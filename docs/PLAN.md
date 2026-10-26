@@ -119,3 +119,12 @@ Out of scope: price targets / buy-sell opinions, live market data (no price exis
 - Color: cool paper neutrals, "red-herring" red reserved for annotations; chart series from a CVD-validated palette.
 - Every figure: hover/focus tooltip, table view, deep link, share-on-X text, page citation.
 - Every claim from outside the filing names its source and date; every derived number shows its arithmetic.
+
+## Status (end of day one)
+
+- Built and published: `dist/index.html` (static hosting) and a private claude.ai Artifact.
+- QA: 99 quoted passages machine-checked against their cited pages (`tools/verify.py`); desktop and phone
+  layouts reviewed in light and dark themes; no console errors.
+- Open items: expected S-1/A with the price range, share counts and commitment totals (rerun the pipeline);
+  Damodaran's promised intrinsic valuation and other post-filing commentary; Amazon and Alphabet Q3 results
+  (Oct 28–29) showing their latest gains on Anthropic stakes.
