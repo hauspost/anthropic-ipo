@@ -1,0 +1,489 @@
+{
+ "experts": [
+  {
+   "id": "damodaran",
+   "name": "Aswath Damodaran",
+   "affiliation": "NYU Stern (valuation professor)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "To make a case for Anthropic at a $1.5 or $2 trillion pricing, you will have to make defensible arguments for sky-high revenue growth in the early years, a surge in operating margins to 30% or higher",
+   "quote_type": "verbatim_primary",
+   "summary": "The IPO will be priced against what investors pay for peers such as OpenAI, not valued on its cash flows. Getting to $1.5-2T needs very fast early growth, operating margins of 30%+ and a risk profile that falls to average. He flags ARR as unstandardized and gameable, notes Anthropic books revenue gross rather than net, and treats the compute commitments as financial risk.",
+   "outlet": "Musings on Markets (Substack)",
+   "date": "2026-10-22",
+   "url": "https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing"
+  },
+  {
+   "id": "ives",
+   "name": "Dan Ives",
+   "affiliation": "Wedbush Securities (tech analyst)",
+   "field": "finance",
+   "stance": "bull",
+   "quote": "I think Anthropic is the heart and lungs of the AI revolution,",
+   "quote_type": "verbatim_secondary",
+   "summary": "He calls Anthropic central to a decade-long build-out of a 'new economy'. He reads the existential-risk disclosures as a jarring 'shocker' risk with some alarmism, not as a reason to avoid the stock.",
+   "outlet": "Yahoo Finance (Sozzi Unleashed)",
+   "date": "2026-09-29",
+   "url": "https://finance.yahoo.com/technology/article/tech-bull-dan-ives-flags-shocker-risk-in-anthropics-ipo-leak-172922273.html"
+  },
+  {
+   "id": "patel",
+   "name": "Dylan Patel",
+   "affiliation": "SemiAnalysis (founder/chief analyst)",
+   "field": "ai",
+   "stance": "bull",
+   "quote": "Anthropic could even be the first company to be a $10 trillion valuation company in the world.",
+   "quote_type": "verbatim_secondary",
+   "summary": "He says Anthropic's inference economics already cover compute costs, and it could reach roughly $1T of revenue around 2028-29, which would support a $10T valuation. Elsewhere he has argued OpenAI and Anthropic will control most usable compute by 2028.",
+   "outlet": "Big Technology Podcast (via Yahoo Finance/TIKR)",
+   "date": "2026-10-07",
+   "url": "https://finance.yahoo.com/technology/ai/articles/investor-predicts-anthropic-could-first-150537121.html"
+  },
+  {
+   "id": "zitron",
+   "name": "Ed Zitron",
+   "affiliation": "EZPR (CEO); Where's Your Ed At newsletter; Better Offline podcast",
+   "field": "ai",
+   "stance": "bear",
+   "quote": "Anthropic's leaked IPO prospectus showed that it spent $2.75 to make a dollar in 2025, making it a worse business than OpenAI.",
+   "quote_type": "verbatim_x_index",
+   "summary": "Using 2025 figures ($12.6B spent, $7.33B of it on compute, for $4.6B of revenue and an $8B operating loss), he calls Anthropic a structurally unprofitable 'dog'. He mocks bulls who say 2025 doesn't count.",
+   "outlet": "X",
+   "date": "2026-09-29",
+   "url": "https://x.com/edzitron/status/2104966502365442093"
+  },
+  {
+   "id": "marcus",
+   "name": "Gary Marcus",
+   "affiliation": "NYU professor emeritus; Marcus on AI (Substack)",
+   "field": "ai",
+   "stance": "bear",
+   "quote": "Anthropic ARR is flatlining post tokenmaxxing (as many of us predicted) just as they are about to IPO.",
+   "quote_type": "verbatim_x_index",
+   "summary": "He says growth has stalled and profits rest on 'adjusted' figures. Frontier models are commoditizing against cheap open-source rivals, so a $2T market cap doesn't add up, and retail investors and pension funds could be left holding the bag.",
+   "outlet": "X / Marcus on AI (Substack)",
+   "date": "2026-09-30",
+   "url": "https://x.com/GaryMarcus/status/2105349862355304892"
+  },
+  {
+   "id": "luria",
+   "name": "Gil Luria",
+   "affiliation": "D.A. Davidson (head of technology research)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "Anthropic will end up being a very speculative investment. They may do well, they may not.",
+   "quote_type": "verbatim_secondary",
+   "summary": "He says Anthropic peaked in enterprise earlier in 2026, then slowed as OpenAI caught up and customers moved to cheaper open-weight models. He prefers the hyperscalers and chipmakers that get paid either way, and calls the labs' safety-slowdown rhetoric a bid to consolidate power.",
+   "outlet": "CNBC interview via Business Insider (syndicated on AOL)",
+   "date": "2026-10-19",
+   "url": "https://www.aol.com/articles/why-veteran-tech-analyst-says-190013000.html"
+  },
+  {
+   "id": "ritter",
+   "name": "Jay Ritter",
+   "affiliation": "University of Florida, Warrington College of Business ('Mr. IPO')",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "These are great companies. A great company doesn't automatically mean it's a great investment.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Strong businesses can still be poor investments if the price is too high. With Ari Pandes he argues the SpaceX template (tiny gross spread, few hedge-fund allocations) threatens Wall Street's IPO economics if Anthropic copies it. His data show dual-class tech IPOs since 1980 beat comparable stocks by about 19 points over three years.",
+   "outlet": "Marketplace (APM)",
+   "date": "2026-06-05",
+   "url": "https://www.marketplace.org/story/2026/06/05/should-you-buy-spacex-open-ai-or-anthropic-stock-at-ipo"
+  },
+  {
+   "id": "nyc_comptroller",
+   "name": "Mark D. Levine",
+   "affiliation": "New York City Comptroller (trustee/adviser to NYC pension funds, >$325B)",
+   "field": "finance",
+   "stance": "bear",
+   "quote": "I write to urge Anthropic to pause its planned initial public offering (IPO) until the company fully and transparently addresses the artificial intelligence (AI) safety, governance, and development pace concerns it has raised.",
+   "quote_type": "verbatim_primary",
+   "summary": "Because Anthropic itself warns of catastrophic or existential AI risk and has called for slowing capabilities, he argues it should pause the IPO. He wants it to set out audits, controls and timelines, and says concentrated founder/trustee control widens the gap between control and accountability.",
+   "outlet": "Office of the NYC Comptroller (letter PDF)",
+   "date": "2026-10-14",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Letter-to-Anthropic-from-New-York-City-Comptroller-Mark-Levine.pdf"
+  },
+  {
+   "id": "levine_matt",
+   "name": "Matt Levine",
+   "affiliation": "Bloomberg Opinion (Money Stuff)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "A frontier-AI prospectus forces the company to choose what good vision of AI to promise and what bad vision to warn about. Next to SpaceX's huge market-size claim and OpenAI's AGI pitch, he calls Anthropic's framing relatively restrained. The same issue also covers share classes.",
+   "outlet": "Bloomberg Opinion / Money Stuff",
+   "date": "2026-10-26",
+   "url": "https://www.bloomberg.com/opinion/newsletters/2026-10-26/anthropic-raises-concerns"
+  },
+  {
+   "id": "burry",
+   "name": "Michael Burry",
+   "affiliation": "Investor (Scion; posts on X / 'Cassandra Unchained')",
+   "field": "finance",
+   "stance": "bear",
+   "quote": "For the benefit of humanity, the markets should tank hard and prevent the OpenAI and Anthropic IPOs.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Burry, who holds puts on AI-linked stocks, argues the labs will destroy trillions of dollars of capital. He says a market sell-off that blocks their IPOs would be the lesser harm.",
+   "outlet": "X (reported by Stocktwits, Yellow, Benzinga)",
+   "date": "2026-09-29",
+   "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-says-markets-should-tank-hard-to-stop-open-ai-anthropic-ip-os-for-benefit-of-humanity/cZMnuTLRBWp"
+  },
+  {
+   "id": "tunguz",
+   "name": "Tomasz Tunguz",
+   "affiliation": "Theory Ventures (GP); tomtunguz.com",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": "Building a business that went from $41M to a $16B half-year in three years is without precedent.",
+   "quote_type": "verbatim_primary",
+   "summary": "Bull case: 11.9x growth on a derived ~40% gross margin, the first operating profit (~$974M in Q2), positive cash flow and almost no drawn debt. Bear case: $637B of commitments ($265.6B fixed/minimum at June 30 plus $245B since), two-thirds non-cancelable, against consumption revenue customers can cut.",
+   "outlet": "tomtunguz.com",
+   "date": "2026-10-26",
+   "url": "https://tomtunguz.com/anthropics-s1-grew-eleven-fold/"
+  },
+  {
+   "id": "zvi",
+   "name": "Zvi Mowshowitz",
+   "affiliation": "Don't Worry About the Vase (Substack); AI-safety-community commentator",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": "this seems entirely appropriate to me, and I also think it makes the company more valuable rather than less valuable.",
+   "quote_type": "verbatim_primary",
+   "summary": "He defends founder control plus the LTBT as appropriate and value-enhancing, while understanding investors who won't buy under it. He doubts the LTBT has much real leverage beyond appointing ordinary business people to the board. He called Q3 revenue of $16.8B 'highly disappointing'.",
+   "outlet": "Don't Worry About the Vase (Substack)",
+   "date": "2026-10-01",
+   "url": "https://thezvi.substack.com/p/ai-188-gemini-dot-argon"
+  },
+  {
+   "id": "lipton",
+   "name": "Ann Lipton",
+   "affiliation": "University of Colorado Law School (corporate/securities law)",
+   "field": "finance",
+   "stance": "bear",
+   "quote": "public shareholders will have very few governance rights.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Without significant changes, public shareholders in Anthropic get almost no governance rights. Founders hold 50.1% of votes through Class F, and the LTBT elects the board majority.",
+   "outlet": "Wall Street Journal (paywalled), quoted by Business Model Analyst (2026-10-19)",
+   "date": "2026-10-18",
+   "url": "https://businessmodelanalyst.com/anthropic-ipo-long-term-benefit-trust-covenants/"
+  },
+  {
+   "id": "azhar",
+   "name": "Azeem Azhar",
+   "affiliation": "Exponential View (founder)",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": "It is a business whose revenues are growing far faster than its costs.",
+   "quote_type": "verbatim_primary",
+   "summary": "Behind the $8B 2025 operating loss and $42B net loss (inflated by an accounting charge), he sees a company investing for growth that shows 'green shoots'. Revenue outpaces costs, but about $410B of the $518B commitments cannot be cancelled.",
+   "outlet": "Exponential View (Substack; partly paywalled)",
+   "date": "2026-09-29",
+   "url": "https://www.exponentialview.co/p/the-first-existential-ipo"
+  },
+  {
+   "id": "evans",
+   "name": "Benedict Evans",
+   "affiliation": "Independent analyst (ben-evans.com)",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "Per the recap, OpenAI and Anthropic, each valued near $850-900B privately, were together worth more than every venture-backed company that IPO'd in the 1995-2000 dot-com boom. Either valuations correct, a lab builds a moat nobody has yet invented, or labs capture enough application-layer value to justify the price.",
+   "outlet": "ben-evans.com presentation, via Advertiser Intelligence recap",
+   "date": "2026-06",
+   "url": "https://advertiserintelligence.substack.com/p/ai-eats-the-world-a-friday-detour"
+  },
+  {
+   "id": "epoch",
+   "name": "Campbell Hutcheson (Epoch AI guest post)",
+   "affiliation": "Epoch AI, Gradient Updates newsletter (guest author)",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": "Anthropic's buildout therefore suggests that financing is unlikely to be the immediate limit on frontier compute growth.",
+   "quote_type": "verbatim_primary",
+   "summary": "Anthropic raised ~$50B of debt-like financing while revenue was under $9B annualized, because lenders lent against contracted payment streams and suppliers (Broadcom, Google) took on part of the risk. Vendor support makes compute financeable, which also shows how much of it is supplier-backed.",
+   "outlet": "Epoch AI - Gradient Updates (Substack)",
+   "date": "2026-08-13",
+   "url": "https://epochai.substack.com/p/will-financing-bottleneck-ai-compute"
+  },
+  {
+   "id": "hughes",
+   "name": "Chris Hughes",
+   "affiliation": "Bloomberg Opinion (deals columnist)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "The AI sell-off reflects oil, rates and geopolitics as well as the overhang of the Anthropic listing. Reports of disappointing revenue growth hurt confidence, and getting the deal done would help clear the air.",
+   "outlet": "Bloomberg Opinion",
+   "date": "2026-10-23",
+   "url": "https://www.bloomberg.com/opinion/articles/2026-10-23/anthropic-please-get-on-with-your-ipo-to-soothe-the-ai-trade"
+  },
+  {
+   "id": "lee_dave",
+   "name": "Dave Lee",
+   "affiliation": "Bloomberg Opinion (US technology columnist)",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "He reads the S-1's dire warnings about the company and humanity as a deliberate 'anti-sell'. Like a recruiting pitch, it repels poor-fit investors and attracts believers.",
+   "outlet": "Bloomberg Opinion",
+   "date": "2026-10-26",
+   "url": "https://www.bloomberg.com/news/videos/2026-10-26/dave-lee-anthropic-brings-anti-sell-strategy-to-ipo-video"
+  },
+  {
+   "id": "pitchbook_rolfes",
+   "name": "Harrison Rolfes",
+   "affiliation": "PitchBook (senior research analyst, AI/LLM providers)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "you need to bump that gross margin up to like 70%",
+   "quote_type": "verbatim_secondary",
+   "summary": "He estimates gross margin at about 44%, well short of the ~70% at Microsoft or ServiceNow, and thinks Anthropic needs about 70% to carry commitments that run to 2030-32.",
+   "outlet": "Stocktwits (quoting PitchBook)",
+   "date": "2026-09-02",
+   "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-spacex-ipo-crown-ai-growth-microsoft-margins-analyst/cZsAKJTRJuX"
+  },
+  {
+   "id": "delong",
+   "name": "J. Bradford DeLong",
+   "affiliation": "UC Berkeley (economist); Grasping Reality (Substack)",
+   "field": "finance",
+   "stance": "bear",
+   "quote": "Anthropic should study Netscape and its fate.",
+   "quote_type": "verbatim_primary",
+   "summary": "He expects the model layer to commoditize like the browser did, leaving thin profits for model sellers. IPO buyers should keep Netscape in mind.",
+   "outlet": "Grasping Reality (Substack)",
+   "date": "2026-08-16",
+   "url": "https://braddelong.substack.com/p/very-partial-crosspost-gary-marcus"
+  },
+  {
+   "id": "new_constructs",
+   "name": "Kyle Guske II (New Constructs)",
+   "affiliation": "New Constructs (senior investment analyst; independent research)",
+   "field": "finance",
+   "stance": "bear",
+   "quote": "In short, we don't think Anthropic has a viable business.",
+   "quote_type": "verbatim_secondary",
+   "summary": "A reverse-DCF that deducts $518B of commitments finds $2T needs ~56% revenue CAGR through 2035 at a 10% margin. A mature-company case (20% margin, 20% growth) gives about $144B, 93% below $2T. The note calls it 'the most ridiculous IPO of 2026' and mainly exit liquidity for insiders.",
+   "outlet": "New Constructs report via The Next Web / 24/7 Wall St.",
+   "date": "2026-10-06",
+   "url": "https://thenextweb.com/news/anthropic-ipo-valuation-new-constructs-144bn"
+  },
+  {
+   "id": "renaissance_kennedy",
+   "name": "Matt Kennedy",
+   "affiliation": "Renaissance Capital (senior strategist)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "A successful IPO from Anthropic could crack open or slam shut the IPO market, even well into 2027",
+   "quote_type": "verbatim_secondary",
+   "summary": "Anthropic is the swing deal for the whole IPO market. The window is tougher than in summer and investors now push back on valuations, but a good outcome could carry 2027 issuance.",
+   "outlet": "Reuters (via Investing.com factbox; Reuters story via InvestmentNews / Idaho Business Review)",
+   "date": "2026-10-26",
+   "url": "https://www.investing.com/news/stock-market-news/factboxanthropic-moves-closer-to-blockbuster-listing-with-us-ipo-filing-4972888"
+  },
+  {
+   "id": "breakingviews",
+   "name": "Reuters Breakingviews (columnists)",
+   "affiliation": "Reuters Breakingviews",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "The listing would be a public-market audit of what has so far been mostly private enthusiasm for AI. The $2T ambition could slip again to after the November US elections.",
+   "outlet": "Reuters Breakingviews",
+   "date": "2026-09-23",
+   "url": "https://www.breakingviews.com/columns/considered-view/anthropics-ipo-is-crucial-ai-gut-check-2026-09-23/"
+  },
+  {
+   "id": "tae_kim",
+   "name": "Tae Kim",
+   "affiliation": "Key Context (Substack publisher; tech/markets writer)",
+   "field": "ai",
+   "stance": "bull",
+   "quote": "Anthropic would be foolish to include a bad October ARR number when it doesn't have to and it's not foolish.",
+   "quote_type": "verbatim_primary",
+   "summary": "He reads the blank October-ARR placeholder as a sign the number will be good. He highlights 1,900+ $1M customers, revenue growth far ahead of compute spend and positive operating cash flow. He flags TSMC and memory supply as the binding risk.",
+   "outlet": "Key Context (Substack)",
+   "date": "2026-10-26",
+   "url": "https://taekim.substack.com/p/anthropic-8-most-interesting-things"
+  },
+  {
+   "id": "bylund",
+   "name": "Anders Bylund",
+   "affiliation": "The Motley Fool (contributor)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "At Anthropic, Wall Street gets to pick up the tab for the compute bills, but it will never get a seat at the table.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Public investors get economic exposure but no real say, because the founder LLC has 50.1% of votes and the LTBT elects the board majority. Buyers should be comfortable with that before investing.",
+   "outlet": "The Motley Fool",
+   "date": "2026-10-26",
+   "url": "https://www.fool.com/investing/2026/10/26/anthropics-ipo-keeps-founders-in-control/"
+  },
+  {
+   "id": "hanley",
+   "name": "Kathleen Hanley",
+   "affiliation": "Lehigh University (finance professor)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "For the most part, one should not expect short-run profits right after trading",
+   "quote_type": "verbatim_secondary",
+   "summary": "Retail buyers shouldn't count on a quick first-day pop in these mega-IPOs.",
+   "outlet": "Marketplace",
+   "date": "2026-06-05",
+   "url": "https://www.marketplace.org/story/2026/06/05/should-you-buy-spacex-open-ai-or-anthropic-stock-at-ipo"
+  },
+  {
+   "id": "peers",
+   "name": "Martin Peers",
+   "affiliation": "The Information (columnist)",
+   "field": "ai",
+   "stance": "mixed",
+   "quote": null,
+   "quote_type": "paraphrase",
+   "summary": "The IPO roadshow collides with Anthropic researchers publicly putting AI-catastrophe odds above 10%, and with internal reports that raised model-derailment risk from 'very low' to 'low'. That leaves the company with an awkward disclosure tension.",
+   "outlet": "The Information (paywalled), summarized by Dealroom",
+   "date": "2026-09-09",
+   "url": "https://dealroom.co/news/info-qcmon8-anthropics-ipo-marketing-meets-extinction-risk/"
+  },
+  {
+   "id": "hyman",
+   "name": "Simeon Hyman",
+   "affiliation": "ProShares (global investment strategist)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "[S]afety incidents could adversely affect company performance.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Safety is a financial risk as well as an ethical one. Incidents could bring regulation, compliance costs and product delays.",
+   "outlet": "InvestmentNews",
+   "date": "2026-10-26",
+   "url": "https://www.investmentnews.com/equities/anthropic-ipo-filing-pairs-explosive-growth-with-an-80b-loss/268746"
+  },
+  {
+   "id": "asimov_addendum",
+   "name": "Tim O'Reilly, Ilan Strauss, Isobel Moure",
+   "affiliation": "Asimov's Addendum (AI Disclosures Project)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "We cannot govern markets we don't understand.",
+   "quote_type": "verbatim_primary",
+   "summary": "They wanted the S-1 to disclose circular cloud deals with investor-suppliers, cap-table detail, training-data litigation and operating and safety metrics, and argued existing SEC rules already require much of it. Useful as a checklist to score the actual S-1 against.",
+   "outlet": "Asimov's Addendum (Substack)",
+   "date": "2025-12-09",
+   "url": "https://asimovaddendum.substack.com/p/our-anthropic-ipo-christmas-wishlist"
+  }
+ ],
+ "bull_args": [
+  {
+   "title": "Growth with improving unit economics",
+   "argument": "Revenue went from ~$41M to $16.3B a half-year in about three years. H1-2026 operating loss narrowed to $693M, Q2 showed an operating profit, operating cash flow turned positive (+$3.9B) and adjusted operating income was profitable. Revenue is growing faster than costs.",
+   "attributed_to": [
+    "Tomasz Tunguz",
+    "Azeem Azhar",
+    "Tae Kim"
+   ]
+  },
+  {
+   "title": "The scary net loss is mostly an accounting mark",
+   "argument": "$72.4B of the $80.7B H1 net loss, and ~$34B of the $42B 2025 loss, are non-cash fair-value charges on convertible notes, SAFEs and derivatives as the company's value rose. Economically, the operating line and cash flow matter more.",
+   "attributed_to": [
+    "Harrison Rolfes (PitchBook)",
+    "Gil Luria (D.A. Davidson, per CNBC snippet)",
+    "Azeem Azhar"
+   ]
+  },
+  {
+   "title": "Inference already pays; the upside is enormous",
+   "argument": "Revenue minus compute cost is already positive. Enterprise adoption is deep (1,900+ customers paying $1M+ a year), and if revenue approaches ~$1T by 2028-29, Anthropic could be the first $10T company.",
+   "attributed_to": [
+    "Dylan Patel (SemiAnalysis)",
+    "Tae Kim"
+   ]
+  },
+  {
+   "title": "Compute is financeable and the balance sheet is strong",
+   "argument": "Lenders and suppliers (Broadcom, Google) have financed capacity against contracted payments, so financing is not the near-term bottleneck. Anthropic has essentially no drawn debt, a large cash pile and an undrawn $15B revolver.",
+   "attributed_to": [
+    "Epoch AI (Campbell Hutcheson)",
+    "Tomasz Tunguz",
+    "Matt Kennedy (Renaissance)",
+    "Gil Luria (cash pile, per snippet)"
+   ]
+  },
+  {
+   "title": "Scarcity, index demand and a governance structure that can add value",
+   "argument": "It is the first major gen-AI pure play, Ives calls it 'the heart and lungs of the AI revolution', and Nasdaq-100 fast entry forces index buying. Zvi argues founder control plus the LTBT makes the company more valuable, and Ritter's data show dual-class tech IPOs have historically outperformed.",
+   "attributed_to": [
+    "Dan Ives (Wedbush)",
+    "Zvi Mowshowitz",
+    "Jay Ritter (data)",
+    "Matt Levine (index-inclusion logic)",
+    "Avery Marquez (Renaissance, snippet)"
+   ]
+  }
+ ],
+ "bear_args": [
+  {
+   "title": "The price needs heroic assumptions",
+   "argument": "$1.5-2T needs 30%+ operating margins and sky-high growth (Damodaran) and is ~31x the July run-rate (PitchBook). A mature-company DCF gives ~$144B (New Constructs). The private valuation alone could buy ~78 profitable S&P 500 companies (Burry). Good company is not the same as good investment (Ritter).",
+   "attributed_to": [
+    "Aswath Damodaran",
+    "Harrison Rolfes (PitchBook)",
+    "New Constructs (Kyle Guske II)",
+    "Michael Burry",
+    "Jay Ritter"
+   ]
+  },
+  {
+   "title": "The leverage is hidden in compute commitments",
+   "argument": "Hundreds of billions in mostly non-cancelable compute obligations ($518B-$637B depending on definition; ~$410B non-cancelable per the leak) set against consumption revenue with no lock-in. The payments are owed whether customers stay or not. Rolfes thinks ~70% gross margins are needed to carry them, against ~44% now.",
+   "attributed_to": [
+    "Tomasz Tunguz (bear case)",
+    "Azeem Azhar",
+    "Harrison Rolfes (PitchBook)",
+    "Ross Hendricks",
+    "Aswath Damodaran (financial risk)"
+   ]
+  },
+  {
+   "title": "Growth is slowing as models commoditize",
+   "argument": "OpenAI caught up and enterprises shifted to open-weight models (Luria). ARR is 'flatlining' (Marcus) and Q3 was 'highly disappointing' (Zvi). Model-selling may go the way of Netscape (DeLong), and reports of weak revenue growth shook the AI trade (Hughes).",
+   "attributed_to": [
+    "Gil Luria",
+    "Gary Marcus",
+    "Zvi Mowshowitz",
+    "Brad DeLong",
+    "Chris Hughes (Bloomberg Opinion)"
+   ]
+  },
+  {
+   "title": "Revenue quality, concentration and circularity",
+   "argument": "ARR is unstandardized and gameable, and Anthropic books cloud-marketplace revenue gross (Damodaran). Nearly half of 2025 sales ran through Amazon and Google, who are also investors, suppliers and competitors. The top two customers are ~20% of revenue. The 2025 cost base was $2.75 per $1 of revenue (Zitron).",
+   "attributed_to": [
+    "Aswath Damodaran",
+    "Tomasz Tunguz",
+    "Ed Zitron",
+    "Reuters/Calcalist analysis",
+    "Asimov's Addendum (disclosure ask)"
+   ]
+  },
+  {
+   "title": "Public shareholders carry the risk without control, amid existential-risk disclosures",
+   "argument": "Class F gives seven founders 50.1% of votes and the LTBT elects the board majority, so public holders get 'very few governance rights' (Lipton). The NYC Comptroller wants the IPO paused over a 'gap between control and accountability'. The company's own catastrophic-risk warnings are a 'shocker risk' (Ives), and safety incidents are a financial risk (Hyman). Burry and Hendricks argue the AI-risk rhetoric serves the labs themselves.",
+   "attributed_to": [
+    "Ann Lipton",
+    "Mark D. Levine (NYC Comptroller)",
+    "Anders Bylund (Motley Fool)",
+    "Dan Ives",
+    "Simeon Hyman (ProShares)",
+    "Michael Burry",
+    "Ross Hendricks"
+   ]
+  }
+ ]
+}

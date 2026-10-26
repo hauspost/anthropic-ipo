@@ -1,0 +1,342 @@
+[
+ {
+  "key": "s1",
+  "term": "S-1",
+  "plain": "The registration form a company files with the SEC before selling shares to the public for the first time. It contains the prospectus: the business description, risks, audited financials and ownership."
+ },
+ {
+  "key": "redherring",
+  "term": "Preliminary prospectus (\"red herring\")",
+  "plain": "The first public version of the prospectus, before the price is set. It is nicknamed a red herring after the red warning legend once printed on its cover. The price and share counts are left blank."
+ },
+ {
+  "key": "compute",
+  "term": "Compute and infrastructure",
+  "plain": "Anthropic's single biggest cost line: renting and leasing the chips, servers, power and data centers used both to train new models and to answer customers' requests."
+ },
+ {
+  "key": "convertible",
+  "term": "Convertible note",
+  "plain": "A loan that turns into shares instead of being repaid in cash, usually at a price agreed in advance. Amazon lent Anthropic billions this way between 2023 and 2025."
+ },
+ {
+  "key": "fairvalue",
+  "term": "Change in fair value",
+  "plain": "When an IOU that converts into shares becomes worth more because the company's valuation rose, accounting rules make the company record the increase as a loss. No cash changes hands."
+ },
+ {
+  "key": "circular",
+  "term": "Circular financing",
+  "plain": "A critic's term for deals where a supplier invests in or lends to a customer, and the customer spends the money back with the supplier. It can make both sides' growth look bigger than outside demand alone would."
+ },
+ {
+  "key": "vendor",
+  "term": "Vendor financing",
+  "plain": "A supplier lending money or extending credit so a customer can buy its products. It is common and legitimate, but it concentrates risk if the customer stumbles."
+ },
+ {
+  "key": "ltbt",
+  "term": "Long-Term Benefit Trust",
+  "plain": "An independent trust, holding a single Class T share with no economic value, that elects four of Anthropic's seven directors. Its trustees may not own Anthropic stock."
+ },
+ {
+  "key": "takeorpay",
+  "term": "Take-or-pay",
+  "plain": "A contract where the buyer pays for a minimum amount whether or not it uses it. Several of Anthropic's compute deals work this way, with cash \"true-ups\" for any shortfall."
+ },
+ {
+  "key": "lockup",
+  "term": "Lock-up",
+  "plain": "A promise by existing shareholders not to sell for a period after the IPO, so the market isn't flooded with stock. Anthropic's releases come in many small steps instead of one date."
+ },
+ {
+  "key": "gaap",
+  "term": "GAAP vs. adjusted",
+  "plain": "GAAP is the official US accounting rulebook, and audited figures follow it. \"Adjusted\" or non-GAAP figures are the company's own versions that leave out items such as stock-based pay."
+ },
+ {
+  "key": "sbc",
+  "term": "Stock-based compensation",
+  "plain": "Paying employees in shares or options instead of cash. It doesn't use cash, but it dilutes shareholders, so many analysts treat it as a real cost."
+ },
+ {
+  "key": "dilution",
+  "term": "Dilution",
+  "plain": "When a company issues new shares, each existing share owns a smaller slice of the company."
+ },
+ {
+  "key": "marketcap",
+  "term": "Market value (market cap)",
+  "plain": "Share price times the number of shares: what the stock market says the whole company is worth."
+ },
+ {
+  "key": "pe",
+  "term": "Price-to-earnings (P/E)",
+  "plain": "Share price divided by profit per share. A P/E of 30 means investors pay $30 for every $1 of annual profit."
+ },
+ {
+  "key": "ps",
+  "term": "Price-to-sales",
+  "plain": "Market value divided by annual revenue. It's used for companies that don't yet make steady profits."
+ },
+ {
+  "key": "runrate",
+  "term": "Run-rate revenue",
+  "plain": "A recent short period of revenue scaled up to a year, for example one month times twelve. It flatters fast-growing companies and is not an audited number."
+ },
+ {
+  "key": "ttm",
+  "term": "TTM (trailing twelve months)",
+  "plain": "The total for the most recent twelve months, whatever the fiscal calendar."
+ },
+ {
+  "key": "nrr",
+  "term": "Net revenue retention",
+  "plain": "How much this year's revenue from last year's customers compares with what they paid a year ago. Anthropic's definition counts any customer that paid at least $1, which inflates the figure against a tiny base."
+ },
+ {
+  "key": "csp",
+  "term": "Cloud marketplaces (CSPs)",
+  "plain": "Amazon, Google and Microsoft resell Claude through their own cloud platforms. They collect the money, keep a fee, and pass the rest to Anthropic. These sales were 48% of revenue in the first half of 2026."
+ },
+ {
+  "key": "grossnet",
+  "term": "Gross vs. net revenue",
+  "plain": "Booking the full price a customer pays (gross) versus only the part the company keeps after a reseller's cut (net). Anthropic books cloud-marketplace sales gross and counts the cloud's fee as an expense."
+ },
+ {
+  "key": "pbc",
+  "term": "Public benefit corporation",
+  "plain": "A company legally required to balance shareholders' financial interests against a stated public purpose. Anthropic's purpose is \"the responsible development and maintenance of advanced AI for the long-term benefit of humanity.\""
+ },
+ {
+  "key": "controlled",
+  "term": "Controlled company",
+  "plain": "A Nasdaq status for companies where one person or group controls board elections. It lets the company skip some independence rules for board committees."
+ },
+ {
+  "key": "dualclass",
+  "term": "Multi-class shares",
+  "plain": "Different classes of stock with different voting rights, so insiders can control votes while selling economic ownership to the public. Alphabet and Meta use simpler versions."
+ },
+ {
+  "key": "npa",
+  "term": "Note purchase agreement (NPA)",
+  "plain": "A pre-agreed facility under which a partner will lend or invest more money later, usually when conditions are met. Anthropic has undrawn facilities with Google, Amazon and Broadcom."
+ },
+ {
+  "key": "pik",
+  "term": "Paid-in-kind (PIK) interest",
+  "plain": "Interest paid by adding to the loan balance instead of in cash. Broadcom's $42B facility accrues 9% this way."
+ },
+ {
+  "key": "vwap",
+  "term": "VWAP",
+  "plain": "Volume-weighted average price: the average price a stock traded at over a period, weighted by how many shares changed hands. Several partner deals convert into stock at the 30-day VWAP."
+ },
+ {
+  "key": "financelease",
+  "term": "Finance lease",
+  "plain": "A lease that works economically like buying with a loan. The asset and the debt both sit on the balance sheet. Anthropic's Broadcom chip leases are treated this way."
+ },
+ {
+  "key": "rpo",
+  "term": "Remaining performance obligations",
+  "plain": "Revenue customers have contractually committed to that hasn't been delivered yet. Anthropic's was $10.8B at June 30, 2026, small next to its revenue because most usage is pay-as-you-go."
+ },
+ {
+  "key": "tender",
+  "term": "Tender offer",
+  "plain": "An offer to buy shares from existing holders, often employees, at a set price before a company is public."
+ },
+ {
+  "key": "index",
+  "term": "Index fast entry",
+  "plain": "New Nasdaq rules let a very large new listing join the Nasdaq-100 within weeks instead of waiting a season, which forces index funds to buy."
+ },
+ {
+  "key": "s1-agentic",
+  "term": "agentic AI",
+  "plain": "AI that does tasks rather than just answering questions. It plans steps and uses software tools to carry out a goal for you."
+ },
+ {
+  "key": "s1-ai",
+  "term": "AI accelerators",
+  "plain": "Specialized computer chips (such as GPUs or TPUs) that run AI math far faster and more cheaply than ordinary processors."
+ },
+ {
+  "key": "s1-api",
+  "term": "API",
+  "plain": "A doorway that lets other companies’ software send requests to Claude and get answers back automatically, without a human typing into a chat window."
+ },
+ {
+  "key": "s1-closing",
+  "term": "closing the loop",
+  "plain": "Using today’s Claude to help build tomorrow’s Claude, for example by writing code and running experiments. Anthropic argues this speeds up progress over time."
+ },
+ {
+  "key": "s1-compute",
+  "term": "compute multipliers",
+  "plain": "Software and research tricks that get more AI capability out of the same number of chips, like a car engine getting more miles per gallon."
+ },
+ {
+  "key": "s1-constitutional",
+  "term": "Constitutional AI",
+  "plain": "Anthropic’s method of teaching Claude to behave well by giving it a written rulebook of values and having it check and revise its own answers against those rules."
+ },
+ {
+  "key": "s1-frontier",
+  "term": "frontier AI",
+  "plain": "The most advanced AI models available at any given moment."
+ },
+ {
+  "key": "s1-inference",
+  "term": "inference",
+  "plain": "Running a finished AI model to answer a request. It is the ‘serving customers’ part of AI costs, as opposed to building (training) the model."
+ },
+ {
+  "key": "s1-mechanistic",
+  "term": "mechanistic interpretability",
+  "plain": "Taking an AI model apart, like reverse-engineering a machine, to find which internal parts cause which behaviors, including hidden unsafe ones."
+ },
+ {
+  "key": "s1-model",
+  "term": "model weights",
+  "plain": "The billions of numbers that make up a trained AI model. They are the model itself and the company’s crown-jewel asset."
+ },
+ {
+  "key": "s1-open-weight",
+  "term": "open-weight",
+  "plain": "AI models whose core files are given away publicly so anyone can run or modify them. Some competitors take this approach."
+ },
+ {
+  "key": "s1-pay-for-intelligence",
+  "term": "pay-for-intelligence / consumption",
+  "plain": "Pay-as-you-go pricing: customers are billed for how much AI work they use, like a utility bill. It made up about 80% of revenue in H1 2026 (F-26)."
+ },
+ {
+  "key": "s1-post-training",
+  "term": "post-training",
+  "plain": "The ‘finishing school’ stage that turns a raw model into a helpful, safe assistant good at real tasks like coding."
+ },
+ {
+  "key": "s1-pre-training",
+  "term": "pre-training",
+  "plain": "The first, most compute-hungry training stage, where the model reads vast amounts of text and learns general knowledge by guessing the next word."
+ },
+ {
+  "key": "s1-run-rate",
+  "term": "Run-Rate Revenue",
+  "plain": "A snapshot of the last four weeks’ revenue scaled up to a full year. It is a speed reading, not actual annual revenue, and can misstate the year if usage spikes or drops."
+ },
+ {
+  "key": "s1-tokens",
+  "term": "tokens / tokenizer",
+  "plain": "The small chunks (roughly word fragments) that AI reads and writes. AI usage is measured and priced per token, like minutes on a phone plan."
+ },
+ {
+  "key": "s1-mythos",
+  "term": "Mythos / Fable",
+  "plain": "Anthropic’s most powerful model. The public version (Fable) has extra safety limits on sensitive topics, while vetted security and science organizations get a less restricted version (Mythos)."
+ },
+ {
+  "key": "s1-project",
+  "term": "Project Glasswing",
+  "plain": "A limited-access program that gave Anthropic’s most capable model first to vetted cybersecurity defenders, because it is very good at finding software security holes."
+ },
+ {
+  "key": "s1-claude",
+  "term": "Claude Code",
+  "plain": "An AI programmer that can carry out whole software tasks, not just suggest lines of code."
+ },
+ {
+  "key": "s1-claude",
+  "term": "Claude Cowork",
+  "plain": "Claude Code’s approach applied to office work: you describe a task in plain language and it does the clicking, drafting and organizing for you."
+ },
+ {
+  "key": "s1-model",
+  "term": "Model Context Protocol (MCP)",
+  "plain": "A common ‘plug’ standard that lets AI assistants connect to company data and software, like a USB port for AI. Anthropic created it and gave it to an open-source foundation."
+ },
+ {
+  "key": "s1-zero",
+  "term": "zero data retention",
+  "plain": "A privacy option where Anthropic deletes customer requests and answers right after processing them."
+ },
+ {
+  "key": "s1-anthropic",
+  "term": "Anthropic Direct",
+  "plain": "Instead of only renting computing power from cloud companies, Anthropic leases its own chips and data center space, run for it by partners."
+ },
+ {
+  "key": "s1-tpu",
+  "term": "TPU / Trainium / GPU",
+  "plain": "Brand families of AI chips. GPUs come from NVIDIA and AMD; TPUs are Google’s own chips; Trainium is Amazon’s own chip."
+ },
+ {
+  "key": "s1-responsible",
+  "term": "Responsible Scaling Policy (RSP)",
+  "plain": "Anthropic’s public rulebook for testing each new model for dangerous abilities and adding safeguards, or delaying release, before it ships."
+ },
+ {
+  "key": "s1-alignment",
+  "term": "alignment / misalignment",
+  "plain": "Making sure the AI actually does what people want. ‘Misaligned’ AI pursues the wrong goals or takes actions nobody asked for."
+ },
+ {
+  "key": "s1-recursive",
+  "term": "recursive self-improvement",
+  "plain": "AI that builds better AI, which builds even better AI, and so on. This could speed progress dramatically and is treated as a safety risk."
+ },
+ {
+  "key": "s1-race",
+  "term": "race to the top",
+  "plain": "Anthropic’s strategy of making safety a competitive selling point so rivals feel pressure to match it."
+ },
+ {
+  "key": "s1-supply-chain",
+  "term": "supply-chain risk designation (10 U.S.C. § 3252 / FASCSA Section 4713)",
+  "plain": "A U.S. military label that can bar defense contractors from doing business with Anthropic. Anthropic is fighting it in court with mixed results so far."
+ },
+ {
+  "key": "s1-bartz",
+  "term": "Bartz settlement",
+  "plain": "A $1.5 billion payment to settle authors’ claims that their books were copied to train Claude."
+ },
+ {
+  "key": "s1-safe",
+  "term": "SAFE",
+  "plain": "An early-stage investment contract that turns into shares later."
+ },
+ {
+  "key": "s1-redeemable",
+  "term": "redeemable convertible preferred stock / Preferred Stock Conversion",
+  "plain": "Special shares sold to venture and strategic investors. At the IPO they turn into ordinary shares."
+ },
+ {
+  "key": "s1-rsus",
+  "term": "RSUs / RSU Settlement",
+  "plain": "Promised employee shares that vest over time. Many vest at the IPO, and some shares are held back to pay employees’ taxes."
+ },
+ {
+  "key": "s1-class",
+  "term": "Class F common stock / Founder LLC",
+  "plain": "A special share that gives the founders together a majority of shareholder votes, but no claim on profits."
+ },
+ {
+  "key": "s1-class",
+  "term": "Class A / Class N / Class E common stock",
+  "plain": "Different share types: A is what the public buys; N is economically identical but non-voting (mostly for partners like big tech investors); E gives employees a narrow say."
+ },
+ {
+  "key": "s1-anthropic",
+  "term": "Anthropic Public Benefit Fund / Initial Public Benefit Issuance / Public Benefit Issuances",
+  "plain": "Anthropic set aside 5% of its shares for public-good causes, with more to come if the stock rises. Note this dilutes other shareholders."
+ },
+ {
+  "key": "s1-donation",
+  "term": "Donation Matching Plan",
+  "plain": "Anthropic doubles employees’ charitable stock donations with newly issued shares."
+ }
+]

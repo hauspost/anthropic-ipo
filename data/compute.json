@@ -1,0 +1,204 @@
+{
+ "deals": [
+  {
+   "id": "broadcom",
+   "partner": "Broadcom",
+   "what": "Five-year master equipment leases for TPU-based accelerators in dedicated data centers (\"Anthropic Direct\")",
+   "amount": 161.2,
+   "amount_type": "fixed",
+   "basis": "rent, excluding interest",
+   "start": 2026,
+   "end": 2032,
+   "cancel": "Non-cancelable by either party during the lease except on default",
+   "page": "171",
+   "snippet": "approximately $161.2 billion excluding interest"
+  },
+  {
+   "id": "spacexai",
+   "partner": "SpaceXAI (formerly xAI)",
+   "what": "Access to NVIDIA GPU compute; ~$3.1B a month once all capacity is delivered (expected Dec 2026)",
+   "amount": 120.5,
+   "amount_type": "up_to",
+   "basis": "up to",
+   "start": 2026,
+   "end": 2029,
+   "cancel": "Non-cancelable until Jan/Mar 2027, then either side may cancel on 90 days' notice",
+   "page": "171",
+   "snippet": "aggregate of up to $120.5 billion"
+  },
+  {
+   "id": "google",
+   "partner": "Google",
+   "what": "Google Cloud / TPU capacity; shortfalls trued up in cash",
+   "amount": 114.5,
+   "amount_type": "fixed",
+   "basis": "at least, regardless of actual usage",
+   "start": 2026,
+   "end": 2033,
+   "cancel": "Non-cancelable except Google's uncured material breach",
+   "page": "170",
+   "snippet": "at least approximately $114.5 billion"
+  },
+  {
+   "id": "amazon",
+   "partner": "Amazon",
+   "what": "AWS capacity (Trainium and other); shortfalls trued up in cash",
+   "amount": 110.0,
+   "amount_type": "fixed",
+   "basis": "at least, regardless of actual usage",
+   "start": 2026,
+   "end": 2036,
+   "cancel": "Non-cancelable except Amazon's uncured material breach",
+   "page": "171",
+   "snippet": "at least $110.0 billion between May 2026 and April 2036"
+  },
+  {
+   "id": "microsoft",
+   "partner": "Microsoft",
+   "what": "Azure capacity",
+   "amount": 44.9,
+   "amount_type": "fixed",
+   "basis": "at least, regardless of actual usage",
+   "start": 2026,
+   "end": 2033,
+   "cancel": "Non-cancelable except Microsoft's uncured material breach or undelivered tranches",
+   "page": "170",
+   "snippet": "at least $44.9 billion"
+  },
+  {
+   "id": "nscale",
+   "partner": "Nscale",
+   "what": "NVIDIA GPU services; fees accrue only as capacity is delivered and accepted",
+   "amount": 44.6,
+   "amount_type": "up_to",
+   "basis": "up to approximately",
+   "start": 2026,
+   "end": 2033,
+   "cancel": "Non-cancelable except delivery failures or breach; depends on Nscale financing the build",
+   "page": "171",
+   "snippet": "up to approximately $44.6 billion"
+  },
+  {
+   "id": "lambda",
+   "partner": "Lambda",
+   "what": "NVIDIA GPU compute; $34.9B of it can be terminated if Lambda fails to secure the facility lease",
+   "amount": 41.3,
+   "amount_type": "fixed",
+   "basis": "approximately",
+   "start": 2026,
+   "end": 2034,
+   "cancel": "Mostly non-cancelable; the $34.9B August 2026 deal falls away if Lambda can't secure the site",
+   "page": "171",
+   "snippet": "approximately $41.3 billion over terms extending into 2034"
+  },
+  {
+   "id": "tpu_more",
+   "partner": "More TPUs (Google and other TPU providers)",
+   "what": "Additional TPU compute delivered 2028–2031; price and volume not final",
+   "amount": 137.5,
+   "amount_low": 125.0,
+   "amount_high": 150.0,
+   "amount_type": "estimate",
+   "basis": "company estimate, not in the commitments table",
+   "start": 2028,
+   "end": 2031,
+   "cancel": "Payment depends on capacity delivered and deployment conditions",
+   "page": "170",
+   "snippet": "approximately $125.0 billion to $150.0 billion"
+  },
+  {
+   "id": "amd",
+   "partner": "AMD",
+   "what": "Helios rack-scale systems (MI450 GPUs) from 2027; AMD in turn may buy up to $5.0B of Class N stock",
+   "amount": 20.0,
+   "amount_type": "estimate",
+   "basis": "\"expected to exceed $20.0 billion\" if the full initial tranche is procured",
+   "start": 2027,
+   "end": 2031,
+   "cancel": "Non-cancelable by Anthropic except AMD's uncured breach",
+   "page": "171",
+   "snippet": "expect aggregate expenditures to exceed $20.0 billion"
+  }
+ ],
+ "ladder": [
+  {
+   "label": "Purchase commitments, Dec 31, 2025",
+   "value": 54.6,
+   "page": "F-58",
+   "kind": "fixed",
+   "note": "Non-cancelable minimums with terms over one year ($54,559M)."
+  },
+  {
+   "label": "Leases signed but not started, Dec 31, 2025",
+   "value": 50.2,
+   "page": "F-35",
+   "kind": "fixed",
+   "note": "Undiscounted; mostly compute and infrastructure."
+  }
+ ],
+ "june30": [
+  {
+   "label": "Fixed or minimum purchase commitments",
+   "value": 265.6,
+   "page": "F-58",
+   "snippet": "approximately $265.6 billion"
+  },
+  {
+   "label": "Leases signed, not yet started",
+   "value": 321.4,
+   "page": "F-35",
+   "snippet": "$50.2 billion and $321.4 billion"
+  },
+  {
+   "label": "Leases already running",
+   "value": 2.1,
+   "page": "F-35",
+   "snippet": "Total undiscounted lease payments"
+  }
+ ],
+ "after_june30": [
+  {
+   "label": "New long-term deals signed after June 30",
+   "value": 245,
+   "page": "F-65",
+   "snippet": "approximately $245"
+  },
+  {
+   "label": "Short-term minimums signed after June 30",
+   "value": 21,
+   "page": "F-65",
+   "snippet": "approximately $21 billion"
+  }
+ ],
+ "not_counted": [
+  {
+   "label": "Extra TPUs 2028–2031 (estimate)",
+   "low": 125,
+   "high": 150,
+   "page": "170"
+  },
+  {
+   "label": "AMD Helios systems (estimate)",
+   "low": 20,
+   "high": 20,
+   "page": "171"
+  }
+ ],
+ "drafts_post_june30": [
+  {
+   "draft": "DRS/A 4",
+   "date": "2026-10-01",
+   "value": 154
+  },
+  {
+   "draft": "DRS/A 5",
+   "date": "2026-10-09",
+   "value": 154
+  },
+  {
+   "draft": "S-1",
+   "date": "2026-10-26",
+   "value": 245
+  }
+ ]
+}

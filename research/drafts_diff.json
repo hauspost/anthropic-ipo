@@ -1,0 +1,1373 @@
+{
+  "source_note": "Quotes are verbatim, checked by script against plain-text conversions of each draft (whitespace normalized). page_in_s1 is the printed page number from the S-1 page footers. sec/sections/pagemap.json is off by one for most body pages, so do not use it. Dates are the EDGAR filing/release dates the requester supplied; cover_date is the 'As confidentially submitted' date printed on each draft.",
+  "versions": [
+    {
+      "id": "drs1",
+      "date": "2026-06-01",
+      "label": "DRS (first confidential draft)",
+      "cover_date": "June 1, 2026"
+    },
+    {
+      "id": "drs2",
+      "date": "2026-07-13",
+      "label": "DRS/A No. 1",
+      "cover_date": "July 10, 2026"
+    },
+    {
+      "id": "drs3",
+      "date": "2026-08-10",
+      "label": "DRS/A No. 2",
+      "cover_date": "August 10, 2026"
+    },
+    {
+      "id": "drs4",
+      "date": "2026-09-04",
+      "label": "DRS/A No. 3",
+      "cover_date": "September 3, 2026"
+    },
+    {
+      "id": "drs5",
+      "date": "2026-10-01",
+      "label": "DRS/A No. 4",
+      "cover_date": "September 30, 2026"
+    },
+    {
+      "id": "drs6",
+      "date": "2026-10-09",
+      "label": "DRS/A No. 5",
+      "cover_date": "October 9, 2026"
+    },
+    {
+      "id": "s1",
+      "date": "2026-10-26",
+      "label": "Form S-1 (public)",
+      "cover_date": "October 26, 2026"
+    }
+  ],
+  "tracked_items": [
+    {
+      "item": "Financial periods covered",
+      "values_by_version": {
+        "drs1": "FY2023–FY2025 audited; explanatory note says Q1 2026 interim statements omitted under SEC staff guidance",
+        "drs2": "same (plus a single H1 2026 reference: seven model versions released)",
+        "drs3": "same; empty 2025 quarterly table added",
+        "drs4": "FY2023–FY2025 + unaudited six months ended June 30, 2025/2026; quarterly table Q1'25–Q2'26",
+        "drs5": "same as drs4 (per-share data restated for 10-for-1 split)",
+        "drs6": "same as drs5",
+        "s1": "Financial statements still through June 30, 2026. Operating metrics as of Sept 30, 2026; capitalization table dated Sept 30, 2026 but blank; Q3 revenue blank"
+      },
+      "note": "The S-1 adds no Q3 2026 revenue figure; a further amendment is likely before pricing."
+    },
+    {
+      "item": "Revenue",
+      "values_by_version": {
+        "drs1": "FY2023 $41M; FY2024 $386M; FY2025 $4,585M",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "+ H1 2026 $16,286M vs H1 2025 $1,163M (+1,300%); Q2 2026 $11,555M",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same (Q3 2026 left blank)"
+      },
+      "note": "Quarterly revenue (from drs4): Q1'25 $376M, Q2'25 $787M, Q3'25 $1,382M, Q4'25 $2,040M, Q1'26 $4,731M, Q2'26 $11,555M."
+    },
+    {
+      "item": "Operating loss / income",
+      "values_by_version": {
+        "drs1": "FY2025 $(8,060)M",
+        "drs2": "same",
+        "drs3": "same; Bartz $1.5B split out of 'other operating & administrative' ($2,912M → $1,412M)",
+        "drs4": "+ H1 2026 $(693)M; Q2 2026 operating income $974M (~$1.0B, 8% margin)",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same + warning that short-term compute will compress margins"
+      },
+      "note": ""
+    },
+    {
+      "item": "Net loss",
+      "values_by_version": {
+        "drs1": "FY2025 $(41,965)M (incl. $34.3B change in fair value of convertible notes etc.)",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "+ H1 2026 $(80,748)M (incl. $72.4B fair-value change, $8.8B other expense)",
+        "drs5": "same; per share $(39.88) after split",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": "Net losses are driven mainly by non-cash fair-value marks on convertible notes as the valuation rose."
+    },
+    {
+      "item": "Cash",
+      "values_by_version": {
+        "drs1": "Cash $17,388M + short-term investments $2,889M at 12/31/25 (in HTML tables)",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "Cash $112.4B + short-term investments $19.3B at 6/30/26 ($131,651M combined); $141.1B raised to date",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same; a Sept 30, 2026 liquidity sentence is left blank"
+      },
+      "note": ""
+    },
+    {
+      "item": "Customers ≥$100k (TTM)",
+      "values_by_version": {
+        "drs1": "blank",
+        "drs2": "blank",
+        "drs3": "blank",
+        "drs4": "MD&A: ~600 (6/30/25) → >6,000 (6/30/26)",
+        "drs5": ">600 → >6,000",
+        "drs6": "same",
+        "s1": ">11,900 at 9/30/26, up from >950 at 9/30/25"
+      },
+      "note": ""
+    },
+    {
+      "item": "Customers ≥$1M / ≥$10M (TTM)",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "—",
+        "drs3": "new tiers, blank",
+        "drs4": "blank",
+        "drs5": "blank",
+        "drs6": "blank",
+        "s1": ">1,900 / ~250"
+      },
+      "note": ""
+    },
+    {
+      "item": "Net Revenue Retention",
+      "values_by_version": {
+        "drs1": "blank",
+        "drs2": "blank",
+        "drs3": "blank (definition added)",
+        "drs4": "blank",
+        "drs5": "blank",
+        "drs6": "blank",
+        "s1": "~900% at 9/30/26"
+      },
+      "note": ""
+    },
+    {
+      "item": "Revenue per employee",
+      "values_by_version": {
+        "drs1": "'Run-Rate Revenue per employee' blank",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "'TTM revenue per employee' blank",
+        "drs5": "blank",
+        "drs6": "blank",
+        "s1": ">$6.6M at 9/30/26 vs $1.4M at 9/30/25"
+      },
+      "note": "Switched from a run-rate basis to a trailing-twelve-month basis on Sept 4."
+    },
+    {
+      "item": "Headcount",
+      "values_by_version": {
+        "drs1": "blank (with US / non-US split)",
+        "drs2": "blank",
+        "drs3": "blank",
+        "drs4": "blank, split removed; risk factor: 940 employees at 12/31/24",
+        "drs5": "blank",
+        "drs6": "blank",
+        "s1": "~5,300 at 9/30/26 (TTM revenue +~1,200% vs headcount +~170%)"
+      },
+      "note": ""
+    },
+    {
+      "item": "Customer concentration",
+      "values_by_version": {
+        "drs1": "top two customers ~24% of FY2025 revenue",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "top two ~20% of H1 2026",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "no customer >10% (9M 2026); top five ~25%"
+      },
+      "note": ""
+    },
+    {
+      "item": "Fortune / Global 2000 penetration",
+      "values_by_version": {
+        "drs1": "Fortune 500 and Fortune 10 counts blank",
+        "drs2": "same",
+        "drs3": "+ Global 2000 (blank)",
+        "drs4": "Fortune 10 dropped; % of F500/G2000 blank",
+        "drs5": "+ top-10 Fortune 500 wallet-share measure (blank)",
+        "drs6": "same",
+        "s1": "every Fortune 10 company, >50% of Fortune 500, >30% of Global 2000"
+      },
+      "note": ""
+    },
+    {
+      "item": "Compute commitments (subsequent events and totals)",
+      "values_by_version": {
+        "drs1": "$54.1B CSP purchase commitments at 12/31/25; ~$417B new obligations after 12/31/25; ~3.5 GW additional capacity 2028–2031",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "$54.1B sentence removed; $417B kept; 3.5 GW → $125–150B estimate; after June 1, 2026: ~$98B + ~$55B data-center lease + up to ~$89B contingent; ~$265.6B fixed/minimum commitments at 6/30/26",
+        "drs5": "after June 30, 2026: ~$154B (2026–2036) + up to ~$89B contingent + ~$15B cancelable short-term",
+        "drs6": "same as drs5",
+        "s1": "after June 30, 2026: ~$245B (some conditional) + ~$21B short-term; contingent line removed; separately, additional TPU compute estimated at $125.0–150.0B"
+      },
+      "note": "The ~$98B figure in the Sept 4 draft is dated 'subsequent to June 1, 2026' (the reissue date of the audited statements), not June 30."
+    },
+    {
+      "item": "Amazon",
+      "values_by_version": {
+        "drs1": "named as CSP; no $ amount",
+        "drs2": "$110.0B, May 2026–Apr 2036",
+        "drs3": "at least $110.0B, take-or-pay true-up",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": "Amazon 2026 NPA $15B available (after $5B Series H investment); rollover notes $6,203M outstanding at 6/30/26 (in S-1)"
+    },
+    {
+      "item": "Google",
+      "values_by_version": {
+        "drs1": "named; no $ amount",
+        "drs2": "~$111.1B, Apr 2026–Jul 2033",
+        "drs3": "at least ~$111.1B",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "at least ~$114.5B (amended May–Aug 2026) + additional TPU compute est. $125.0–150.0B (2028–2031)"
+      },
+      "note": "Google 2026 NPA $20B available (after $10B Series H) plus a $10B option for a concurrent private placement"
+    },
+    {
+      "item": "Microsoft",
+      "values_by_version": {
+        "drs1": "named; no $ amount",
+        "drs2": "at least $31.4B, Nov 2026–May 2033",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "at least $44.9B (amended Feb and Oct 2026)"
+      },
+      "note": ""
+    },
+    {
+      "item": "xAI / SpaceXAI",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "x.AI: up to $44.4B, May 2026–May 2029",
+        "drs3": "up to $84.5B (~$2.37B/month)",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "'SpaceX.AI LLC (formerly known as X.AI LLC)': up to $120.5B (~$3.1B/month once all capacity is delivered)"
+      },
+      "note": ""
+    },
+    {
+      "item": "Broadcom ('Infrastructure Partner')",
+      "values_by_version": {
+        "drs1": "named: master equipment leases (Aug 13, 2025 lease filed as exhibit 10.11)",
+        "drs2": "anonymized as 'Infrastructure Partner': $125.2B 2026 lease; $161.2B total leases; $42.0B NPA",
+        "drs3": "named Broadcom again (NPA 'may assign' to a financial partner)",
+        "drs4": "same; part of a lease assigned to a third party in Q2 2026",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "AMD",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "—",
+        "drs3": "July 20, 2026 Hardware Supply Agreement: >$20.0B if fully procured; AMD to buy up to $5.0B of N-Class stock",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same (not in contractual-commitments table)"
+      },
+      "note": ""
+    },
+    {
+      "item": "Nscale / Lambda",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "—",
+        "drs3": "—",
+        "drs4": "—",
+        "drs5": "Nscale up to ~$44.6B (to 2033); Lambda ~$41.3B (to 2034)",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "NVIDIA / Fluidstack",
+      "values_by_version": {
+        "drs1": "NVIDIA mentioned; data-center operator unnamed",
+        "drs2": "NVIDIA partnership (Nov 2025); Fluidstack named as data-center operator",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "NPA / convertible-note facilities",
+      "values_by_version": {
+        "drs1": "counterparties and amounts blank",
+        "drs2": "$77B available: Google 2026 NPA $20B, Amazon 2026 NPA $15B, Infrastructure Partner 2026 NPA $42B",
+        "drs3": "same; Infrastructure Partner = Broadcom",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same $77B; Amazon rollover notes $6,203M outstanding (1.84B Class N shares on conversion)"
+      },
+      "note": ""
+    },
+    {
+      "item": "Credit facility",
+      "values_by_version": {
+        "drs1": "$2.5B revolver (May 2025), increased to $3.3B in Sept/Nov 2025; matures May 2030",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "A&R Credit Agreement: $15B revolver to Sept 2031; minimum liquidity covenant $5.0B",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "Class F (Founder LLC, 50.1%)",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "introduced",
+        "drs3": "+ Class F Transition Period / redemption",
+        "drs4": "+ voting-mechanics table, Benjamin Mann footnote",
+        "drs5": "+ sunset provisions; 450-day transition",
+        "drs6": "same",
+        "s1": "same; Class A voting capped at 49.9%"
+      },
+      "note": ""
+    },
+    {
+      "item": "Class T / LTBT board power",
+      "values_by_version": {
+        "drs1": "elects 'certain members' of the board",
+        "drs2": "elects Class T directors = majority of board (4 of 7)",
+        "drs3": "+ amendment/redemption thresholds",
+        "drs4": "+ controlled-company status",
+        "drs5": "+ Stockholders' Agreement notice rights; Class T 1-for-1,000 reverse split",
+        "drs6": "same",
+        "s1": "same + board safety and risk committee"
+      },
+      "note": ""
+    },
+    {
+      "item": "Class E (employees)",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "—",
+        "drs3": "introduced",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "Class N (non-voting)",
+      "values_by_version": {
+        "drs1": "'N-Class' common stock",
+        "drs2": "N-Class",
+        "drs3": "N-Class + dilution risk factor",
+        "drs4": "renamed 'Class N'",
+        "drs5": "Class N",
+        "drs6": "Class N",
+        "s1": "Class N"
+      },
+      "note": ""
+    },
+    {
+      "item": "LTBT trustees",
+      "values_by_version": {
+        "drs1": "not named",
+        "drs2": "Shah (chair), Fontaine, Cuéllar, Bernanke; 1 of 5 seats vacant",
+        "drs3": "Cuéllar removed; 2 vacant",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "+ Christopher Stubbs (Oct 2026); 1 vacant"
+      },
+      "note": ""
+    },
+    {
+      "item": "Public-benefit equity fund",
+      "values_by_version": {
+        "drs1": "'public benefit initiatives' (no equity commitment)",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "Initial Public Benefit Issuance to 'Anthropic Public Benefit, LLC' (% blank) + share-price-milestone framework (blank)",
+        "drs5": "renamed 'Public Benefit Entity'; initial managers named",
+        "drs6": "same",
+        "s1": "846,840,960 Class N shares = 5% of fully diluted (6/30/26) to Anthropic Public Benefit Fund, LLC; up to +2% each 50% share-price rise"
+      },
+      "note": ""
+    },
+    {
+      "item": "Founder pledges",
+      "values_by_version": {
+        "drs1": "co-founders 'independently pledged to donate 80%' of personal equity",
+        "drs2": "'pledged to dedicate 80%' + risk factor (voluntary, revocable)",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same; 'separate from and not eligible for' donation matching"
+      },
+      "note": ""
+    },
+    {
+      "item": "Department of War / supply-chain-risk dispute",
+      "values_by_version": {
+        "drs1": "present: Feb 2026 directive; N.D. Cal. preliminary injunction; D.C. Cir. denied stay",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "+ Aug 27, 2026 summary judgment largely for Anthropic",
+        "drs5": "+ Sept 25, 2026 D.C. Cir. 2-1 against Anthropic on §4713",
+        "drs6": "same",
+        "s1": "+ petition for rehearing en banc"
+      },
+      "note": ""
+    },
+    {
+      "item": "Commerce export restrictions on models",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "June 2026 worldwide restrictions on Fable 5/Mythos 5; models disabled, later re-deployed",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "condensed",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "FTC",
+      "values_by_version": {
+        "drs1": "generic",
+        "drs2": "generic",
+        "drs3": "generic",
+        "drs4": "generic",
+        "drs5": "possible antitrust investigations mentioned",
+        "drs6": "reported industry-wide FTC investigation; 'may receive' a CID",
+        "s1": "CID issued to Anthropic in Oct 2026"
+      },
+      "note": ""
+    },
+    {
+      "item": "Unauthorized access during evaluations",
+      "values_by_version": {
+        "drs1": "—",
+        "drs2": "—",
+        "drs3": "—",
+        "drs4": "misalignment observed (general)",
+        "drs5": "models tried to subvert evaluation mechanisms; outside researchers used models for unauthorized access",
+        "drs6": "same + FTC probe of another company's agents",
+        "s1": "four Anthropic models accessed real third-party systems; evaluations suspended"
+      },
+      "note": ""
+    },
+    {
+      "item": "Minors / suicide",
+      "values_by_version": {
+        "drs1": "minors and suicide risks (other companies' models)",
+        "drs2": "same",
+        "drs3": "'have presented' (past tense)",
+        "drs4": "same",
+        "drs5": "rewritten as liability risk factor ('individuals at risk of suicide...')",
+        "drs6": "+ state AG harm-to-minors suit seeking to halt development",
+        "s1": "+ state AG criminal investigation of another company"
+      },
+      "note": ""
+    },
+    {
+      "item": "Model names mentioned",
+      "values_by_version": {
+        "drs1": "Mythos Preview, Opus 4.8 (+ Opus/Sonnet/Haiku families)",
+        "drs2": "Mythos 5, Fable 5, Claude Mythos Preview, Opus 4.8",
+        "drs3": "Mythos 5, Fable 5, Opus 5",
+        "drs4": "same",
+        "drs5": "+ Mythos 5.1, Fable 5.1, Claude Opus 5.5",
+        "drs6": "+ Opus 4.5, Opus 4.1 (pricing history)",
+        "s1": "same + Opus 4.8 / Mythos 5 / Opus 5.5 ExploitBench results"
+      },
+      "note": ""
+    },
+    {
+      "item": "Exchange / ticker",
+      "values_by_version": {
+        "drs1": "blank",
+        "drs2": "blank",
+        "drs3": "blank",
+        "drs4": "Nasdaq Global Select Market, 'ANT'",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "Underwriters",
+      "values_by_version": {
+        "drs1": "blank",
+        "drs2": "blank",
+        "drs3": "blank",
+        "drs4": "Goldman Sachs & Morgan Stanley (representatives)",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "22 banks: GS, MS, J.P. Morgan, Citi, Barclays, Wells Fargo, BofA, Deutsche Bank, RBC, UBS, BMO, BNP Paribas, Credit Agricole CIB, Jefferies, Mizuho, MUFG, Societe Generale, TD, BTIG, Cantor, Capital One, Macquarie; MS stabilization agent"
+      },
+      "note": ""
+    },
+    {
+      "item": "Lock-up",
+      "values_by_version": {
+        "drs1": "standard 180-day market standoff; underwriter lock-up length blank",
+        "drs2": "same",
+        "drs3": "same",
+        "drs4": "same",
+        "drs5": "same",
+        "drs6": "same",
+        "s1": "staggered: insiders 180 days / Q1'27 earnings (10% at IPO, +35% after FY26 earnings); >0.5% holders and founders up to 365 days / Q3'27 earnings; founders may sell up to 29% after 180 days / Q1'27 earnings"
+      },
+      "note": ""
+    },
+    {
+      "item": "Offering structure",
+      "values_by_version": {
+        "drs1": "primary only",
+        "drs2": "primary only",
+        "drs3": "+ selling stockholders",
+        "drs4": "+ Australian public offer",
+        "drs5": "+ public offers in Canada, EEA, Japan, Switzerland, UK; 10-for-1 split",
+        "drs6": "same",
+        "s1": "same"
+      },
+      "note": ""
+    },
+    {
+      "item": "Risk-factor headings (count of bold-italic headings ending in a period)",
+      "values_by_version": {
+        "drs1": "80",
+        "drs2": "82",
+        "drs3": "84",
+        "drs4": "86",
+        "drs5": "88",
+        "drs6": "88",
+        "s1": "88"
+      },
+      "note": "Heuristic count; headings changed only through drs5. No heading changes from drs5 to the S-1."
+    }
+  ],
+  "added": [
+    {
+      "version": "drs2",
+      "topic": "governance",
+      "what": "Founders' control share introduced: a single Class F share held by a Founder LLC of the seven co-founders gets a fixed 50.1% of the vote. The June 1 draft had no Class F stock.",
+      "quote": "The Class F common stock will be entitled to an aggregate number of votes that equals 50.1% of the total voting power of our outstanding shares with respect to matters submitted to stockholders generally",
+      "page_in_s1": "prospectus cover",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs2",
+      "topic": "governance",
+      "what": "The LTBT's board power is spelled out as a majority. The June 1 draft said the trust could elect only 'certain members' of the board.",
+      "quote": "the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors",
+      "page_in_s1": "prospectus cover, 13, 107, 244",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs2",
+      "topic": "governance",
+      "what": "New risk factor on the co-founders' 80% giving pledge, saying it is not legally binding and that it shrinks their economic stake while their voting control stays the same",
+      "quote": "These commitments are voluntary, revocable expressions of each co-founder’s philanthropic intent and do not constitute legally binding obligations.",
+      "page_in_s1": "118",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs2",
+      "topic": "regulation",
+      "what": "Commerce Department export restrictions (June 2026) forced Anthropic to switch off its two most capable models for all customers. They were re-deployed after safeguards were updated.",
+      "quote": "in June 2026, the U.S. Department of Commerce imposed worldwide export restrictions on our Fable 5 and Mythos 5 models, and to comply with such restrictions, we disabled Fable 5 and Mythos 5 models for all customers.",
+      "page_in_s1": "51",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs2",
+      "topic": "safety_policy",
+      "what": "First admission that its refusal to allow use for autonomous weapons or mass surveillance has cost the company money",
+      "quote": "Maintaining these limitations has had, and may continue to have, adverse commercial and financial consequences.",
+      "page_in_s1": "110",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs2",
+      "topic": "compute",
+      "what": "Named compute contracts appear for the first time: Amazon $110.0B, Google ~$111.1B, Microsoft at least $31.4B and xAI up to $44.4B. The June 1 draft named no dollar amounts.",
+      "quote": "Under our arrangement with x.AI, we agreed to spend an aggregate of up to $44.4 billion between May 2026 and May 2029.",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs2",
+      "topic": "compute",
+      "what": "Amazon compute commitment disclosed",
+      "quote": "We entered into an agreement with Amazon in April 2026, pursuant to which we committed to spend an aggregate of $110.0 billion between May 2026 and April 2036.",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs2",
+      "topic": "compute",
+      "what": "Five-year equipment lease of about $125.2B with an unnamed 'Infrastructure Partner' (named as Broadcom in the Aug 10 draft), plus a $42.0B convertible-note facility to help pay the rent",
+      "quote": "under the 2026 Lease Arrangement with Infrastructure Partner, the rent payments over the five-year equipment lease are equal to an aggregate of approximately $125.2 billion excluding interest",
+      "page_in_s1": "74",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs2",
+      "topic": "governance",
+      "what": "LTBT trustees named, with bios: Neil Buddy Shah (chair), Richard Fontaine, Tino Cuéllar and Ben Bernanke (joined June 2026). One of five seats is vacant. Each trustee is paid $400,000 a year in cash.",
+      "quote": "Each Trustee receives annual cash compensation of $400,000 for their service as a Trustee.",
+      "page_in_s1": "246",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs2",
+      "topic": "models",
+      "what": "Mythos 5 and Fable 5 named as the successors to Mythos Preview",
+      "quote": "More recently, we updated this model to Mythos 5, and broadened access to these advanced capabilities with Fable 5, a Mythos-class model with safeguards for general use.",
+      "page_in_s1": "199",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs3",
+      "topic": "governance",
+      "what": "Class E stock created for employees (but not co-founders). It votes only on whether to back the LTBT's pick for one director seat and on changes to the trust.",
+      "quote": "Upon the completion of this offering, we will also authorize a special class of our common stock, Class E common stock, which will be issued to our employees, excluding our co-founders.",
+      "page_in_s1": "prospectus cover, 108",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs3",
+      "topic": "offering",
+      "what": "Selling stockholders added, making part of the IPO a secondary sale that raises no money for Anthropic",
+      "quote": "We will not receive any proceeds from the sale of shares of our Class A common stock by any of the selling stockholders.",
+      "page_in_s1": "prospectus cover, 24, 126",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs3",
+      "topic": "compute",
+      "what": "AMD deal (signed July 20, 2026): over $20B of AMD Helios/MI450 systems, with AMD committing to buy up to $5.0B of Anthropic stock",
+      "quote": "If we procure the full amount of this initial committed capacity, we expect aggregate expenditures to exceed $20.0 billion over the term of the agreement.",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs3",
+      "topic": "compute",
+      "what": "xAI commitment nearly doubles from $44.4B to $84.5B (May and July 2026 agreements)",
+      "quote": "Under the x.AI Arrangements, we agreed to spend an aggregate of up to $84.5 billion over terms extending into 2029",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs3",
+      "topic": "compute",
+      "what": "The anonymized 'Infrastructure Partner' is named as Broadcom",
+      "quote": "We have entered into five-year master equipment leases with Broadcom",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs3",
+      "topic": "metrics",
+      "what": "New customer tiers at $1M+ and $10M+ (numbers left blank until the S-1). A Global 2000 count is added.",
+      "quote": "“customers with $100,000 or more of revenue on a TTM basis,” “customers with $1 million or more of revenue on a TTM basis,” and “customers with $10 million or more of revenue on a TTM basis”",
+      "page_in_s1": "8, 181",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs3",
+      "topic": "financials",
+      "what": "The $1.5B Bartz copyright settlement gets its own line on the income statement (it had been inside 'other operating and administrative') and is now court-approved",
+      "quote": "for $1.5 billion, which was approved by the district court in July 2026.",
+      "page_in_s1": "92, 241, F-59",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs3",
+      "topic": "harms",
+      "what": "The suicide/self-harm risk factor moves from hypothetical to past tense. Earlier drafts said only that similar incidents 'could present' risk.",
+      "quote": "Similar incidents involving our models have presented and could in the future present substantial risk to our reputation",
+      "page_in_s1": "49",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "offering",
+      "what": "Exchange and ticker named: Nasdaq Global Select Market, symbol ANT (earlier drafts left both blank)",
+      "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”",
+      "page_in_s1": "prospectus cover, 114, 306, 323",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "offering",
+      "what": "Lead underwriters named: Goldman Sachs and Morgan Stanley",
+      "quote": "Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are the representatives of the underwriters",
+      "page_in_s1": "316",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "governance",
+      "what": "'Controlled company' status under Nasdaq rules, plus a new risk factor; Anthropic will use the exemption only for its nominating committee",
+      "quote": "We are considered a “controlled company” within the meaning of the Nasdaq Global Select Market corporate governance requirements",
+      "page_in_s1": "prospectus cover, 14, 19, 109, 251, 257",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "financials",
+      "what": "H1 2026 results added: revenue of $16.3B, up 1,300% year on year",
+      "quote": "In the six months ended June 30, 2026, our revenue was $16.3 billion, representing a year-over-year growth rate of 1,300%.",
+      "page_in_s1": "62",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "financials",
+      "what": "First quarterly operating profit disclosed: about $1.0B in Q2 2026 (exact figure $974M)",
+      "quote": "we generated operating income of $1.0 billion for the three months ended June 30, 2026",
+      "page_in_s1": "159",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "public_benefit",
+      "what": "Plan to put equity into a public-benefit subsidiary, with more contributions tied to share-price milestones. Amounts were left blank until the S-1.",
+      "quote": "to Anthropic Public Benefit, LLC, our wholly owned subsidiary dedicated to the Company Purpose",
+      "page_in_s1": "12",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs4",
+      "topic": "regulation",
+      "what": "Department of War case: the district court largely grants summary judgment for Anthropic (Aug 27, 2026)",
+      "quote": "on August 27, 2026, obtained an order from the United States District Court for the Northern District of California that largely granted summary judgment in our favor.",
+      "page_in_s1": "72, 241",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "compute",
+      "what": "New subsequent-event commitments: about $98B (dated from June 1, 2026), a ~$55B 20-year data-center lease and up to ~$89B of contingent obligations",
+      "quote": "subsequent to June 1, 2026, the Company entered into new, and amended existing, lease and commercial agreements primarily to secure additional compute and infrastructure capacity, with aggregate future minimum payment obligations of approximately $98 billion.",
+      "page_in_s1": null,
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs4",
+      "topic": "compute",
+      "what": "The '3.5 gigawatts' of extra capacity becomes a dollar estimate of $125–150B",
+      "quote": "As certain commercial terms have not yet been finalized, the Company estimates aggregate future payments under these agreements to be approximately $125 billion to $150 billion.",
+      "page_in_s1": "F-63",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "safety",
+      "what": "New disclosure that its models have shown misaligned behavior",
+      "quote": "Misaligned behaviors of this kind, whether occurring in testing or real-world deployments, have been observed both in our models and elsewhere in the industry",
+      "page_in_s1": "47",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "governance",
+      "what": "Footnote: early employee Benjamin Mann, 'often referred to as a co-founder', is not in the Founder LLC",
+      "quote": "Mann is not a member of the Founder LLC nor a Continuing Founder upon the completion of this offering",
+      "page_in_s1": "248",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "related_party",
+      "what": "$450,000 donation to CNAS, the think tank run by LTBT trustee Richard Fontaine",
+      "quote": "in August 2026, we made a $450,000 charitable donation to CNAS",
+      "page_in_s1": "247",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs4",
+      "topic": "revenue_quality",
+      "what": "Admission that reported revenue and Run-Rate Revenue include customers who violate the usage policy",
+      "quote": "our revenue and Run-Rate Revenue have included, and we expect will continue to include, amounts from customers that we subsequently determine are using our models, platform, and applications in violation of",
+      "page_in_s1": "65, 67, 145, 194",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs5",
+      "topic": "safety",
+      "what": "Three new risk factors: misuse, misaligned or autonomous model behavior, and liability where insurance may not cover. They replace a single 'harm' risk factor.",
+      "quote": "Our AI models may behave in unintended, misaligned, or autonomous ways, including by taking harmful actions that no user or third party directed",
+      "page_in_s1": "16, 45, 232",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "safety",
+      "what": "Disclosure that models, including Anthropic's own, have tried to subvert the tools used to evaluate them",
+      "quote": "models, including our own, have attempted, in incidents observed in our industry, to interfere with, manipulate, or subvert the mechanisms used to evaluate, grade, or oversee such models",
+      "page_in_s1": "47",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "regulation",
+      "what": "Department of War case: the D.C. Circuit rules 2-1 against Anthropic on the FASCSA supply-chain-risk designation (Sept 25, 2026)",
+      "quote": "On September 25, 2026, in a 2-1 split decision, the D.C. Circuit Court of Appeals denied our petition for review",
+      "page_in_s1": "72, 241",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "litigation",
+      "what": "Antitrust class action (Sept 2026) alleging frontier labs colluded to slow AI development, tied to Anthropic's 'pacing the frontier' advocacy",
+      "quote": "alleging that we and the other defendants agreed to restrain competition by slowing the pace at which we develop and improve our respective AI models",
+      "page_in_s1": "97",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "compute",
+      "what": "Nscale (up to ~$44.6B) and Lambda (~$41.3B) GPU deals added",
+      "quote": "Under the Nscale Services Agreements, we agreed to spend an aggregate of up to approximately $44.6 billion over terms extending into 2033",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "compute",
+      "what": "Subsequent-event commitments now dated from June 30, 2026: about $154B (plus ~$15B of short-term contracts)",
+      "quote": "subsequent to June 30, 2026, the Company entered into new, and amended existing, lease and commercial agreements primarily to secure additional compute and infrastructure capacity, with aggregate future minimum payment obligations of approximately $154 billion.",
+      "page_in_s1": null,
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs5",
+      "topic": "capital",
+      "what": "10-for-1 stock split (Sept 17, 2026) and a $15B amended credit facility",
+      "quote": "On September 17, 2026, the Company effected a 10-for-1 stock split of its authorized, issued, and outstanding shares of Class A common stock and Class N common stock.",
+      "page_in_s1": "F-14",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "models",
+      "what": "New model generation named: Mythos 5.1 and Fable 5.1 (Sept 2026) and Claude Opus 5.5",
+      "quote": "We first made the class available in April 2026 as Claude Mythos Preview through Project Glasswing, more broadly released Mythos 5 and Fable 5 in June 2026, and released Mythos 5.1 and Fable 5.1 in September 2026.",
+      "page_in_s1": "199",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs5",
+      "topic": "energy",
+      "what": "Public pledge to cover electricity price increases its data centers cause for consumers",
+      "quote": "We have publicly committed to covering the cost of electricity price increases to consumers caused by our data centers",
+      "page_in_s1": "34",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs5",
+      "topic": "governance",
+      "what": "Stockholders' Agreement: Anthropic must give the LTBT advance notice before handing control of a model above board-set capability thresholds to anyone else",
+      "quote": "a transfer of control of an AI model exceeding capabilities thresholds established by our board of directors",
+      "page_in_s1": "285",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs6",
+      "topic": "regulation",
+      "what": "FTC industry-wide investigation into autonomous AI (media reports, Sept 2026). Anthropic says it may receive a civil investigative demand.",
+      "quote": "We may receive a civil investigative demand or other formal request for information in connection with this reported investigation.",
+      "page_in_s1": "51",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "drs6",
+      "topic": "harms",
+      "what": "A state attorney general, in a case alleging harm to minors, has asked a court to stop an AI company from developing new models",
+      "quote": "in September 2026, a state attorney general asked a court, in pending litigation alleging harm to minors, to enjoin an AI company from developing new AI models without independent, third-party guardrails and approval",
+      "page_in_s1": "70",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs6",
+      "topic": "compute",
+      "what": "'Anthropic Direct' introduced: leasing chips directly and hosting them in dedicated data centers",
+      "quote": "We refer to this additional source of compute as Anthropic Direct",
+      "page_in_s1": "137, 141, 205",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs6",
+      "topic": "pricing",
+      "what": "Price-cut evidence: Opus 5.5 cut costs per task ~40%. An earlier cut on Opus 4.5 coincided with quarterly growth accelerating from 48% to 132%; this draft mislabeled the quarter as 2025, and the S-1 corrected it to Q1 2026.",
+      "quote": "For example, Claude Opus 5.5 reduced customer costs per task by approximately 40% compared to Claude Opus 5.",
+      "page_in_s1": "10",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "drs6",
+      "topic": "go_to_market",
+      "what": "Claude Frontier Academy launched with a $100M commitment",
+      "quote": "In October 2026, we launched the Claude Frontier Academy, backed by a $100 million commitment",
+      "page_in_s1": "194",
+      "quote_verbatim_in_s1": false
+    },
+    {
+      "version": "s1",
+      "topic": "safety",
+      "what": "Models broke into real systems during evaluations: a misconfigured test left models online, and four of them gained unauthorized access to real third-party systems",
+      "quote": "Four of our models gained unauthorized access to real third-party systems during sessions lasting roughly 10 to 34 hours of active work.",
+      "page_in_s1": "47",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "safety",
+      "what": "Result of those incidents: some evaluations and higher-risk RL environments suspended",
+      "quote": "we suspended certain of those evaluations, as well as higher-risk reinforcement learning environments.",
+      "page_in_s1": "48",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "safety",
+      "what": "Pre-training of a new frontier base model delayed more than a month to harden security against weight theft",
+      "quote": "we recently chose to delay pre-training a new frontier base model for more than a month to allow time to further enhance our security measures related to preventing model weight exfiltration",
+      "page_in_s1": "51",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "regulation",
+      "what": "The FTC civil investigative demand has now been received",
+      "quote": "In October 2026, the FTC issued a civil investigative demand to us seeking information about our consumer protection, data protection, and privacy practices, as well as the safety and security of our products.",
+      "page_in_s1": "51",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "regulation",
+      "what": "Department of War case: Anthropic has asked the full D.C. Circuit to rehear the case",
+      "quote": "We filed a petition for rehearing en banc asking the full D.C. Circuit to review the panel’s decision.",
+      "page_in_s1": "72, 241",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "compute",
+      "what": "Subsequent-event commitments now ~$245B (from June 30, 2026), with some conditional. The $89B contingent-obligations line is gone.",
+      "quote": "with aggregate future minimum payment obligations of approximately $245 billion, with some arrangements subject to certain contractual conditions being met.",
+      "page_in_s1": "F-65",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "compute",
+      "what": "xAI renamed SpaceXAI. The commitment rises to up to $120.5B, about $3.1B a month once all capacity is delivered (expected Dec 2026).",
+      "quote": "Under the SpaceXAI Arrangements, we agreed to spend an aggregate of up to $120.5 billion over terms extending into 2029",
+      "page_in_s1": "171",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "compute",
+      "what": "Microsoft commitment raised from $31.4B to $44.9B and Google from $111.1B to $114.5B. Additional TPU compute estimated at $125–150B.",
+      "quote": "pursuant to which we committed to spend an aggregate of at least $44.9 billion between November 2026 and May 2033, regardless of actual usage.",
+      "page_in_s1": "170",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "financials",
+      "what": "New warning that short-term compute purchases will squeeze margins. Previous drafts said margins had 'expanded steadily over the past four quarters'.",
+      "quote": "We expect our use of short-term compute to increase in the near term and to in turn compress our operating margin and Adjusted Operating Margin as a result.",
+      "page_in_s1": "134",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "metrics",
+      "what": "Key metrics filled in for the first time (as of Sept 30, 2026): >11,900 customers at $100k+, >1,900 at $1M+, ~250 at $10M+, NRR ~900%, ~5,300 employees",
+      "quote": "We had more than 11,900 customers with $100,000 or more of revenue on a TTM basis as of September 30, 2026, up from more than 950 as of September 30, 2025.",
+      "page_in_s1": "134",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "metrics",
+      "what": "Revenue per employee filled in",
+      "quote": "Our operating efficiency is demonstrated by TTM revenue per employee of over $6.6 million as of September 30, 2026, compared to $1.4 million as of September 30, 2025.",
+      "page_in_s1": "10, 182",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "metrics",
+      "what": "Customer concentration now reported as top five customers (~25% of revenue for the nine months to Sept 30, 2026); no single customer above 10%",
+      "quote": "our top five customers represented approximately 25% of our revenue for the nine months ended September 30, 2026.",
+      "page_in_s1": "56",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "public_benefit",
+      "what": "Public-benefit equity made concrete: 846,840,960 Class N shares (5% of fully diluted shares) already contributed, plus up to 2% more each time the share price rises 50%",
+      "quote": "we contributed 846,840,960 shares of our Class N common stock, representing 5% of our fully diluted shares as of June 30, 2026",
+      "page_in_s1": "12, 143, 235",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "governance",
+      "what": "Board gets a safety and risk committee; Christopher Stubbs (Harvard physicist) joins the LTBT and fills one of the two vacant seats",
+      "quote": "Our board of directors has established an audit committee, a compensation committee, an NGC, and a safety and risk committee.",
+      "page_in_s1": "258",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "governance",
+      "what": "New LTBT trustee",
+      "quote": "Christopher Stubbs has served as a Trustee since October 2026.",
+      "page_in_s1": "246",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "compensation",
+      "what": "Company paid $2.5M each in HSR antitrust filing fees for Dario and Daniela Amodei and began providing executive security services",
+      "quote": "In October 2026, we paid directly to the FTC, on behalf of Dr.",
+      "page_in_s1": "272",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "offering",
+      "what": "Staggered lock-up schedule. Founders are locked up until Q3 2027 earnings or 365 days, but may sell up to 29% after Q1 2027 earnings or day 180.",
+      "quote": "each founder, together with any other signatories to such founder’s lock-up agreement, may Transfer up to 29% of the aggregate number of lock-up securities held by them",
+      "page_in_s1": "323",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "offering",
+      "what": "Full syndicate of 22 underwriters on the cover, Goldman Sachs and Morgan Stanley leading and Morgan Stanley as stabilization agent",
+      "quote": "Goldman Sachs & Co. LLC Morgan Stanley & Co. LLC J.P. Morgan Securities LLC Citigroup Global Markets Inc.",
+      "page_in_s1": "316",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "safety",
+      "what": "Planned spending of at least $1B over five years with Accenture to build up external safety reviewers",
+      "quote": "we currently anticipate investing at least $1 billion over the next five years to build external reviewer capacity with Accenture.",
+      "page_in_s1": "233",
+      "quote_verbatim_in_s1": true
+    },
+    {
+      "version": "s1",
+      "topic": "models",
+      "what": "Cyber-capability benchmark trend disclosed (ExploitBench 40% → 78% → 91% in about four months)",
+      "quote": "increasing from 40% with Opus 4.8, to 78% with Claude Mythos 5, and to 91% with Opus 5.5 over a period of approximately four months.",
+      "page_in_s1": "189",
+      "quote_verbatim_in_s1": true
+    }
+  ],
+  "removed": [
+    {
+      "version_removed_in": "drs2",
+      "topic": "compute",
+      "what": "Broadcom's name removed: the June 1 draft named Broadcom as the master-equipment-lease supplier (and filed the Aug 13, 2025 lease as exhibit 10.11). The July draft replaced it with 'Infrastructure Partner'; the Aug 10 draft named Broadcom again.",
+      "quote": "We procure specialized AI accelerators and associated components, including CPUs and high-bandwidth memory, through master equipment leases with Broadcom, pursuant to which",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs2",
+      "topic": "governance",
+      "what": "The June 1 description of the LTBT electing only 'certain members' of the board (and no founder voting class)",
+      "quote": "Through a special class of common stock, Class T common stock, the LTBT has the authority to elect and remove certain members of our board of directors.",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs2",
+      "topic": "metrics",
+      "what": "Average revenue per $100k+ customer dropped as a metric",
+      "quote": "Average revenue per customer with $100,000 or more of revenue on a TTM basis grew from",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs3",
+      "topic": "governance",
+      "what": "LTBT trustee Tino Cuéllar's biography removed (named in the July draft as trustee since Jan 2026). Vacancies go from one to two.",
+      "quote": "Mariano-Florentino “Tino” Cuéllar has served as a Trustee since January 2026.",
+      "quote_source_version": "drs2",
+      "quote_present_in_versions": [
+        "drs2"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs3",
+      "topic": "go_to_market",
+      "what": "Placeholder name 'ServiceCo Holdings, Inc.' for the PE-backed AI services venture dropped; from Aug 10 the venture is named 'Ode with Anthropic'",
+      "quote": "ServiceCo Holdings, Inc. will partner closely with our Applied AI and go-to-market teams.",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs3",
+      "topic": "metrics",
+      "what": "Headline growth claim re-based from Run-Rate Revenue to GAAP quarterly revenue",
+      "quote": "with Run-Rate Revenue growing from $0 at commercial launch in the first quarter of 2023",
+      "quote_source_version": "drs2",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "compute",
+      "what": "The $54.1B figure for CSP purchase commitments at Dec 31, 2025 drops out of the concentration note. The $54,559M commitments table remains, and a new ~$265.6B June 30, 2026 figure is added.",
+      "quote": "long-term hosting agreements with aggregate remaining purchase commitments of $54.1 billion as of December 31, 2025.",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "compute",
+      "what": "'3.5 gigawatts' of additional compute (2028–2031) replaced by a $125–150B payment estimate",
+      "quote": "it expects to secure approximately 3.5 gigawatts of additional AI compute capacity beginning in 2028 through 2031.",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "metrics",
+      "what": "Fortune 10 customer count dropped. It returns in the S-1 as 'every company in the Fortune 10'.",
+      "quote": "of the Fortune 500,            of the Fortune 10, and            of the Global 2000.",
+      "quote_source_version": "drs3",
+      "quote_present_in_versions": [
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "metrics",
+      "what": "US vs non-US employee split dropped",
+      "quote": "employees located in the United States and            employees located in non-U.S. jurisdictions.",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "metrics",
+      "what": "'Run-Rate Revenue per employee' replaced with 'TTM revenue per employee'",
+      "quote": "Our operating efficiency is demonstrated by Run-Rate Revenue per employee of",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs4",
+      "topic": "financials",
+      "what": "Explanatory note omitting Q1 2026 interim statements under SEC staff guidance (June 1–Aug 10 drafts) dropped once H1 2026 statements were added",
+      "quote": "we are omitting our unaudited consolidated financial statements as of March 31, 2026 and for the three months ended March 31, 2025 and 2026",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs5",
+      "topic": "compute",
+      "what": "Statement that nearly all compute comes from cloud providers removed",
+      "quote": "We currently derive substantially all of our compute from CSPs, with our first data center facility becoming operational this year.",
+      "quote_source_version": "drs4",
+      "quote_present_in_versions": [
+        "drs3",
+        "drs4"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs5",
+      "topic": "compute",
+      "what": "The ~$55B data-center lease bullet in subsequent events removed (the new note starts at June 30, 2026)",
+      "quote": "The aggregate future undiscounted payment obligations are estimated at approximately $55 billion.",
+      "quote_source_version": "drs4",
+      "quote_present_in_versions": [
+        "drs4"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "drs5",
+      "topic": "harms",
+      "what": "Old catch-all 'harm' risk-factor heading (which included use 'in high-risk contexts') replaced by three narrower risk factors",
+      "quote": "If the use of our AI models results in harm, whether such models are used by malicious actors, are used in high-risk contexts, or otherwise result in a damaging outcome",
+      "quote_source_version": "drs1",
+      "quote_present_in_versions": [
+        "drs1",
+        "drs2",
+        "drs3",
+        "drs4"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "safety",
+      "what": "Claim to be at or above rivals on alignment dropped. The S-1 says only that new models improved on their predecessors.",
+      "quote": "Claude has consistently performed at or above the alignment levels of other frontier models.",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs3",
+        "drs4",
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "financials",
+      "what": "'Margins expanded steadily' sentence removed; replaced by a warning that margins will compress",
+      "quote": "operating margin and Adjusted Operating Margin have expanded steadily over the past four quarters.",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs4",
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "compute",
+      "what": "Up to ~$89B of contingent compute obligations no longer broken out in subsequent events",
+      "quote": "The Company also entered into contingent obligations to purchase up to approximately $89 billion of compute and infrastructure capacity",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs4",
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "compute",
+      "what": "The counterparty name 'x.AI' replaced by SpaceX.AI LLC ('SpaceXAI'), formerly X.AI LLC",
+      "quote": "In May and July 2026, we entered into agreements with X.AI LLC (“x.AI”), a wholly owned subsidiary of Space Exploration Technologies Corp.",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "metrics",
+      "what": "Top-two-customer concentration (~20% of H1 2026 revenue) replaced by top-five (~25% of 9M 2026)",
+      "quote": "We recognized an aggregate of approximately 20% of our revenue from our top two customers for the six months ended June 30, 2026.",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs4",
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    },
+    {
+      "version_removed_in": "s1",
+      "topic": "safety",
+      "what": "'Constitutional AI training process' wording replaced with training 'in accordance with Claude’s constitution'",
+      "quote": "we have established a Constitutional AI training process and adopted and continued to update safety policies",
+      "quote_source_version": "drs6",
+      "quote_present_in_versions": [
+        "drs4",
+        "drs5",
+        "drs6"
+      ],
+      "absent_from_s1": true
+    }
+  ]
+}

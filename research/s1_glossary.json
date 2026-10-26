@@ -1,0 +1,1002 @@
+[
+  {
+    "term": "agent loop",
+    "filing_definition_verbatim_or_short": "“the iterative cycle in which an AI agent receives a task, takes an action, such as planning a project, running code, or calling a tool, observes the result, and decides its next step, with this cycle repeating until the task is complete.”",
+    "plain_english": "The repeat-until-done cycle an AI assistant follows: try a step, check what happened, decide the next step. It is how an AI works through a multi-step job on its own.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "agentic AI",
+    "filing_definition_verbatim_or_short": "“AI systems that, with varying degrees of autonomy, can plan, determine, and sequence actions and execute them to accomplish defined objectives, including through interaction with external tools, services, datasets, and environments on behalf of a user.”",
+    "plain_english": "AI that does tasks rather than just answering questions. It plans steps and uses software tools to carry out a goal for you.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "AI",
+    "filing_definition_verbatim_or_short": "“a machine-based system that learns or is trained from data and, for explicit or implicit objectives and with varying levels of autonomy, processes that data to infer patterns, generate outputs … and act upon physical or virtual environments.”",
+    "plain_english": "Artificial intelligence: software that learns patterns from data and uses them to produce answers, content, or decisions.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "AI accelerators",
+    "filing_definition_verbatim_or_short": "“processors purpose-built or adapted for the large-scale computations required to pre-train, post-train, refine, and run AI models.”",
+    "plain_english": "Specialized computer chips (such as GPUs or TPUs) that run AI math far faster and more cheaply than ordinary processors.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "API",
+    "filing_definition_verbatim_or_short": "“application programming interface, a standardized interface that allows external software to access a system’s capabilities programmatically.”",
+    "plain_english": "A doorway that lets other companies’ software send requests to Claude and get answers back automatically, without a human typing into a chat window.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "Applied AI",
+    "filing_definition_verbatim_or_short": "“a discipline and organizational function focused on embedding AI capabilities directly into production business environments to address specific customer requirements … include forward-deployed engineers”.",
+    "plain_english": "Anthropic engineers who work hands-on inside customer companies to build custom AI solutions, somewhat like specialist consultants on the vendor’s payroll.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "closing the loop",
+    "filing_definition_verbatim_or_short": "“a development cycle in which successive versions of an AI model assist in building the next, with the goal of compounding capability gains over time.”",
+    "plain_english": "Using today’s Claude to help build tomorrow’s Claude, for example by writing code and running experiments. Anthropic argues this speeds up progress over time.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "compute",
+    "filing_definition_verbatim_or_short": "“the computational processing resources used to train and run AI models, including … specialized AI accelerators, memory, networking, storage, and power systems … deployed in data centers”.",
+    "plain_english": "The computing power (chips, data centers, electricity) needed to build and run AI. It is Anthropic’s biggest cost.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "compute multipliers",
+    "filing_definition_verbatim_or_short": "“algorithmic and methodological improvements in training and inference that increase the effective output of a given amount of compute.”",
+    "plain_english": "Software and research tricks that get more AI capability out of the same number of chips, like a car engine getting more miles per gallon.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "computer use",
+    "filing_definition_verbatim_or_short": "“an AI capability that allows a model to observe and interact with a graphical user interface, such as clicking, typing, and navigating applications, similar to how a human operator would.”",
+    "plain_english": "Claude’s ability to operate a computer screen the way a person does: looking at it, clicking buttons, and typing.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "Constitutional AI",
+    "filing_definition_verbatim_or_short": "“an approach to training AI models using a set of written principles, which we refer to as Claude’s constitution, currently organized around four priorities: being broadly safe, broadly ethical, compliant with our guidelines, and genuinely helpful.”",
+    "plain_english": "Anthropic’s method of teaching Claude to behave well by giving it a written rulebook of values and having it check and revise its own answers against those rules.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "context window",
+    "filing_definition_verbatim_or_short": "“the maximum amount of text, code, or other content, measured in tokens, that an AI model can process in a given request”.",
+    "plain_english": "How much material the AI can ‘hold in mind’ at once, such as an entire contract or codebase, within a single request.",
+    "page": 1,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "CSP (cloud services provider) / hyperscalers",
+    "filing_definition_verbatim_or_short": "“a technology company that owns and operates large-scale cloud computing infrastructure and provides on-demand compute, storage, and networking … The largest CSPs, sometimes referred to as hyperscalers”.",
+    "plain_english": "Big cloud companies (Amazon Web Services, Google Cloud, Microsoft Azure) that rent computing power. For Anthropic they are both suppliers of computing power and sales channels.",
+    "page": "1–2",
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "customer",
+    "filing_definition_verbatim_or_short": "“a prosumer or an organization that uses our models, platform, or applications.”",
+    "plain_english": "Any paying individual power-user or organization that uses Claude.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "customers with $100,000 / $1 million / $10 million or more of revenue on a TTM basis",
+    "filing_definition_verbatim_or_short": "“customers contributing revenue equal to or greater than the applicable dollar amount during the trailing twelve-month (‘TTM’) period … we define a customer as a distinct organization, identified by aggregating the accounts that we determine belong to the same organization”. Anthropic uses the $100k group as its measure of ‘enterprise’ adoption.",
+    "plain_english": "Counts of organizations that paid Anthropic at least $100k, $1M, or $10M over the past 12 months. When the filing says ‘enterprise customers’ it means the $100k+ group, defined by spending, not by company size.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "frontier AI",
+    "filing_definition_verbatim_or_short": "“AI systems at the current leading edge of capability and safety, performing at or near the highest levels of any existing system across a broad range of tasks.”",
+    "plain_english": "The most advanced AI models available at any given moment.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "hallucinations",
+    "filing_definition_verbatim_or_short": "“outputs in which an AI model generates factually incorrect or fabricated information with apparent confidence.”",
+    "plain_english": "When an AI confidently makes something up.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "inference",
+    "filing_definition_verbatim_or_short": "“the process by which a trained AI model processes an input and generates an output. Inference occurs each time a user or agent interacts with an AI system.”",
+    "plain_english": "Running a finished AI model to answer a request. It is the ‘serving customers’ part of AI costs, as opposed to building (training) the model.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "interleaved thinking",
+    "filing_definition_verbatim_or_short": "“a capability whereby an AI model interposes discrete reasoning steps between successive tool calls within a single response”.",
+    "plain_english": "The AI pauses to think between each action it takes, rather than planning everything only once at the start.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "interpretability",
+    "filing_definition_verbatim_or_short": "“research into how and why AI models produce specific outputs, with the goal of making model behavior more transparent and verifiable”.",
+    "plain_english": "Research into understanding what is going on inside an AI model, so its behavior can be explained and checked.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "knowledge work",
+    "filing_definition_verbatim_or_short": "“complex cognitive work and related professional activities, including obtaining, producing, analyzing, and communicating information through tasks such as coding, drafting analyses, synthesizing research, building financial models”.",
+    "plain_english": "Desk jobs built on thinking and information: analysts, lawyers, programmers, researchers, and similar roles.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "LLMs (large language models)",
+    "filing_definition_verbatim_or_short": "“AI models trained primarily on large datasets to understand and generate natural language and computer code.”",
+    "plain_english": "The type of AI behind Claude and ChatGPT. They learn from huge amounts of text and code to read and write language.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "mechanistic interpretability",
+    "filing_definition_verbatim_or_short": "“a subfield of interpretability research focused on reverse-engineering the internal computations of neural networks … to identify the specific features and circuits within a model that give rise to its behavior”.",
+    "plain_english": "Taking an AI model apart, like reverse-engineering a machine, to find which internal parts cause which behaviors, including hidden unsafe ones.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "model weights",
+    "filing_definition_verbatim_or_short": "“the numerical parameters encoding a trained AI model’s behavior, which are the primary intellectual asset of a frontier AI developer”.",
+    "plain_english": "The billions of numbers that make up a trained AI model. They are the model itself and the company’s crown-jewel asset.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "multi-agent orchestration",
+    "filing_definition_verbatim_or_short": "“an architecture in which multiple AI agents collaborate on a shared task, with one coordinating while others execute subtasks in parallel”.",
+    "plain_english": "A team of AI assistants working together, with one acting as manager and splitting up the work among the others.",
+    "page": 2,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "Net Revenue Retention (NRR)",
+    "filing_definition_verbatim_or_short": "“dividing the Qualified Customers’ Current Period revenue by their Base Period revenue. A Qualified Customer is a customer with at least $1 of revenue during the Base Period, excluding subscribers to our Claude Pro and Max plans … The Base Period is the three months ending a year prior … The Current Period is the three months ending as of the measurement date.”",
+    "plain_english": "How much the same group of customers spends now compared with a year ago. ~900% means that group spends about 9 times more. Because those customers spent little a year earlier, the ratio is far above what mature software companies typically report (roughly 100–130% is a common industry rule of thumb; that benchmark is not from the filing).",
+    "page": "2–3",
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "open-weight",
+    "filing_definition_verbatim_or_short": "“an AI model whose trained model weights … are publicly released, allowing third parties to download, run, and modify the model”.",
+    "plain_english": "AI models whose core files are given away publicly so anyone can run or modify them. Some competitors take this approach.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "pay-for-intelligence / consumption",
+    "filing_definition_verbatim_or_short": "“our revenue model under which customers pay for their usage of our intelligence service, which is metered in tokens and priced according to the model selected.”",
+    "plain_english": "Pay-as-you-go pricing: customers are billed for how much AI work they use, like a utility bill. It made up about 80% of revenue in H1 2026 (F-26).",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "persistent",
+    "filing_definition_verbatim_or_short": "“data, state, or context that is continuously retained beyond the boundary of a single operation, session, or interaction”.",
+    "plain_english": "Remembered across sessions, so the AI doesn’t start from scratch every time.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "post-training",
+    "filing_definition_verbatim_or_short": "“techniques applied to a pre-trained model to refine its behavior, including reinforcement learning, supervised refinement methods, and other alignment methods.”",
+    "plain_english": "The ‘finishing school’ stage that turns a raw model into a helpful, safe assistant good at real tasks like coding.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "pre-training",
+    "filing_definition_verbatim_or_short": "“the initial stage of training an AI model, in which the model learns general patterns … typically by predicting the next token in a sequence.”",
+    "plain_english": "The first, most compute-hungry training stage, where the model reads vast amounts of text and learns general knowledge by guessing the next word.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "primitives",
+    "filing_definition_verbatim_or_short": "“the foundational, modular building blocks of a software system from which more complex applications and workflows are constructed.”",
+    "plain_english": "Basic building blocks, like Lego pieces, that developers combine to build their own AI products.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "prompt injection",
+    "filing_definition_verbatim_or_short": "“an adversarial technique in which malicious instructions are embedded in content an AI model is asked to process … with the aim of overriding or manipulating the model’s intended behavior”.",
+    "plain_english": "A hacking trick that hides malicious instructions inside a web page or document so the AI follows the attacker instead of the user.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "prosumers",
+    "filing_definition_verbatim_or_short": "“individual users who subscribe to AI tools to perform knowledge work.”",
+    "plain_english": "Individual professionals who pay for Claude themselves, for example on the Pro or Max plans.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "reinforcement learning",
+    "filing_definition_verbatim_or_short": "“a machine learning approach in which a model learns to perform a task by taking actions, receiving feedback signals called rewards, and adjusting its behavior to maximize the rewards”.",
+    "plain_english": "Training by trial and error with a score: the model is rewarded for good results and learns to get more of them.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "RLHF",
+    "filing_definition_verbatim_or_short": "“reinforcement learning from human feedback … human evaluators rate the model’s responses, and those ratings are used as the reward signal”.",
+    "plain_english": "Training an AI using people’s ratings of its answers as the score. Anthropic’s founders helped pioneer it.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "Run-Rate Revenue",
+    "filing_definition_verbatim_or_short": "“the estimated annualized value of our revenue-generating activity as of a measurement date, calculated as the sum of (i) our consumption-based fees during the trailing 28-day period … multiplied by 13, and (ii) our aggregate monthly subscription fees … multiplied by 12.”",
+    "plain_english": "A snapshot of the last four weeks’ revenue scaled up to a full year. It is a speed reading, not actual annual revenue, and can misstate the year if usage spikes or drops.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "SIs (systems integrators)",
+    "filing_definition_verbatim_or_short": "“third-party technology and professional services firms that design, build, and deploy integrated solutions for customers by combining products and services from multiple technology vendors”.",
+    "plain_english": "Consulting firms like Accenture, Deloitte, KPMG and PwC that install and customize technology for big companies.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "tokens / tokenizer",
+    "filing_definition_verbatim_or_short": "“numeric units into which an AI model converts the data it processes … Tokens are the smallest individual units of a language model and can correspond to words, subwords, characters, or bytes.”",
+    "plain_english": "The small chunks (roughly word fragments) that AI reads and writes. AI usage is measured and priced per token, like minutes on a phone plan.",
+    "page": 3,
+    "category": "defined_term",
+    "source": "Select Defined Terms"
+  },
+  {
+    "term": "Powerful AI",
+    "filing_definition_verbatim_or_short": "Frontier AI with expert-level cognition across most disciplines, able to use all interfaces, work autonomously for “hours, days, or weeks,” coordinate many instances, and control physical equipment; expected “within a few years.”",
+    "plain_english": "Anthropic’s term for the much more capable AI it expects soon: systems as good as top human experts that can work independently for long stretches.",
+    "page": "6, 184",
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Virtual Collaborator",
+    "filing_definition_verbatim_or_short": "“AI systems that work alongside humans to perform complex, multi-step work at professional levels.”",
+    "plain_english": "Anthropic’s name for AI that acts like a capable coworker you delegate whole projects to, not just a chatbot you ask questions.",
+    "page": "7, 189",
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "country of geniuses in a data center",
+    "filing_definition_verbatim_or_short": "Anthropic’s phrase for millions of Virtual Collaborators running in parallel, “available to every organization and sector of the economy.”",
+    "plain_english": "A vivid image of the long-term goal: vast numbers of expert-level AI workers running on computers at the same time.",
+    "page": "8, 191",
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Improvement Loop",
+    "filing_definition_verbatim_or_short": "Enterprise deployments surface hard problems; feedback improves models, platform, and applications, which drives wider adoption and the next cycle.",
+    "plain_english": "The more businesses use Claude, the more Anthropic learns about what to fix, and the better Claude gets.",
+    "page": "10, 182",
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Investment Loop",
+    "filing_definition_verbatim_or_short": "Revenue from enterprise adoption funds compute, research, and talent; better capabilities broaden the addressable market and drive more revenue and reinvestment.",
+    "plain_english": "Sales pay for better AI, and better AI brings in more sales. This is Anthropic’s growth flywheel.",
+    "page": "10–11, 183",
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Scaling Laws",
+    "filing_definition_verbatim_or_short": "“the finding that AI model performance improves predictably with increases in model size, training data, and compute.”",
+    "plain_english": "The observed rule that AI gets reliably better as you make it bigger and feed it more data and computing power. Several Anthropic co-founders co-wrote the key paper.",
+    "page": 184,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "capability-cost-speed curve",
+    "filing_definition_verbatim_or_short": "The trade-off frontier across which customers choose models (more capable vs cheaper vs faster).",
+    "plain_english": "The menu of choices between the smartest model, the cheapest, and the fastest. Anthropic offers several model sizes to cover it.",
+    "page": "7, 9, 185",
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Mythos / Fable",
+    "filing_definition_verbatim_or_short": "One underlying model class deployed in two configurations: Fable is “generally available” with production safeguards; Mythos runs with safeguards calibrated for vetted cybersecurity and life-sciences users via trusted-access programs.",
+    "plain_english": "Anthropic’s most powerful model. The public version (Fable) has extra safety limits on sensitive topics, while vetted security and science organizations get a less restricted version (Mythos).",
+    "page": 199,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Opus / Sonnet / Haiku",
+    "filing_definition_verbatim_or_short": "Opus: “powerful workhorse model class for reasoning-intensive tasks”; Sonnet: “versatile model class for everyday tasks”; Haiku: “lowest-cost and fastest model class.”",
+    "plain_english": "Claude’s model sizes, from most capable to cheapest and fastest: Opus, then Sonnet, then Haiku. Mythos sits above all three.",
+    "page": 199,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Project Glasswing",
+    "filing_definition_verbatim_or_short": "Gated research-preview program through which Mythos was first released (April 2026) to select organizations for cybersecurity applications; up to $100 million committed in cyberdefense initiatives.",
+    "plain_english": "A limited-access program that gave Anthropic’s most capable model first to vetted cybersecurity defenders, because it is very good at finding software security holes.",
+    "page": "186, 199, 234",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "trusted-access programs / Cyber Verification Program",
+    "filing_definition_verbatim_or_short": "Programs through which vetted organizations and individuals access Mythos with calibrated safeguards.",
+    "plain_english": "Vetting processes that let approved security researchers and scientists use the less restricted model.",
+    "page": 199,
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Platform",
+    "filing_definition_verbatim_or_short": "“our comprehensive agentic development environment” providing “direct access to the primitives to build, deploy, and scale their own applications.”",
+    "plain_english": "The developer toolkit and API for building your own AI products and agents on top of Claude.",
+    "page": "9, 181, 200",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Code",
+    "filing_definition_verbatim_or_short": "“our coding agent” that plans, writes, tests, debugs, and commits code; terminal, desktop, web, and mobile.",
+    "plain_english": "An AI programmer that can carry out whole software tasks, not just suggest lines of code.",
+    "page": "8, 190, 201",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Cowork",
+    "filing_definition_verbatim_or_short": "“our knowledge work agent” with computer use that autonomously reads files, navigates applications, and executes multi-step workflows on a user’s desktop.",
+    "plain_english": "Claude Code’s approach applied to office work: you describe a task in plain language and it does the clicking, drafting and organizing for you.",
+    "page": "8, 190, 202",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude.ai",
+    "filing_definition_verbatim_or_short": "“Our flagship conversational product” on desktop, web, and mobile; being merged with Claude Cowork since September 2026.",
+    "plain_english": "The Claude chat app most people know.",
+    "page": 202,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Enterprise / Team / Pro / Max",
+    "filing_definition_verbatim_or_short": "Paid plans: Pro and Max for prosumers (p. 206); Team and Enterprise for organizations (p. 203). Enterprise adds SSO, SCIM, audit logging, Compliance API, HIPAA-supporting configurations (p. 202).",
+    "plain_english": "Subscription tiers: Pro and Max for individuals, Team and Enterprise for companies (with security and admin controls). Prices are not disclosed in the filing.",
+    "page": "202–203, 206",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Security / OSS Scanner",
+    "filing_definition_verbatim_or_short": "Claude Security: defensive cyber product in public beta for Claude Enterprise customers that scans code, triages vulnerabilities and proposes fixes. OSS Scanner: extends this to open-source projects.",
+    "plain_english": "AI tools that hunt for security holes in software and suggest fixes before hackers find them.",
+    "page": "185, 189, 202",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Tag / Claude Design / Claude Science",
+    "filing_definition_verbatim_or_short": "Tag: collaborative agent tagged into Slack-style channels. Design: visual work via conversation. Science: research workbench querying >60 scientific databases.",
+    "plain_english": "Newer Claude apps for team chat, visual design work, and scientific research.",
+    "page": 202,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "vertical solutions",
+    "filing_definition_verbatim_or_short": "Seven industry packages (Financial Services, Financial Advisors, Healthcare, Life Sciences, Legal, Education, Government) with domain knowledge, connectors, and compliance controls.",
+    "plain_english": "Ready-made versions of Claude tailored to specific industries such as banking, healthcare or law.",
+    "page": "192, 203–204",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Model Context Protocol (MCP)",
+    "filing_definition_verbatim_or_short": "“an open standard we introduced in November 2024 and donated to the Linux Foundation’s Agentic AI Foundation in December 2025” that defines “a universal interface” for connecting AI to data and tools.",
+    "plain_english": "A common ‘plug’ standard that lets AI assistants connect to company data and software, like a USB port for AI. Anthropic created it and gave it to an open-source foundation.",
+    "page": 200,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Agent Skills",
+    "filing_definition_verbatim_or_short": "“A modular framework that lets organizations encode repeatable tasks, workflows, and domain expertise into reusable packages, or skills, that Claude loads on demand.”",
+    "plain_english": "Packaged know-how (for example, ‘how our firm formats a pitch deck’) that Claude can pick up when needed.",
+    "page": 200,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Agent SDK / Claude Managed Agents / harness",
+    "filing_definition_verbatim_or_short": "Harness = “the secure environment, credentials, memory, and orchestration loop a model needs”. Agent SDK runs it on the customer’s compute; Managed Agents are run by Anthropic.",
+    "plain_english": "The surrounding software that turns a model into a working agent. Customers can run it themselves (SDK) or let Anthropic host it (Managed Agents).",
+    "page": 201,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Model Hardware Standard",
+    "filing_definition_verbatim_or_short": "Research-preview standard enabling AI agents to “find, understand, and safely operate lab and manufacturing equipment such as microscopes, liquid handlers, and off-the-shelf robotic arms.”",
+    "plain_english": "A way for AI to control lab and factory machines. It is Anthropic’s first step toward physical-world work.",
+    "page": "7, 186, 201",
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "extended thinking / adaptive thinking / effort controls",
+    "filing_definition_verbatim_or_short": "Extended thinking: additional internal reasoning before answering. Adaptive thinking: Claude decides how much reasoning a request needs. Effort controls: developers set the reasoning level per request.",
+    "plain_english": "Settings for how hard Claude ‘thinks’ before answering. More thinking means better answers on hard problems, but costs more and takes longer.",
+    "page": 200,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "prompt caching",
+    "filing_definition_verbatim_or_short": "Reused prompt components cached up to one hour, “reducing cost by up to approximately 97% and latency by approximately 60% for long prompts”.",
+    "plain_english": "Remembering a long instruction you send repeatedly so you don’t pay full price to process it every time.",
+    "page": 201,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "zero data retention",
+    "filing_definition_verbatim_or_short": "“we do not store their inputs or outputs after we process a request” (except for legal compliance or to combat misuse).",
+    "plain_english": "A privacy option where Anthropic deletes customer requests and answers right after processing them.",
+    "page": 203,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Enterprise Frontier Safeguards",
+    "filing_definition_verbatim_or_short": "Announced September 2026: misuse-monitoring data stored in the customer’s own cloud account under the customer’s keys, with automated alerts to the customer’s security team and no Anthropic employee review.",
+    "plain_english": "A setup that lets regulated companies use the most powerful models while keeping their data private, with automated misuse checks the customer controls.",
+    "page": "202–203",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Anthropic Direct",
+    "filing_definition_verbatim_or_short": "Hybrid compute model in which Anthropic procures AI accelerators directly and operates them “in dedicated data center facilities leased and operated on our behalf, to our specification.” The first facility became operational in 2026.",
+    "plain_english": "Instead of only renting computing power from cloud companies, Anthropic leases its own chips and data center space, run for it by partners.",
+    "page": 205,
+    "category": "compute",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "multi-chip compute architecture / fungible compute pool",
+    "filing_definition_verbatim_or_short": "Training and serving across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs, managed “as a single, fungible pool” and directed to the most productive workload.",
+    "plain_english": "Anthropic runs on four different chip brands and treats them as one big shared pool. That reduces dependence on any single supplier.",
+    "page": "6, 180, 188, 204",
+    "category": "compute",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "TPU / Trainium / GPU",
+    "filing_definition_verbatim_or_short": "Chip families: Google TPUs (via Google and Broadcom), AWS Trainium (Amazon), NVIDIA GPUs (Grace Blackwell, Vera Rubin), AMD Instinct MI450 GPUs (Helios racks).",
+    "plain_english": "Brand families of AI chips. GPUs come from NVIDIA and AMD; TPUs are Google’s own chips; Trainium is Amazon’s own chip.",
+    "page": 204,
+    "category": "compute",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "colocation / behind-the-meter power",
+    "filing_definition_verbatim_or_short": "Colocation: leasing capacity in third-party data centers (e.g., Fluidstack agreement). Behind-the-meter: power generation supplying the facility directly rather than through the grid.",
+    "plain_english": "Renting space in someone else’s data center, and having a power plant feed the data center directly instead of drawing from the public grid.",
+    "page": 205,
+    "category": "compute",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "purchase commitments / non-cancelable / true-up",
+    "filing_definition_verbatim_or_short": "Multi-year contracts to buy compute regardless of usage; if spend falls short, a true-up payment covers the difference (MD&A pp. 170–171). Aggregate amount blank in Business/Summary.",
+    "plain_english": "Promises to pay for computing power for years even if it isn’t used. If Anthropic uses less than promised, it still pays the difference.",
+    "page": "6, 180, 196",
+    "category": "finance",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Responsible Scaling Policy (RSP)",
+    "filing_definition_verbatim_or_short": "Describes “how we approach the catastrophic risks posed by AI”; requires regularly publishing risk reports and a Frontier Safety Roadmap; first published September 2023.",
+    "plain_english": "Anthropic’s public rulebook for testing each new model for dangerous abilities and adding safeguards, or delaying release, before it ships.",
+    "page": "229–231, 233",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "system card",
+    "filing_definition_verbatim_or_short": "Detailed public document released with each model covering capability and safety evaluations, external tester reports, and known limitations.",
+    "plain_english": "A published ‘spec sheet and safety report’ for each model.",
+    "page": "231, 233",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "alignment / misalignment",
+    "filing_definition_verbatim_or_short": "Alignment team focuses on “whether models behave as intended, and do not take unwanted actions of their own accord.”",
+    "plain_english": "Making sure the AI actually does what people want. ‘Misaligned’ AI pursues the wrong goals or takes actions nobody asked for.",
+    "page": 232,
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "red-teaming / Frontier Red Team",
+    "filing_definition_verbatim_or_short": "Adversarial testing to find ways a model may fail; Frontier Red Team analyzes whether new models give attackers meaningful new capabilities.",
+    "plain_english": "Hiring or assigning people to deliberately attack and misuse the AI so weaknesses get found before release.",
+    "page": "231, 233",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "recursive self-improvement",
+    "filing_definition_verbatim_or_short": "Term used for AI accelerating its own development; Anthropic’s RSP “sets out our plans to monitor and mitigate the risks as we approach” it.",
+    "plain_english": "AI that builds better AI, which builds even better AI, and so on. This could speed progress dramatically and is treated as a safety risk.",
+    "page": 184,
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "pacing the frontier",
+    "filing_definition_verbatim_or_short": "Anthropic’s call for “industry-wide standards primarily related to the use of AI to accelerate AI development, so that AI capabilities do not advance faster than the safety, alignment, and security practices needed to support them.”",
+    "plain_english": "A proposal for industry-wide rules so AI doesn’t improve faster than the ability to keep it safe.",
+    "page": 233,
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "race to the top",
+    "filing_definition_verbatim_or_short": "Goal to “foster a race to the top in which AI developers compete on the safety and security of their systems”.",
+    "plain_english": "Anthropic’s strategy of making safety a competitive selling point so rivals feel pressure to match it.",
+    "page": "229, 233",
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "ExploitBench",
+    "filing_definition_verbatim_or_short": "“a benchmark developed by Carnegie Mellon researchers that evaluates AI models’ ability to exploit software vulnerabilities”. Opus 4.8: 40%; Claude Mythos 5: 78%; Opus 5.5: 91%.",
+    "plain_english": "A test measuring how well an AI can break into software through security holes. It is useful for defenders, and a reason for caution.",
+    "page": 189,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "CAISSI / U.K. AI Security Institute",
+    "filing_definition_verbatim_or_short": "U.S. Center for Advancing Innovation and Standards for Super Intelligence and the U.K. AI Security Institute; government bodies given pre-deployment model access.",
+    "plain_english": "U.S. and U.K. government agencies that test advanced AI models for national-security risks before they are released.",
+    "page": "232, 233, 237",
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "ISO/IEC 42001 / SOC 2",
+    "filing_definition_verbatim_or_short": "ISO/IEC 42001: international AI management-system standard, certified after independent audit. SOC 2: System and Organization Controls 2 security reporting.",
+    "plain_english": "Independent audits showing Anthropic follows recognized processes for managing AI risk (ISO 42001) and data security (SOC 2).",
+    "page": 232,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "FedRAMP High",
+    "filing_definition_verbatim_or_short": "Claude for Government operates “in a FedRAMP High authorized environment”.",
+    "plain_english": "The U.S. government’s top-tier security approval for cloud services handling sensitive (unclassified) government data.",
+    "page": 204,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "HIPAA",
+    "filing_definition_verbatim_or_short": "Health Insurance Portability and Accountability Act of 1996; Claude Enterprise offers configurations designed to support HIPAA compliance.",
+    "plain_english": "The U.S. law protecting patients’ medical data. Healthcare customers need tools that comply with it.",
+    "page": 202,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "SAML SSO / SCIM",
+    "filing_definition_verbatim_or_short": "SAML-based single sign-on with SCIM (System for Cross-domain Identity Management) provisioning.",
+    "plain_english": "Corporate login and user-management standards that let IT departments control who can access Claude.",
+    "page": 202,
+    "category": "ai_tech",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "SB 53 (California Transparency in Frontier Artificial Intelligence Act)",
+    "filing_definition_verbatim_or_short": "California law that Anthropic “publicly endorsed”.",
+    "plain_english": "A California law requiring developers of the most advanced AI to be transparent about safety practices. Anthropic supported it.",
+    "page": 237,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "EU AI Act",
+    "filing_definition_verbatim_or_short": "Risk-based EU framework; general-purpose AI models face transparency, documentation, copyright, and training-data-summary obligations, with more for ‘systemic risk’ models.",
+    "plain_english": "The European Union’s AI law, which sets stricter rules for more powerful or riskier AI systems.",
+    "page": 238,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "export controls / Entity List",
+    "filing_definition_verbatim_or_short": "U.S. rules restricting cross-border provision of technology; in June 2026 the Department of Commerce imposed worldwide export restrictions on Fable 5 and Mythos 5 (later lifted).",
+    "plain_english": "Government limits on which countries or companies can receive certain technology. They have already applied to Anthropic’s models once.",
+    "page": 239,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "supply-chain risk designation (10 U.S.C. § 3252 / FASCSA Section 4713)",
+    "filing_definition_verbatim_or_short": "Department of War designations asserting Anthropic’s products “present a supply-chain risk”; the D.C. Circuit upheld the Section 4713 designation 2–1 on September 25, 2026.",
+    "plain_english": "A U.S. military label that can bar defense contractors from doing business with Anthropic. Anthropic is fighting it in court with mixed results so far.",
+    "page": 241,
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Bartz settlement",
+    "filing_definition_verbatim_or_short": "Class action by authors alleging copyright infringement from training; settled for $1.5 billion (September 2025), approved July 2026; shown as a separate $1.5B expense line in FY2025.",
+    "plain_english": "A $1.5 billion payment to settle authors’ claims that their books were copied to train Claude.",
+    "page": "22, 241",
+    "category": "legal_regulatory",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Ode with Anthropic",
+    "filing_definition_verbatim_or_short": "“an AI services company, in partnership with leading private equity firms to bring Claude’s capabilities to mid-sized companies”.",
+    "plain_english": "A new joint venture with investment firms that sells Claude-based solutions to mid-sized businesses.",
+    "page": "9, 181, 194, 198",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Claude Partner Network / Claude Certification Program / Claude Frontier Academy",
+    "filing_definition_verbatim_or_short": "Partner Network launched March 2026 with an initial $100M for 2026; >150,000 practitioners certified at >4,000 organizations (2026-09-30). Frontier Academy launched October 2026 with a $100M commitment to train 10,000 engineers by end of 2027.",
+    "plain_english": "Training and certification programs that create a workforce of consultants and engineers who know how to deploy Claude.",
+    "page": "193–194",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Fortune 10 / Fortune 500 / Global 2000",
+    "filing_definition_verbatim_or_short": "Rankings used to show penetration: ≥$100k customers include every Fortune 10 company, >50% of Fortune 500, >30% of Global 2000.",
+    "plain_english": "Lists of the largest U.S. companies by revenue (Fortune) and the largest public companies worldwide (Global 2000).",
+    "page": "194, 206",
+    "category": "metric",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "TTM (trailing twelve months)",
+    "filing_definition_verbatim_or_short": "Used throughout, e.g., “TTM revenue per employee” and customer revenue thresholds.",
+    "plain_english": "The most recent 12 months, whatever the calendar year.",
+    "page": "2, 10",
+    "category": "finance",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "year over year (YoY) / quarter over quarter (QoQ)",
+    "filing_definition_verbatim_or_short": "E.g., revenue “grew 1,368% year over year”; QoQ growth “48% … to 132%”.",
+    "plain_english": "Growth compared with the same period last year (YoY) or with the immediately previous quarter (QoQ).",
+    "page": "10, 195",
+    "category": "finance",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "CAGR",
+    "filing_definition_verbatim_or_short": "Compound annual growth rate; e.g., IT spend CAGR of approximately 7% (2006–2025).",
+    "plain_english": "The steady yearly growth rate that would get you from the starting number to the ending number.",
+    "page": 185,
+    "category": "finance",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "TTM revenue per employee",
+    "filing_definition_verbatim_or_short": ">$6.6 million as of 2026-09-30 vs $1.4 million a year earlier.",
+    "plain_english": "Last 12 months of revenue divided by the number of employees. It is a rough measure of how lean a company is.",
+    "page": "10, 195, 228",
+    "category": "metric",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "regrettable attrition",
+    "filing_definition_verbatim_or_short": "“approximately 1% regrettable attrition of our employee base overall in the TTM period”.",
+    "plain_english": "Employees who quit whom the company wanted to keep, as a share of all staff.",
+    "page": 187,
+    "category": "metric",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "GAAP / non-GAAP",
+    "filing_definition_verbatim_or_short": "Generally accepted accounting principles; non-GAAP measures used: Adjusted Operating Income (Loss), Adjusted Operating Margin, Adjusted Net Income (Loss).",
+    "plain_english": "GAAP is the official accounting rulebook. Non-GAAP figures are company-adjusted versions that leave some costs out, so read them with care.",
+    "page": 24,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "operating margin / Adjusted Operating Margin",
+    "filing_definition_verbatim_or_short": "Q2 2026: operating margin 8%; Adjusted Operating Margin 19% (vs (152)% and (129)% in Q2 2025).",
+    "plain_english": "Profit from running the business as a share of revenue. The ‘adjusted’ version excludes items such as stock-based pay, so it looks higher.",
+    "page": "24, 182",
+    "category": "finance",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "stock-based compensation (SBC)",
+    "filing_definition_verbatim_or_short": "Included in personnel expense: $1.2 billion in FY2025; $2.2 billion in H1 2026.",
+    "plain_english": "Paying employees in company shares instead of cash. It is a real cost to shareholders even though no cash leaves the company.",
+    "page": 22,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "change in fair value of convertible notes, derivative liabilities, and SAFEs",
+    "filing_definition_verbatim_or_short": "Non-operating loss of $34.3 billion (FY2025) and $72.4 billion (H1 2026), “primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation”.",
+    "plain_english": "An accounting loss caused by Anthropic’s rising valuation: IOUs that convert into stock became more valuable to their holders. It explains most of the large reported net losses and is not cash spent.",
+    "page": 22,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "SAFE",
+    "filing_definition_verbatim_or_short": "Simple agreement for future equity.",
+    "plain_english": "An early-stage investment contract that turns into shares later.",
+    "page": 22,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "convertible promissory notes / Amazon Notes",
+    "filing_definition_verbatim_or_short": "Notes convertible into Class N common stock; a portion held by Amazon Web Services converts at the IPO subject to an ownership cap (the “Convertible Notes Conversion”).",
+    "plain_english": "Loans from investors (notably Amazon) that turn into shares instead of being repaid in cash.",
+    "page": "12, 19",
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "redeemable convertible preferred stock / Preferred Stock Conversion",
+    "filing_definition_verbatim_or_short": "$157.5 billion on the June 30, 2026 balance sheet; all series convert into Class A or Class N common stock immediately before the IPO.",
+    "plain_english": "Special shares sold to venture and strategic investors. At the IPO they turn into ordinary shares.",
+    "page": "19, 24",
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "accumulated deficit / stockholders’ deficit",
+    "filing_definition_verbatim_or_short": "Accumulated deficit $(132.9) billion; total stockholders’ deficit $(127.6) billion (June 30, 2026).",
+    "plain_english": "Total losses since founding (largely non-cash valuation charges) and the resulting negative book equity before the preferred shares convert.",
+    "page": 24,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "working capital",
+    "filing_definition_verbatim_or_short": "“current assets less current liabilities”; $130.8 billion at June 30, 2026.",
+    "plain_english": "Short-term assets minus short-term bills: a measure of near-term financial cushion.",
+    "page": 24,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "pro forma / pro forma as adjusted",
+    "filing_definition_verbatim_or_short": "Columns showing the balance sheet as if the preferred conversion, note conversion, etc. had occurred (pro forma), and additionally after IPO proceeds (as adjusted).",
+    "plain_english": "‘What the numbers would look like if’ the IPO-related changes had already happened.",
+    "page": "23–24",
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "RSUs / RSU Settlement",
+    "filing_definition_verbatim_or_short": "Restricted stock units; RSUs whose service condition is met and whose performance condition is satisfied at effectiveness are net-settled, with shares withheld for taxes (the “RSU Settlement”).",
+    "plain_english": "Promised employee shares that vest over time. Many vest at the IPO, and some shares are held back to pay employees’ taxes.",
+    "page": "19–20",
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "public benefit corporation (PBC) / Company Purpose",
+    "filing_definition_verbatim_or_short": "Directors must balance stockholders’ pecuniary interests, the best interests of those materially affected, and the Company Purpose: “the responsible development and maintenance of advanced AI for the long-term benefit of humanity.”",
+    "plain_english": "A corporate form where the board must weigh a stated public mission alongside shareholder profits, not profits alone.",
+    "page": "12–13",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Long-Term Benefit Trust (LTBT) / Class T common stock",
+    "filing_definition_verbatim_or_short": "Five financially disinterested trustees; through Class T stock, generally elects and removes the Class T directors, who constitute a majority of the board.",
+    "plain_english": "An independent trust with no financial stake that picks most of Anthropic’s board, to keep the company on its safety mission.",
+    "page": "13, cover",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Class F common stock / Founder LLC",
+    "filing_definition_verbatim_or_short": "Single share held by an LLC of the seven co-founders; entitled to 50.1% of total voting power on matters generally (excluding Class T director elections); no economic rights.",
+    "plain_english": "A special share that gives the founders together a majority of shareholder votes, but no claim on profits.",
+    "page": "13, cover",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Class A / Class N / Class E common stock",
+    "filing_definition_verbatim_or_short": "Class A: one vote per share, offered in the IPO. Class N: no votes (except as required by law), held mainly by strategic partners, converts to Class A on transfer to unaffiliated parties. Class E: issued to employees, votes on limited matters, no economic rights.",
+    "plain_english": "Different share types: A is what the public buys; N is economically identical but non-voting (mostly for partners like big tech investors); E gives employees a narrow say.",
+    "page": "15, cover",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "controlled company",
+    "filing_definition_verbatim_or_short": "Nasdaq status because the LTBT can elect a majority of the board; Anthropic expects to rely on the exemption only for its nominating and corporate governance committee.",
+    "plain_english": "A stock-exchange label that lets companies controlled by one holder skip some independence rules.",
+    "page": "14, cover",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Anthropic Public Benefit Fund / Initial Public Benefit Issuance / Public Benefit Issuances",
+    "filing_definition_verbatim_or_short": "846,840,960 Class N shares (5% of fully diluted shares at 2026-06-30) contributed to a wholly owned subsidiary; board may issue up to a further 2% each time the share price rises 50% above the prior milestone.",
+    "plain_english": "Anthropic set aside 5% of its shares for public-good causes, with more to come if the stock rises. Note this dilutes other shareholders.",
+    "page": "12, 235",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Donation Matching Plan",
+    "filing_definition_verbatim_or_short": "Employees pledge equity to charity; Anthropic matches with Class N shares.",
+    "plain_english": "Anthropic doubles employees’ charitable stock donations with newly issued shares.",
+    "page": "12, 20, 235",
+    "category": "governance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "forward split / reverse split",
+    "filing_definition_verbatim_or_short": "10-for-one forward split of Class A and Class N (September 17, 2026); one-for-1,000 reverse split of Class T.",
+    "plain_english": "Changing the number of shares without changing total value, for example turning each share into ten smaller ones.",
+    "page": 21,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "underwriters / underwriting discount / option to purchase additional shares",
+    "filing_definition_verbatim_or_short": "Goldman Sachs & Co. LLC and Morgan Stanley are listed first among 22 underwriters on the cover; price, share counts, and discount are blank.",
+    "plain_english": "The investment banks that sell the IPO shares for a fee and may sell extra shares if demand is strong.",
+    "page": "cover",
+    "category": "finance",
+    "source": "Cover"
+  },
+  {
+    "term": "use of proceeds",
+    "filing_definition_verbatim_or_short": "Net proceeds for “general corporate purposes, including working capital, operating expenses, and capital expenditures, including investments in compute and infrastructure,” hiring, possible acquisitions, and RSU tax withholding.",
+    "plain_english": "What the company plans to do with the money raised: mainly computing infrastructure and general operations.",
+    "page": 18,
+    "category": "finance",
+    "source": "Prospectus Summary"
+  },
+  {
+    "term": "Applied AI teams / forward-deployed engineers",
+    "filing_definition_verbatim_or_short": "Engineers who “embed more deeply with select customers, building solutions”; organized by geography then industry.",
+    "plain_english": "Anthropic engineers stationed with big customers to build custom AI solutions.",
+    "page": 193,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "intelligence-led growth",
+    "filing_definition_verbatim_or_short": "Platform and applications as “the primary mechanism through which Claude’s intelligence reaches users”; prosumers become internal champions.",
+    "plain_english": "Growth driven mainly by the product being good enough that people adopt it on their own, rather than by a large sales force.",
+    "page": 193,
+    "category": "strategy",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "first-party applications",
+    "filing_definition_verbatim_or_short": "Applications Anthropic builds itself on Claude Platform (Claude Code, Cowork, Claude.ai, etc.).",
+    "plain_english": "Anthropic’s own branded apps, as opposed to products other companies build using Claude.",
+    "page": "181, 198",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "SI / data-platform ecosystem partners",
+    "filing_definition_verbatim_or_short": "SIs such as Accenture, Deloitte, KPMG, PwC; data platforms such as Salesforce and Snowflake.",
+    "plain_english": "Outside firms that resell, install or embed Claude for their own customers.",
+    "page": "9, 181",
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Gemini Enterprise Agent Platform / Amazon Bedrock / Microsoft Foundry",
+    "filing_definition_verbatim_or_short": "The three CSP “dedicated AI service layers” through which Claude is available.",
+    "plain_english": "The AI storefronts of Google Cloud, Amazon Web Services and Microsoft Azure where companies can buy and use Claude.",
+    "page": 206,
+    "category": "product",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Anthropic Economic Index / Anthropic Institute",
+    "filing_definition_verbatim_or_short": "Economic Index: recurring reports and open datasets on how Claude is used across jobs, industries, regions. Institute: shares research and internal data with external partners.",
+    "plain_english": "Public research projects tracking how AI is changing work and the economy.",
+    "page": 234,
+    "category": "safety",
+    "source": "Summary/Business text"
+  },
+  {
+    "term": "Frontier Model Forum",
+    "filing_definition_verbatim_or_short": "Industry group through which Anthropic shares safety-critical findings with other AI developers.",
+    "plain_english": "An industry club where leading AI labs share safety research.",
+    "page": 233,
+    "category": "safety",
+    "source": "Summary/Business text"
+  }
+]
