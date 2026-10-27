@@ -39,7 +39,9 @@ No package install is needed. The page loads D3 7.9.0 from cdnjs and fonts from 
 ## Deploy
 
 The repository includes a GitHub Pages workflow (`.github/workflows/pages.yml`) that publishes `dist/` on every
-push to `main`. Enable it under **Settings → Pages → Source: GitHub Actions**. The Open Graph image URL in
+push to `main` (or on demand from the Actions tab). Enable it under **Settings → Pages → Source: GitHub Actions**.
+On a free GitHub plan Pages requires a public repository; on Pro a private repository can publish, but the site
+itself is always public. The Open Graph image URL in
 `tools/build.py` (`SITE_URL`) assumes `https://hauspost.github.io/anthropic-ipo/`; change it if you host
 elsewhere, rebuild, and X will show the card when the link is posted.
 
