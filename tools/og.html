@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Gelasio:ital,wght@1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  /* 1200×630 social card, rendered to dist/og.png by tools/og.js */
+  :root { --ink: #0f131a; --paper: #fafbfc; --rule: #2a2f38; --red: #ff6b7d; --mut: #9aa1ad; }
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; background: var(--ink); color: var(--paper); font-family: "Archivo", sans-serif; padding: 56px 64px; display: flex; flex-direction: column; justify-content: space-between; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .badge { font-family: "IBM Plex Mono", monospace; font-size: 22px; border: 2px solid var(--paper); padding: 2px 10px; border-radius: 4px; letter-spacing: .08em; }
+  .legend { font-family: "Gelasio", serif; font-style: italic; color: var(--red); border: 1.5px solid var(--red); padding: 8px 14px; font-size: 17px; }
+  h1 { font-size: 84px; line-height: .95; font-weight: 850; font-variation-settings: "wdth" 118; letter-spacing: -.01em; margin-top: 18px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 3px solid var(--paper); }
+  .row > div { padding: 16px 16px 0 0; }
+  .row > div + div { padding-left: 16px; border-left: 1px solid var(--rule); }
+  .lbl { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--mut); font-weight: 700; }
+  .val { font-size: 56px; font-weight: 750; font-variation-settings: "wdth" 72; margin-top: 4px; }
+  .neg { color: #ff6b6b; }
+  .foot { font-family: "IBM Plex Mono", monospace; color: var(--mut); font-size: 17px; display: flex; justify-content: space-between; margin-top: 14px; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="top"><span class="badge">ANT · FORM S-1</span><span class="legend">Price per share: $____ to $____</span></div>
+    <h1>The trillion-dollar prospectus, annotated.</h1>
+  </div>
+  <div>
+    <div class="row">
+      <div><div class="lbl">Revenue, Q2 2026</div><div class="val">$11.6B</div></div>
+      <div><div class="lbl">Net loss, H1 2026</div><div class="val neg">−$80.7B</div></div>
+      <div><div class="lbl">Compute owed</div><div class="val">≈$855B</div></div>
+      <div><div class="lbl">Founders' vote</div><div class="val">50.1%</div></div>
+    </div>
+    <div class="foot"><span>Every number traced to its page in Anthropic's S-1</span><span>Independent analysis</span></div>
+  </div>
+</body>
+</html>

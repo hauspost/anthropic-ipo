@@ -1,0 +1,2286 @@
+{
+  "meta": {
+    "filing": "Anthropic, PBC Form S-1 (preliminary prospectus), filed 2026-10-26",
+    "sections_covered": [
+      "Cover & Select Defined Terms (pp. i, 1-3)",
+      "Prospectus Summary (pp. 5-25)",
+      "Business (pp. 178-241)",
+      "Industry, Market, and Other Data (p. 123)"
+    ],
+    "page_convention": "Printed folio. Case-study pages 208-227 are image-only; their folios are inferred from position (between p. 207 and p. 228) and HTML image order. Gatefold = inside-front co-founders' letter, PDF pp. 3-10, unnumbered (cited 'gatefold pgN').",
+    "blank_convention": "null value with note 'blank in filing' = placeholder left empty in this unpriced S-1.",
+    "cross_refs_note": "Items tagged section 'MD&A', 'Risk Factors', or 'Financial Statements' come from outside the assigned sections and are included only as context for stress-tests."
+  },
+  "company": {
+    "name": "Anthropic, PBC",
+    "incorporated": "Delaware public benefit corporation, January 2021 (p. 17)",
+    "founded": "2021 (pp. 5, 179)",
+    "hq": "548 Market Street, PMB 90375, San Francisco, CA 94104 (cover; p. 17)",
+    "ticker_proposed": "ANT, Nasdaq Global Select Market (cover)",
+    "sic": "7372",
+    "mission_and_company_purpose": "the responsible development and maintenance of advanced AI for the long-term benefit of humanity (pp. 5, 12, 179)",
+    "self_description_quote": {
+      "text": "We are first and foremost a research lab—our mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity.",
+      "pages": [
+        5,
+        179,
+        229
+      ]
+    },
+    "thesis_quote": {
+      "text": "For the first time in history, intelligence is something humans can build.",
+      "pages": [
+        5,
+        179
+      ]
+    },
+    "cofounders": [
+      "Dario Amodei",
+      "Daniela Amodei",
+      "Tom Brown",
+      "Jack Clark",
+      "Jared Kaplan",
+      "Sam McCandlish",
+      "Christopher Olah"
+    ],
+    "cofounders_page": 13
+  },
+  "core_advantages": [
+    {
+      "name": "Mission & Focus",
+      "pages": [
+        5,
+        180,
+        186
+      ],
+      "gist": "Singular mission focus; avoids conflicting priorities; e.g., gated Mythos release April 2026."
+    },
+    {
+      "name": "Talent & Culture",
+      "pages": [
+        5,
+        180,
+        187
+      ],
+      "gist": "Low-ego, truth-seeking culture; claims deepest concentration of AI research talent; ~1% regrettable attrition."
+    },
+    {
+      "name": "Frontier & Safety Research",
+      "pages": [
+        5,
+        180,
+        187,
+        188
+      ],
+      "gist": "Integrated capability+safety research; 'closing the loop'; co-designed architecture and inference; capital-efficient pre-training; agentic post-training."
+    },
+    {
+      "name": "Approach to Compute",
+      "pages": [
+        6,
+        180,
+        188
+      ],
+      "gist": "Single fungible compute pool across AWS Trainium, Google TPUs, NVIDIA GPUs, AMD GPUs; dynamic allocation to the most productive workload."
+    },
+    {
+      "name": "Enterprise Strategy",
+      "pages": [
+        6,
+        180,
+        188,
+        189
+      ],
+      "gist": "Enterprise deployment as the locus of economic impact and of the richest feedback loops."
+    }
+  ],
+  "loops": {
+    "improvement_loop": {
+      "pages": [
+        10,
+        182
+      ],
+      "diagram_pages": [
+        11,
+        183
+      ],
+      "steps_in_diagram": [
+        "Better models",
+        "More use cases",
+        "More feedback"
+      ],
+      "quote": "Enterprise deployments of Claude deepen our understanding of the hard problems, edge cases, and domain-specific challenges that matter most to our customers."
+    },
+    "investment_loop": {
+      "pages": [
+        10,
+        11,
+        183
+      ],
+      "diagram_pages": [
+        11,
+        183
+      ],
+      "steps_in_diagram": [
+        "Higher growth",
+        "More investment",
+        "More capabilities"
+      ],
+      "quote": "Revenue from expanding enterprise adoption helps us to fund the compute, research, and talent needed to improve Claude."
+    },
+    "closing_the_loop": {
+      "definition_page": 1,
+      "pages": [
+        5,
+        11,
+        180,
+        183,
+        195
+      ],
+      "quote": "Many aspects of the research, training, and testing of subsequent model generations now involve Claude, including running experiments, generating and processing training data, automating evaluations and safety audits, and writing and reviewing code.",
+      "claimed_output": "accelerating pace of producing compute multipliers (not quantified)",
+      "safety_caveat_page": 184
+    },
+    "overview_diagram_page": 179,
+    "overview_diagram": "Our core advantages -> Enterprise adoption of Claude (Virtual collaborator; Platform and applications; Diffusion of AI) -> Our financial model (Revenue growth; Compute efficiency; Operating efficiency); Improvement loop returns from adoption; Investment loop returns from financial model."
+  },
+  "financial_model_drivers": [
+    {
+      "driver": "Rapid Revenue Growth",
+      "pages": [
+        10,
+        182
+      ],
+      "evidence": "Net Revenue Retention ~900% as of 2026-09-30; Opus 5.5 cut cost per task ~40% vs Opus 5 (p. 10)."
+    },
+    {
+      "driver": "Compute Efficiency",
+      "pages": [
+        10,
+        182,
+        196
+      ],
+      "evidence": "Revenue +1,368% YoY vs compute & infrastructure expense +300% (three months ended 2026-06-30)."
+    },
+    {
+      "driver": "Operating Efficiency",
+      "pages": [
+        10,
+        182,
+        195
+      ],
+      "evidence": "TTM revenue per employee >$6.6M (2026-09-30) vs $1.4M (2025-09-30)."
+    }
+  ],
+  "summary_financials_p22_p24": {
+    "unit": "USD millions",
+    "periods": [
+      "FY2023",
+      "FY2024",
+      "FY2025",
+      "H1 2025",
+      "H1 2026"
+    ],
+    "revenue": [
+      41,
+      386,
+      4585,
+      1163,
+      16286
+    ],
+    "compute_and_infrastructure": [
+      433,
+      2522,
+      7326,
+      2334,
+      8945
+    ],
+    "personnel": [
+      95,
+      454,
+      1839,
+      538,
+      3152
+    ],
+    "bartz_settlement": [
+      0,
+      0,
+      1500,
+      0,
+      0
+    ],
+    "sales_marketing_partnerships": [
+      2,
+      43,
+      568,
+      120,
+      3168
+    ],
+    "other_operating_admin": [
+      62,
+      347,
+      1412,
+      306,
+      1714
+    ],
+    "total_operating_expenses": [
+      592,
+      3366,
+      12645,
+      3298,
+      16979
+    ],
+    "operating_loss": [
+      -551,
+      -2980,
+      -8060,
+      -2135,
+      -693
+    ],
+    "change_in_fair_value_notes_derivatives_SAFEs": [
+      -1045,
+      -5434,
+      -34308,
+      -10942,
+      -72388
+    ],
+    "net_loss": [
+      -1531,
+      -8309,
+      -41965,
+      -12969,
+      -80748
+    ],
+    "adjusted_operating_income_loss": [
+      -522,
+      -2788,
+      -4854,
+      -1849,
+      1618
+    ],
+    "operating_margin_pct": [
+      -1344,
+      -772,
+      -176,
+      -184,
+      -4
+    ],
+    "adjusted_operating_margin_pct": [
+      -1273,
+      -722,
+      -106,
+      -159,
+      10
+    ],
+    "adjusted_net_income_loss": [
+      -457,
+      -2683,
+      -4448,
+      -1741,
+      2671
+    ],
+    "sbc_in_personnel": {
+      "FY2023": 29,
+      "FY2024": 192,
+      "FY2025": 1200,
+      "H1 2025": 286,
+      "H1 2026": 2200
+    },
+    "balance_sheet_2026_06_30": {
+      "cash_equivalents_and_short_term_investments": 131651,
+      "working_capital": 130760,
+      "total_assets": 147358,
+      "total_liabilities": 117467,
+      "redeemable_convertible_preferred_stock": 157510,
+      "accumulated_deficit": -132902,
+      "total_stockholders_deficit": -127619
+    },
+    "pages": {
+      "income_statement": 22,
+      "balance_sheet_and_non_gaap": 24
+    },
+    "note": "Net losses are dominated by non-cash changes in fair value of convertible notes, which the filing attributes to increases in enterprise valuation (p. 22, fn 2)."
+  },
+  "quarterly_context_mdna_p157": {
+    "unit": "USD millions",
+    "section": "MD&A",
+    "page": 157,
+    "quarters": [
+      "Q1'25",
+      "Q2'25",
+      "Q3'25",
+      "Q4'25",
+      "Q1'26",
+      "Q2'26"
+    ],
+    "revenue": [
+      376,
+      787,
+      1382,
+      2040,
+      4731,
+      11555
+    ],
+    "compute_and_infrastructure": [
+      944,
+      1390,
+      2047,
+      2945,
+      3387,
+      5558
+    ],
+    "operating_income_loss": [
+      -935,
+      -1200,
+      -3089,
+      -2836,
+      -1667,
+      974
+    ],
+    "reconciliation": "Q2'26 vs Q2'25: revenue +1,368%, compute +300%, other opex (personnel+S&M+other) $597M->$5,023M = +741%; QoQ revenue +48% (Q4'25) and +132% (Q1'26). All match Business-section claims."
+  },
+  "metrics": [
+    {
+      "id": "cust_100k",
+      "label": "Customers with >=$100k revenue on TTM basis",
+      "value": ">11,900",
+      "unit": "customers",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        8,
+        181,
+        194,
+        206
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cust_100k_prior",
+      "label": "Customers with >=$100k revenue on TTM basis (prior year)",
+      "value": ">950",
+      "unit": "customers",
+      "as_of_or_period": "2025-09-30",
+      "page": [
+        194,
+        206
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cust_1m",
+      "label": "Customers with >=$1M revenue on TTM basis",
+      "value": ">1,900",
+      "unit": "customers",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        8,
+        181
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cust_10m",
+      "label": "Customers with >=$10M revenue on TTM basis",
+      "value": "~250",
+      "unit": "customers",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        9,
+        181
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "platform_plus_app",
+      "label": "Share of >=$100k customers using Claude Platform AND >=1 first-party app",
+      "value": ">50% (vs ~30% in Q4'25)",
+      "unit": "percent",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        181
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "fortune",
+      "label": "Fortune/Global 2000 penetration among >=$100k customers",
+      "value": "Every Fortune 10 company; >50% of Fortune 500; >30% of Global 2000",
+      "unit": "share",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        194,
+        206
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "fortune_detail",
+      "label": "Fortune 500 leaders that are >=$100k customers",
+      "value": "10 largest software & IT services; 10 largest internet; 9 of 10 largest pharma; 10 largest banks; 9 of 10 largest semiconductor; 8 of 10 largest healthcare",
+      "unit": "count",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        194
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "nrr",
+      "label": "Net Revenue Retention",
+      "value": "~900%",
+      "unit": "percent",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        10,
+        182,
+        195
+      ],
+      "section": "Business",
+      "note": "Definition pp. 2-3: Current Period (3 months ending at date) revenue / Base Period (3 months ending one year earlier) revenue of Qualified Customers (>=$1 base revenue), excluding Pro and Max subscribers."
+    },
+    {
+      "id": "ent_spend_no_code",
+      "label": "Average monthly spend, Claude Enterprise users not using Claude Code",
+      "value": "<$75",
+      "unit": "USD per month",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        195
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "ent_spend_top5pct_code",
+      "label": "Spend of top 5% of Claude Enterprise users who used Claude Code",
+      "value": "~20x the <$75 figure",
+      "unit": "multiple",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        195
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cowork_vs_code",
+      "label": "Claude Cowork adoption vs Claude Code at equivalent point after research preview",
+      "value": "Cowork 'outpaced' Claude Code",
+      "unit": "qualitative",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        8,
+        190,
+        191
+      ],
+      "section": "Business",
+      "note": "Adoption metric not defined. Cowork research preview Jan 2026; Claude Code research preview Feb 2025."
+    },
+    {
+      "id": "rev_q3_26",
+      "label": "Revenue, three months ended 2026-09-30",
+      "value": null,
+      "unit": "USD",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        5,
+        179
+      ],
+      "section": "Business",
+      "note": "blank in filing"
+    },
+    {
+      "id": "rev_launch",
+      "label": "Revenue at commercial launch",
+      "value": "$0",
+      "unit": "USD",
+      "as_of_or_period": "Q1 2023",
+      "page": [
+        5,
+        179
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "rev_q2_26",
+      "label": "Revenue, three months ended 2026-06-30",
+      "value": "$11.6B (vs $787M Q2'25)",
+      "unit": "USD",
+      "as_of_or_period": "Q2 2026",
+      "page": [
+        182
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "rev_growth_q2",
+      "label": "Revenue growth YoY, Q2 2026",
+      "value": "1,368%",
+      "unit": "percent",
+      "as_of_or_period": "Q2 2026 vs Q2 2025",
+      "page": [
+        10,
+        182,
+        196
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "compute_growth_q2",
+      "label": "Compute & infrastructure expense growth YoY, Q2 2026",
+      "value": "300%",
+      "unit": "percent",
+      "as_of_or_period": "Q2 2026 vs Q2 2025",
+      "page": [
+        10,
+        182,
+        196
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "other_opex_growth_q2",
+      "label": "Other operating expenses growth YoY, Q2 2026",
+      "value": "741%",
+      "unit": "percent",
+      "as_of_or_period": "Q2 2026 vs Q2 2025",
+      "page": [
+        196
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "op_margin_q2",
+      "label": "Operating margin / operating income",
+      "value": "8% / $1.0B (vs (152)% / $(1.2)B)",
+      "unit": "percent / USD",
+      "as_of_or_period": "Q2 2026 vs Q2 2025",
+      "page": [
+        182,
+        196
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "adj_op_margin_q2",
+      "label": "Adjusted Operating Margin / Adjusted Operating Income",
+      "value": "19% / $2.2B (vs (129)% / $(1.0)B)",
+      "unit": "percent / USD",
+      "as_of_or_period": "Q2 2026 vs Q2 2025",
+      "page": [
+        182,
+        196
+      ],
+      "section": "Business",
+      "note": "Non-GAAP"
+    },
+    {
+      "id": "rev_86x",
+      "label": "Revenue Q3'26 as multiple of Q4'24",
+      "value": "86x",
+      "unit": "multiple",
+      "as_of_or_period": "Q3 2026 vs Q4 2024",
+      "page": [
+        183
+      ],
+      "section": "Business",
+      "note": "Neither quarter's absolute revenue is disclosed in Business; Q4'24 not in MD&A quarterly table (starts Q1'25)."
+    },
+    {
+      "id": "qoq_opus45",
+      "label": "Total QoQ revenue growth around Opus 4.5 launch (Nov 2025)",
+      "value": "48% (Q4'25) -> 132% (Q1'26)",
+      "unit": "percent",
+      "as_of_or_period": "Q4 2025, Q1 2026",
+      "page": [
+        195
+      ],
+      "section": "Business",
+      "note": "Filing attributes to 'combined effect of several factors'."
+    },
+    {
+      "id": "run_rate",
+      "label": "Run-Rate Revenue",
+      "value": null,
+      "unit": "USD",
+      "as_of_or_period": "2026-10-31",
+      "page": [
+        194
+      ],
+      "section": "Business",
+      "note": "blank in filing; measurement date is after the 2026-10-26 filing date; footnote 11 notes it includes revenue from usage-policy violators."
+    },
+    {
+      "id": "capital_raised",
+      "label": "Aggregate capital raised",
+      "value": "$141.1B",
+      "unit": "USD",
+      "as_of_or_period": "2026-06-30",
+      "page": [
+        10,
+        182
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cash",
+      "label": "Cash and cash equivalents",
+      "value": "$112.4B",
+      "unit": "USD",
+      "as_of_or_period": "2026-06-30",
+      "page": [
+        10,
+        182
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "st_investments",
+      "label": "Short-term investments",
+      "value": "$19.3B",
+      "unit": "USD",
+      "as_of_or_period": "2026-06-30",
+      "page": [
+        10,
+        182
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "headcount",
+      "label": "Employees",
+      "value": "~5,300",
+      "unit": "employees",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        195,
+        228,
+        229
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "headcount_growth",
+      "label": "Headcount growth",
+      "value": ">5x",
+      "unit": "multiple",
+      "as_of_or_period": "2024-12-31 to 2026-09-30",
+      "page": [
+        183
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "rev_per_employee",
+      "label": "TTM revenue per employee",
+      "value": ">$6.6M (vs $1.4M)",
+      "unit": "USD",
+      "as_of_or_period": "2026-09-30 (vs 2025-09-30)",
+      "page": [
+        10,
+        182,
+        195,
+        228
+      ],
+      "section": "Business",
+      "note": "Denominator definition (period-end vs average) not stated in these sections. MD&A p.136: TTM revenue +~1,200% and headcount +~170% over the same year."
+    },
+    {
+      "id": "regrettable_attrition",
+      "label": "Regrettable attrition",
+      "value": "~1%",
+      "unit": "percent of employee base",
+      "as_of_or_period": "TTM to 2026-09-30",
+      "page": [
+        187
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "code_by_claude",
+      "label": "Share of contributions to Anthropic codebase written by Claude",
+      "value": ">90%",
+      "unit": "percent",
+      "as_of_or_period": "September 2026",
+      "page": [
+        183,
+        196,
+        228
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "code_volume",
+      "label": "Average daily code contributed per engineer",
+      "value": ">45x the FY2024 average",
+      "unit": "multiple",
+      "as_of_or_period": "Q3 2026 vs FY2024",
+      "page": [
+        183,
+        196
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "hard_eng_success",
+      "label": "Claude success rate on challenging open-ended engineering problems (internal benchmarks)",
+      "value": "~90%, up ~50 percentage points in nine months",
+      "unit": "percent",
+      "as_of_or_period": "September 2026",
+      "page": [
+        183
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "internal_usage_value",
+      "label": "Value of internal Claude usage at list prices",
+      "value": "grew >250x; monthly value first exceeded monthly personnel expense ex-SBC in April 2026",
+      "unit": "multiple",
+      "as_of_or_period": "Jan 2026 to Sep 2026",
+      "page": [
+        184
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "opus55_cost",
+      "label": "Customer cost per task, Opus 5.5 vs Opus 5",
+      "value": "~-40%",
+      "unit": "percent",
+      "as_of_or_period": "September 2026",
+      "page": [
+        10,
+        195
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "fable51_cost",
+      "label": "Cost of typical workloads, Fable 5.1 vs Fable 5",
+      "value": "~-25% (up to -45% for complex coding/agentic tasks)",
+      "unit": "percent",
+      "as_of_or_period": "September 2026",
+      "page": [
+        195
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "prompt_cache",
+      "label": "Prompt caching savings for long prompts",
+      "value": "cost up to ~-97%; latency ~-60%; cache up to one hour",
+      "unit": "percent",
+      "as_of_or_period": "current",
+      "page": [
+        201
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "partner_network",
+      "label": "Claude Partner Network certified practitioners / organizations",
+      "value": ">150,000 / >4,000",
+      "unit": "count",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        193
+      ],
+      "section": "Business",
+      "note": "Network launched March 2026 with initial $100M commitment for 2026."
+    },
+    {
+      "id": "academy",
+      "label": "Claude Frontier Academy",
+      "value": "$100M commitment; target 10,000 engineers trained by end of 2027",
+      "unit": "USD / count",
+      "as_of_or_period": "launched October 2026",
+      "page": [
+        194
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "efs_customers",
+      "label": "Customers co-developing Enterprise Frontier Safeguards",
+      "value": ">100",
+      "unit": "customers",
+      "as_of_or_period": "announced September 2026",
+      "page": [
+        203
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "claude_science_db",
+      "label": "Scientific databases queried by Claude Science",
+      "value": ">60",
+      "unit": "count",
+      "as_of_or_period": "current",
+      "page": [
+        202
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "exploitbench",
+      "label": "ExploitBench (Carnegie Mellon) score",
+      "value": "Opus 4.8: 40%; Claude Mythos 5: 78%; Opus 5.5: 91%",
+      "unit": "percent",
+      "as_of_or_period": "over ~4 months to Sep 2026",
+      "page": [
+        189
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "patents",
+      "label": "Patents",
+      "value": "40 US issued; 67 US pending (32 nonprovisional, 35 provisional); 26 foreign issued; 12 foreign pending",
+      "unit": "count",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        237
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "trademarks",
+      "label": "Trademarks",
+      "value": "29 US registered (+11 pending); 237 foreign registered (+261 pending)",
+      "unit": "count",
+      "as_of_or_period": "2026-09-30",
+      "page": [
+        237
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "pbf_shares",
+      "label": "Class N shares contributed to Anthropic Public Benefit Fund",
+      "value": "846,840,960 (5% of fully diluted shares)",
+      "unit": "shares",
+      "as_of_or_period": "as of 2026-06-30 basis",
+      "page": [
+        12,
+        235
+      ],
+      "section": "Business"
+    },
+    {
+      "id": "cust_conc_top5",
+      "label": "Top five customers share of revenue",
+      "value": "~25%",
+      "unit": "percent",
+      "as_of_or_period": "nine months ended 2026-09-30",
+      "page": [
+        56
+      ],
+      "section": "Risk Factors"
+    },
+    {
+      "id": "outside_top5",
+      "label": "Revenue from customers outside top five",
+      "value": "~79% (vs ~64% in Q1'26)",
+      "unit": "percent",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        143
+      ],
+      "section": "MD&A"
+    },
+    {
+      "id": "f500_wallet",
+      "label": "Revenue from Fortune 500 >=$100k customers as share of their total expenses",
+      "value": "<0.1% average (<1% for top 10 F500 customers)",
+      "unit": "percent",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        142
+      ],
+      "section": "MD&A"
+    },
+    {
+      "id": "violator_rev",
+      "label": "Revenue from customers later found violating usage policy/commercial terms",
+      "value": "~5% to 7%",
+      "unit": "percent of revenue",
+      "as_of_or_period": "nine months ended 2026-09-30",
+      "page": [
+        145
+      ],
+      "section": "MD&A"
+    },
+    {
+      "id": "gov_rev",
+      "label": "Government agency revenue",
+      "value": "~1%",
+      "unit": "percent of revenue",
+      "as_of_or_period": "each period presented",
+      "page": [
+        70
+      ],
+      "section": "Risk Factors"
+    },
+    {
+      "id": "new_model_rev",
+      "label": "Revenue from model versions released in prior six months",
+      "value": ">80%",
+      "unit": "percent of Q3'26 revenue",
+      "as_of_or_period": "Q3 2026",
+      "page": [
+        143
+      ],
+      "section": "MD&A"
+    },
+    {
+      "id": "csp_marketplace_rev",
+      "label": "Revenue via CSP marketplaces",
+      "value": "11% (2023), 32% (2024), 47% (2025), 44% (H1'25), 48% (H1'26)",
+      "unit": "percent of revenue",
+      "as_of_or_period": "various",
+      "page": [
+        "F-16"
+      ],
+      "section": "Financial Statements"
+    },
+    {
+      "id": "consumption_mix",
+      "label": "Consumption vs subscription revenue",
+      "value": "H1'26: $13,064M (80%) / $3,222M (20%); FY2025: $3,796M / $789M",
+      "unit": "USD millions",
+      "as_of_or_period": "H1 2026, FY2025",
+      "page": [
+        "F-26",
+        138
+      ],
+      "section": "Financial Statements / MD&A"
+    },
+    {
+      "id": "intl_rev",
+      "label": "International revenue (billing address)",
+      "value": "H1'26: $4,523M of $16,286M; FY2025: $1,223M of $4,585M",
+      "unit": "USD millions",
+      "as_of_or_period": "H1 2026, FY2025",
+      "page": [
+        "F-26"
+      ],
+      "section": "Financial Statements"
+    }
+  ],
+  "models": [
+    {
+      "class": "Mythos (including Fable)",
+      "page": 199,
+      "description": "Our most capable model class",
+      "configurations": {
+        "Fable": "generally available, production safeguards that block or limit performance on certain sensitive topics, including routing to a less capable Claude model",
+        "Mythos": "safeguards calibrated for vetted organizations/individuals doing cybersecurity and life sciences work; via trusted-access programs incl. Cyber Verification Program"
+      }
+    },
+    {
+      "class": "Opus",
+      "page": 199,
+      "description": "Our powerful workhorse model class for reasoning-intensive tasks",
+      "latest": "Claude Opus 5.5 ('enterprise daily driver')"
+    },
+    {
+      "class": "Sonnet",
+      "page": 199,
+      "description": "Our versatile model class for everyday tasks",
+      "notes": "incl. high-volume sub-agents in multi-agent orchestration"
+    },
+    {
+      "class": "Haiku",
+      "page": 199,
+      "description": "Our lowest-cost and fastest model class",
+      "notes": "customer service agents, large-scale document processing"
+    }
+  ],
+  "release_timeline": [
+    {
+      "date": "2025-02",
+      "event": "Claude Code research preview",
+      "page": 191
+    },
+    {
+      "date": "2025-11",
+      "event": "Opus 4.5 launched (greater capability, lower price and cost per task than Opus 4.1)",
+      "page": 195
+    },
+    {
+      "date": "2026-01",
+      "event": "Claude Cowork research preview",
+      "page": 190
+    },
+    {
+      "date": "2026-03",
+      "event": "Claude Partner Network launched",
+      "page": 193
+    },
+    {
+      "date": "2026-04",
+      "event": "Claude Mythos Preview via Project Glasswing (gated); Coefficient Bio acquisition completed",
+      "pages": [
+        186,
+        198,
+        199
+      ]
+    },
+    {
+      "date": "2026-06",
+      "event": "Fable 5 generally available; Mythos 5 to Project Glasswing participants; US Commerce worldwide export restrictions on Fable 5 and Mythos 5 (later lifted)",
+      "pages": [
+        199,
+        239
+      ]
+    },
+    {
+      "date": "2026-09",
+      "event": "Mythos 5.1, Fable 5.1, Opus 5.5 released; Cowork/Claude.ai merger begun; Enterprise Frontier Safeguards announced",
+      "pages": [
+        191,
+        195,
+        199,
+        202
+      ]
+    },
+    {
+      "date": "2026-10",
+      "event": "Claude Frontier Academy launched",
+      "page": 194
+    }
+  ],
+  "models_mentioned_elsewhere": {
+    "Claude 2.0": "AIG case p. 209",
+    "Claude 3.7 Sonnet": "Jane Street p. 213",
+    "Sonnet 3.5": "Shopify p. 222",
+    "Opus 4.6": "Mozilla p. 217",
+    "Opus 4.8": "ExploitBench p. 189; Legora p. 214; UST p. 224",
+    "Sonnet 4.6": "Walmart p. 226",
+    "Opus 5": "MD&A p. 136; p. 195",
+    "Claude Mythos 5": "p. 189"
+  },
+  "platform": {
+    "pages": [
+      192,
+      200,
+      201
+    ],
+    "features": [
+      "Extended Thinking",
+      "Adaptive Thinking",
+      "Effort Controls",
+      "Tool Use (parallel, interleaved thinking, tool search)",
+      "Long Context",
+      "Structured Outputs",
+      "Code Execution",
+      "Web Search",
+      "Files API"
+    ],
+    "context_management": [
+      "Model Context Protocol (introduced Nov 2024; donated to Linux Foundation's Agentic AI Foundation Dec 2025)",
+      "Agent Skills (pre-built Word/Excel/PowerPoint/PDF)",
+      "Model Hardware Standard (research preview)"
+    ],
+    "infrastructure": [
+      "Availability direct and via AWS, GCP, Azure (feature availability varies)",
+      "Prompt Caching",
+      "Batch Processing",
+      "Fast Mode"
+    ],
+    "harnesses": [
+      "Agent SDK (customer compute)",
+      "Claude Managed Agents (Anthropic-managed compute)"
+    ]
+  },
+  "applications": [
+    {
+      "name": "Claude Code",
+      "page": 201,
+      "desc": "Coding agent: terminal, desktop, web, mobile; GitHub/IDE integrations; parallel sessions."
+    },
+    {
+      "name": "Claude Cowork",
+      "page": 202,
+      "desc": "Knowledge-work agent on desktop/web/mobile; computer use; plugin system. Being merged with Claude.ai since Sep 2026."
+    },
+    {
+      "name": "Claude.ai",
+      "page": 202,
+      "desc": "Flagship conversational product; top-of-funnel for enterprise."
+    },
+    {
+      "name": "Claude Security",
+      "page": 202,
+      "desc": "Defensive cyber product; public beta for Claude Enterprise customers."
+    },
+    {
+      "name": "OSS Scanner",
+      "pages": [
+        185,
+        189
+      ],
+      "desc": "Recently launched; scanning for open-source projects."
+    },
+    {
+      "name": "Claude Tag",
+      "page": 202,
+      "desc": "Collaborative agent in tools like Slack."
+    },
+    {
+      "name": "Claude Design",
+      "page": 202,
+      "desc": "Designs, prototypes, presentations via conversation."
+    },
+    {
+      "name": "Claude Science",
+      "page": 202,
+      "desc": "Scientific research workbench; >60 databases."
+    },
+    {
+      "name": "Claude for Microsoft 365",
+      "page": 192,
+      "desc": "Embedded in Microsoft 365."
+    },
+    {
+      "name": "Claude in Chrome",
+      "page": 192,
+      "desc": "Embedded in Chrome browser."
+    }
+  ],
+  "plans": {
+    "named": [
+      "Claude Pro (prosumer, p. 206)",
+      "Claude Max (prosumer, p. 206)",
+      "Team (p. 203)",
+      "Claude Enterprise (pp. 202, 203)",
+      "free tiers/free trials (Risk Factors p. 79)"
+    ],
+    "prices_disclosed": false,
+    "subscriber_counts_disclosed": false
+  },
+  "enterprise_controls": {
+    "page": 202,
+    "items": [
+      "SAML SSO with SCIM",
+      "role-based access controls",
+      "audit logging",
+      "Compliance API",
+      "HIPAA-supporting configurations",
+      "admin console"
+    ],
+    "enterprise_frontier_safeguards": {
+      "pages": [
+        202,
+        203
+      ],
+      "announced": "2026-09",
+      "summary": "Safety-monitoring data stored in customer's cloud under customer keys; automated alerts to customer security team; no Anthropic employee review; zero data retention on Fable 5/5.1 for eligible customers during rollout."
+    }
+  },
+  "verticals": {
+    "pages": [
+      192,
+      203,
+      204
+    ],
+    "count": 7,
+    "list": [
+      "Claude for Financial Services",
+      "Claude for Financial Advisors",
+      "Claude for Healthcare",
+      "Claude for Life Sciences",
+      "Claude for Legal",
+      "Claude for Education (Higher Education; Claude for Teachers free to verified US K-12)",
+      "Claude for Government (FedRAMP High; classified/non-US via Amazon Bedrock)"
+    ]
+  },
+  "revenue_model": {
+    "consumption_definition_page": 3,
+    "consumption_definition": "customers pay for their usage of our intelligence service, which is metered in tokens and priced according to the model selected",
+    "subscription": "Pro, Max, Team, Enterprise plans (pricing not disclosed)",
+    "csp_structure_quote": {
+      "text": "We have a joint go-to-market approach with these CSPs through which we establish direct contractual relationships with our customers while paying a fee to each CSP.",
+      "pages": [
+        9,
+        181,
+        193
+      ]
+    },
+    "csp_fee_disclosed_in_business": false
+  },
+  "distribution": {
+    "cloud_service_layers": {
+      "AWS": "Amazon Bedrock",
+      "Google Cloud": "Gemini Enterprise Agent Platform",
+      "Microsoft Azure": "Microsoft Foundry",
+      "page": 206,
+      "note": "Filing does not use the name 'Vertex AI'."
+    },
+    "SIs": [
+      "Accenture",
+      "Deloitte",
+      "KPMG",
+      "PwC"
+    ],
+    "data_platforms": [
+      "Salesforce",
+      "Snowflake"
+    ],
+    "si_pages": [
+      9,
+      181
+    ],
+    "ode_with_anthropic": {
+      "pages": [
+        9,
+        181,
+        194,
+        198
+      ],
+      "desc": "AI services company launched with unnamed 'leading private equity firms' to serve mid-sized companies."
+    },
+    "builders": {
+      "page": 192,
+      "names": [
+        "Legora",
+        "Salesforce"
+      ],
+      "claim": "built AI-powered products on Claude that reach millions of end users"
+    },
+    "gtm": {
+      "page": 193,
+      "motions": [
+        "Intelligence-Led Growth (organic/prosumer)",
+        "Direct Teams",
+        "Applied AI Teams (forward-deployed engineers)",
+        "Cloud Partnerships",
+        "Ecosystem Partnerships"
+      ]
+    }
+  },
+  "tam_claims": [
+    {
+      "claim": "Knowledge-worker work represented >$40 trillion in economic value globally in 2025",
+      "pages": [
+        7,
+        185
+      ],
+      "source": "Anthropic estimate (method p. 123): US BLS 2025 wages for an unspecified knowledge-worker occupation subset, scaled by ratio of US total wages to global wages (ILO labor share x 2025 world GDP).",
+      "caveat": "Wage bill, not AI spend; ILO not listed among source bullets."
+    },
+    {
+      "claim": "AI solutions & services will yield cumulative global economic impact of $22.5 trillion by 2031",
+      "pages": [
+        7,
+        185
+      ],
+      "source": "IDC, The Economic Impact of AI: 2026 Edition, doc # US54452226, April 2026",
+      "caveat": "Cumulative economic impact, not revenue pool."
+    },
+    {
+      "claim": "Annual global pharmaceutical spend expected to exceed $2 trillion in 2026",
+      "pages": [
+        7,
+        186,
+        197
+      ],
+      "source": "IQVIA Institute, Global Medicine Use Trends 2026, Feb 2026"
+    },
+    {
+      "claim": "Knowledge workers globally estimated to exceed one billion in 2028",
+      "pages": [
+        8,
+        190
+      ],
+      "source": "IDC, Worldwide Developer Population Growth Forecast, 2025-2029, doc # US53789825, Sep 2025",
+      "caveat": "Source title refers to developers; verify it supports a knowledge-worker count."
+    },
+    {
+      "claim": "IT spend ~$1.2T (2006) -> $4.3T (2025), ~7% CAGR; cloud spend 0 -> $1.9T",
+      "pages": [
+        185
+      ],
+      "source": "IDC, Worldwide Black Book: Live Edition V2 2026 Forecast, July 2026"
+    },
+    {
+      "claim": "Global GDP ~$34T (2000) -> >$118T (2025)",
+      "pages": [
+        185
+      ],
+      "source": "World Bank"
+    },
+    {
+      "claim": "Ten largest public tech companies (by market cap at 2026-09-30) grew aggregate revenue $68B (2000) -> >$2.5T (2025), ~38x, ~11x the rate of global GDP growth",
+      "pages": [
+        185
+      ],
+      "source": "Not footnoted",
+      "caveat": "Survivorship: selected by current market cap."
+    }
+  ],
+  "tam_not_disclosed": "No explicit Anthropic TAM/SAM/SOM in dollars; no market share.",
+  "compute": {
+    "philosophy_pages": [
+      6,
+      180,
+      188
+    ],
+    "chips": [
+      {
+        "family": "AWS Trainium",
+        "partner": "Amazon",
+        "page": 204,
+        "note": "access + opportunity to influence future Trainium generations"
+      },
+      {
+        "family": "Google TPUs",
+        "partner": "Google and Broadcom",
+        "page": 204,
+        "note": "multiple TPU generations"
+      },
+      {
+        "family": "NVIDIA GPUs",
+        "partner": "NVIDIA (strategic partnership) + Microsoft, SpaceXAI, Nscale, Lambda, other cloud providers",
+        "page": 204,
+        "systems": [
+          "Grace Blackwell",
+          "Vera Rubin"
+        ]
+      },
+      {
+        "family": "AMD GPUs",
+        "partner": "AMD + approved manufacturers of Helios rack-scale systems + third-party providers",
+        "page": 204,
+        "systems": [
+          "AMD Instinct MI450 Series",
+          "Helios rack-scale"
+        ]
+      }
+    ],
+    "anthropic_direct": {
+      "page": 205,
+      "summary": "Hybrid model: in addition to cloud purchases, procure accelerators directly (equipment leases incl. 2026 Lease Arrangement) and operate them in dedicated leased facilities operated on Anthropic's behalf. First data center facility became operational in 2026.",
+      "arrangements": [
+        "Compute infrastructure equipment master leases (incl. 2026 Lease Arrangement)",
+        "Data center leases and colocation incl. Fluidstack USA I Inc. colocation and services agreement (amount not disclosed)",
+        "Financing partners guaranteeing lease obligations",
+        "Electrical power incl. behind-the-meter generation"
+      ],
+      "locations": "Primarily United States (p. 205); data-center capacity leases in Australia and Canada; pursuing others (p. 240)"
+    },
+    "commitments_business_section": {
+      "pages": [
+        6,
+        180,
+        196
+      ],
+      "aggregate": null,
+      "before_2030": null,
+      "next_12_months": null,
+      "remainder_window": "2031-2045",
+      "note": "All amounts blank in filing; 'substantially all of which is related to compute and infrastructure'."
+    },
+    "commitments_mdna_pp170_172": [
+      {
+        "counterparty": "Microsoft",
+        "amount": ">= $44.9B",
+        "terms": "Nov 2026 - May 2033; non-cancelable regardless of usage",
+        "page": 170
+      },
+      {
+        "counterparty": "Google",
+        "amount": ">= ~$114.5B",
+        "terms": "Apr 2026 - Jul 2033; non-cancelable; true-up",
+        "page": 170
+      },
+      {
+        "counterparty": "Google/TPU providers (additional TPU compute)",
+        "amount": "~$125.0B - $150.0B (estimate; not in contractual table)",
+        "terms": "delivery 2028-2031",
+        "page": 170
+      },
+      {
+        "counterparty": "Amazon",
+        "amount": ">= $110.0B",
+        "terms": "May 2026 - Apr 2036; non-cancelable; true-up",
+        "page": 171
+      },
+      {
+        "counterparty": "SpaceXAI (SpaceX.AI LLC, formerly X.AI LLC)",
+        "amount": "up to $120.5B",
+        "terms": "into 2029; ~$3.1B/month at full delivery (expected Dec 2026); cancellable on 90 days' notice after initial periods ending Jan/Mar 2027",
+        "page": 171
+      },
+      {
+        "counterparty": "AMD",
+        "amount": "expected > $20.0B if full initial tranche procured (no fixed dollar commitment; not in table)",
+        "terms": "initial tranche calendar 2027",
+        "page": 171
+      },
+      {
+        "counterparty": "Nscale",
+        "amount": "up to ~$44.6B",
+        "terms": "into 2033; fees accrue as capacity delivered",
+        "page": 171
+      },
+      {
+        "counterparty": "Lambda",
+        "amount": "~$41.3B",
+        "terms": "into 2034; $34.9B portion terminable if facility lease not secured",
+        "page": 171
+      },
+      {
+        "counterparty": "Broadcom (master equipment leases, TPU capacity)",
+        "amount": "~$161.2B rent excl. interest",
+        "terms": "five-year finance leases",
+        "page": 171
+      }
+    ],
+    "commitments_note": "MD&A items are context only (section MD&A). They mix minimums, caps, estimates and lease rent; do not present their sum as a filing figure.",
+    "efficiency_claims": [
+      "Revenue +1,368% vs compute +300% YoY Q2'26 (pp. 10, 182, 196)",
+      "Compute multipliers accelerating via 'closing the loop' (pp. 11, 183) - not quantified",
+      "Model architecture and inference co-designed (pp. 187, 230)",
+      "No video/image generation models; compute redirected to coding, agents, safety (p. 230)",
+      "Onboard new chip platforms 'in a fraction of the time' (pp. 188, 204) - not quantified"
+    ],
+    "not_disclosed": [
+      "gigawatts / megawatts of capacity",
+      "number of accelerators",
+      "compute multiplier magnitudes",
+      "Fluidstack contract value",
+      "owned (vs leased) data centers"
+    ]
+  },
+  "research_safety": {
+    "rsp": {
+      "pages": [
+        228,
+        229,
+        230,
+        231,
+        233
+      ],
+      "first_published": "September 2023",
+      "claims": [
+        "first frontier AI lab to adopt a formal RSP tying safety evaluations to capability thresholds (pp. 228, 229)",
+        "two other leading frontier AI labs adopted similar frameworks within months (p. 233; labs unnamed)"
+      ],
+      "components": [
+        "regular risk reports",
+        "Frontier Safety Roadmap"
+      ]
+    },
+    "ai_safety_levels_mentioned": false,
+    "constitution": {
+      "pages": [
+        1,
+        231
+      ],
+      "priorities": [
+        "Be Broadly Safe",
+        "Be Broadly Ethical",
+        "Be Compliant with our Guidelines",
+        "Be Genuinely Helpful"
+      ],
+      "claim": "training on constitutional documents + fictional stories of aligned AI contributes to reducing misalignment rate (p. 231; no figures)"
+    },
+    "certifications_and_external_eval": {
+      "pages": [
+        232,
+        233,
+        237
+      ],
+      "items": [
+        "ISO/IEC 42001",
+        "SOC 2",
+        "pre-deployment access for CAISSI and UK AI Security Institute",
+        "expanded early access for designated government partners on national-security-relevant frontier models"
+      ]
+    },
+    "alignment_claim": {
+      "page": 232,
+      "text": "Our own internal alignment evaluation shows that our newly released frontier models have demonstrated improved alignment compared to their predecessors."
+    },
+    "interpretability_claim": {
+      "page": 232,
+      "text": "Anthropic is widely recognized as a leader in mechanistic interpretability"
+    },
+    "release_policy": {
+      "page": 233,
+      "text": "we do not release every model we develop for general use",
+      "example": "Mythos gated April 2026 (Project Glasswing); Fable 5 released with restrictions on certain cyber, bio, chem capabilities"
+    },
+    "commitments": [
+      {
+        "item": "External reviewer capacity with Accenture (independent verification program)",
+        "amount": "at least $1 billion over next five years (terms not finalized)",
+        "page": 233
+      },
+      {
+        "item": "Cyberdefense initiatives through Project Glasswing",
+        "amount": "up to $100 million",
+        "page": 234
+      },
+      {
+        "item": "Studies with governments on responses to economic change",
+        "amount": "$200 million",
+        "page": "gatefold pg4"
+      }
+    ],
+    "policy_positions": [
+      "'pacing the frontier' industry-wide standards on AI accelerating AI (p. 233)",
+      "regulation incl. transparency and independent third-party auditing; international coordination (pp. 233-234, 238)",
+      "publicly endorsed California SB 53 (p. 237)",
+      "critical-infrastructure cyber agenda (p. 234)",
+      "technology should not be used for mass domestic surveillance or fully autonomous weapons (p. 241)",
+      "Claude kept free of advertising (gatefold pg7)"
+    ],
+    "societal_impacts": {
+      "page": 234,
+      "items": [
+        "80,000+ person multilingual qualitative study",
+        "Anthropic Economic Index (open datasets)",
+        "Anthropic Institute"
+      ]
+    },
+    "frontier_model_forum_member": true
+  },
+  "incidents_and_adverse_events": [
+    {
+      "date": "2025-09",
+      "event": "Chinese state-sponsored group manipulated Claude Code to attempt infiltration of ~30 global targets; limited number of successful intrusions",
+      "page": 45,
+      "section": "Risk Factors"
+    },
+    {
+      "date": "2025-09 (approved 2026-07)",
+      "event": "Bartz copyright class action settled for $1.5B",
+      "page": 241,
+      "section": "Business"
+    },
+    {
+      "date": "2026-02 onward",
+      "event": "Presidential directive and Department of War 'supply-chain risk' designation; N.D. Cal. largely ruled for Anthropic (2026-08-27); D.C. Cir. 2-1 upheld Section 4713 designation (2026-09-25); en banc petition filed",
+      "page": 241,
+      "section": "Business"
+    },
+    {
+      "date": "2026-03",
+      "event": "Service outage and degraded performance (demand surge, compute constraints)",
+      "page": 81,
+      "section": "Risk Factors"
+    },
+    {
+      "date": "2026-06",
+      "event": "US Commerce worldwide export restrictions on Fable 5 and Mythos 5; redeployed after safeguards updated and restrictions lifted",
+      "page": 239,
+      "section": "Business"
+    },
+    {
+      "date": "9M 2026",
+      "event": "~5-7% of revenue from customers later found violating usage policy/commercial terms",
+      "page": 145,
+      "section": "MD&A"
+    }
+  ],
+  "competition": {
+    "pages": [
+      235,
+      236,
+      237
+    ],
+    "named_competitors": [
+      "OpenAI",
+      "Google"
+    ],
+    "categories": [
+      "Model developers (frontier labs, large well-capitalized tech companies)",
+      "Broader model providers incl. open-weight/open-source models from state actors and research organizations",
+      "First-party application providers (enterprise software in select categories)",
+      "Status quo / organizational inertia"
+    ],
+    "claimed_differentiators": [
+      "enterprise focus",
+      "ability to remain at and define the frontier",
+      "research talent",
+      "compute efficiency"
+    ],
+    "closing_claim": "We believe that we compete favorably across these factors and are uniquely positioned at the frontier of AI. (p. 237)",
+    "not_disclosed": [
+      "market share",
+      "win rates",
+      "pricing comparisons"
+    ],
+    "overlaps": "Google is both named competitor and compute/distribution partner; Amazon and Microsoft are compute and distribution partners; CSPs hold preferred stock/notes (F-16); SpaceXAI (formerly X.AI LLC) is a compute supplier (MD&A p. 171)."
+  },
+  "government_international": {
+    "claude_for_government": {
+      "page": 204,
+      "detail": "FedRAMP High; non-US government and classified workloads via Amazon Bedrock"
+    },
+    "caissi_agreement": {
+      "page": 237,
+      "detail": "model access for testing before and after public release; UK AISI pre-deployment access"
+    },
+    "department_of_war_dispute_page": 241,
+    "gov_revenue_share": "~1% (Risk Factors p. 70)",
+    "gatefold_claim": "work with US federal government, many state governments, and US allies in areas such as child services, social security administration, cybersecurity, and intelligence collection (gatefold pg3)",
+    "offices": "HQ San Francisco; international offices in Europe and Asia-Pacific (p. 240)",
+    "international_growth": "regional offices and partnerships; international expansion expected to be meaningful growth driver (p. 197)",
+    "data_centers_abroad": "leases for capacity in Australia and Canada (p. 240)",
+    "offering_jurisdictions": "public offerings in Australia, Canada, certain EEA states, Japan, Switzerland, UK (p. i)"
+  },
+  "employees": {
+    "headcount": "~5,300 (2026-09-30)",
+    "pages": [
+      195,
+      228,
+      229
+    ],
+    "composition": "majority in research, engineering, and product development (p. 229)",
+    "nickname": "Ants (p. 228)",
+    "rev_per_employee": ">$6.6M TTM (2026-09-30) vs $1.4M (2025-09-30)",
+    "regrettable_attrition": "~1% TTM (p. 187)",
+    "gatefold_claims": [
+      ">3/4 of first 100 employees still employed (pg5)",
+      "19% of regretted leavers returned (pg5)",
+      "only major AI company to retain entire founding team (pg5)",
+      "just over half of employees pledged equity (pg5)",
+      "founder pledges 9% and employee pledges 8% of fully diluted shares as of 2026-06-30 (pg6 fn3)"
+    ],
+    "talent_lineage_claims": [
+      "Scaling Laws",
+      "GPT-2 and GPT-3",
+      "RLHF",
+      "Constitutional AI",
+      "mechanistic interpretability",
+      "first formally adopted RSP"
+    ],
+    "collective_bargaining": "some employees in certain countries subject to industry-wide CBAs (p. 229)"
+  },
+  "acquisitions_and_ventures": [
+    {
+      "name": "Coefficient Bio, Inc.",
+      "type": "acquisition (computational biology)",
+      "date": "April 2026",
+      "pages": [
+        197,
+        198
+      ]
+    },
+    {
+      "name": "Ode with Anthropic",
+      "type": "AI services company with private equity firms",
+      "date": "recently launched",
+      "pages": [
+        9,
+        181,
+        194,
+        198
+      ]
+    }
+  ],
+  "case_studies": [
+    {
+      "page": 208,
+      "customer": "Accenture",
+      "since": 2025,
+      "metrics": [
+        "45,000 professionals trained on Anthropic",
+        ">18,000 certified Claude practitioners",
+        "Cyber.AI security scan test coverage ~10% -> >80%; 1,600 apps & 500,000+ APIs; scan turnaround days -> <1 hour",
+        "Broadband provider client: 7x ROI, 55% faster speed to market, -86% sales-lead validation cost, accuracy 13% -> 97%"
+      ],
+      "caveat": "Also SI partner and planned $1B external-reviewer partner (p. 233)."
+    },
+    {
+      "page": 209,
+      "customer": "AIG",
+      "since": 2023,
+      "metrics": [
+        "8 business lines using Claude (2026-03-31)",
+        "Lexington Middle Market Property: +30% quoted submissions, -55% time-to-quote, +40% submissions bound",
+        ">90% cut in submission review time; 100% of applicable submissions reviewed"
+      ]
+    },
+    {
+      "page": 210,
+      "customer": "Bristol Myers Squibb",
+      "since": 2023,
+      "metrics": [
+        "30,000+ employees with Claude access",
+        "Real-world evidence question ~2 months -> ~5 minutes",
+        "Claude Code to 3,000+ developers/data scientists",
+        "Claude Enterprise selected company-wide May 2026"
+      ]
+    },
+    {
+      "page": 211,
+      "customer": "DoorDash",
+      "since": 2023,
+      "metrics": [
+        "Claude Code & Cowork available to 100% of corporate employees",
+        "7,000+ monthly Cowork users",
+        "Launch timelines for major products cut >50%"
+      ]
+    },
+    {
+      "page": 212,
+      "customer": "International Rescue Committee",
+      "since": 2025,
+      "metrics": [
+        "8x Claude user growth (Dec 2025-May 2026)",
+        "464 staff hours returned per week",
+        "300-user pilot -> ~2,400 seats",
+        "Key health indicators used in planning 20% -> 100%"
+      ],
+      "caveat": "'20.5M+ people served' is IRC's reach, not a Claude result."
+    },
+    {
+      "page": 213,
+      "customer": "Jane Street",
+      "since": 2023,
+      "metrics": [
+        "Fable 5.1 +32% over Fable 5 on internal agentic coding eval",
+        "Large codebase migration ~1 week vs months",
+        "One researcher ~50% more analysis"
+      ]
+    },
+    {
+      "page": 214,
+      "customer": "Legora",
+      "since": 2024,
+      "metrics": [
+        "1,500+ law firms/in-house teams served (Legora's platform)",
+        "4.3 non-billable hours recaptured per lawyer weekly (independent study of 31 firms, 14 countries) = $6.9M additional annual billing per 100 lawyers",
+        "Claude Code 14x (~50 -> 700+ seats)",
+        "100% Claude Enterprise employee access"
+      ]
+    },
+    {
+      "page": 215,
+      "customer": "Eli Lilly",
+      "since": 2024,
+      "metrics": [
+        "50,000+ employees with Claude Enterprise access",
+        "5x expansion since July 2025 rollout (~10,000)",
+        ">85% of employees in key functions actively engage",
+        "'first large pharmaceutical company' to make Claude Enterprise available across employee base (Apr 2026)"
+      ]
+    },
+    {
+      "page": 216,
+      "customer": "Mercado Libre",
+      "since": 2023,
+      "metrics": [
+        ">100% YoY merged code",
+        "500,000+ code submissions reviewed autonomously in past year",
+        "78% of non-tech teams active in Cowork weekly",
+        "23,000+ developers; ~9,000 services migrated",
+        "2025: ~40% of shipped code written by Claude",
+        "Q2 2026: code submissions +110% YoY, deployments ~+75%",
+        "Monthly close shortened by a third"
+      ]
+    },
+    {
+      "page": 217,
+      "customer": "Mozilla",
+      "since": 2025,
+      "metrics": [
+        "22 vulnerabilities (14 high-severity) found by Opus 4.6 in two-week evaluation, fixed in Firefox 148",
+        "271 vulnerabilities found by Claude Mythos Preview, resolved as of Firefox 150"
+      ]
+    },
+    {
+      "page": 218,
+      "customer": "PayPal",
+      "since": 2025,
+      "metrics": [
+        "12,000+ Claude Enterprise monthly active users",
+        "45 min average time saved per sales team member per week",
+        "AMOS report prep 5-10 minutes"
+      ],
+      "caveat": "Text says 'Claude and other tools'."
+    },
+    {
+      "page": 219,
+      "customer": "Rakuten",
+      "since": 2024,
+      "metrics": [
+        "70+ business units using AI",
+        "99.9% code accuracy on complex code modifications",
+        "7+ hours autonomous coding",
+        "Feature time to market 24 -> 5 working days (>75% cut)"
+      ],
+      "caveat": "'Business units using AI' is not Claude-specific."
+    },
+    {
+      "page": 220,
+      "customer": "Salesforce",
+      "since": 2023,
+      "metrics": [
+        "+151% effective output per developer YoY; PRs merged per developer +79%",
+        "18x faster API migration (231 person-days in 13 days)",
+        "Slackbot (Claude-powered): 2x QoQ productivity gains, est. 8.1M hours annualized; 99% employees use it",
+        ">60% of 83,000 employees use Claude"
+      ],
+      "related_party_footnote": "Salesforce beneficially owns less than 1% of Anthropic's outstanding capital stock, on an as-converted basis."
+    },
+    {
+      "page": 221,
+      "customer": "SAP",
+      "since": 2023,
+      "metrics": [
+        "Up to 14% faster project delivery with Joule for Consultants",
+        "25 hours saved per consultant per month (up to 1.5 hours/day)",
+        "50+ Joule Assistants and 200+ agents leverage Claude"
+      ],
+      "related_party_footnote": "SAP beneficially owns less than 1% of Anthropic's outstanding capital stock, on an as-converted basis.",
+      "caveat": "Multi-model ('models, such as Claude')."
+    },
+    {
+      "page": 222,
+      "customer": "Shopify",
+      "since": 2024,
+      "metrics": [
+        "Millions of merchants served by AI",
+        "3x YoY daily active merchants using Sidekick (2026)",
+        "7,500+ employees using Claude Code"
+      ],
+      "caveat": "Claude is 'One of the models' powering Sidekick; Shopify is early-access partner for Fable 5."
+    },
+    {
+      "page": 223,
+      "customer": "Travelers",
+      "since": 2024,
+      "metrics": [
+        "Nearly 25,000 employees with Claude assistants (from ~10,000 in Jan 2026)",
+        "-50% time to merge code"
+      ]
+    },
+    {
+      "page": 224,
+      "customer": "UST",
+      "since": 2023,
+      "metrics": [
+        "20,000 associates training on Claude",
+        "50-70% reduction in chip validation cycle time",
+        "Standard validation turnaround 4 -> 2 days"
+      ]
+    },
+    {
+      "page": 225,
+      "customer": "Verizon",
+      "since": 2023,
+      "metrics": [
+        "33,000+ engineers with Claude Code",
+        "Joined Project Glasswing; tested Claude Mythos (May 2026)"
+      ]
+    },
+    {
+      "page": 226,
+      "customer": "Walmart",
+      "since": 2024,
+      "metrics": [
+        "Sparky weekly active users +110% QoQ",
+        "+35% average order value via Sparky vs non-Sparky orders",
+        "2x units sold via Sparky QoQ"
+      ],
+      "caveat": "Sparky metrics not isolated to Claude; Claude is 'one of the models' powering WIBEY."
+    },
+    {
+      "page": 227,
+      "customer": "Shy Bird (restaurant)",
+      "since": null,
+      "metrics": [
+        "60%+ reduction in brunch ticket times, to 12 minutes",
+        "60 restaurants use Colette (Claude-built platform)",
+        "Server became full-time back-end engineer in 6 months"
+      ]
+    },
+    {
+      "page": 227,
+      "customer": "KBF Design Gallery",
+      "since": "adopted 2025",
+      "metrics": [
+        "490 hours/year recovered for one employee",
+        "7 hours per project cut from contract scope writing",
+        "70 projects/year with 3 designers; 32% sales growth"
+      ]
+    }
+  ],
+  "other_named_customers_users": [
+    {
+      "name": "AIG, Bristol Myers Squibb (as Fortune 500 users)",
+      "page": 192
+    },
+    {
+      "name": "Garvan Institute of Medical Research, Gladstone Institutes, UCSF",
+      "page": 192
+    },
+    {
+      "name": "NASA (Mars Perseverance AI-planned drive)",
+      "pages": [
+        8,
+        190
+      ]
+    },
+    {
+      "name": "WHO Regional Office for Africa (Ebola sitrep: full day -> under an hour); Gates Foundation; IRC",
+      "page": "gatefold pg3"
+    }
+  ],
+  "superlatives": [
+    {
+      "claim": "fastest enterprise adoption of any technology in history",
+      "pages": [
+        5,
+        179
+      ],
+      "evidence": "Revenue $0 (Q1'23) -> $[blank] (Q3'26); no comparison set"
+    },
+    {
+      "claim": "one of the fastest-growing businesses in history",
+      "pages": [
+        234
+      ],
+      "evidence": "Growth figures only"
+    },
+    {
+      "claim": "impact greater than industrialization, electricity, semiconductors, and the internet",
+      "pages": [
+        5,
+        179
+      ],
+      "evidence": "Belief"
+    },
+    {
+      "claim": "frontier AI represents a larger opportunity than any prior technology cycle",
+      "pages": [
+        7,
+        185
+      ],
+      "evidence": "IT spend/tech revenue history analogies"
+    },
+    {
+      "claim": "closing the loop is one of the most significant structural advantages in frontier AI",
+      "pages": [
+        5,
+        180
+      ],
+      "evidence": "Internal code metrics; compute multipliers not quantified"
+    },
+    {
+      "claim": "unprecedented financial model",
+      "pages": [
+        11,
+        194
+      ],
+      "evidence": "Q2'26 revenue +1,368% vs compute +300%"
+    },
+    {
+      "claim": "deepest concentration of AI research talent in the world",
+      "pages": [
+        187,
+        195
+      ],
+      "evidence": "Founding team research lineage; ~1% regrettable attrition; revenue per employee"
+    },
+    {
+      "claim": "researchers pushed boundaries further than bigger teams or those with larger budgets",
+      "pages": [
+        187
+      ],
+      "evidence": "None quantified"
+    },
+    {
+      "claim": "Claude Code launch comparable in impact to first widely adopted conversational AI assistants",
+      "pages": [
+        8,
+        190
+      ],
+      "evidence": "None quantified"
+    },
+    {
+      "claim": "autonomous coding became the reference point for measuring frontier AI progress",
+      "pages": [
+        8,
+        190
+      ],
+      "evidence": "None"
+    },
+    {
+      "claim": "first AI-planned drive on Mars (NASA)",
+      "pages": [
+        8,
+        190
+      ],
+      "evidence": "Anecdote"
+    },
+    {
+      "claim": "Cowork adoption outpaced Claude Code at equivalent point",
+      "pages": [
+        8,
+        191
+      ],
+      "evidence": "Metric undefined"
+    },
+    {
+      "claim": "first frontier AI lab to adopt formal RSP; two other labs followed within months",
+      "pages": [
+        228,
+        229,
+        233
+      ],
+      "evidence": "RSP Sep 2023; labs unnamed"
+    },
+    {
+      "claim": "widely recognized as a leader in mechanistic interpretability",
+      "pages": [
+        232
+      ],
+      "evidence": "None cited"
+    },
+    {
+      "claim": "Claude is widely recognized for its performance on real-world tasks",
+      "pages": [
+        187
+      ],
+      "evidence": "None cited"
+    },
+    {
+      "claim": "Opus models consistently rank among leading models on key industry benchmarks",
+      "pages": [
+        199
+      ],
+      "evidence": "No benchmark named except ExploitBench (p. 189)"
+    },
+    {
+      "claim": "smaller team relative to other large enterprise technology companies; greater sales efficiency than typical enterprise tech",
+      "pages": [
+        10,
+        182,
+        196
+      ],
+      "evidence": "Revenue per employee; no peer data"
+    },
+    {
+      "claim": "multi-chip experience differentiated and difficult to replicate",
+      "pages": [
+        188
+      ],
+      "evidence": "None quantified"
+    },
+    {
+      "claim": "particularly deep adoption in highly regulated sectors",
+      "pages": [
+        206
+      ],
+      "evidence": "F500 bank/pharma/healthcare counts (p. 194)"
+    },
+    {
+      "claim": "largest multilingual qualitative study of its kind (80,000+ people)",
+      "pages": [
+        234
+      ],
+      "evidence": "'what we believe to be'"
+    },
+    {
+      "claim": "only major AI company to have retained its entire founding team; revenue/employee meaningfully higher than largest public US companies; greatest economic opportunity in history",
+      "pages": [
+        "gatefold pg5",
+        "gatefold pg3",
+        "gatefold pg6"
+      ],
+      "evidence": "No comparison data"
+    },
+    {
+      "claim": "Lilly the first large pharma company to roll out Claude Enterprise company-wide",
+      "pages": [
+        215
+      ],
+      "evidence": "Case-study assertion"
+    }
+  ],
+  "claims_to_stress_test": [
+    {
+      "n": 1,
+      "claim": "Fastest enterprise adoption of any technology in history",
+      "pages": [
+        5,
+        179
+      ],
+      "given": "$0 -> blank revenue; Q2'26 $11.6B; Q3'26 = 86x Q4'24",
+      "missing": "Comparator set; Q3'26 revenue; adoption definition; 'enterprise' is a spend threshold (p. 2); 5-7% of 9M'26 revenue from violators (MD&A p. 145)"
+    },
+    {
+      "n": 2,
+      "claim": "Net Revenue Retention ~900%",
+      "pages": [
+        10,
+        182,
+        195
+      ],
+      "given": "Definition pp. 2-3 ($1 base-period threshold; excludes Pro/Max)",
+      "missing": "Cohort size, gross retention/churn, trend; small base mechanically inflates ratio"
+    },
+    {
+      "n": 3,
+      "claim": "Compute efficiency: revenue +1,368% vs compute +300%",
+      "pages": [
+        10,
+        182,
+        196
+      ],
+      "given": "Reconciles to MD&A p. 157",
+      "missing": "Aggregate commitments blank; MD&A pp. 170-172 shows multi-hundred-billion commitments vs H1'26 revenue $16.3B; expense follows capacity delivery; no per-model margins"
+    },
+    {
+      "n": 4,
+      "claim": "TTM revenue per employee >$6.6M",
+      "pages": [
+        10,
+        182,
+        195,
+        228
+      ],
+      "given": "~5,300 employees; MD&A p. 136 TTM rev +~1,200%, headcount +~170%",
+      "missing": "Denominator definition; contractors; implied ~$35B TTM revenue is derived not disclosed; CSP marketplace share 48% (F-16)"
+    },
+    {
+      "n": 5,
+      "claim": ">90% of code contributions by Claude; >45x code per engineer; ~90% success on hard engineering problems",
+      "pages": [
+        183,
+        196,
+        228
+      ],
+      "given": "Internal metrics",
+      "missing": "Definition of 'contributions'; quality/defect data; benchmark is internal"
+    },
+    {
+      "n": 6,
+      "claim": "Internal Claude usage value >250x; exceeded monthly personnel expense ex-SBC",
+      "pages": [
+        184
+      ],
+      "given": "Valued at list prices",
+      "missing": "Absolute amounts; cost basis; compute diverted from customers"
+    },
+    {
+      "n": 7,
+      "claim": "Cost per task -40% (Opus 5.5) and -25%/-45% (Fable 5.1) while preserving margins",
+      "pages": [
+        10,
+        195
+      ],
+      "given": "Mix of price cut and efficiency",
+      "missing": "Methodology; split; margin data"
+    },
+    {
+      "n": 8,
+      "claim": "ExploitBench 40% -> 78% -> 91%; Opus ranks among leading models",
+      "pages": [
+        189,
+        199
+      ],
+      "given": "One external benchmark",
+      "missing": "Competitor scores; other benchmarks; settings"
+    },
+    {
+      "n": 9,
+      "claim": ">$40T knowledge-worker value; $22.5T IDC impact; >1B knowledge workers",
+      "pages": [
+        7,
+        8,
+        123,
+        185,
+        190
+      ],
+      "given": "Method p. 123; IDC/IQVIA/World Bank sources",
+      "missing": "Occupational subset; wage bill not spend; IDC figure is cumulative impact; knowledge-worker count cites developer forecast; 38x tech-revenue stat unsourced"
+    },
+    {
+      "n": 10,
+      "claim": "Every Fortune 10, >50% Fortune 500, >30% Global 2000",
+      "pages": [
+        194,
+        206
+      ],
+      "given": "$100k TTM threshold",
+      "missing": "Wallet share: <0.1% of F500 customers' expenses (MD&A p. 142); contract terms (RF p. 56)"
+    },
+    {
+      "n": 11,
+      "claim": ">950 -> >11,900 customers >=$100k in one year",
+      "pages": [
+        194,
+        206
+      ],
+      "given": "Account aggregation by internal judgment (p. 2)",
+      "missing": "Prior-year $1M/$10M counts; violator inclusion; top-5 = ~25% of 9M'26 revenue (RF p. 56)"
+    },
+    {
+      "n": 12,
+      "claim": "'Closing the loop' as durable structural advantage",
+      "pages": [
+        5,
+        11,
+        180,
+        183
+      ],
+      "given": "Qualitative description",
+      "missing": "Compute multiplier magnitudes; replicability by rivals; self-flagged safety risk and proposed 'pacing' standards (pp. 184, 233)"
+    },
+    {
+      "n": 13,
+      "claim": "Case-study outcomes",
+      "pages": [
+        208,
+        227
+      ],
+      "given": "20 customer pages",
+      "missing": "Dates/methods; multi-model attribution (PayPal, Shopify, SAP, Walmart, Rakuten); related parties (Salesforce, SAP <1% holders; Accenture partner)"
+    },
+    {
+      "n": 14,
+      "claim": "Run-Rate Revenue as of 2026-10-31",
+      "pages": [
+        3,
+        194
+      ],
+      "given": "Definition (28-day consumption x13 + subscriptions x12)",
+      "missing": "Value blank; date after filing; includes non-recurring violator revenue (fn 11)"
+    },
+    {
+      "n": 15,
+      "claim": "Safety leadership and government trust",
+      "pages": [
+        204,
+        229,
+        232,
+        233,
+        239,
+        241
+      ],
+      "given": "RSP, FedRAMP High, CAISSI, internal alignment evals",
+      "missing": "External verification; D.C. Cir. upheld DoW Section 4713 designation (2026-09-25); June 2026 export restrictions; Sep 2025 Claude Code misuse (RF p. 45); AI Safety Levels not mentioned"
+    }
+  ],
+  "not_disclosed_anywhere_in_filing_text": [
+    "Data center / power capacity in gigawatts or megawatts",
+    "'AI Safety Levels' / ASL terminology",
+    "Token volumes processed",
+    "User counts (MAU/WAU/DAU), developer counts, subscriber counts",
+    "Claude Code revenue or run-rate",
+    "Plan prices (Free/Pro/Max/Team/Enterprise)",
+    "Market share",
+    "Q3 2026 revenue (blank)",
+    "Run-Rate Revenue value (blank)",
+    "Aggregate committed spend (blank in Summary/Business)",
+    "Compute multiplier magnitudes",
+    "Identity of private equity partners in Ode with Anthropic",
+    "Fluidstack agreement value"
+  ]
+}

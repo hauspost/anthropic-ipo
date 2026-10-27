@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "rf-b-001",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our pricing structures for our models, platform, and applications change from time to time, which could adversely affect our business, financial condition, and results of operations.",
+    "page": "60",
+    "category": "financial-losses",
+    "plain_english": "Anthropic may have to cut prices or adopt new pricing models (such as paying per outcome or task) because of competition and enterprise demands. Agentic products use far more compute per task, so if prices don't reflect that, margins could worsen as agent usage grows.",
+    "novelty": "ai-specific",
+    "quote": "our agentic offerings are structurally more compute-intensive than our non-agentic offerings",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-002",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we are unable to attract, retain, or motivate highly skilled personnel, we may not be able to grow or operate effectively.",
+    "page": "60",
+    "category": "talent-key-people",
+    "plain_english": "Anthropic depends on a small pool of frontier-AI researchers whom rivals actively poach, and many long-tenured staff will hold very valuable vested equity at the IPO, which may weaken their incentive to stay. It also discloses threats to employee safety and attempts to steal confidential information.",
+    "novelty": "ai-specific",
+    "quote": "we have experienced threats to employee safety and attempts to obtain confidential information through physical or digital means",
+    "numbers": "",
+    "named_entities": [
+      "San Francisco Bay Area"
+    ]
+  },
+  {
+    "id": "rf-b-003",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We have a limited operating history in an evolving and nascent industry, which makes it difficult to evaluate our future prospects and may increase the risk that we will not be successful.",
+    "page": "61",
+    "category": "other",
+    "plain_english": "Anthropic was founded in 2021 and only launched Claude commercially in early 2023, so there is little track record for judging how the business will perform over time.",
+    "novelty": "boilerplate",
+    "quote": "We were founded in 2021 and launched our first commercial product, Claude, publicly in the first quarter of 2023.",
+    "numbers": "Founded 2021; Claude launched publicly in Q1 2023",
+    "named_entities": [
+      "Claude"
+    ]
+  },
+  {
+    "id": "rf-b-004",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We are at an early stage of our revenue growth, we have experienced rapid growth in recent periods, and our historical growth rates are not indicative of future performance or our ability to sustain or forecast future revenue growth.",
+    "page": "62",
+    "category": "financial-losses",
+    "plain_english": "Revenue has exploded, from $41 million in 2023 to $16.3 billion in the first half of 2026 alone, but Anthropic warns that growth rates will slow and that it has struggled to forecast revenue accurately.",
+    "novelty": "boilerplate",
+    "quote": "In the six months ended June 30, 2026, our revenue was $16.3 billion, representing a year-over-year growth rate of 1,300%.",
+    "numbers": "Revenue $41M (2023), $386M (2024), $4.6B (2025); YoY growth 841% (2024) and 1,088% (2025); H1 2026 revenue $16.3B (+1,300% YoY)",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-005",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we fail to manage our growth effectively, our brand, business, financial condition, and results of operations could be adversely affected.",
+    "page": "63",
+    "category": "operations-scaling",
+    "plain_english": "Headcount grew more than five-fold in under two years, straining management, controls and partner relationships. Mis-planning compute (too much or too little) could cause service limits or wasted spending.",
+    "novelty": "boilerplate",
+    "quote": "the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026",
+    "numbers": "Employees ~940 (Dec 31, 2024) to ~5,300 (Sep 30, 2026); revenue $197M in Q4 2024 (Q3 2026 figure left blank in this draft)",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-006",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We have a history of net losses and may not generate sufficient revenue to achieve or sustain profitability in the future.",
+    "page": "63",
+    "category": "financial-losses",
+    "plain_english": "Anthropic has lost money every year, and its reported net loss reached $80.7 billion in the first half of 2026. Most of that is a non-cash charge from its convertible notes rising in value as its valuation climbed. Large stock-compensation charges will also be booked once the IPO is completed.",
+    "novelty": "boilerplate",
+    "quote": "a net loss of $1.5 billion, $8.3 billion, and $42.0 billion for the years ended December 31, 2023, 2024, and 2025, respectively, and $80.7 billion for the six months ended June 30, 2026",
+    "numbers": "Net loss $1.5B (2023), $8.3B (2024), $42.0B (2025), $80.7B (H1 2026); of which fair-value changes in convertible notes, derivative liabilities and SAFEs $1.0B, $5.4B, $34.3B, $72.4B; RSUs: $2.9B cumulative SBC catch-up plus $23.7B unrecognized over ~2.1 years (if IPO had closed Jun 30, 2026); ~$3.1B other unrecognized SBC over ~1.3 years; post-Sep 30, 2026 purchase/lease commitments of 'more than $[blank]'",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-007",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our results of operations may fluctuate significantly on a period-to-period basis, including as a result of strategic investment decisions and substantial compute-related expenditures, which could cause the market price of our Class A common stock to decline.",
+    "page": "65",
+    "category": "financial-losses",
+    "plain_english": "Quarterly results may swing because of lumpy compute and safety spending, seasonal dips in usage, and the timing of model releases. Some revenue comes from customers later found to be violating Anthropic's usage policy, and a stepped-up crackdown in August-September 2026 is expected to reduce revenue and growth.",
+    "novelty": "unusual",
+    "quote": "Our revenue in any period has also included, and we expect will continue to include, amounts from customers that we subsequently determine are using our models, platform, and applications in violation of our usage policy or commercial terms",
+    "numbers": "Enforcement enhanced in August and September 2026",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-008",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Certain of our operating metrics are subject to assumptions and limitations. As a result, these metrics may not provide an accurate indication of our actual performance or future results.",
+    "page": "67",
+    "category": "other",
+    "plain_english": "Headline metrics such as Run-Rate Revenue (which annualizes just 28 days of usage), 'enterprise' customer counts and Claude's benchmark success rates are calculated internally, are not independently verified, and may not be comparable to other companies' figures.",
+    "novelty": "ai-specific",
+    "quote": "We do not separately define or internally track a category of “enterprise” customers",
+    "numbers": "Run-Rate Revenue annualizes trailing 28-day consumption fees and one month of subscription fees; 'enterprise' proxy = customers with $100,000+ of TTM revenue",
+    "named_entities": [
+      "Claude"
+    ]
+  },
+  {
+    "id": "rf-b-009",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our business is subject to an evolving and uncertain regulatory and political environment, which could increase our costs, restrict our operations, or adversely affect demand for our models, platform, and applications.",
+    "page": "68",
+    "category": "regulation-policy",
+    "plain_english": "AI rules are multiplying and fragmenting (EU AI Act, New York and California safety laws, a June 2026 U.S. executive order), and some U.S. proposals go as far as nationalization or mandatory shutdown of frontier AI. The Department of War floated using the Defense Production Act against Anthropic's usage limits, and even rules Anthropic itself advocates could slow its growth.",
+    "novelty": "unusual",
+    "quote": "the U.S. Department of War suggested it could invoke the Defense Production Act to compel us to remove the limitations we have placed on the use of our models for autonomous weapons and mass surveillance",
+    "numbers": "EU AI Act in force August 2024; June 2026 U.S. executive order (voluntary pre-deployment framework); early 2026 Defense Production Act threat; September 2026 state AG request to enjoin an AI company from developing new models; June 2026 Commerce export restrictions on Fable 5 and Mythos 5",
+    "named_entities": [
+      "EU AI Act",
+      "New York",
+      "California",
+      "U.S. Department of War",
+      "Defense Production Act",
+      "U.S. Department of Commerce",
+      "Fable 5",
+      "Mythos 5",
+      "China"
+    ]
+  },
+  {
+    "id": "rf-b-010",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our sales to government entities and highly regulated organizations are subject to challenges and risks.",
+    "page": "70",
+    "category": "government-natsec",
+    "plain_english": "Government agencies are only about 1% of revenue, but Anthropic's refusal to allow mass domestic surveillance or fully autonomous weapons led the President to order agencies to stop using its technology and the Department of War to label it a 'supply-chain risk.' Anthropic largely won in district court but lost a 2-1 appeals ruling on one designation, and the dispute could deter customers that sell to the government.",
+    "novelty": "unusual",
+    "quote": "the Secretary of War directed the Department of War to designate us as a “supply-chain risk to national security” and stated that “effective immediately, no contractor, supplier, or partner that does business with the United States military may conduct any commercial activity” with us.",
+    "numbers": "Government contracts ~1% of revenue in each period; February 2026 presidential directive and DoW designation; March 4, 2026 DoW letters under 10 U.S.C. § 3252 and FASCSA § 4713; August 27, 2026 N.D. Cal. summary judgment largely for Anthropic; September 25, 2026 D.C. Circuit 2-1 ruling upholding the § 4713 designation (en banc petition filed); June 2026 export restrictions",
+    "named_entities": [
+      "President of the United States",
+      "Secretary of War",
+      "U.S. Department of War",
+      "10 U.S.C. § 3252",
+      "Federal Acquisition Supply Chain Security Act (FASCSA)",
+      "Anthropic PBC v. Department of War (N.D. Cal.)",
+      "Anthropic PBC v. Department of War (D.C. Cir.)",
+      "U.S. Department of Commerce",
+      "Fable 5",
+      "Mythos 5",
+      "Anthropic Public Institutions, LLC",
+      "National Industrial Security Program"
+    ]
+  },
+  {
+    "id": "rf-b-011",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our reliance on a limited number of CSPs and suppliers, some of which have strategic and investment relationships with us and are our customers, creates complex dynamics that could give rise to conflicts of interest and adversely affect our access to compute.",
+    "page": "73",
+    "category": "partners-conflicts",
+    "plain_english": "Anthropic gets its compute mainly from Amazon, Google and Microsoft, plus Broadcom as a supplier and equipment lessor. The three cloud providers are at once its investors, customers, distribution channels and competitors: they see its pricing, may favor their own models, and switching away from them would be slow and costly.",
+    "novelty": "ai-specific",
+    "quote": "these CSPs, who simultaneously serve as our investors, customers, distribution partners, and competitors, or with Broadcom, which simultaneously serves as a supplier and lessor",
+    "numbers": "",
+    "named_entities": [
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "Broadcom"
+    ]
+  },
+  {
+    "id": "rf-b-012",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We are pursuing initiatives to develop our own data center infrastructure, which involves significant capital commitments, operational complexities, and execution risks that could adversely affect our business, financial condition, and results of operations.",
+    "page": "74",
+    "category": "compute-supply",
+    "plain_english": "To reduce its dependence on cloud providers, Anthropic is leasing chips and data centers directly, including a non-cancelable five-year equipment lease of roughly $125 billion and 20-year power/data-center deals with take-or-pay terms. Those payments are owed whether or not the capacity is used, and much of the cash goes out before the compute is running.",
+    "novelty": "unusual",
+    "quote": "under the 2026 Lease Arrangement, the rent payments over the five-year equipment lease are equal to an aggregate of approximately $125.2 billion excluding interest",
+    "numbers": "2026 Lease Arrangement: ~$125.2B rent over a 5-year equipment lease (excl. interest), quarterly, non-cancelable except on default; restricted cash deposited April 2026 for Broadcom; certain power/data-center deals: 20-year initial terms, annual escalators, take-or-pay, uncapped fuel cost pass-throughs",
+    "named_entities": [
+      "Broadcom",
+      "2026 Lease Arrangement",
+      "Infrastructure Partner 2026 NPA"
+    ]
+  },
+  {
+    "id": "rf-b-013",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We may not successfully build, expand, and deploy our sales and marketing organization in a timely manner, or we may not successfully hire, retain, train, and motivate our sales personnel.",
+    "page": "76",
+    "category": "operations-scaling",
+    "plain_english": "Anthropic has little experience building a large direct sales force, and hiring salespeople who understand complex AI products, especially abroad, is hard and expensive.",
+    "novelty": "boilerplate",
+    "quote": "We have limited experience building, managing, and scaling a direct sales force.",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-014",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We have a limited history under our current go-to-market strategy, and our efforts to scale and evolve our customer acquisition, engagement, and retention model may not be successful.",
+    "page": "77",
+    "category": "competition",
+    "plain_english": "Much of Claude's enterprise adoption has started bottom-up with individual developers and power users rather than through a big sales team. If rivals with bigger consumer apps win those individual users, Anthropic's enterprise pipeline could shrink.",
+    "novelty": "boilerplate",
+    "quote": "much of the diffusion of Claude to date has been organic—driven by individual users, including software developers and prosumers, who adopt Claude and often serve as internal champions for its broader adoption within their organizations",
+    "numbers": "",
+    "named_entities": [
+      "Claude"
+    ]
+  },
+  {
+    "id": "rf-b-015",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Sales to enterprise customers involve complexities and risks that could adversely affect our business, financial condition, and results of operations.",
+    "page": "77",
+    "category": "customers-concentration",
+    "plain_english": "Large enterprise customers demand uptime, security and detailed audit logs, especially for autonomous agents like Claude Code and Claude Cowork that need broad access to company systems. A meaningful share of revenue comes from a relatively small number of these customers.",
+    "novelty": "ai-specific",
+    "quote": "The scope of access required for extended autonomous operation within enterprise environments increases the potential consequences of any security incident, unauthorized action, or system error",
+    "numbers": "",
+    "named_entities": [
+      "Claude Code",
+      "Claude Cowork"
+    ]
+  },
+  {
+    "id": "rf-b-016",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If our marketing strategies, such as our free trials and free tiers, fail to generate the benefits we expect, or if their costs exceed those benefits, our ability to grow our revenue could be adversely affected.",
+    "page": "79",
+    "category": "financial-losses",
+    "plain_english": "Free versions of Claude cost real compute money, may never convert to paying users, and may cannibalize paid plans.",
+    "novelty": "boilerplate",
+    "quote": "The availability of free tiers may cannibalize potential paid subscriptions",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-017",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we fail to maintain high-quality customer support, our ability to retain and expand customers could suffer, which may adversely affect our prospects, business, financial condition, and results of operations.",
+    "page": "79",
+    "category": "operations-scaling",
+    "plain_english": "Growth depends on helping existing customers find and scale more use cases; if support and integration help falls short, customers may cut back spending.",
+    "novelty": "boilerplate",
+    "quote": "our growth model depends significantly on driving deeper adoption and expanded use cases within our existing customer base.",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-018",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our product and investment decisions may not prioritize short-term financial results and may not align with investor expectations or preferences, which could adversely affect the market price of our Class A common stock.",
+    "page": "80",
+    "category": "safety-misuse",
+    "plain_english": "Because of its safety commitments and PBC status, Anthropic sometimes delays or restricts models (as with Mythos, released through Project Glasswing), at a cost to short-term revenue. Investors may disagree with these trade-offs.",
+    "novelty": "ai-specific",
+    "quote": "we have in the past delayed the release of new models or features, limited their availability, imposed usage restrictions, or constrained certain functionality until we determined that sufficient safety testing, evaluations, or mitigations were completed, such as with Mythos through Project Glasswing",
+    "numbers": "",
+    "named_entities": [
+      "Mythos",
+      "Project Glasswing"
+    ]
+  },
+  {
+    "id": "rf-b-019",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our investments in new products, technologies, and business initiatives may not produce the expected benefits and could adversely affect our business.",
+    "page": "80",
+    "category": "other",
+    "plain_english": "Anthropic is investing in areas far from its software core, including a life-sciences research program with laboratories and robotics/physical AI research. These bring new liabilities (biosafety, hazardous materials, workplace injury) and may never pay off.",
+    "novelty": "unusual",
+    "quote": "our life sciences research program, which involves operating laboratory facilities, and our research in robotics and physical AI, require us to engage in activities outside our historical experience as a software and research organization, such as handling biological and chemical materials",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-020",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we fail to manage our technical operations infrastructure, or experience service outages, interruptions, or delays in the deployment of our models, platform, and applications, our results of operations may be adversely affected.",
+    "page": "81",
+    "category": "operations-scaling",
+    "plain_english": "Claude has suffered outages, including a March 2026 incident caused by surging demand and compute constraints. Because compute is bought far in advance, demand spikes can outstrip capacity, and service depends heavily on Amazon, Google, Microsoft and newer third-party data-center operators.",
+    "novelty": "boilerplate",
+    "quote": "in March 2026, we experienced a service outage and periods of degraded performance resulting from a combination of factors, including a significant and rapid increase in usage demand, compute constraints in certain components of our infrastructure",
+    "numbers": "March 2026 outage",
+    "named_entities": [
+      "Amazon",
+      "Google",
+      "Microsoft"
+    ]
+  },
+  {
+    "id": "rf-b-021",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we are unable to make acquisitions and investments, or successfully integrate them into our business, our business, financial condition, and results of operations could be adversely affected.",
+    "page": "82",
+    "category": "operations-scaling",
+    "plain_english": "Anthropic plans to keep buying companies and technologies and may overpay, fail to integrate them, or be blocked by antitrust regulators.",
+    "novelty": "boilerplate",
+    "quote": "we may overpay for acquisition targets or make investments at valuations that do not ultimately prove justified by the targets’ performance, strategic value, or market conditions",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-022",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Unfavorable media coverage regarding our business, our models, platform, and applications, the impacts of AI, and the AI industry more broadly could adversely affect our business, financial condition, and results of operations.",
+    "page": "83",
+    "category": "reputation-brand",
+    "plain_english": "Anthropic is a lightning rod for public fears about AI, from job losses and misuse to existential risk, and bad press about the industry may stick to it whether or not it applies.",
+    "novelty": "ai-specific",
+    "quote": "recurring narratives concerning the potential adverse societal impacts of AI, including that AI may displace or eliminate jobs, may be misused or otherwise cause harm, and may pose catastrophic or existential risks to humanity",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-023",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "We will incur increased costs and demands upon management as a result of complying with the laws and regulations affecting public companies, which may adversely affect our business, financial condition, and results of operations.",
+    "page": "84",
+    "category": "other",
+    "plain_english": "Being public adds legal, accounting and compliance costs, and much of Anthropic's management has never run a public company.",
+    "novelty": "boilerplate",
+    "quote": "many members of our management team have limited experience managing a publicly traded company",
+    "numbers": "",
+    "named_entities": [
+      "SEC",
+      "Nasdaq Global Select Market",
+      "Exchange Act",
+      "Sarbanes-Oxley Act",
+      "Dodd-Frank Wall Street Reform and Consumer Protection Act"
+    ]
+  },
+  {
+    "id": "rf-b-024",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Our business, financial condition, and results of operations may be adversely affected by war, terrorism, natural disasters, public health crises, political crises, or other unexpected events.",
+    "page": "84",
+    "category": "macro-geopolitics",
+    "plain_english": "Earthquakes, wildfires, war, terrorism or pandemics could disrupt Anthropic's Bay Area headquarters or the data centers it depends on.",
+    "novelty": "boilerplate",
+    "quote": "our corporate headquarters are located in the San Francisco Bay Area, a region known for seismic activity and increasingly for the threat of fires",
+    "numbers": "",
+    "named_entities": [
+      "San Francisco Bay Area"
+    ]
+  },
+  {
+    "id": "rf-b-025",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "If we are unable to ensure that our models, platform, and applications interoperate with a variety of software applications that are developed by others, including our integration partners, we may become less competitive and our business, financial condition, and results of operations may be adversely affected.",
+    "page": "85",
+    "category": "partners-conflicts",
+    "plain_english": "Claude has to work with other companies' software, APIs and app stores (Apple, Google). Those platform owners, some of them competitors, can change terms, cut off access or favor their own products.",
+    "novelty": "boilerplate",
+    "quote": "some of our competitors may be able to disrupt the operations or compatibility of our models, platform, and applications with their models, platforms, or applications",
+    "numbers": "",
+    "named_entities": [
+      "Apple App Store",
+      "Google Play Store",
+      "iOS",
+      "Android"
+    ]
+  },
+  {
+    "id": "rf-b-026",
+    "group": "Risks Related to our Business and Industry",
+    "heading": "Many of the risks we face are interconnected and may compound or trigger cascading adverse effects across our business, which could amplify their overall impact.",
+    "page": "86",
+    "category": "other",
+    "plain_english": "Anthropic warns that its risks are linked: for example, losing a copyright case could force it to retrain models and hurt revenue, which could limit compute purchases or trigger covenant breaches and cross-defaults under its credit agreement.",
+    "novelty": "unusual",
+    "quote": "the occurrence of one risk event may exacerbate or trigger additional risk events, and the combined effect may be materially greater than the impact of any individual risk event in isolation",
+    "numbers": "",
+    "named_entities": [
+      "A&R Credit Agreement"
+    ]
+  },
+  {
+    "id": "rf-b-027",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "The application of certain copyright law doctrines and contractual interpretations of open-source licenses to modern AI model training are uncertain.",
+    "page": "86",
+    "category": "legal-ip-litigation",
+    "plain_english": "Anthropic relies on 'fair use' to train on copyrighted material, but courts haven't settled whether that applies. A loss, even in a case against another AI company, could force costly licensing or retraining models from scratch.",
+    "novelty": "ai-specific",
+    "quote": "an adverse ruling against us or another company in our industry could result in injunctive relief that restricts our ability to use or distribute models trained on the data at issue or could require us to retrain affected models from scratch at substantial cost",
+    "numbers": "",
+    "named_entities": [
+      "Bartz"
+    ]
+  },
+  {
+    "id": "rf-b-028",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We are subject to complex and evolving laws, regulations, and other legal obligations related to privacy and data protection, and any actual or perceived failure to comply with such obligations could adversely affect our business, financial condition, and results of operations.",
+    "page": "87",
+    "category": "privacy-security",
+    "plain_english": "Anthropic must comply with a patchwork of privacy laws such as the EU's GDPR, and regulators and plaintiffs are increasingly going after AI companies over how they handle data.",
+    "novelty": "boilerplate",
+    "quote": "plaintiffs, class action counsel, state Attorneys’ General, and other claimants continue to pursue claims against artificial intelligence companies relating to data handling, privacy, and cybersecurity",
+    "numbers": "",
+    "named_entities": [
+      "GDPR",
+      "EU"
+    ]
+  },
+  {
+    "id": "rf-b-029",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We process personal and sensitive data for AI safety, and any actual or perceived failure to comply with the legal and regulatory obligations applicable to such processing could adversely affect our business, financial condition, and results of operations.",
+    "page": "87",
+    "category": "privacy-security",
+    "plain_english": "To monitor for misuse and keep its models safe, Anthropic sometimes has to collect and analyze personal and sensitive data, which brings its own privacy and breach risks.",
+    "novelty": "ai-specific",
+    "quote": "Our commitment to AI safety requires us in some cases to access, collect, and process personal and sensitive data.",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-030",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "Any security breaches or other incidents, including those that affect our networks, systems, or data, or the networks, systems, or data of our service providers, suppliers, or customers, could adversely affect our business, financial condition, and results of operations.",
+    "page": "88",
+    "category": "privacy-security",
+    "plain_english": "Anthropic's model weights are prime targets for nation-state hackers, especially Mythos given its powerful cyber capabilities, and it admits it has operated at times with known security gaps. It also faces insider threats, job applicants using false identities, foreign laws that can compel staff or vendors to give access, and new attack routes against AI agents such as prompt injection.",
+    "novelty": "unusual",
+    "quote": "in light of its advanced cyber vulnerability discovery capabilities, state-sponsored actors may conduct cyberattacks specifically targeting Mythos.",
+    "numbers": "",
+    "named_entities": [
+      "Mythos",
+      "GDPR",
+      "NIS2",
+      "EU AI Act",
+      "AI Office",
+      "New York SHIELD Act",
+      "New York RAISE Act",
+      "California Transparency in Frontier Artificial Intelligence Act"
+    ]
+  },
+  {
+    "id": "rf-b-031",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We employ automated data collection across the web and use other methods to collect data for training our AI models, and such activities may subject us to liability or limit our ability to use the collected data, which may adversely affect our business, financial condition, or results of operations.",
+    "page": "91",
+    "category": "legal-ip-litigation",
+    "plain_english": "Anthropic gathers training data by crawling the web and scanning books, which can lead to lawsuits; Reddit is currently suing it over scraped posts.",
+    "novelty": "ai-specific",
+    "quote": "To collect publicly available information, we utilize web scraping or web crawling techniques, book scanning, and other methods.",
+    "numbers": "Reddit case removed to federal court July 3, 2025; remanded to state court March 30, 2026",
+    "named_entities": [
+      "Reddit, Inc.",
+      "Reddit, Inc. v. Anthropic PBC"
+    ]
+  },
+  {
+    "id": "rf-b-032",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We collect, integrate, and analyze data via agreements from multiple sources, including data provided by our customers and users and data sourced from third parties under contractual arrangements, and such activities may subject us to liability or limit our ability to use the collected data, which may adversely affect our business, financial condition, or results of operations.",
+    "page": "92",
+    "category": "legal-ip-litigation",
+    "plain_english": "If customers, users or data vendors didn't actually have the rights to data Anthropic uses (including for training), Anthropic could be sued and forced to restrict features or retrain models.",
+    "novelty": "ai-specific",
+    "quote": "Such claims could require us to limit functionality, segregate data, or retrain models",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-033",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We have been, are currently defending against, and may in the future be, subject to intellectual property rights claims by third parties, which are extremely costly to defend, may require us to pay significant damages and may limit our ability to use certain technologies, which may adversely affect our business, financial condition, and results of operations.",
+    "page": "92",
+    "category": "legal-ip-litigation",
+    "plain_english": "Anthropic agreed to pay $1.5 billion to settle the Bartz authors' copyright class action and still faces suits from music publishers and Reddit, plus patent claims. Some contracts require it to defend customers and evaluators against IP claims over its models or their outputs with no cap on liability.",
+    "novelty": "ai-specific",
+    "quote": "in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion, which was approved by the district court in July 2026",
+    "numbers": "Bartz settlement $1.5B (agreed September 2025; court-approved July 2026); uncapped IP indemnities in certain agreements",
+    "named_entities": [
+      "Bartz, et al. v. Anthropic PBC",
+      "Concord Music Group, Inc.",
+      "BMG Rights Management (US) LLC",
+      "Round Hill Music LP",
+      "Sony Music Publishing (US) LLC",
+      "Reddit, Inc."
+    ]
+  },
+  {
+    "id": "rf-b-034",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "If we fail to adequately protect our intellectual property rights, our competitive position may be impaired, and we may lose valuable assets, generate reduced revenue, and incur costly litigation to protect our rights, which may adversely affect our business, financial condition, and results of operations.",
+    "page": "93",
+    "category": "legal-ip-litigation",
+    "plain_english": "Anthropic relies on trade secrets, patents and trademarks that may not fully protect it. Insiders with access to model weights could steal them, and others may copy its technology or challenge its brands.",
+    "novelty": "boilerplate",
+    "quote": "current or former employees, contractors, or other insiders with access to our proprietary model weights, training data, algorithms, research insights, or other proprietary information, could misappropriate such information",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-035",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We incorporate open-source software in our models, platform, and applications, which may subject us to litigation or other requirements, each of which may adversely affect our business, financial condition, and results of operations.",
+    "page": "95",
+    "category": "legal-ip-litigation",
+    "plain_english": "Using open-source code carries license risks, and those risks are higher because Anthropic writes software with its own Claude Code: AI-generated code could unknowingly copy 'copyleft' code whose license forces disclosure of proprietary source code.",
+    "novelty": "ai-specific",
+    "quote": "AI-generated code could incorporate or reproduce open-source software such that the associated license obligations, including copyleft requirements to disclose or license proprietary source code, apply to us without our knowledge",
+    "numbers": "",
+    "named_entities": [
+      "Claude Code"
+    ]
+  },
+  {
+    "id": "rf-b-036",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We currently, and may in the future, license technology from third parties for use in our models, platform, and applications, and our inability to maintain those licenses could adversely affect our business, financial condition, and results of operations, and our use of such third-party technology could subject us to litigation.",
+    "page": "95",
+    "category": "legal-ip-litigation",
+    "plain_english": "Some technology inside Anthropic's products is licensed from others; losing those licenses, or inheriting the licensors' IP problems, could disrupt products.",
+    "novelty": "boilerplate",
+    "quote": "If we are unable to obtain or continue to use or license these technologies on reasonable terms, or if these technologies become unreliable, unavailable, or fail to operate properly, we may not be able to secure adequate alternatives in a timely manner or at all",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-037",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "Our development of solutions that replace or reduce reliance on third-party vendors may expose us to litigation and other disputes.",
+    "page": "96",
+    "category": "legal-ip-litigation",
+    "plain_english": "As Anthropic builds its own or partner-based tools to replace outside vendors, those vendors may sue it for breach of contract, IP infringement, misuse of confidential information or unfair competition.",
+    "novelty": "unusual",
+    "quote": "We develop and deploy proprietary and partner-based solutions that replace, deprecate, or reduce our reliance on third-party vendors, including vendors that historically provided software, services, or infrastructure supporting our business.",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-038",
+    "group": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+    "heading": "We may be subject to claims that we or our employees have misappropriated the intellectual property of other companies, particularly as we hire employees from other AI and technology companies.",
+    "page": "96",
+    "category": "legal-ip-litigation",
+    "plain_english": "In the AI talent war, Anthropic hires from rivals and could be accused of using their trade secrets through those hires.",
+    "novelty": "boilerplate",
+    "quote": "As competition for AI talent continues to intensify, we have hired and may in the future hire employees who previously worked for or have otherwise been involved with competitors or companies operating in related technology areas",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-039",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "We are subject to claims, lawsuits, investigations, executive and administrative orders and directives, other regulatory actions, and various actions and proceedings, and face potential liability, expenses for legal claims, and harm to our business.",
+    "page": "97",
+    "category": "legal-ip-litigation",
+    "plain_english": "Anthropic faces many lawsuits and government actions, untested liability theories for autonomous AI agents, and possible healthcare regulation. A September 2026 class action accuses it and other frontier labs of illegally agreeing to slow AI development, and its proposal for an antitrust safe harbor for safety coordination has drawn political criticism.",
+    "novelty": "unusual",
+    "quote": "alleging that we and the other defendants agreed to restrain competition by slowing the pace at which we develop and improve our respective AI models, in purported violation of Section 1 of the Sherman Act",
+    "numbers": "September 2026 putative class action (N.D. Cal.) seeking treble damages",
+    "named_entities": [
+      "Sherman Act",
+      "U.S. District Court for the Northern District of California",
+      "U.S. Department of Justice",
+      "FTC",
+      "Bartz"
+    ]
+  },
+  {
+    "id": "rf-b-040",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "We are subject to anti-corruption and anti-bribery laws, anti-money laundering laws, and similar laws.",
+    "page": "98",
+    "category": "regulation-policy",
+    "plain_english": "Anthropic uses agents and intermediaries, including for sales and lobbying, and could be held liable for bribery or money-laundering violations they commit.",
+    "novelty": "boilerplate",
+    "quote": "we potentially could be held liable for the corrupt or other illegal activities of third-party business partners and intermediaries",
+    "numbers": "",
+    "named_entities": [
+      "U.S. Foreign Corrupt Practices Act of 1977",
+      "UK Bribery Act 2010"
+    ]
+  },
+  {
+    "id": "rf-b-041",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "Governmental trade controls, including export and import controls, sanctions, customs requirements, and related regimes, could subject us to liability or loss of contracting privileges or limit our ability to compete in certain markets.",
+    "page": "99",
+    "category": "government-natsec",
+    "plain_english": "Anthropic's models are subject to U.S. export controls whose application to AI is unsettled. In June 2026 the Commerce Department imposed worldwide export restrictions on its Fable 5 and Mythos 5 models, forcing it to switch them off for all customers until safeguards were updated; it has also voluntarily disclosed past compliance lapses.",
+    "novelty": "unusual",
+    "quote": "To ensure compliance, we disabled Fable 5 and Mythos 5 for all of our customers; access to our other models was not affected.",
+    "numbers": "June 2026 worldwide export restrictions (since lifted)",
+    "named_entities": [
+      "U.S. Department of Commerce",
+      "Export Administration Regulations",
+      "ITAR",
+      "U.S. Department of State",
+      "Fable 5",
+      "Mythos 5",
+      "Russia",
+      "Belarus",
+      "Ukraine"
+    ]
+  },
+  {
+    "id": "rf-b-042",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "To continue to grow our business, we will need to continue to expand internationally, and our non-U.S. operations and sales to customers outside of the United States expose us to risks inherent in international expansion, sales, and operations.",
+    "page": "101",
+    "category": "macro-geopolitics",
+    "plain_english": "Expanding abroad brings the usual currency, tax, staffing and legal problems, plus AI-specific ones: China-related data-transfer rules, foreign laws that can compel access to its systems, and growing U.S. scrutiny of AI companies' exposure to Chinese state actors.",
+    "novelty": "ai-specific",
+    "quote": "the U.S. government has increasingly scrutinized AI companies’ exposure to Chinese state actors, and future executive orders, legislation, or regulatory actions could restrict our ability to serve customers or users connected to China",
+    "numbers": "DOJ data-security final rule effective April 2025",
+    "named_entities": [
+      "UK",
+      "EU",
+      "Canada",
+      "Asia-Pacific",
+      "U.S. Department of Justice",
+      "China",
+      "EU AI Act",
+      "NIS2",
+      "EU Digital Services Act",
+      "UK Online Safety Act 2023",
+      "EU Data Act"
+    ]
+  },
+  {
+    "id": "rf-b-043",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "Increasing scrutiny and changing expectations from global regulations, our investors, customers, and employees with respect to ESG may result in additional compliance risk and costs and may impact our reputation and business.",
+    "page": "103",
+    "category": "reputation-brand",
+    "plain_english": "AI's heavy use of power, water and critical minerals draws ESG scrutiny, while anti-ESG politics create the opposite pressure; Anthropic may face backlash whatever positions it takes.",
+    "novelty": "boilerplate",
+    "quote": "there is particular focus on concerns relating to AI and its impact on society and the environment, including the power-intensive nature of the industry, public concern regarding high consumption of water, and reliance on critical minerals and rare elements in the manufacture of chips",
+    "numbers": "",
+    "named_entities": [
+      "California",
+      "EU Corporate Sustainability Reporting Directive",
+      "EU Corporate Sustainability Due Diligence Directive",
+      "UK Streamlined Energy and Carbon Reporting framework"
+    ]
+  },
+  {
+    "id": "rf-b-044",
+    "group": "Risks Related to Legal and Regulatory Matters",
+    "heading": "If we or our payment processing partners fail to manage the risks related to our payment processing activities, we could be subject to fines, regulatory scrutiny, disruptions to our business, or reputational harm.",
+    "page": "103",
+    "category": "other",
+    "plain_english": "Fraudsters open accounts with fake identities and stolen cards; Anthropic doesn't verify cardholders' physical identity, and excessive chargebacks could bring fines or loss of card processing.",
+    "novelty": "boilerplate",
+    "quote": "we do not verify the physical identity of cardholders or conduct additional verification beyond what we collect online, which increases our risk of exposure to fraudulent activity",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-045",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "Changes in tax laws or regulations could be enacted, or existing tax laws or regulations could be applied to us or our customers in a manner that could increase the costs of our models, platform, and applications and adversely affect our business.",
+    "page": "104",
+    "category": "regulation-policy",
+    "plain_english": "New or reinterpreted taxes, possibly retroactive, could raise the cost of Anthropic's services. It has paid only immaterial income taxes so far, but staff and data centers abroad could create taxable presence there, and global minimum-tax rules are still changing.",
+    "novelty": "boilerplate",
+    "quote": "Although we have not been required to pay income taxes, other than in immaterial amounts in certain jurisdictions to date, the amount of taxes we pay in these jurisdictions could increase substantially",
+    "numbers": "OECD 15% global minimum tax; January 5, 2026 OECD 'side-by-side' safe harbor for U.S.-parented groups (fiscal years beginning on or after January 1, 2026)",
+    "named_entities": [
+      "OECD"
+    ]
+  },
+  {
+    "id": "rf-b-046",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "Our business, financial condition, and results of operations may be adversely affected if we are required to collect sales or other related taxes for subscriptions to our models, platform, and applications in jurisdictions where we have not historically done so.",
+    "page": "105",
+    "category": "regulation-policy",
+    "plain_english": "States and countries may require Anthropic to collect sales, VAT or digital-services taxes it hasn't been collecting, possibly retroactively.",
+    "novelty": "boilerplate",
+    "quote": "certain jurisdictions in which we operate have enacted a digital services tax, which is generally a tax on gross revenue generated from users or customers located in those jurisdictions",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-047",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "Our ability to use our net operating loss carryforwards and certain other tax attributes may be limited.",
+    "page": "105",
+    "category": "regulation-policy",
+    "plain_english": "Anthropic's large accumulated tax losses may be less useful as future tax shields because of ownership changes (possibly including this IPO), and federal rules cap their use at 80% of taxable income.",
+    "novelty": "boilerplate",
+    "quote": "We have experienced ownership changes in the past, and we may experience ownership changes in the future, including as a result of this offering",
+    "numbers": "IRC Sections 382/383: ownership change = >50 percentage-point shift over a rolling 3-year period; post-2017 federal NOLs offset only 80% of taxable income",
+    "named_entities": [
+      "Internal Revenue Code",
+      "California"
+    ]
+  },
+  {
+    "id": "rf-b-048",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "Our corporate structure and intercompany arrangements are subject to the tax laws of multiple jurisdictions, and we could be required to pay additional taxes, which could adversely affect our business, financial condition, and results of operations.",
+    "page": "105",
+    "category": "regulation-policy",
+    "plain_english": "Tax authorities could challenge how Anthropic allocates profits among its international entities, leading to extra taxes, penalties or double taxation.",
+    "novelty": "boilerplate",
+    "quote": "infrastructure-related agreements entered into by U.S. entities pending the formation of local subsidiaries, may give rise to non-recoverable value-added or similar indirect taxes",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-049",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "If our judgments or estimates relating to our critical accounting policies prove to be incorrect, our results of operations may be adversely affected.",
+    "page": "106",
+    "category": "other",
+    "plain_english": "Anthropic's financial statements rely on judgment calls, such as valuing convertible notes, SAFEs and stock compensation, and complex, novel deals may require it to consolidate other entities, which could make reported results volatile.",
+    "novelty": "boilerplate",
+    "quote": "we engage in complex and novel transactions and may be required to consolidate certain assets or entities on our financial statements, which may involve significant judgment and could result in volatility in our reported results of operations",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-050",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "If we fail to maintain an effective system of disclosure controls and internal control over financial reporting, our ability to produce timely and accurate financial statements or comply with applicable regulations may be impaired, which may adversely affect our business, financial condition, and results of operations.",
+    "page": "106",
+    "category": "other",
+    "plain_english": "Anthropic is still building public-company financial controls and relies partly on distribution partners' systems for data behind its reporting; weaknesses could lead to restatements.",
+    "novelty": "boilerplate",
+    "quote": "We also rely on distribution partners and other third-party service providers to process and store data underlying our financial reporting.",
+    "numbers": "Management report on internal control over financial reporting required starting with the second annual report on Form 10-K",
+    "named_entities": [
+      "Nasdaq Global Select Market",
+      "Sarbanes-Oxley Act",
+      "SEC"
+    ]
+  },
+  {
+    "id": "rf-b-051",
+    "group": "Risks Related to Tax and Accounting Matters",
+    "heading": "We are exposed to fluctuations in interest rates and currency exchange rates, which could negatively affect our business, financial condition, and results of operations.",
+    "page": "107",
+    "category": "macro-geopolitics",
+    "plain_english": "Falling interest rates would shrink income on Anthropic's large cash holdings, and a stronger dollar could make its services more expensive abroad.",
+    "novelty": "boilerplate",
+    "quote": "We hold a significant amount of cash, cash equivalents, and investments, a substantial portion of which is invested in instruments with variable or market-based interest rates.",
+    "numbers": "Sales denominated in U.S. dollars, euros and pounds sterling",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-052",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Our capital stock structure features certain provisions that are novel or otherwise not common among other corporations with multiple-class structures, and may effectively eliminate the ability of holders of our Class A common stock to influence important decisions, including a change in control.",
+    "page": "107",
+    "category": "governance-control",
+    "plain_english": "Anthropic's governance has no public-company precedent. An independent Long-Term Benefit Trust (five financially disinterested trustees) elects a board majority through Class T stock, and a Founder LLC holds a single Class F share with 50.1% of the vote, so public Class A holders generally cannot change any outcome, however they vote.",
+    "novelty": "unusual",
+    "quote": "holders of our Class A common stock generally will not be able to affect the outcome of any matter submitted to a vote of our stockholders or the election of our directors, regardless of how they vote",
+    "numbers": "Class F: one share with 50.1% of total voting power; LTBT: 5 Trustees; Class T directors: board majority; Class T and Class E stock have no economic rights",
+    "named_entities": [
+      "Long-Term Benefit Trust (LTBT)",
+      "Founder LLC",
+      "Class T common stock",
+      "Class F common stock",
+      "Class E common stock",
+      "Continuing Founders"
+    ]
+  },
+  {
+    "id": "rf-b-053",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Our capital structure will concentrate voting power with the LTBT and the Founder LLC for the foreseeable future and will result in the LTBT and the Founder LLC having voting power that is not derived from or proportionate to economic interests in our company.",
+    "page": "108",
+    "category": "governance-control",
+    "plain_english": "The trust's and founders' voting power isn't tied to owning shares and can't be diluted, even if the co-founders sell or give away stock. They may use it to put the mission and affected stakeholders ahead of shareholders' financial interests.",
+    "novelty": "unusual",
+    "quote": "exercising their influence in a manner that prioritizes actions or outcomes they believe to be consistent with the Company Purpose and the best interests of those materially affected by our conduct over the pecuniary interests of our other stockholders",
+    "numbers": "Class F fixed at 50.1% of voting power; Class F Transition Period starts after fewer than three Continuing Founders for 90 consecutive days; co-founders' post-IPO voting % left blank in this draft",
+    "named_entities": [
+      "LTBT",
+      "Founder LLC",
+      "Trustees",
+      "Trust Agreement",
+      "Continuing Founders"
+    ]
+  },
+  {
+    "id": "rf-b-054",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Our governance structure and the adoption of our amended and restated certificate of incorporation may negatively affect the decision by certain institutional investors to purchase or hold shares of our Class A common stock.",
+    "page": "109",
+    "category": "stock-offering",
+    "plain_english": "Some funds won't buy stock with multiple share classes, and index providers may exclude Anthropic, in which case index funds and ETFs wouldn't own it, which could depress its valuation.",
+    "novelty": "boilerplate",
+    "quote": "our multi-class capital structure may make us ineligible for inclusion in indices, and as a result, mutual funds, exchange-traded funds, and other investment vehicles that attempt to passively track these indices would not invest in our stock",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-055",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "We are considered a “controlled company” within the meaning of the Nasdaq Global Select Market corporate governance requirements, and, as a result, we qualify for, and currently rely on, exemptions from certain corporate governance requirements.",
+    "page": "109",
+    "category": "governance-control",
+    "plain_english": "Because the LTBT can elect a board majority, Nasdaq treats Anthropic as a 'controlled company' that may skip some board-independence rules. Anthropic says it will use this only for its nominating and governance committee, which won't be fully independent.",
+    "novelty": "unusual",
+    "quote": "we do not expect to rely on this exemption except with respect to our NGC, which will not consist entirely of independent directors.",
+    "numbers": "",
+    "named_entities": [
+      "Nasdaq Global Select Market",
+      "LTBT"
+    ]
+  },
+  {
+    "id": "rf-b-056",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "We operate as a Delaware public benefit corporation. As a public benefit corporation, we cannot provide any assurance that we will achieve our Company Purpose.",
+    "page": "110",
+    "category": "governance-control",
+    "plain_english": "As a public benefit corporation, Anthropic must report on its public-benefit performance at least every two years, but it can't promise it will achieve its stated purpose.",
+    "novelty": "boilerplate",
+    "quote": "As a PBC, we are required, under Section 366 of the Delaware General Corporation Law (“DGCL”) and pursuant to our amended and restated bylaws, to disclose to stockholders a report at least biennially on our overall performance in promoting the public benefit",
+    "numbers": "Public benefit report at least biennially (DGCL § 366)",
+    "named_entities": [
+      "Delaware General Corporation Law"
+    ]
+  },
+  {
+    "id": "rf-b-057",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Our focus on the long-term best interests of our company as a PBC, and the duty of our directors to balance the pecuniary interests of our stockholders, the best interests of those stakeholders materially affected by our conduct, and our Company Purpose, may conflict with short-, medium-, or long-term financial interests and business performance, which may negatively impact the value of our Class A common stock.",
+    "page": "110",
+    "category": "governance-control",
+    "plain_english": "Directors are legally required, not merely allowed, to weigh Anthropic's mission and affected stakeholders alongside shareholder returns, and conflicts need not be resolved in shareholders' favor. Examples include banning use of its models for autonomous weapons and mass surveillance despite lost revenue, gating Mythos, not building image/video generation, and large equity 'Public Benefit Issuances.'",
+    "novelty": "unusual",
+    "quote": "our directors are not merely permitted, but obligated, to consider our Company Purpose and the interests of other stakeholders",
+    "numbers": "",
+    "named_entities": [
+      "Mythos",
+      "Project Glasswing",
+      "Initial Public Benefit Issuance",
+      "Public Benefit Issuances"
+    ]
+  },
+  {
+    "id": "rf-b-058",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "As a Delaware public benefit corporation, we may be subject to increased litigation concerning our board of directors’ obligation to balance our stockholders’ pecuniary interests, the best interests of those materially affected by our conduct and our Company Purpose, the occurrence of which may have an adverse impact on our business, financial condition, and results of operations.",
+    "page": "111",
+    "category": "governance-control",
+    "plain_english": "Delaware lets large holders (at least 2% of shares or $2 million worth) sue to enforce the board's duty to balance profit and purpose, a lawsuit risk that ordinary companies don't face.",
+    "novelty": "boilerplate",
+    "quote": "This potential liability for enforcement of the statutory balancing requirement does not exist for traditional corporations.",
+    "numbers": "Standing threshold: lesser of 2% of outstanding shares or $2,000,000 market value (DGCL § 367)",
+    "named_entities": [
+      "Delaware General Corporation Law"
+    ]
+  },
+  {
+    "id": "rf-b-059",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Our amended and restated bylaws will designate a state or federal court located within the State of Delaware as the exclusive forum for substantially all disputes between us and our stockholders, and also provide that the federal district courts will be the exclusive forum for resolving any complaint asserting a cause of action arising under the Securities Act of 1933, as amended, each of which may limit our stockholders’ ability to choose the judicial forum for disputes with us or our directors, officers, stockholders, or employees.",
+    "page": "112",
+    "category": "governance-control",
+    "plain_english": "Shareholder suits generally must be filed in Delaware courts, and Securities Act claims in federal court, which limits where investors can sue.",
+    "novelty": "boilerplate",
+    "quote": "the federal district courts of the United States will, to the fullest extent permitted by applicable law, be the sole and exclusive forum for resolving any complaint asserting a cause or causes of action arising under the Securities Act",
+    "numbers": "",
+    "named_entities": [
+      "Court of Chancery of the State of Delaware",
+      "U.S. District Court for the District of Delaware",
+      "Securities Act of 1933",
+      "Exchange Act"
+    ]
+  },
+  {
+    "id": "rf-b-060",
+    "group": "Risks Related to our Governance Structure",
+    "heading": "Provisions in our amended and restated certificate of incorporation and amended and restated bylaws could make a merger, tender offer, proxy contest, or other significant corporate transaction difficult, potentially depressing the market price of our Class A common stock.",
+    "page": "113",
+    "category": "governance-control",
+    "plain_english": "Charter and bylaw provisions make a takeover very hard: the founders control stockholder votes, an 80% board supermajority is needed to change board size or issue preferred stock, and the board becomes staggered once founder control ends.",
+    "novelty": "boilerplate",
+    "quote": "the number of directors constituting our board of directors will be permitted to be set only with the approval of 80% of the authorized members of our board of directors",
+    "numbers": "80% board approval to set board size and to set terms of undesignated preferred stock; 66 2/3% Class A vote to amend certain provisions after Class F Sunset Time; three-class staggered board after Class F Sunset Time",
+    "named_entities": [
+      "Founder LLC",
+      "LTBT"
+    ]
+  },
+  {
+    "id": "rf-b-061",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "There has been no prior public trading market for our Class A common stock, and an active trading market may not develop or be sustained following this offering.",
+    "page": "114",
+    "category": "stock-offering",
+    "plain_english": "Anthropic stock has never traded publicly, and an active market may not develop; the IPO price is negotiated and may not hold.",
+    "novelty": "boilerplate",
+    "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”",
+    "numbers": "Ticker: ANT",
+    "named_entities": [
+      "Nasdaq Global Select Market"
+    ]
+  },
+  {
+    "id": "rf-b-062",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "The market price of our Class A common stock may be volatile, and you may lose all or part of your investment.",
+    "page": "114",
+    "category": "stock-offering",
+    "plain_english": "The share price could swing widely for reasons including compute supply constraints, tariffs, lock-up releases, competitor launches and regulation, and investors could lose money.",
+    "novelty": "boilerplate",
+    "quote": "supply chain constraints, particularly those impacting compute, and new and evolving trade regulations and tariffs, and counter-measures",
+    "numbers": "",
+    "named_entities": []
+  },
+  {
+    "id": "rf-b-063",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "The issuance of additional stock in connection with financings, acquisitions, investments, our equity incentive plans, the conversion of our outstanding convertible promissory notes, the conversion of our outstanding Class N common stock, our public benefit initiatives, or otherwise will dilute the interests of the holders of our Class A common stock.",
+    "page": "116",
+    "category": "stock-offering",
+    "plain_english": "Anthropic can issue enormous numbers of new shares (300 billion Class A shares authorized) for financing, acquisitions, employee pay and note conversions, and even give equity to nonprofits under its public-benefit program, diluting existing holders. Noteholders also have registration rights that could put large blocks of stock on the market.",
+    "novelty": "unusual",
+    "quote": "our public benefit initiatives, which may include issuances of equity to third parties such as nonprofit organizations, research institutions, or other recipients",
+    "numbers": "Authorized: 300,000,000,000 Class A; 100,000,000,000 Class N; 1 Class T; 1 Class F; 30,000,000,000 Class E; 30,000,000,000 preferred",
+    "named_entities": [
+      "Public Benefit Issuances"
+    ]
+  },
+  {
+    "id": "rf-b-064",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "A substantial number of shares of our Class N common stock will be outstanding upon the completion of this offering, which will dilute the voting power of the holders of our Class A common stock upon conversion.",
+    "page": "116",
+    "category": "stock-offering",
+    "plain_english": "Big holders including Amazon and Google (each above 5%) will own non-voting Class N shares with full economic rights; those shares become voting Class A shares if sold publicly or to unaffiliated parties. More Class N will be issued as Amazon's remaining notes convert over time.",
+    "novelty": "unusual",
+    "quote": "After giving effect to the Preferred Stock Conversion and the Convertible Notes Conversion, Amazon and Google will each hold greater than five percent of our outstanding capital stock.",
+    "numbers": "Amazon and Google each >5% of outstanding capital stock; share counts and percentages left blank in this draft",
+    "named_entities": [
+      "Amazon",
+      "Google"
+    ]
+  },
+  {
+    "id": "rf-b-065",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "Future issuances of our Class A common stock and Class N common stock will not dilute the voting power of our Class F common stock.",
+    "page": "117",
+    "category": "governance-control",
+    "plain_english": "The founders' Class F share always carries 50.1% of the vote: if 1 million new Class A shares are issued, Class F automatically gains about 1,004,008 extra votes.",
+    "novelty": "unusual",
+    "quote": "if we were to issue 1,000,000 additional shares of Class A common stock, our Class F common stock would automatically be entitled to an incremental number of votes sufficient to cause the aggregate voting power of our Class F common stock to equal 50.1%",
+    "numbers": "Class F fixed at 50.1%; 1,000,000 new Class A shares = ~1,004,008 additional Class F votes",
+    "named_entities": [
+      "Class F common stock",
+      "Nasdaq Global Select Market"
+    ]
+  },
+  {
+    "id": "rf-b-066",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "Future sales of our Class A common stock in the public market could cause the market price of our Class A common stock to decline.",
+    "page": "117",
+    "category": "stock-offering",
+    "plain_english": "Large share sales after lock-ups expire could pressure the price. Co-founders and holders above 0.5% are locked up until the earlier of about one year or shortly after Q3 2027 results; everyone else until the earlier of 180 days or shortly after Q1 2027 results. The co-founders have also pledged, non-bindingly, to give away 80% of their equity, which could add selling while their voting control stays unchanged.",
+    "novelty": "unusual",
+    "quote": "our co-founders have each pledged to dedicate 80% of their personal equity in Anthropic to philanthropic causes. These commitments are voluntary, revocable expressions of each co-founder’s philanthropic intent and do not constitute legally binding obligations.",
+    "numbers": "Lock-up for co-founders and >0.5% holders: earlier of 2nd full trading day after results for quarter ending Sep 30, 2027 or 365 days; all others: earlier of 2nd full trading day after results for quarter ending Mar 31, 2027 or 180 days; IRA dated May 28, 2026; co-founders' 80% philanthropic pledge",
+    "named_entities": [
+      "Goldman Sachs & Co. LLC",
+      "Morgan Stanley & Co. LLC",
+      "Founder LLC"
+    ]
+  },
+  {
+    "id": "rf-b-067",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "Because we do not anticipate paying any cash dividends on our capital stock in the foreseeable future, capital appreciation, if any, will be your sole source of gain.",
+    "page": "118",
+    "category": "stock-offering",
+    "plain_english": "Anthropic doesn't plan to pay dividends, and its credit agreement restricts them, so any return must come from a rising share price.",
+    "novelty": "boilerplate",
+    "quote": "stockholders should rely on sales of their Class A common stock or Class N common stock after price appreciation, if any, as the only way to realize any future gains on their investment",
+    "numbers": "",
+    "named_entities": [
+      "A&R Credit Agreement"
+    ]
+  },
+  {
+    "id": "rf-b-068",
+    "group": "Risks Related to Ownership of our Class A Common Stock",
+    "heading": "If securities or industry analysts do not publish research or publish inaccurate or unfavorable research about us, our business or our market, or if they change their recommendation regarding our Class A common stock adversely, the market price and trading volume of our Class A common stock could decline.",
+    "page": "119",
+    "category": "stock-offering",
+    "plain_english": "If Wall Street analysts don't cover the stock or turn negative, the price and trading volume could fall.",
+    "novelty": "boilerplate",
+    "quote": "If few securities analysts commence coverage of us, or if one or more of these analysts cease coverage of us or fail to publish reports on us regularly, we could lose visibility in the financial markets",
+    "numbers": "",
+    "named_entities": []
+  }
+]

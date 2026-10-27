@@ -1,0 +1,63 @@
+{
+  "unit": "USD millions",
+  "annual": {
+    "page": "F-7",
+    "periods": ["FY2023", "FY2024", "FY2025", "H1 2025", "H1 2026"],
+    "rows": {
+      "revenue": [41, 386, 4585, 1163, 16286],
+      "compute": [433, 2522, 7326, 2334, 8945],
+      "personnel": [95, 454, 1839, 538, 3152],
+      "bartz": [0, 0, 1500, 0, 0],
+      "sales": [2, 43, 568, 120, 3168],
+      "other_opex": [62, 347, 1412, 306, 1714],
+      "total_opex": [592, 3366, 12645, 3298, 16979],
+      "operating": [-551, -2980, -8060, -2135, -693],
+      "interest": [69, 106, 431, 115, 1111],
+      "fair_value": [-1045, -5434, -34308, -10942, -72388],
+      "other_income": [-2, 0, -8, 0, -8757],
+      "pretax": [-1529, -8308, -41945, -12962, -80727],
+      "tax": [2, 1, 20, 7, 21],
+      "net": [-1531, -8309, -41965, -12969, -80748]
+    }
+  },
+  "quarterly": {
+    "page": "157",
+    "periods": ["Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"],
+    "rows": {
+      "revenue": [376, 787, 1382, 2040, 4731, 11555],
+      "compute": [944, 1390, 2047, 2945, 3387, 5558],
+      "personnel": [218, 320, 489, 812, 1295, 1857],
+      "bartz": [0, 0, 1500, 0, 0, 0],
+      "sales": [24, 96, 202, 246, 1033, 2135],
+      "other_opex": [125, 181, 233, 873, 683, 1031],
+      "total_opex": [1311, 1987, 4471, 4876, 6398, 10581],
+      "operating": [-935, -1200, -3089, -2836, -1667, 974],
+      "interest": [51, 64, 124, 192, 349, 762],
+      "fair_value": [-5701, -5241, -9165, -14201, -12791, -59597],
+      "other_income": [0, 0, -3, -5, -309, -8448],
+      "net": [-6592, -6377, -12138, -16858, -14439, -66309],
+      "sbc": [105, 181, 305, 574, 924, 1261],
+      "adj_operating": [-830, -1019, -1284, -1721, -617, 2235]
+    },
+    "adj_page": "160"
+  },
+  "customers_100k": [
+    {"date": "2023-12-31", "label": "Dec 2023", "value": 20, "approx": true},
+    {"date": "2024-12-31", "label": "Dec 2024", "value": 200, "approx": true},
+    {"date": "2025-03-31", "label": "Mar 2025", "value": 400, "approx": true},
+    {"date": "2025-09-30", "label": "Sep 2025", "value": 950, "approx": false},
+    {"date": "2025-12-31", "label": "Dec 2025", "value": 1500, "approx": true},
+    {"date": "2026-06-30", "label": "Jun 2026", "value": 6000, "approx": false},
+    {"date": "2026-09-30", "label": "Sep 2026", "value": 11900, "approx": false}
+  ],
+  "balance": {
+    "cash": 112.4, "short_term": 19.3, "restricted": 2.5, "raised_total": 141.1, "debt": 6.2, "date": "2026-06-30", "page": "172"
+  },
+  "mix_h1_2026": {"consumption": 13064, "subscription": 3222, "international": 4523, "page": "F-26"},
+  "mix_fy2025": {"consumption": 3796, "subscription": 789, "international": 1223, "page": "F-26"},
+  "csp_share": [{"period": "2023", "value": 0.11}, {"period": "2024", "value": 0.32}, {"period": "2025", "value": 0.47}, {"period": "H1 2026", "value": 0.48}],
+  "metrics": {
+    "nrr": 9.0, "rev_per_employee": 6.6, "rev_per_employee_prior": 1.4, "headcount": 5300,
+    "customers_1m": 1900, "customers_10m": 250, "top5_share_9m26": 0.25, "violators_share": [0.05, 0.07]
+  }
+}

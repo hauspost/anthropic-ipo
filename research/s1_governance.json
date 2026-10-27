@@ -1,0 +1,1445 @@
+{
+ "meta": {
+  "issuer": "Anthropic, PBC",
+  "form": "S-1 (preliminary)",
+  "filed": "2026-10-26",
+  "listing": {
+   "exchange": "Nasdaq Global Select Market",
+   "ticker": "ANT",
+   "page": "306"
+  },
+  "page_convention": "printed prospectus page; F-x financial pages; II-x Part II; Ex. = exhibit number",
+  "blank_note": "null values = left blank in the preliminary S-1 ($____). 'derived' fields are arithmetic from disclosed figures, not disclosed numbers.",
+  "exhibit_map": {
+   "3.3": "Form of A&R Certificate of Incorporation (post-IPO)",
+   "3.5": "Form of A&R Bylaws (post-IPO)",
+   "4.2": "A&R Investors' Rights Agreement (May 28, 2026)",
+   "4.3": "Amazon 2026 Stock Purchase and Convertible Note Facility Agreement (Apr 20, 2026)",
+   "4.4": "Broadcom Note Purchase Agreement (Mar 31, 2026)",
+   "4.5": "Google Note Purchase Agreement (Mar 31, 2026)",
+   "4.6": "Broadcom Registration Rights Agreement (Jun 8, 2026)",
+   "4.7": "Google Registration Rights Agreement (May 4, 2026)",
+   "10.11": "Broadcom Master Equipment Lease (Mar 31, 2026)",
+   "10.12": "Irrevocable Proxy - Daffy Charitable Fund",
+   "10.13": "Irrevocable Proxy - Dechomai Asset Trust",
+   "10.14": "Form of Stockholders' Agreement",
+   "99.1": "Form of A&R LTBT Trust Agreement",
+   "99.2": "Form of LLC Agreement of Anthropic Founders, LLC",
+   "16.1": "Letter re change in accountants (not in raw folder)",
+   "1.1": "Underwriting Agreement (to be filed by amendment)"
+  }
+ },
+ "share_classes": [
+  {
+   "class": "A",
+   "authorized": 300000000000,
+   "holders": "IPO investors, co-founders, employees, former voting-preferred holders",
+   "votes": "1 per share, general matters incl. non-Class-T directors",
+   "economic": "pro rata dividends and liquidation",
+   "conversion": "none",
+   "transfer": "free (subject to lock-up)",
+   "redeemable": false,
+   "collective_voting_cap": "49.9% of general voting power (Class F fixed at 50.1%)",
+   "pages": [
+    "15",
+    "289",
+    "292-293"
+   ]
+  },
+  {
+   "class": "N",
+   "authorized": 100000000000,
+   "holders": "'primarily strategic business partners' (Amazon, Google, others) + Anthropic Public Benefit Fund (846,840,960 sh)",
+   "votes": "0 (only as required by law)",
+   "economic": "pro rata, identical to A",
+   "conversion": "auto 1:1 into A on registered/open-market sale or transfer to non-N holder owning <=9.99% of any class",
+   "transfer": "free; converts on transfer",
+   "redeemable": false,
+   "pages": [
+    "292-293",
+    "309"
+   ]
+  },
+  {
+   "class": "T",
+   "authorized": 1,
+   "outstanding": 1,
+   "holders": "LTBT (sole)",
+   "votes": "elects/removes Class T directors (board majority, 4 of 7); votes on Class E redemption and certain amendments to Class F rights; no general vote",
+   "economic": "none; par value on liquidation",
+   "conversion": "none",
+   "transfer": "only with Trust Amendment Threshold approval; no restriction on transferee identity",
+   "redeemable": "for no consideration at Trust Amendment Threshold",
+   "sunset": "Class T Sunset Time - no automatic/time trigger; only via Trust Amendment Threshold",
+   "notes": "1-for-1,000 reverse split Sept 17, 2026",
+   "pages": [
+    "244-245",
+    "252",
+    "292-295"
+   ]
+  },
+  {
+   "class": "F",
+   "authorized": 1,
+   "outstanding": 1,
+   "holders": "Founder LLC (Anthropic Founders, LLC); members = 7 co-founders",
+   "votes": "aggregate 50.1% of total voting power on general matters; formula (0.501*A)/(0.499*B)",
+   "economic": "none; par value on liquidation",
+   "conversion": "none",
+   "transfer": "only board-approved reorganization/redomiciliation of Founder LLC with no member change",
+   "redeemable": "for no consideration: Supermajority founder request, Founder LLC dissolution, or end of Class F Transition Period",
+   "non_dilutable": true,
+   "pages": [
+    "117",
+    "247-248",
+    "251-253",
+    "293-295",
+    "306"
+   ],
+   "charter_ref": "Ex. 3.3 Art. V"
+  },
+  {
+   "class": "E",
+   "authorized": 30000000000,
+   "outstanding_at_ipo": 0,
+   "holders": "employees excluding co-founders",
+   "issuance_rule": "1 share per 6 months of employment + 1 share per Class A share pledged to donation matching program; timing set after closing; documentation due by Mar 31, 2027 (Ex. 10.14 s4.1)",
+   "votes": "1 per share on limited matters: Specified Class T Director (if NGC does not concur), LTBT/Class T amendments, Class T redemption",
+   "economic": "none; par value on liquidation",
+   "conversion": "none",
+   "transfer": "not transferable",
+   "redemption": "half annually after separation (non-cause); all on death, incapacity, cause, joining a direct competitor; all when Class F ceases; or by 80% board + Class F + Class T; always for no consideration",
+   "no_written_consent": true,
+   "pages": [
+    "18",
+    "249-250",
+    "295",
+    "303"
+   ]
+  }
+ ],
+ "control_model": {
+  "board_post_ipo": {
+   "authorized_seats": 7,
+   "class_t_seats": 4,
+   "class_t_directors": [
+    "Reed Hastings",
+    "Vas Narasimhan",
+    "Christopher Liddell (Specified Class T Director)",
+    "VACANT"
+   ],
+   "a_plus_f_seats": 3,
+   "a_plus_f_directors": [
+    "Dario Amodei",
+    "Daniela Amodei",
+    "Yasmin Razavi"
+   ],
+   "board_size_change": "80% of Whole Board; must be odd until either sunset",
+   "page": "256, 302"
+  },
+  "general_voting_power_post_ipo": [
+   {
+    "holder": "Founder LLC (Class F)",
+    "pct": 50.1,
+    "page": "289"
+   },
+   {
+    "holder": "All Class A holders combined",
+    "pct": 49.9,
+    "page": "289"
+   },
+   {
+    "holder": "Co-founders' personal Class A",
+    "pct": null,
+    "page": "109, 289",
+    "note": "blank"
+   },
+   {
+    "holder": "LTBT",
+    "pct": 0,
+    "note": "no general vote; elects board majority"
+   },
+   {
+    "holder": "Amazon",
+    "pct": 0,
+    "note": "non-voting Class N"
+   },
+   {
+    "holder": "Google",
+    "pct": 0,
+    "note": "non-voting Class N"
+   }
+  ],
+  "economic_ownership": [
+   {
+    "holder": "Founder LLC",
+    "pct": 0
+   },
+   {
+    "holder": "LTBT",
+    "pct": 0
+   },
+   {
+    "holder": "Seven co-founders (beneficial, Class A)",
+    "shares": 1685535170,
+    "pct_disclosed": null,
+    "derived_pct_of_fully_diluted": 9.95,
+    "derived_method": "1,685,535,170 / (846,840,960/0.05 = 16,936,819,200 FD shares at 6/30/26); mixed dates, approximate",
+    "page": "12, 289"
+   },
+   {
+    "holder": "Amazon",
+    "pct_disclosed": ">5% of outstanding capital stock (count blank)",
+    "conversion_cap": "12% of capitalization (waivable)",
+    "derived_identifiable_floor": "~1.64B Class N (~9.7% FD) from Series E-2, F-2, G-3, G-2 + ~$5B Series H, plus notes convertible into up to 1,840,444,962 Class N pre-cap; pre-2023 holdings not itemized",
+    "page": "116, 164, F-31, F-41-F-42"
+   },
+   {
+    "holder": "Google",
+    "pct_disclosed": ">5% of outstanding capital stock (count blank)",
+    "conversion_cap": "14.99% post-money (waivable)",
+    "derived_identifiable_floor": "~1.1B Class N (~6.6% FD) from Series E-3, E-4, E-5, G-4, G-2 + $10B Series H; pre-2023 holdings not itemized",
+    "page": "116, 168, F-31, F-39-F-40"
+   },
+   {
+    "holder": "Anthropic Public Benefit Fund (wholly owned subsidiary)",
+    "shares": 846840960,
+    "pct": 5.0,
+    "basis": "fully diluted as of 6/30/26 assuming full Amazon Notes conversion; legally outstanding, not outstanding for accounting",
+    "page": "12, 19"
+   },
+   {
+    "holder": "Other investors, employees, public",
+    "pct": null
+   }
+  ]
+ },
+ "ltbt": {
+  "legal_form": "Delaware common-law noncharitable purpose trust (12 Del. C. s3556)",
+  "created": "2023 (trust agreement effective June 29, 2023)",
+  "agreement": "Ex. 99.1 Form of A&R Trust Agreement",
+  "purpose_quote": "to ensure ... that the Company is managed in a manner that responsibly balances the pecuniary interests of the Company's stockholders, the best interests of those materially affected by the Company's conduct, and the responsible development and maintenance of advanced AI for the long-term benefit of humanity. The Trust shall have no other purposes and no beneficiaries. (Ex. 99.1 s1.3)",
+  "accounting": "consolidated VIE (p. 246)",
+  "trustees_authorized": 5,
+  "trustees_serving": 4,
+  "trustees": [
+   {
+    "name": "Dr. Neil 'Buddy' Shah",
+    "role": "Chair",
+    "since": "2023-06",
+    "background": "CEO, Clinton Health Access Initiative (since Jun 2022); ex-Managing Director GiveWell; co-founder/CEO IDinsight; initial manager of Anthropic Public Benefit Fund",
+    "page": "245"
+   },
+   {
+    "name": "Richard Fontaine",
+    "since": "2025-04",
+    "background": "CEO, Center for a New American Security (since Feb 2019); ex-foreign policy advisor to Sen. McCain; NSC, State Dept.",
+    "related_item": "$450,000 Anthropic donation to CNAS, Aug 2026",
+    "page": "246-247"
+   },
+   {
+    "name": "Dr. Ben S. Bernanke",
+    "since": "2026-06",
+    "background": "Fed Chair 2006-2014; Brookings Distinguished Fellow; ex-PIMCO advisor; 2022 Nobel",
+    "page": "246"
+   },
+   {
+    "name": "Dr. Christopher Stubbs",
+    "since": "2026-10",
+    "background": "Harvard physics/astronomy professor; Senior Advisor for AI to Harvard FAS 2024-26; JASON member",
+    "page": "246",
+    "note": "not on Ex. 99.1 form signature page"
+   },
+   {
+    "name": "VACANT"
+   }
+  ],
+  "administrative_trustee": "The Bryn Mawr Trust Company of Delaware (ministerial only; Ex. 99.1 s2.9)",
+  "selection": "Trustees appoint by majority of those in office; reappointment by majority of others; 30-day NGC notice (waivable); annual terms, no limit; 'Trustees and company executives have collaborated closely on sourcing, interviewing, and selecting Trustees' (p. 245); if no Trustees, 80% of Whole Board appoints (Ex. 99.1 s2.4(d))",
+  "removal": "majority of total authorized Trustees, or unanimous other Trustees + NGC approval; Chancery removal on Enforcer petition for disqualifying conduct",
+  "powers": [
+   "elect/remove 4 Class T directors (board majority)",
+   "consent to amendments of key Founder LLC provisions (Ex. 10.14 s3.7)",
+   "5-day prior notice (else void; deemed waived if no objection in 5 days) of liquidation, >=50% voting/economic sale, bankruptcy, or transfer of control of an AI model exceeding board-set capability thresholds (Ex. 10.14 s3.6; p. 285)",
+   "part of Class F Amendment Threshold (Ex. 3.3 s5.1(h))"
+  ],
+  "limits": [
+   "no day-to-day management or strategy authority (p. 244)",
+   "Specified Class T Director requires NGC concurrence or Class E majority vote (p. 244)",
+   "Specified Matters need 80% of Voting Trustees (Ex. 99.1 s2.1(f))",
+   "cannot act if <3 Trustees in office >90 days (Ex. 99.1 s2.1(e))",
+   "Trust may hold no company securities other than Class T (Ex. 99.1 s2.1(d)); Trustees prohibited from holding company securities (p. 247)",
+   "cannot amend Trust Agreement before Class F Sunset without Trust Amendment Threshold (Ex. 10.14 s3.8)"
+  ],
+  "compensation": {
+   "per_trustee_annual_cash": 400000,
+   "chair_additional": 25000,
+   "rule": "reasonable cash amount fixed annually by Trustees; not conditioned on company profits or actions",
+   "page": "246-247"
+  },
+  "company_payments_to_ltbt": {
+   "2023": 2716750,
+   "2024": 0,
+   "2025": 906089,
+   "9M_2026": 8425213,
+   "page": "246"
+  },
+  "enforcers": "Voting Trustee, the company, Class F holder, or holders of >=10% of voting power of Non-Trust Voting Shares (excl. Class F) for >=1 year (Ex. 99.1 s5.1)",
+  "trustee_liability": "only willful misconduct proved by clear and convincing evidence (Ex. 99.1 s5.2); company guarantees trust indemnity (s5.4(i))",
+  "counsel": "John Morley (principal legal counsel) and Cleary Gottlieb (p. 334)",
+  "trust_amendment_threshold": [
+   {
+    "path": "trustees in favor",
+    "requirement": "80% of authorized board AND 80% of Trustees in office"
+   },
+   {
+    "path": "trustees not in favor, Class F outstanding, until 3rd anniversary of IPO",
+    "requirement": "Class F by UNANIMOUS Continuing Founders + majority of Class E votes cast (40% quorum) + majority of Class A votes cast (quorum: majority of outstanding A)"
+   },
+   {
+    "path": "trustees not in favor, Class F outstanding, any time",
+    "requirement": "Class F by 66 2/3% of Continuing Founders + 75% of Class E votes cast (majority quorum) + majority of Class A votes cast (majority quorum)"
+   },
+   {
+    "path": "trustees not in favor, no Class F",
+    "requirement": "85% of OUTSTANDING Class A shares"
+   }
+  ],
+  "stockholder_failsafe": "Voting Request: persons at Trust Amendment Threshold can instruct Trust/Founder LLC how to vote or act, incl. amending Trust Agreement or Class T terms; cannot designate specific individuals as Class T directors (Ex. 10.14 s3.5(a))",
+  "judicial_modification": "Chancery may modify if purpose unlawful/impractical (Ex. 99.1 s4.5)",
+  "pages": [
+   "243-247",
+   "252-253",
+   "285",
+   "294-295",
+   "Ex. 99.1",
+   "Ex. 10.14"
+  ]
+ },
+ "class_f_mechanics": {
+  "issued": "immediately prior to IPO completion, to Founder LLC",
+  "members": [
+   "Dario Amodei",
+   "Daniela Amodei",
+   "Tom Brown",
+   "Jack Clark",
+   "Jared Kaplan",
+   "Sam McCandlish",
+   "Christopher Olah"
+  ],
+  "excluded": "Benjamin Mann ('often referred to as a co-founder') is not a member (p. 248 fn 13)",
+  "voting_rules": [
+   {
+    "matter": "general",
+    "threshold": "majority of Continuing Founders",
+    "fallback": "vote proportionately with Class A votes cast"
+   },
+   {
+    "matter": "amendments adverse to Class F",
+    "threshold": "Supermajority (N-1; unanimous if <3)",
+    "fallback": "against"
+   },
+   {
+    "matter": "LTBT/Class T amendments",
+    "threshold": "Trust Amendment Supermajority (66 2/3%, or unanimous on 3-year path)",
+    "fallback": "against"
+   }
+  ],
+  "removal_triggers": [
+   "resignation",
+   "death or incapacity (>=12 months; physician jointly selected, or Supermajority for wrongful detention)",
+   "original founder holding <2% of Class A (incl. options/RSUs) held at IPO completion, on any record date",
+   "cause by Supermajority of others; includes competing business beyond <=5% passive ownership ('sole discretion')",
+   "successor member: 10th anniversary of IPO",
+   "approved leave of absence for a Qualifying Leave Role (senior gov't/nonprofit); can return"
+  ],
+  "successors": "confidential ranked Successor Designee List of up to 10 per founder, approved by Supermajority of others, notified to NGC (advisory reconsideration right); first 8 must meet eligibility (US status; >=3 yrs at Anthropic technical/policy/Anthropic Institute or senior nonprofit role); admitted on death/incapacity only, until 10th anniversary (Ex. 99.2 s22(o), s34(r))",
+  "sunset": {
+   "trigger": "fewer than 3 Continuing Founders (excluding Non-Qualifying Members) for 90 consecutive days",
+   "transition_period_days": 450,
+   "result": "all Class F and Class E redeemed for no consideration; classified board; Class A elects non-T seats; 66 2/3% Class A to amend charter",
+   "no_time_sunset_for_original_founders": true,
+   "not_extendable": true,
+   "pages": [
+    "247-248",
+    "251-253",
+    "295",
+    "305"
+   ]
+  },
+  "what_founders_control": [
+   "all non-Class-T directors",
+   "outcome of all general stockholder votes incl. mergers/sale of company",
+   "consent to any preferred stock issuance before Class F Sunset",
+   "calling special meetings; filling non-T vacancies",
+   "part of LTBT amendment/redemption paths; Class F rights amendments need board majority + Class F + Class T"
+  ],
+  "founder_pledge": "each pledged 80% of personal equity to philanthropy; voluntary, revocable, not legally binding; does not apply to Class F; voting control unchanged as economics fall (p. 118)"
+ },
+ "pbc": {
+  "purpose": "the responsible development and maintenance of advanced AI for the long-term benefit of humanity",
+  "balancing": "stockholders' pecuniary interests, best interests of those materially affected, Company Purpose",
+  "standard": "directors 'must only make informed and disinterested decisions that serve a rational purpose' (p. 111)",
+  "measurement": "no objective third-party standard; qualitative; biennial s366(b) statement; five mission pillars (p. 243)",
+  "suit_limit": "DGCL s367: only holders of lesser of 2% of outstanding shares or $2,000,000 market value can sue to enforce balancing (p. 111)",
+  "exculpation": "absent conflict, balancing failure is not bad faith or loyalty breach for exculpation/indemnification (p. 287)",
+  "examples_of_tradeoffs": [
+   "usage policy bans fully autonomous weapons and mass surveillance",
+   "Mythos released only as gated preview via Project Glasswing",
+   "declined image/video generation models"
+  ],
+  "takeover": "could make it easier to reject hostile bids (p. 111)",
+  "pages": [
+   "12-13",
+   "110-112",
+   "243",
+   "287"
+  ]
+ },
+ "controlled_company": {
+  "basis": "LTBT can elect a majority of the board",
+  "exemptions_used": [
+   "NGC not fully independent"
+  ],
+  "exemptions_not_used": [
+   "majority-independent board",
+   "independent compensation committee"
+  ],
+  "pages": [
+   "251",
+   "257-260"
+  ]
+ },
+ "board_and_officers": {
+  "directors": [
+   {
+    "name": "Dario Amodei",
+    "age": 43,
+    "role": "CEO, co-founder, director",
+    "elected_by": "A+F",
+    "independent": false
+   },
+   {
+    "name": "Daniela Amodei",
+    "age": 39,
+    "role": "President, co-founder, Chairperson",
+    "elected_by": "A+F",
+    "independent": false,
+    "committees": [
+     "NGC (chair)"
+    ]
+   },
+   {
+    "name": "Reed Hastings",
+    "age": 65,
+    "role": "Lead Independent Director; since May 2025",
+    "elected_by": "T",
+    "independent": true,
+    "committees": [
+     "Audit",
+     "NGC"
+    ]
+   },
+   {
+    "name": "Christopher Liddell",
+    "age": 68,
+    "role": "Director since Feb 2026; Specified Class T Director",
+    "elected_by": "T",
+    "independent": true,
+    "committees": [
+     "Audit (chair)",
+     "Safety & Risk"
+    ]
+   },
+   {
+    "name": "Vas Narasimhan",
+    "age": 50,
+    "role": "Director since Apr 2026; Novartis CEO",
+    "elected_by": "T",
+    "independent": true,
+    "committees": [
+     "Compensation (chair)",
+     "Safety & Risk (chair)"
+    ]
+   },
+   {
+    "name": "Yasmin Razavi",
+    "age": 37,
+    "role": "Director since Mar 2023; Spark Capital GP",
+    "elected_by": "A+F",
+    "independent": true,
+    "committees": [
+     "NGC",
+     "Compensation"
+    ]
+   },
+   {
+    "name": "VACANT",
+    "elected_by": "T"
+   }
+  ],
+  "executive_officers": [
+   {
+    "name": "Dario Amodei",
+    "title": "CEO"
+   },
+   {
+    "name": "Daniela Amodei",
+    "title": "President"
+   },
+   {
+    "name": "Krishna Rao",
+    "title": "CFO (since Apr 2024)"
+   }
+  ],
+  "other_signatory": "Effendi Ng, Chief Accounting Officer (II-9)",
+  "family": "Dario and Daniela Amodei are siblings; Holden Karnofsky (Daniela's spouse) is an employee",
+  "pages": [
+   "254-260"
+  ]
+ },
+ "compensation": {
+  "philosophy": "targets 90th percentile of AI development market; co-founders paid equally (p. 264)",
+  "summary_comp_2025": [
+   {
+    "name": "Dario Amodei",
+    "salary": 654167,
+    "stock_awards": 9264932,
+    "option_awards": 4028558,
+    "all_other": 4010641,
+    "total": 17958298,
+    "all_other_detail": {
+     "security": 2745874,
+     "personal_private_air": 97055,
+     "tender_spread": 1153087,
+     "401k": 14000,
+     "valuation_report": 625
+    }
+   },
+   {
+    "name": "Daniela Amodei",
+    "salary": 654167,
+    "stock_awards": 9264932,
+    "option_awards": 4028558,
+    "all_other": 2461341,
+    "total": 16408998,
+    "all_other_detail": {
+     "security": 1293629,
+     "tender_spread": 1153087,
+     "401k": 14000,
+     "valuation_report": 625
+    }
+   },
+   {
+    "name": "Krishna Rao",
+    "salary": 706250,
+    "stock_awards": 0,
+    "option_awards": 0,
+    "all_other": 14000,
+    "total": 720250
+   }
+  ],
+  "grants_2025": "Jun 12, 2025: 992,500 options @ $2.38 + 1,717,000 RSUs each to D. and D. Amodei (RSUs vest on IPO effectiveness + service)",
+  "salaries_2026": {
+   "D_and_D_Amodei": "$915,000 (Jan 16) -> $1,380,000 (Jul 1)",
+   "Rao": "$1,250,000 (Feb 1)"
+  },
+  "grants_2026": [
+   "Feb 20: 1,431,490 options @ $17.66 + 2,374,010 RSUs each to D. and D. Amodei; 1,122,840 options + 1,862,140 RSUs to Rao",
+   "Jul 15: 537,430 Co-Founder RSUs each to D. and D. Amodei"
+  ],
+  "severance_oct_2026": "24 months salary (Amodeis) / 12 months (Rao) + 12 months COBRA + 12 months time-based vesting acceleration",
+  "rao": {
+   "new_hire_options": 14000000,
+   "strike": 1.3,
+   "cic_acceleration_value_12_31_25": 133590388
+  },
+  "hsr_fees_paid_by_company": {
+   "each": 2500000,
+   "for": [
+    "Dario Amodei",
+    "Daniela Amodei"
+   ],
+   "date": "Oct 2026"
+  },
+  "director_policy": {
+   "cash_retainer": 100000,
+   "annual_rsu": 325000,
+   "initial_rsu": 400000,
+   "annual_cap": 1000000,
+   "first_year_cap": 2000000
+  },
+  "plans": {
+   "2026_plan_evergreen": "lesser of 5% of economic shares or board amount, 2027-2036",
+   "espp": "1% evergreen; 85% purchase price",
+   "2021_plan_reserve": 3864826090
+  },
+  "cic_definition_carveout": "board-turnover prong inapplicable until both Class F and Class T Sunsets (p. 278)",
+  "pages": [
+   "261-281"
+  ]
+ },
+ "principal_stockholders": {
+  "as_of": "2026-09-30",
+  "percent_columns": "blank",
+  "shares_offered_column": "blank",
+  "page": "288-291",
+  "rows": [
+   {
+    "name": "Dario Amodei",
+    "class_a_beneficial": 240637980,
+    "plus_proxy_shares": 4621120,
+    "total_incl_proxy": 245259100
+   },
+   {
+    "name": "Daniela Amodei",
+    "class_a_beneficial": 241408940
+   },
+   {
+    "name": "Krishna Rao",
+    "class_a_beneficial": 9497900
+   },
+   {
+    "name": "Reed Hastings",
+    "class_a_beneficial": 9410
+   },
+   {
+    "name": "Christopher Liddell",
+    "class_a_beneficial": 9410
+   },
+   {
+    "name": "Vas Narasimhan",
+    "class_a_beneficial": 176050
+   },
+   {
+    "name": "Yasmin Razavi",
+    "class_a_beneficial": 0,
+    "note": "excludes Spark Capital holdings; disclaims"
+   },
+   {
+    "name": "All directors and officers (7)",
+    "class_a_beneficial": 496360810
+   },
+   {
+    "name": "Long-Term Benefit Trust",
+    "class_t": 1,
+    "pct_class_t": 100
+   },
+   {
+    "name": "Founder LLC",
+    "class_f": 1,
+    "pct_class_f": 100,
+    "voting_power_after": 50.1
+   },
+   {
+    "name": "Tom Brown",
+    "class_a_beneficial": 244173040,
+    "selling_stockholder": true
+   },
+   {
+    "name": "Jack Clark",
+    "class_a_beneficial": 242271840,
+    "selling_stockholder": true
+   },
+   {
+    "name": "Jared Kaplan",
+    "class_a_beneficial": 242351170,
+    "selling_stockholder": true
+   },
+   {
+    "name": "Sam McCandlish",
+    "class_a_beneficial": 231809780,
+    "selling_stockholder": true
+   },
+   {
+    "name": "Christopher Olah",
+    "class_a_beneficial": 242882420,
+    "selling_stockholder": true
+   }
+  ],
+  "not_listed": "Amazon and Google (non-voting Class N; table covers >5% of any class of voting securities); no other >5% Class A holder listed"
+ },
+ "related_person_transactions": [
+  {
+   "party": "Spark Capital (Razavi)",
+   "type": "preferred purchases",
+   "amounts": {
+    "C-1": 74999991,
+    "D-1": 74999968,
+    "E-1": 99999930,
+    "F-1": 61999947,
+    "G-1": 24999925,
+    "H-1": 439999521
+   },
+   "page": "282-284"
+  },
+  {
+   "party": "Bodhi LLC (Narasimhan)",
+   "type": "Series H-1 purchase",
+   "amount": 9999614,
+   "page": "282"
+  },
+  {
+   "party": "D. Amodei, D. Amodei, Rao, Karnofsky",
+   "type": "sold in Apr 2026 tender ($25.9136/sh; 179,883,540 sh; $4,661,437,298 total); individual amounts not disclosed",
+   "page": "284"
+  },
+  {
+   "party": "D. Amodei, D. Amodei",
+   "type": "sold in Jun 2025 tender ($5.61/sh; 27,942,000 sh; $156,716,898 total)",
+   "page": "284"
+  },
+  {
+   "party": "Daffy Charitable Fund, Dechomai Asset Trust / Dario Amodei",
+   "type": "irrevocable proxies; CEO votes DAF shares at discretion (excl. own family's donations)",
+   "page": "284-285"
+  },
+  {
+   "party": "Holden Karnofsky (spouse of Daniela Amodei)",
+   "type": "employment",
+   "cash_2025": 430213,
+   "cash_2026": null,
+   "options": 179500,
+   "rsus": 761700,
+   "page": "285"
+  },
+  {
+   "party": "LTBT",
+   "type": "funding",
+   "amounts": {
+    "2023": 2716750,
+    "2024": 0,
+    "2025": 906089,
+    "9M_2026": 8425213
+   },
+   "page": "246, 286"
+  },
+  {
+   "party": "CNAS (Fontaine)",
+   "type": "charitable donation",
+   "amount": 450000,
+   "date": "2026-08",
+   "page": "247"
+  },
+  {
+   "party": "Founder LLC",
+   "type": "legal fee reimbursement",
+   "amount": null,
+   "page": "286"
+  },
+  {
+   "party": "LTBT and Founder LLC",
+   "type": "Stockholders' Agreement; expense reimbursement; indemnification",
+   "page": "285"
+  },
+  {
+   "party": "ROFR/co-sale and voting agreements (May 28, 2026)",
+   "type": "terminate at IPO",
+   "page": "284"
+  }
+ ],
+ "rpt_scope_note": "Section defines related persons via >5% of VOTING securities; Amazon, Google, Broadcom, Microsoft, AMD not mentioned in pp. 282-287",
+ "strategic_partner_flows": [
+  {
+   "party": "Amazon (Amazon Web Services, Inc.)",
+   "roles": [
+    "investor (Class N/non-voting preferred)",
+    "noteholder",
+    "compute supplier",
+    "distribution partner (Bedrock)",
+    "customer",
+    "competitor"
+   ],
+   "invested": [
+    {
+     "what": "2023 NPA notes tranche 1",
+     "date": "2023-09",
+     "cash": 1200000000.0
+    },
+    {
+     "what": "2023 NPA tranche 2 ($3.4B principal)",
+     "date": "2024-03",
+     "cash": 2800000000.0
+    },
+    {
+     "what": "2024 NPA notes",
+     "dates": [
+      "2024-11",
+      "2025-05",
+      "2025-11"
+     ],
+     "cash": 4000000000.0
+    },
+    {
+     "what": "Series G-2 (19.3M sh @ $259.1364)",
+     "date": "2026-04",
+     "cash": 5000000000.0
+    },
+    {
+     "what": "Series H",
+     "date": "2026-05",
+     "cash": 5000000000.0
+    }
+   ],
+   "derived_total_cash_in": 18000000000.0,
+   "notes_outstanding": {
+    "principal": 6203000000.0,
+    "tranches": [
+     {
+      "agreement": "Amazon 2023 NPA",
+      "principal": 2186000000.0,
+      "conv_price": 2.0928
+     },
+     {
+      "agreement": "Amazon 2024 NPA",
+      "principal": 4017000000.0,
+      "conv_price": 5.0478
+     }
+    ],
+    "class_n_issuable_pre_cap": 1840444962,
+    "ownership_cap": "12% of capitalization (waivable)",
+    "ipo_conversion": "lower of fixed price and IPO price; excess -> rollover notes converting quarterly at lowest of fixed, IPO, 10-day VWAP",
+    "set_off": "may be settled by set-off against amounts Amazon owes Anthropic under commercial agreements"
+   },
+   "future_facility": {
+    "agreement": "Amazon 2026 NPA",
+    "remaining": 15000000000.0,
+    "original": 20000000000.0,
+    "mechanics": "available in $5.0B increments per compute capacity milestone (Delivered Capacity delivered by Amazon) under commercial agreements; settled in Class N at 30-day VWAP post-IPO",
+    "draw_period": "30 months post-IPO or earlier termination of commercial agreements"
+   },
+   "anthropic_spend_commitment": {
+    "min": 110000000000.0,
+    "period": "2026-05 to 2036-04",
+    "note": "regardless of actual usage; true-up"
+   },
+   "pages": [
+    "116",
+    "163-166",
+    "171",
+    "F-31",
+    "F-40-F-42",
+    "F-63",
+    "Ex. 4.3"
+   ]
+  },
+  {
+   "party": "Google (Google LLC)",
+   "roles": [
+    "investor (non-voting)",
+    "former noteholder",
+    "compute supplier (TPU)",
+    "customer ('commercial agreement ... for the provision of intelligence service')",
+    "distribution partner",
+    "competitor"
+   ],
+   "invested": [
+    {
+     "what": "2023 NPA notes",
+     "dates": [
+      "2023-09",
+      "2024-09",
+      "2025-09"
+     ],
+     "cash": 2000000000.0
+    },
+    {
+     "what": "2024 NPA note",
+     "date": "2024-08",
+     "cash": 1300000000.0
+    },
+    {
+     "what": "Series G-2 (38.6M sh @ $259.1364)",
+     "date": "2026-03",
+     "cash": 10000000000.0
+    },
+    {
+     "what": "Series H",
+     "date": "2026-05",
+     "cash": 10000000000.0
+    }
+   ],
+   "derived_total_cash_in": 23300000000.0,
+   "future_facility": {
+    "agreement": "Google 2026 NPA",
+    "remaining": 20000000000.0,
+    "through": "2030-12-31",
+    "mechanics": "draws driven by TPU capacity delivered under third-party compute agreements and TTM revenue targets; post-IPO settled in mutually agreed note or Class N at 30-day VWAP; ownership cap 14.99% (waivable)",
+    "total_package_per_ex_4_5": "$40B less Series G investment = $30B Aggregate Purchase Price"
+   },
+   "ipo_private_placement_option": {
+    "max": 10000000000.0,
+    "price": "IPO price",
+    "effect": "reduces NPA capacity; conditioned on ROFO Waiver (Ex. 4.5)"
+   },
+   "anthropic_spend_commitment": {
+    "min": 114500000000.0,
+    "period": "2026-04 to 2033-07",
+    "additional_estimated_tpu_from_providers_incl_google": [
+     125000000000.0,
+     150000000000.0
+    ],
+    "additional_period": "2028-2031"
+   },
+   "pages": [
+    "116",
+    "165",
+    "167-168",
+    "170",
+    "F-31",
+    "F-39-F-40",
+    "F-62-F-63",
+    "Ex. 4.5"
+   ]
+  },
+  {
+   "party": "Broadcom",
+   "roles": [
+    "supplier",
+    "lessor",
+    "potential lender (convertible)"
+   ],
+   "lease_rent_total_ex_interest": 161200000000.0,
+   "lease_term": "5-year master equipment leases, TPU-based capacity",
+   "npa": {
+    "size": 42000000000.0,
+    "purpose": "solely to finance quarterly rent under 2026 Lease Arrangement",
+    "interest": "9% PIK (13% if revenue conditions missed)",
+    "conversion": "into Class N at 90% (or 85%) of 30-day VWAP",
+    "cic": "150% cash or convert",
+    "issued": 0,
+    "assignable_to": "designated financial partner"
+   },
+   "pages": [
+    "166-167",
+    "171-172",
+    "300-301",
+    "Ex. 4.4",
+    "Ex. 10.11"
+   ]
+  },
+  {
+   "party": "AMD",
+   "roles": [
+    "supplier",
+    "equity purchaser"
+   ],
+   "anthropic_expected_spend": ">$20.0B (no fixed commitment)",
+   "amd_equity_commitment": {
+    "max": 5000000000.0,
+    "security": "Class N",
+    "price": "30-day VWAP",
+    "trigger": "GPU delivery/deployment milestones; first expected 2027"
+   },
+   "pages": [
+    "163",
+    "171"
+   ]
+  },
+  {
+   "party": "Microsoft",
+   "roles": [
+    "compute supplier",
+    "investor (amount not itemized)",
+    "distribution partner",
+    "competitor"
+   ],
+   "anthropic_spend_commitment": {
+    "min": 44900000000.0,
+    "period": "2026-11 to 2033-05"
+   },
+   "pages": [
+    "73",
+    "170"
+   ]
+  },
+  {
+   "party": "SpaceXAI",
+   "anthropic_spend": "up to $120.5B into 2029 (~$3.1B/month at full capacity); cancelable on 90 days' notice after early-2027 non-cancelable periods",
+   "page": "171"
+  },
+  {
+   "party": "Nscale",
+   "anthropic_spend": "up to ~$44.6B into 2033",
+   "page": "171"
+  },
+  {
+   "party": "Lambda",
+   "anthropic_spend": "~$41.3B into 2034",
+   "page": "171"
+  },
+  {
+   "party": "CSP marketplaces (aggregate)",
+   "revenue_share": {
+    "2023": 0.11,
+    "2024": 0.32,
+    "2025": 0.47,
+    "1H25": 0.44,
+    "1H26": 0.48
+   },
+   "ar_share": {
+    "2024-12-31": 0.42,
+    "2025-12-31": 0.6,
+    "2026-06-30": 0.58
+   },
+   "page": "F-16"
+  }
+ ],
+ "lockups": {
+  "company": {
+   "ends": "earlier of 6:00 AM ET 2nd full trading day after Q1 2027 earnings release or close of day 180",
+   "carve_outs": [
+    "NPA note issuances/conversions",
+    "Class F and Class E issuance",
+    "concurrent private placement",
+    "M&A/strategic issuances",
+    "equity plans/S-8"
+   ],
+   "page": "317-318"
+  },
+  "market_standoff": "substantially all holders, 180 days; company won't waive without representatives",
+  "groups": [
+   {
+    "group": "non-founder directors, officers, certain employees/consultants",
+    "final_expiry": "Q1 2027 earnings (+2 trading days) or day 180",
+    "releases": [
+     {
+      "when": "first trading day",
+      "pct": 10
+     },
+     {
+      "when": "FY26 earnings release +2 trading days",
+      "pct": 35
+     }
+    ],
+    "page": "321"
+   },
+   {
+    "group": "certain stockholders (180-day track)",
+    "base": "holdings 7 days before prospectus date",
+    "final_expiry": "Q1 2027 earnings or day 180",
+    "releases": [
+     {
+      "when": "day 27",
+      "pct": 6,
+      "cum": 6
+     },
+     {
+      "when": "day 48",
+      "pct": 6,
+      "cum": 12
+     },
+     {
+      "when": "day 62",
+      "pct": 7,
+      "cum": 19
+     },
+     {
+      "when": "day 76",
+      "pct": 7,
+      "cum": 26
+     },
+     {
+      "when": "FY26 earnings +2 trading days",
+      "pct": 12.5,
+      "cum": 38.5
+     },
+     {
+      "when": "FY26 earnings +13d",
+      "pct": 9.5,
+      "cum": 48
+     },
+     {
+      "when": "FY26 earnings +27d",
+      "pct": 9.5,
+      "cum": 57.5
+     },
+     {
+      "when": "FY26 earnings +41d",
+      "pct": 9.5,
+      "cum": 67
+     },
+     {
+      "when": "FY26 earnings +55d",
+      "pct": 9.5,
+      "cum": 76.5
+     },
+     {
+      "when": "FY26 earnings +69d",
+      "pct": 9.5,
+      "cum": 86
+     },
+     {
+      "when": "Q1 2027 earnings or day 180",
+      "pct": "remainder (~14)",
+      "cum": 100
+     }
+    ],
+    "interpretation_note": "'each of the dates that are 27 and 48 days ... up to 6%' read as 6% per date; cumulative figures derived",
+    "page": "321-322"
+   },
+   {
+    "group": "certain holders >0.5% of fully diluted (365-day track)",
+    "final_expiry": "Q3 2027 earnings or day 365",
+    "releases": [
+     {
+      "when": "day 27",
+      "pct": 1.8,
+      "cum": 1.8
+     },
+     {
+      "when": "day 48",
+      "pct": 1.8,
+      "cum": 3.6
+     },
+     {
+      "when": "day 62",
+      "pct": 2.1,
+      "cum": 5.7
+     },
+     {
+      "when": "day 76",
+      "pct": 2.1,
+      "cum": 7.8
+     },
+     {
+      "when": "FY26 earnings +2 trading days",
+      "pct": 3.75,
+      "cum": 11.55
+     },
+     {
+      "when": "FY26 earnings +13/27/41/55/69d",
+      "pct": "2.85 each",
+      "cum": 25.8
+     },
+     {
+      "when": "Q1 2027 earnings or day 180",
+      "pct": 4.2,
+      "cum": 30.0
+     },
+     {
+      "when": "Q1 earnings +34/48/62/76d",
+      "pct": "5.6 each",
+      "cum": 52.4
+     },
+     {
+      "when": "Q2 2027 earnings +2 trading days",
+      "pct": 7.0,
+      "cum": 59.4
+     },
+     {
+      "when": "Q2 earnings +27/41/55/69/83d",
+      "pct": "6.3 each",
+      "cum": 90.9
+     },
+     {
+      "when": "Q3 2027 earnings or day 365",
+      "pct": "remainder (~9.1)",
+      "cum": 100
+     }
+    ],
+    "page": "322"
+   },
+   {
+    "group": "seven co-founders",
+    "final_expiry": "Q3 2027 earnings (+2 trading days) or day 365",
+    "releases": [
+     {
+      "when": "Q1 2027 earnings or day 180",
+      "pct": 29
+     }
+    ],
+    "excludes": "shares sold in IPO",
+    "page": "323"
+   }
+  ],
+  "day_27_48_62_76_confirmed": true,
+  "applies_to": "groups 2 and 3 only",
+  "price_thresholds": "none disclosed",
+  "group_share_counts_and_pct_fd": null,
+  "exceptions": [
+   "gifts/family/estate; founders: any philanthropic organization and bona fide estate planning",
+   "bona fide pledges (incl. founder estate-planning vehicles)",
+   "sell-to-cover taxes",
+   "10b5-1 plans (no sales in lock-up)",
+   "board-approved change-of-control tender/merger",
+   "conversions/reclassifications"
+  ],
+  "early_release": "representatives' joint discretion; certain releases trigger pro rata release for other holders (p. 323)"
+ },
+ "shares_eligible": {
+  "schedule_share_counts": null,
+  "rule_144_affiliate_limit": "greater of 1% of outstanding or 4-week avg weekly volume",
+  "rule_701": "90 days post-prospectus",
+  "s8": "promptly after effectiveness",
+  "pages": [
+   "307-310"
+  ]
+ },
+ "registration_rights": {
+  "ira": {
+   "demand": "from 6 months post-IPO; 60% of registrable; >=$200M; 2 demands",
+   "s3": ">= $2M; max 2 per 12 months",
+   "piggyback": "cutback floor 20%; co-founder shares cut first",
+   "expiry": "2nd anniversary of IPO",
+   "shares_covered": null
+  },
+  "google_rra": {
+   "date": "2026-05",
+   "terms": "single resale demand in first year; S-3 resale registration within 60 days of each quarterly NPA closing; expires Feb 7, 2033 or 12 months after final closing"
+  },
+  "broadcom_rra": {
+   "date": "2026-06",
+   "terms": "shelf within 60 days of S-3 eligibility; 1 demand per $5.0B notes; $500M minimum; up to 3 underwritten offerings/block trades per 12 months; MFN; pro rata lock-up waiver; co-founders cut first; no registrable shares yet"
+  },
+  "pages": [
+   "299-301",
+   "310"
+  ]
+ },
+ "underwriting": {
+  "representatives": [
+   "Goldman Sachs & Co. LLC",
+   "Morgan Stanley & Co. LLC"
+  ],
+  "syndicate": [
+   "Goldman Sachs & Co. LLC",
+   "Morgan Stanley & Co. LLC",
+   "J.P. Morgan Securities LLC",
+   "Citigroup Global Markets Inc.",
+   "Barclays Capital Inc. and Barclays Bank PLC",
+   "Wells Fargo Securities, LLC",
+   "BofA Securities, Inc.",
+   "Deutsche Bank Securities Inc.",
+   "RBC Capital Markets, LLC",
+   "UBS Securities LLC",
+   "BMO Capital Markets Corp.",
+   "BNP Paribas Securities Corp.",
+   "Credit Agricole Securities (USA) Inc.",
+   "Jefferies LLC",
+   "Mizuho Securities USA LLC",
+   "MUFG Securities Americas Inc.",
+   "S G Americas Securities, LLC",
+   "TD Securities (USA) LLC",
+   "BTIG, LLC",
+   "Cantor Fitzgerald & Co.",
+   "Capital One Securities, Inc.",
+   "Macquarie Capital (USA) Inc."
+  ],
+  "selling_agent": "Bernstein Institutional Services LLC for SG Americas",
+  "discount_per_share": null,
+  "discount_total": null,
+  "shares_offered_company": null,
+  "shares_offered_selling": null,
+  "price_range": null,
+  "greenshoe": {
+   "days": 30,
+   "from": "company only",
+   "shares": null
+  },
+  "discretionary_accounts_max_pct": 5,
+  "stabilization_agent": "Morgan Stanley & Co. LLC",
+  "directed_share_program": "none disclosed",
+  "online_brokerage": "representatives may allocate to underwriters for online brokerage account holders (standard)",
+  "international_public_offerings": [
+   "Australia (separate Australian Prospectus lodged with ASIC)",
+   "Canada",
+   "certain EEA states (European retail offering; European prospectus, BaFin-approved per Swiss section)",
+   "Japan",
+   "Switzerland",
+   "United Kingdom"
+  ],
+  "underwriter_conflicts": "affiliates are agents/lenders under $15B A&R Credit Facility (Morgan Stanley affiliate administrative agent); some underwriters are customers",
+  "expenses": null,
+  "counsel": {
+   "company": "Wilson Sonsini Goodrich & Rosati",
+   "underwriters": "Freshfields US LLP",
+   "exec_comp": "Orrick",
+   "ltbt": "John Morley; Cleary Gottlieb",
+   "co_founders": "Cravath, Swaine & Moore"
+  },
+  "pages": [
+   "cover",
+   "i",
+   "316-325",
+   "334"
+  ]
+ },
+ "use_of_proceeds": {
+  "net_proceeds": null,
+  "uses": [
+   "general corporate purposes incl. working capital, opex, capex incl. compute and infrastructure",
+   "hiring and retention",
+   "possible acquisitions (none committed)",
+   "RSU Settlement tax withholding (amount blank)"
+  ],
+  "selling_stockholder_proceeds_to_company": 0,
+  "page": "124"
+ },
+ "dividend_policy": {
+  "history": "never declared or paid",
+  "intent": "none foreseeable",
+  "restriction": "A&R Credit Agreement",
+  "page": "125"
+ },
+ "capitalization": {
+  "figures": null,
+  "authorized_actual": {
+   "class_a": 10906111730,
+   "class_n": 7128888270,
+   "preferred": 1040440652
+  },
+  "authorized_pro_forma": {
+   "class_a": 300000000000,
+   "class_n": 100000000000,
+   "class_t": 1,
+   "class_f": 1,
+   "class_e": 30000000000,
+   "preferred": 30000000000
+  },
+  "pro_forma_adjustments": [
+   "Preferred Stock Conversion (A, C-1, D-1, D-2, E-1, F-1, G-1, H-1 -> Class A; B, C-2, D-3, E-2..E-5, F-2..F-4, G-2..G-4, H-2..H-4 -> Class N)",
+   "Convertible Notes Conversion (Amazon notes -> Class N up to ownership cap)",
+   "Class F Stock Issuance",
+   "Initial Public Benefit Issuance (legally outstanding; not for accounting)",
+   "RSU Settlement (net)",
+   "new charter"
+  ],
+  "splits": "10-for-1 forward split of A and N, and 1-for-1,000 reverse split of T, on Sept 17, 2026",
+  "pages": [
+   "19-21",
+   "126-128"
+  ]
+ },
+ "dilution": {
+  "figures": null,
+  "method": "NTBV per share over Class A + Class N; Class T/F/E excluded (no economic rights)",
+  "page": "129-131"
+ },
+ "public_benefit_issuances": {
+  "initial_class_n_shares": 846840960,
+  "pct_fd": 5,
+  "holder": "Anthropic Public Benefit Fund, LLC (wholly owned)",
+  "future": "up to +2% each time share price rises 50% above prior milestone (from IPO price); milestone requires close above threshold 90 of 120 trading days and 10-day average above threshold; board discretion",
+  "initial_managers": [
+   "Dario Amodei",
+   "Daniela Amodei",
+   "Jack Clark",
+   "Buddy Shah"
+  ],
+  "pages": [
+   "12",
+   "143-144"
+  ]
+ },
+ "accountant_change": {
+  "engaged": "Ernst & Young LLP",
+  "dismissed": "Grant Thornton LLP",
+  "date": "2025-10-30",
+  "scope": "EY audits FY2025; GT audited FY2023-2024",
+  "disagreements": "none",
+  "reportable_events": "none",
+  "reason_stated": false,
+  "gt_letter_date": "2026-10-26",
+  "pages": [
+   "334-335"
+  ]
+ },
+ "anti_takeover": {
+  "items": [
+   "multi-class control (LTBT + Founder LLC)",
+   "board size only by 80% of Whole Board; odd number until a sunset",
+   "non-T vacancies filled per Founder LLC notice pre-Class F Sunset",
+   "special meetings: board, Chair, CEO, President, Founder LLC (pre-Class F Sunset)",
+   "written consent limited; Class E never",
+   "advance notice (except Class T/F nominations)",
+   "no cumulative voting",
+   "classified board after Class F Sunset",
+   "66 2/3% Class A to amend charter after Class F Sunset",
+   "blank-check preferred needs 80% board + Founder LLC consent",
+   "DGCL s203 opt-out until both sunsets"
+  ],
+  "pages": [
+   "301-304",
+   "113-114"
+  ]
+ },
+ "exclusive_forum": {
+  "state": "Delaware Court of Chancery for derivative, fiduciary, DGCL, charter/bylaw, internal affairs",
+  "securities_act": "US federal district courts",
+  "exchange_act_derivative": "US District Court for the District of Delaware",
+  "page": "304"
+ },
+ "other_notable": [
+  {
+   "item": "Series B shares forfeited to U.S. government by former holders in legal proceedings repurchased Oct 2025 at $140.9676 and resold to 9 investors (~$627M); former holders not named",
+   "page": "II-3"
+  },
+  {
+   "item": "Series G-2 non-voting sold to 5 investors ($21.7B); Series H-2 non-voting to 11 investors ($19.5B)",
+   "page": "II-3-II-4"
+  }
+ ],
+ "matt_levine_features": [
+  {
+   "n": 1,
+   "title": "One share, 50.1% of the vote, auto-adjusting",
+   "pages": "117, 247; Ex. 3.3 Art. V"
+  },
+  {
+   "n": 2,
+   "title": "Economically empty trust picks board; company funds and consolidates it",
+   "pages": "244, 246, 251"
+  },
+  {
+   "n": 3,
+   "title": "Two controllers holding each other's leash (Class F Amendment Threshold, Specified Class T Director, Trust amendment restrictions)",
+   "pages": "244, 260; Ex. 3.3 s5.4(d); Ex. 10.14 s3.8"
+  },
+  {
+   "n": 4,
+   "title": "Trust off-switch: founders + employees + public, no trustees needed; Voting Request",
+   "pages": "245; Ex. 10.14 s3.5"
+  },
+  {
+   "n": 5,
+   "title": "Class E: employee votes scale with charitable pledges; forfeited on joining competitor",
+   "pages": "249-250"
+  },
+  {
+   "n": 6,
+   "title": "Secret successor lists; 90+450-day sunset clock; government leave",
+   "pages": "247, 251-252; Ex. 99.2 s22(o), s34(jj)"
+  },
+  {
+   "n": 7,
+   "title": "2% retention rule vs 80% philanthropy pledge: votes don't fall with economics",
+   "pages": "118, 248"
+  },
+  {
+   "n": 8,
+   "title": "Vendor financing in stock: Amazon/Google/Broadcom/AMD funding tied to compute delivered",
+   "pages": "163-172; F-41; Ex. 4.3, 4.5"
+  },
+  {
+   "n": 9,
+   "title": "Non-voting stock keeps biggest counterparties out of RPT and 5%-holder sections",
+   "pages": "116, 282, 288"
+  },
+  {
+   "n": 10,
+   "title": "Public Benefit Issuance: dilution for humanity grows with stock price",
+   "pages": "12, 143-144"
+  },
+  {
+   "n": 11,
+   "title": "Lock-up staircase (~20 releases, max 7% steps) instead of a cliff",
+   "pages": "321-323"
+  },
+  {
+   "n": 12,
+   "title": "5-day notice right before transferring control of frontier AI model (else void); CEO votes DAF-donated shares",
+   "pages": "285, 284-285; Ex. 10.14 s3.6"
+  }
+ ]
+}
