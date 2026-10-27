@@ -32,6 +32,7 @@ python3 tools/content.py        # editorial content -> data/content.json
 python3 tools/build.py          # src/ + data/      -> dist/index.html, dist/artifact.html
 python3 tools/verify.py         # checks every quoted passage against its cited S-1 page
 node tools/og.js                # dist/og.png (needs Playwright)
+node tools/test_nav.js [url]    # navigation tests at 7 screen widths (needs Playwright and a served dist/)
 ```
 
 No package install is needed. The page loads D3 7.9.0 from cdnjs and fonts from Google Fonts.

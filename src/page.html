@@ -2,26 +2,21 @@
 
 <header class="topbar gutter">
   <div class="topbar-inner">
-    <a class="brand" href="#top"><span class="ticker">ANT</span><span>S-1, Annotated</span></a>
-    <nav class="topnav" aria-label="Sections">
-      <a href="#growth">Growth</a>
-      <a class="minor" href="#economics">Economics</a>
-      <a href="#loss">The loss</a>
-      <a href="#compute">Compute bill</a>
-      <a href="#circle">Money circle</a>
-      <a href="#control">Control</a>
-      <a class="minor" href="#letter">Letter</a>
-      <a href="#valuation">Valuation</a>
-      <a href="#risks">Risks</a>
-      <a href="#court">Debates</a>
-      <a class="minor" href="#experts">Experts</a>
-      <a class="minor" href="#timeline">Timeline</a>
-    </nav>
-    <span class="pagecount" id="pagecount" aria-live="off">S-1 pp. i–F-66</span>
+    <a class="brand" href="#top" aria-label="Back to top"><span class="ticker">ANT</span><span class="brand-name">S-1, Annotated</span></a>
+    <p class="nav-current" id="nav-current" aria-hidden="true"><span class="nav-num"></span><span class="nav-title">Introduction</span></p>
+    <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-panel"><span class="toc-icon" aria-hidden="true"></span><span>Contents</span></button>
     <button class="theme-toggle" type="button" aria-label="Color theme">◐</button>
+    <nav class="toc-panel" id="toc-panel" aria-label="Contents" hidden>
+      <ol class="toc-list" id="toc-list"></ol>
+    </nav>
   </div>
-  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><div class="progress-fill" id="progress"></div></div>
 </header>
+
+<nav class="toc-rail" id="toc-rail" aria-label="Sections">
+  <p class="toc-rail-head">Contents</p>
+  <ol class="toc-list" id="toc-rail-list"></ol>
+</nav>
 
 <main id="top">
 

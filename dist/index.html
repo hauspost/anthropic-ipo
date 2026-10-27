@@ -169,12 +169,16 @@ button { font: inherit; color: inherit; }
   -webkit-backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--rule);
 }
+/* Fixed-width columns: brand | current section (takes the slack, truncates) | Contents | theme.
+   Nothing in the bar changes width while scrolling, so nothing can shift or be pushed off-screen. */
 .topbar-inner {
+  position: relative;
   max-width: var(--wide);
   margin-inline: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   height: 3rem;
 }
 .brand {
@@ -186,29 +190,71 @@ button { font: inherit; color: inherit; }
   font-family: var(--mono); font-weight: 600; font-size: var(--t-xs);
   border: 1px solid var(--ink); padding: 0 0.35rem; border-radius: 3px; letter-spacing: 0.06em;
 }
-.topnav { display: flex; gap: 0.1rem; overflow-x: auto; scrollbar-width: none; min-width: 0; flex: 1; justify-content: flex-end; }
-.topnav::-webkit-scrollbar { display: none; }
-.topnav a {
-  font-size: var(--t-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
-  text-decoration: none; color: var(--ink-3); padding: 0.35rem 0.5rem; border-radius: 4px; white-space: nowrap;
-}
-.topnav a:hover { color: var(--ink); background: var(--slip); }
-.topnav a[aria-current="true"] { color: var(--ink); }
-.pagecount {
-  font-family: var(--mono); font-size: var(--t-xs); color: var(--ink-3); white-space: nowrap;
+.nav-current {
+  min-width: 0; margin: 0; display: flex; align-items: baseline; gap: 0.5rem;
+  white-space: nowrap; overflow: hidden;
   border-left: 1px solid var(--rule); padding-left: 0.75rem;
+  font-size: var(--t-sm); color: var(--ink-2);
 }
-.progress { position: absolute; left: 0; bottom: -1px; height: 2px; background: var(--herring); width: 0; transition: width 0.1s linear; }
+.nav-num { flex: none; font-family: var(--mono); font-size: var(--t-xs); color: var(--herring); font-variant-numeric: tabular-nums; }
+.nav-num:empty { display: none; }
+.nav-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; font-weight: 600; }
+.toc-toggle {
+  display: inline-flex; align-items: center; gap: 0.45rem; height: 2rem; padding: 0 0.8rem;
+  border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; cursor: pointer;
+  font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink);
+}
+.toc-toggle:hover { border-color: var(--rule-2); }
+.toc-toggle[aria-expanded="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.toc-icon { width: 0.8rem; height: 0.55rem; border-block: 1.5px solid currentColor; position: relative; }
+.toc-icon::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1.5px solid currentColor; transform: translateY(-50%); }
 .theme-toggle {
   border: 1px solid var(--rule); background: transparent; border-radius: 999px; width: 2rem; height: 2rem;
   display: grid; place-items: center; cursor: pointer; color: var(--ink-2); flex: none;
 }
 .theme-toggle:hover { color: var(--ink); border-color: var(--rule-2); }
-@media (max-width: 1320px) { .pagecount { display: none; } }
-@media (max-width: 1180px) { .topnav a.minor { display: none; } }
-@media (max-width: 860px) {
-  .topnav { display: none; }
-  .topbar-inner { justify-content: space-between; }
+@media (max-width: 520px) {
+  .brand-name { display: none; }
+  .topbar-inner { gap: 0.5rem; }
+}
+
+.progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--herring); transform-origin: 0 50%; transform: scaleX(0); }
+
+/* the Contents menu: drops from the bar on every screen size */
+.toc-panel {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 70;
+  width: min(25rem, 100%); max-height: calc(100vh - 4.5rem - env(safe-area-inset-top, 0px)); overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 0.4rem;
+}
+.toc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.toc-list a {
+  display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.15rem 0.5rem; align-items: baseline;
+  padding: 0.45rem 0.6rem; border-radius: 4px; text-decoration: none; color: var(--ink-2);
+}
+.toc-list a:hover { background: var(--slip); color: var(--ink); }
+.toc-list .toc-n { font-family: var(--mono); font-size: var(--t-xs); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.toc-list .toc-t { font-weight: 650; font-size: var(--t-sm); color: inherit; }
+.toc-list .toc-d { grid-column: 2; font-size: var(--t-xs); color: var(--ink-3); line-height: 1.35; }
+.toc-list a[aria-current="location"] { background: var(--herring-wash); color: var(--ink); box-shadow: inset 2px 0 0 var(--herring); }
+.toc-list a[aria-current="location"] .toc-n { color: var(--herring); }
+
+/* the side rail: only where the margin beside the widest figures can hold it */
+.toc-rail { display: none; }
+@media (min-width: 1540px) {
+  .toc-rail {
+    display: block; position: fixed; z-index: 40;
+    top: calc(env(safe-area-inset-top, 0px) + 3rem + 1.75rem);
+    left: max(16px, calc((100vw - var(--wide)) / 2 - 13.5rem));
+    width: 11.5rem; max-height: calc(100vh - 6rem); overflow-y: auto; overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+  .toc-rail-head { margin: 0 0 0.5rem; padding-left: 0.6rem; font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .toc-rail .toc-list a { grid-template-columns: 1.4rem minmax(0, 1fr); padding: 0.3rem 0.6rem; }
+  .toc-rail .toc-d { display: none; }
+  .toc-rail .toc-t { font-size: var(--t-xs); font-weight: 600; }
 }
 
 /* ---------- hero ---------- */
@@ -523,6 +569,10 @@ table.tracker td.chg { background: var(--herring-wash); color: var(--ink); font-
 table.tracker td.same { color: var(--ink-3); text-align: center; }
 table.tracker thead th:last-child, table.tracker td:last-child { background-image: linear-gradient(var(--wash-1), var(--wash-1)); }
 @media (max-width: 600px) { table.tracker tbody th { min-width: 8rem; } }
+@media (min-width: 900px) {
+  .toc-panel { width: min(40rem, 100%); }
+  .toc-panel .toc-list { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); grid-auto-flow: column; column-gap: 0.4rem; }
+}
 
 </style>
 <meta property="og:type" content="article">
@@ -542,26 +592,21 @@ table.tracker thead th:last-child, table.tracker td:last-child { background-imag
 
 <header class="topbar gutter">
   <div class="topbar-inner">
-    <a class="brand" href="#top"><span class="ticker">ANT</span><span>S-1, Annotated</span></a>
-    <nav class="topnav" aria-label="Sections">
-      <a href="#growth">Growth</a>
-      <a class="minor" href="#economics">Economics</a>
-      <a href="#loss">The loss</a>
-      <a href="#compute">Compute bill</a>
-      <a href="#circle">Money circle</a>
-      <a href="#control">Control</a>
-      <a class="minor" href="#letter">Letter</a>
-      <a href="#valuation">Valuation</a>
-      <a href="#risks">Risks</a>
-      <a href="#court">Debates</a>
-      <a class="minor" href="#experts">Experts</a>
-      <a class="minor" href="#timeline">Timeline</a>
-    </nav>
-    <span class="pagecount" id="pagecount" aria-live="off">S-1 pp. i–F-66</span>
+    <a class="brand" href="#top" aria-label="Back to top"><span class="ticker">ANT</span><span class="brand-name">S-1, Annotated</span></a>
+    <p class="nav-current" id="nav-current" aria-hidden="true"><span class="nav-num"></span><span class="nav-title">Introduction</span></p>
+    <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-panel"><span class="toc-icon" aria-hidden="true"></span><span>Contents</span></button>
     <button class="theme-toggle" type="button" aria-label="Color theme">◐</button>
+    <nav class="toc-panel" id="toc-panel" aria-label="Contents" hidden>
+      <ol class="toc-list" id="toc-list"></ol>
+    </nav>
   </div>
-  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><div class="progress-fill" id="progress"></div></div>
 </header>
+
+<nav class="toc-rail" id="toc-rail" aria-label="Sections">
+  <p class="toc-rail-head">Contents</p>
+  <ol class="toc-list" id="toc-rail-list"></ol>
+</nav>
 
 <main id="top">
 
@@ -2410,21 +2455,98 @@ const Charts = (() => {
   }
 
   /* --- nav: progress, active section, S-1 page counter --- */
+  /* Sections in reading order: one list feeds the Contents menu, the side rail and the top bar. */
+  const NAV = [
+    { id: "short", t: "The short version", d: "Seven things to know first" },
+    { id: "growth", t: "Growth", d: "$376M to $11.6B a quarter" },
+    { id: "economics", t: "Unit economics", d: "Revenue per dollar of compute" },
+    { id: "loss", t: "The $80.7B loss", d: "Why most of it is paper" },
+    { id: "compute", t: "The compute bill", d: "≈$855B signed; can they pay?" },
+    { id: "circle", t: "The money circle", d: "Investors who are also suppliers" },
+    { id: "control", t: "Who controls it", d: "One share, 50.1% of the vote" },
+    { id: "letter", t: "The founders' letter", d: "Eight pages most readers miss" },
+    { id: "valuation", t: "Fill in the blank", d: "What a $1–2T price assumes" },
+    { id: "risks", t: "88 risk factors", d: "Searchable, unprecedented ones first" },
+    { id: "court", t: "Nine debates", d: "Both sides, the filing, our read" },
+    { id: "experts", t: "The expert map", d: "Who is saying what" },
+    { id: "timeline", t: "Timeline and drafts", d: "Rounds, drafts, lock-ups" },
+    { id: "glossary", t: "Glossary", d: "The jargon, decoded" },
+    { id: "method", t: "Method and sources", d: "How this was made" },
+  ];
+
   function initNav() {
-    const prog = $("#progress"), counter = $("#pagecount");
-    const secs = $$("main .section[id]");
-    const links = new Map($$(".topnav a").map((a) => [a.getAttribute("href").slice(1), a]));
-    const onScroll = () => {
-      const h = document.documentElement;
-      const p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
-      prog.style.width = (p * 100).toFixed(1) + "%";
-      let cur = null;
-      for (const s of secs) { if (s.getBoundingClientRect().top < 120) cur = s; }
-      links.forEach((a, id) => a.setAttribute("aria-current", String(cur && cur.id === id)));
-      if (counter) counter.textContent = cur && cur.dataset.pages ? "Reading S-1 " + cur.dataset.pages : "S-1 · 421 pages";
+    const fill = $("#progress");
+    const cur = $("#nav-current");
+    const toggle = $("#toc-toggle"), panel = $("#toc-panel");
+    const rail = $("#toc-rail");
+    const items = NAV.map((n, i) => ({ ...n, n: String(i + 1).padStart(2, "0"), el: document.getElementById(n.id) })).filter((n) => n.el);
+
+    const build = (ol) => {
+      if (!ol) return [];
+      return items.map((n) => {
+        const a = el("a", { href: "#" + n.id, "data-id": n.id },
+          el("span", { class: "toc-n", text: n.n }), el("span", { class: "toc-t", text: n.t }), el("span", { class: "toc-d", text: n.d }));
+        ol.append(el("li", {}, a));
+        return a;
+      });
     };
+    const links = [...build($("#toc-list")), ...build($("#toc-rail-list"))];
+
+    // The active section is the last one whose top has passed just under the bar.
+    let active = undefined, ticking = false;
+    const barBottom = () => $(".topbar").getBoundingClientRect().bottom;
+    const update = () => {
+      ticking = false;
+      const h = document.documentElement;
+      const p = Math.min(1, Math.max(0, h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)));
+      fill.style.transform = `scaleX(${p.toFixed(4)})`;
+      const line = barBottom() + 24;
+      let now = null;
+      for (const n of items) { if (n.el.getBoundingClientRect().top <= line) now = n; else break; }
+      // at the very bottom the last short sections may never reach the line
+      if (h.scrollTop + h.clientHeight >= h.scrollHeight - 2) now = items[items.length - 1];
+      const id = now ? now.id : null;
+      if (id === active) return;
+      active = id;
+      $(".nav-num", cur).textContent = now ? now.n : "";
+      $(".nav-title", cur).textContent = now ? now.t : "Introduction";
+      links.forEach((a) => (a.dataset.id === id ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current")));
+      // keep the highlighted rail entry visible without scrolling the page
+      const ra = rail && rail.offsetParent !== null && id ? rail.querySelector(`a[data-id="${id}"]`) : null;
+      if (ra) {
+        const top = ra.offsetTop, bottom = top + ra.offsetHeight;
+        if (top < rail.scrollTop || bottom > rail.scrollTop + rail.clientHeight) rail.scrollTop = top - rail.clientHeight / 3;
+      }
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
     window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    window.addEventListener("resize", onScroll, { passive: true });
+    update();
+
+    // Contents menu
+    const open = () => {
+      panel.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      const target = panel.querySelector('a[aria-current="location"]') || panel.querySelector("a");
+      if (target) { target.scrollIntoView({ block: "nearest" }); target.focus({ preventScroll: true }); }
+    };
+    const close = (refocus) => {
+      if (panel.hidden) return;
+      panel.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      if (refocus) toggle.focus({ preventScroll: true });
+    };
+    toggle.addEventListener("click", () => (panel.hidden ? open() : close(false)));
+    panel.addEventListener("click", (e) => { if (e.target.closest("a")) close(false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) { e.preventDefault(); close(true); } });
+    document.addEventListener("pointerdown", (e) => { if (!panel.hidden && !panel.contains(e.target) && !toggle.contains(e.target)) close(false); });
+    panel.addEventListener("focusout", (e) => { if (e.relatedTarget && !panel.contains(e.relatedTarget) && e.relatedTarget !== toggle) close(false); });
+    panel.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+      const list = $$("a", panel), i = list.indexOf(document.activeElement);
+      const next = list[(i + (e.key === "ArrowDown" ? 1 : list.length - 1)) % list.length];
+      if (next) { e.preventDefault(); next.focus(); }
+    });
     const sp = $("#share-page");
     if (sp) sp.addEventListener("click", () => U.copyText(U.pageUrl()));
     const sx = $("#share-x");

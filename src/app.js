@@ -993,21 +993,98 @@
   }
 
   /* --- nav: progress, active section, S-1 page counter --- */
+  /* Sections in reading order: one list feeds the Contents menu, the side rail and the top bar. */
+  const NAV = [
+    { id: "short", t: "The short version", d: "Seven things to know first" },
+    { id: "growth", t: "Growth", d: "$376M to $11.6B a quarter" },
+    { id: "economics", t: "Unit economics", d: "Revenue per dollar of compute" },
+    { id: "loss", t: "The $80.7B loss", d: "Why most of it is paper" },
+    { id: "compute", t: "The compute bill", d: "≈$855B signed; can they pay?" },
+    { id: "circle", t: "The money circle", d: "Investors who are also suppliers" },
+    { id: "control", t: "Who controls it", d: "One share, 50.1% of the vote" },
+    { id: "letter", t: "The founders' letter", d: "Eight pages most readers miss" },
+    { id: "valuation", t: "Fill in the blank", d: "What a $1–2T price assumes" },
+    { id: "risks", t: "88 risk factors", d: "Searchable, unprecedented ones first" },
+    { id: "court", t: "Nine debates", d: "Both sides, the filing, our read" },
+    { id: "experts", t: "The expert map", d: "Who is saying what" },
+    { id: "timeline", t: "Timeline and drafts", d: "Rounds, drafts, lock-ups" },
+    { id: "glossary", t: "Glossary", d: "The jargon, decoded" },
+    { id: "method", t: "Method and sources", d: "How this was made" },
+  ];
+
   function initNav() {
-    const prog = $("#progress"), counter = $("#pagecount");
-    const secs = $$("main .section[id]");
-    const links = new Map($$(".topnav a").map((a) => [a.getAttribute("href").slice(1), a]));
-    const onScroll = () => {
-      const h = document.documentElement;
-      const p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
-      prog.style.width = (p * 100).toFixed(1) + "%";
-      let cur = null;
-      for (const s of secs) { if (s.getBoundingClientRect().top < 120) cur = s; }
-      links.forEach((a, id) => a.setAttribute("aria-current", String(cur && cur.id === id)));
-      if (counter) counter.textContent = cur && cur.dataset.pages ? "Reading S-1 " + cur.dataset.pages : "S-1 · 421 pages";
+    const fill = $("#progress");
+    const cur = $("#nav-current");
+    const toggle = $("#toc-toggle"), panel = $("#toc-panel");
+    const rail = $("#toc-rail");
+    const items = NAV.map((n, i) => ({ ...n, n: String(i + 1).padStart(2, "0"), el: document.getElementById(n.id) })).filter((n) => n.el);
+
+    const build = (ol) => {
+      if (!ol) return [];
+      return items.map((n) => {
+        const a = el("a", { href: "#" + n.id, "data-id": n.id },
+          el("span", { class: "toc-n", text: n.n }), el("span", { class: "toc-t", text: n.t }), el("span", { class: "toc-d", text: n.d }));
+        ol.append(el("li", {}, a));
+        return a;
+      });
     };
+    const links = [...build($("#toc-list")), ...build($("#toc-rail-list"))];
+
+    // The active section is the last one whose top has passed just under the bar.
+    let active = undefined, ticking = false;
+    const barBottom = () => $(".topbar").getBoundingClientRect().bottom;
+    const update = () => {
+      ticking = false;
+      const h = document.documentElement;
+      const p = Math.min(1, Math.max(0, h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)));
+      fill.style.transform = `scaleX(${p.toFixed(4)})`;
+      const line = barBottom() + 24;
+      let now = null;
+      for (const n of items) { if (n.el.getBoundingClientRect().top <= line) now = n; else break; }
+      // at the very bottom the last short sections may never reach the line
+      if (h.scrollTop + h.clientHeight >= h.scrollHeight - 2) now = items[items.length - 1];
+      const id = now ? now.id : null;
+      if (id === active) return;
+      active = id;
+      $(".nav-num", cur).textContent = now ? now.n : "";
+      $(".nav-title", cur).textContent = now ? now.t : "Introduction";
+      links.forEach((a) => (a.dataset.id === id ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current")));
+      // keep the highlighted rail entry visible without scrolling the page
+      const ra = rail && rail.offsetParent !== null && id ? rail.querySelector(`a[data-id="${id}"]`) : null;
+      if (ra) {
+        const top = ra.offsetTop, bottom = top + ra.offsetHeight;
+        if (top < rail.scrollTop || bottom > rail.scrollTop + rail.clientHeight) rail.scrollTop = top - rail.clientHeight / 3;
+      }
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
     window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    window.addEventListener("resize", onScroll, { passive: true });
+    update();
+
+    // Contents menu
+    const open = () => {
+      panel.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      const target = panel.querySelector('a[aria-current="location"]') || panel.querySelector("a");
+      if (target) { target.scrollIntoView({ block: "nearest" }); target.focus({ preventScroll: true }); }
+    };
+    const close = (refocus) => {
+      if (panel.hidden) return;
+      panel.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      if (refocus) toggle.focus({ preventScroll: true });
+    };
+    toggle.addEventListener("click", () => (panel.hidden ? open() : close(false)));
+    panel.addEventListener("click", (e) => { if (e.target.closest("a")) close(false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) { e.preventDefault(); close(true); } });
+    document.addEventListener("pointerdown", (e) => { if (!panel.hidden && !panel.contains(e.target) && !toggle.contains(e.target)) close(false); });
+    panel.addEventListener("focusout", (e) => { if (e.relatedTarget && !panel.contains(e.relatedTarget) && e.relatedTarget !== toggle) close(false); });
+    panel.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+      const list = $$("a", panel), i = list.indexOf(document.activeElement);
+      const next = list[(i + (e.key === "ArrowDown" ? 1 : list.length - 1)) % list.length];
+      if (next) { e.preventDefault(); next.focus(); }
+    });
     const sp = $("#share-page");
     if (sp) sp.addEventListener("click", () => U.copyText(U.pageUrl()));
     const sx = $("#share-x");
