@@ -157,12 +157,16 @@ button { font: inherit; color: inherit; }
   -webkit-backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--rule);
 }
+/* Fixed-width columns: brand | current section (takes the slack, truncates) | Contents | theme.
+   Nothing in the bar changes width while scrolling, so nothing can shift or be pushed off-screen. */
 .topbar-inner {
+  position: relative;
   max-width: var(--wide);
   margin-inline: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   height: 3rem;
 }
 .brand {
@@ -174,29 +178,71 @@ button { font: inherit; color: inherit; }
   font-family: var(--mono); font-weight: 600; font-size: var(--t-xs);
   border: 1px solid var(--ink); padding: 0 0.35rem; border-radius: 3px; letter-spacing: 0.06em;
 }
-.topnav { display: flex; gap: 0.1rem; overflow-x: auto; scrollbar-width: none; min-width: 0; flex: 1; justify-content: flex-end; }
-.topnav::-webkit-scrollbar { display: none; }
-.topnav a {
-  font-size: var(--t-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
-  text-decoration: none; color: var(--ink-3); padding: 0.35rem 0.5rem; border-radius: 4px; white-space: nowrap;
-}
-.topnav a:hover { color: var(--ink); background: var(--slip); }
-.topnav a[aria-current="true"] { color: var(--ink); }
-.pagecount {
-  font-family: var(--mono); font-size: var(--t-xs); color: var(--ink-3); white-space: nowrap;
+.nav-current {
+  min-width: 0; margin: 0; display: flex; align-items: baseline; gap: 0.5rem;
+  white-space: nowrap; overflow: hidden;
   border-left: 1px solid var(--rule); padding-left: 0.75rem;
+  font-size: var(--t-sm); color: var(--ink-2);
 }
-.progress { position: absolute; left: 0; bottom: -1px; height: 2px; background: var(--herring); width: 0; transition: width 0.1s linear; }
+.nav-num { flex: none; font-family: var(--mono); font-size: var(--t-xs); color: var(--herring); font-variant-numeric: tabular-nums; }
+.nav-num:empty { display: none; }
+.nav-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; font-weight: 600; }
+.toc-toggle {
+  display: inline-flex; align-items: center; gap: 0.45rem; height: 2rem; padding: 0 0.8rem;
+  border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; cursor: pointer;
+  font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink);
+}
+.toc-toggle:hover { border-color: var(--rule-2); }
+.toc-toggle[aria-expanded="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.toc-icon { width: 0.8rem; height: 0.55rem; border-block: 1.5px solid currentColor; position: relative; }
+.toc-icon::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1.5px solid currentColor; transform: translateY(-50%); }
 .theme-toggle {
   border: 1px solid var(--rule); background: transparent; border-radius: 999px; width: 2rem; height: 2rem;
   display: grid; place-items: center; cursor: pointer; color: var(--ink-2); flex: none;
 }
 .theme-toggle:hover { color: var(--ink); border-color: var(--rule-2); }
-@media (max-width: 1320px) { .pagecount { display: none; } }
-@media (max-width: 1180px) { .topnav a.minor { display: none; } }
-@media (max-width: 860px) {
-  .topnav { display: none; }
-  .topbar-inner { justify-content: space-between; }
+@media (max-width: 520px) {
+  .brand-name { display: none; }
+  .topbar-inner { gap: 0.5rem; }
+}
+
+.progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--herring); transform-origin: 0 50%; transform: scaleX(0); }
+
+/* the Contents menu: drops from the bar on every screen size */
+.toc-panel {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 70;
+  width: min(25rem, 100%); max-height: calc(100vh - 4.5rem - env(safe-area-inset-top, 0px)); overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 0.4rem;
+}
+.toc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.toc-list a {
+  display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.15rem 0.5rem; align-items: baseline;
+  padding: 0.45rem 0.6rem; border-radius: 4px; text-decoration: none; color: var(--ink-2);
+}
+.toc-list a:hover { background: var(--slip); color: var(--ink); }
+.toc-list .toc-n { font-family: var(--mono); font-size: var(--t-xs); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.toc-list .toc-t { font-weight: 650; font-size: var(--t-sm); color: inherit; }
+.toc-list .toc-d { grid-column: 2; font-size: var(--t-xs); color: var(--ink-3); line-height: 1.35; }
+.toc-list a[aria-current="location"] { background: var(--herring-wash); color: var(--ink); box-shadow: inset 2px 0 0 var(--herring); }
+.toc-list a[aria-current="location"] .toc-n { color: var(--herring); }
+
+/* the side rail: only where the margin beside the widest figures can hold it */
+.toc-rail { display: none; }
+@media (min-width: 1540px) {
+  .toc-rail {
+    display: block; position: fixed; z-index: 40;
+    top: calc(env(safe-area-inset-top, 0px) + 3rem + 1.75rem);
+    left: max(16px, calc((100vw - var(--wide)) / 2 - 13.5rem));
+    width: 11.5rem; max-height: calc(100vh - 6rem); overflow-y: auto; overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+  .toc-rail-head { margin: 0 0 0.5rem; padding-left: 0.6rem; font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .toc-rail .toc-list a { grid-template-columns: 1.4rem minmax(0, 1fr); padding: 0.3rem 0.6rem; }
+  .toc-rail .toc-d { display: none; }
+  .toc-rail .toc-t { font-size: var(--t-xs); font-weight: 600; }
 }
 
 /* ---------- hero ---------- */
@@ -511,3 +557,7 @@ table.tracker td.chg { background: var(--herring-wash); color: var(--ink); font-
 table.tracker td.same { color: var(--ink-3); text-align: center; }
 table.tracker thead th:last-child, table.tracker td:last-child { background-image: linear-gradient(var(--wash-1), var(--wash-1)); }
 @media (max-width: 600px) { table.tracker tbody th { min-width: 8rem; } }
+@media (min-width: 900px) {
+  .toc-panel { width: min(40rem, 100%); }
+  .toc-panel .toc-list { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(8, auto); grid-auto-flow: column; column-gap: 0.4rem; }
+}
