@@ -3,14 +3,14 @@
   {
    "id": "broadcom",
    "partner": "Broadcom",
-   "what": "Five-year master equipment leases for TPU-based accelerators in dedicated data centers (\"Anthropic Direct\")",
+   "what": "Five-year master equipment leases for TPU-based accelerators in dedicated data centers (\"Anthropic Direct\"); in October Broadcom assigned part of the 2026 lease to a special-purpose financing entity",
    "amount": 161.2,
    "amount_type": "fixed",
    "basis": "rent, excluding interest",
    "start": 2026,
    "end": 2032,
    "cancel": "Non-cancelable by either party during the lease except on default",
-   "page": "171",
+   "page": "176",
    "snippet": "approximately $161.2 billion excluding interest"
   },
   {
@@ -23,21 +23,21 @@
    "start": 2026,
    "end": 2029,
    "cancel": "Non-cancelable until Jan/Mar 2027, then either side may cancel on 90 days' notice",
-   "page": "171",
+   "page": "175",
    "snippet": "aggregate of up to $120.5 billion"
   },
   {
    "id": "google",
    "partner": "Google",
-   "what": "Google Cloud / TPU capacity; shortfalls trued up in cash",
-   "amount": 114.5,
+   "what": "Google Cloud / TPU capacity; shortfalls trued up in cash (raised from $114.5B in amendments made by October)",
+   "amount": 121.3,
    "amount_type": "fixed",
    "basis": "at least, regardless of actual usage",
    "start": 2026,
    "end": 2033,
    "cancel": "Non-cancelable except Google's uncured material breach",
-   "page": "170",
-   "snippet": "at least approximately $114.5 billion"
+   "page": "174",
+   "snippet": "at least approximately $121.3 billion"
   },
   {
    "id": "amazon",
@@ -49,20 +49,20 @@
    "start": 2026,
    "end": 2036,
    "cancel": "Non-cancelable except Amazon's uncured material breach",
-   "page": "171",
+   "page": "175",
    "snippet": "at least $110.0 billion between May 2026 and April 2036"
   },
   {
    "id": "microsoft",
    "partner": "Microsoft",
-   "what": "Azure capacity",
+   "what": "Azure capacity, November 2026 to June 2033",
    "amount": 44.9,
    "amount_type": "fixed",
    "basis": "at least, regardless of actual usage",
    "start": 2026,
    "end": 2033,
    "cancel": "Non-cancelable except Microsoft's uncured material breach or undelivered tranches",
-   "page": "170",
+   "page": "174",
    "snippet": "at least $44.9 billion"
   },
   {
@@ -75,7 +75,7 @@
    "start": 2026,
    "end": 2033,
    "cancel": "Non-cancelable except delivery failures or breach; depends on Nscale financing the build",
-   "page": "171",
+   "page": "175",
    "snippet": "up to approximately $44.6 billion"
   },
   {
@@ -83,12 +83,12 @@
    "partner": "Lambda",
    "what": "NVIDIA GPU compute; $34.9B of it can be terminated if Lambda fails to secure the facility lease",
    "amount": 41.3,
-   "amount_type": "fixed",
-   "basis": "approximately",
+   "amount_type": "up_to",
+   "basis": "approximately; $34.9B terminable if Lambda can't secure its site",
    "start": 2026,
    "end": 2034,
    "cancel": "Mostly non-cancelable; the $34.9B August 2026 deal falls away if Lambda can't secure the site",
-   "page": "171",
+   "page": "175",
    "snippet": "approximately $41.3 billion over terms extending into 2034"
   },
   {
@@ -103,8 +103,8 @@
    "start": 2028,
    "end": 2031,
    "cancel": "Payment depends on capacity delivered and deployment conditions",
-   "page": "170",
-   "snippet": "approximately $125.0 billion to $150.0 billion"
+   "page": "175",
+   "snippet": "approximately $125.0 billion to"
   },
   {
    "id": "amd",
@@ -116,7 +116,7 @@
    "start": 2027,
    "end": 2031,
    "cancel": "Non-cancelable by Anthropic except AMD's uncured breach",
-   "page": "171",
+   "page": "175",
    "snippet": "expect aggregate expenditures to exceed $20.0 billion"
   }
  ],
@@ -136,52 +136,18 @@
    "note": "Undiscounted; mostly compute and infrastructure."
   }
  ],
- "june30": [
-  {
-   "label": "Fixed or minimum purchase commitments",
-   "value": 265.6,
-   "page": "F-58",
-   "snippet": "approximately $265.6 billion"
-  },
-  {
-   "label": "Leases signed, not yet started",
-   "value": 321.4,
-   "page": "F-35",
-   "snippet": "$50.2 billion and $321.4 billion"
-  },
-  {
-   "label": "Leases already running",
-   "value": 2.1,
-   "page": "F-35",
-   "snippet": "Total undiscounted lease payments"
-  }
- ],
- "after_june30": [
-  {
-   "label": "New long-term deals signed after June 30",
-   "value": 245,
-   "page": "F-65",
-   "snippet": "approximately $245"
-  },
-  {
-   "label": "Short-term minimums signed after June 30",
-   "value": 21,
-   "page": "F-65",
-   "snippet": "approximately $21 billion"
-  }
- ],
  "not_counted": [
   {
    "label": "Extra TPUs 2028–2031 (estimate)",
    "low": 125,
    "high": 150,
-   "page": "170"
+   "page": "175"
   },
   {
    "label": "AMD Helios systems (estimate)",
    "low": 20,
    "high": 20,
-   "page": "171"
+   "page": "175"
   }
  ],
  "drafts_post_june30": [
@@ -200,5 +166,106 @@
    "date": "2026-10-26",
    "value": 245
   }
- ]
+ ],
+ "sep30": [
+  {
+   "label": "Purchase commitments (table)",
+   "value": 313.8,
+   "page": "173",
+   "snippet": "Purchase commitments (3)"
+  },
+  {
+   "label": "Leases already running (operating + finance)",
+   "value": 6.2,
+   "page": "173",
+   "snippet": "Finance leases (2)"
+  },
+  {
+   "label": "Short-term minimums",
+   "value": 17.4,
+   "page": "174",
+   "snippet": "approximately $17.4 billion"
+  },
+  {
+   "label": "Leases signed, not yet started",
+   "value": 451.2,
+   "page": "174",
+   "snippet": "approximately $451.2 billion"
+  }
+ ],
+ "after_sep30": [
+  {
+   "label": "Deals signed after Sept 30",
+   "value": 100.2,
+   "page": "174",
+   "snippet": "approximately $100.2 billion"
+  },
+  {
+   "label": "Short-term deals signed after Sept 30",
+   "value": 6.6,
+   "page": "174",
+   "snippet": "approximately $6.6 billion"
+  }
+ ],
+ "filed": {
+  "total": 895.4,
+  "by_2030": 447.5,
+  "next_12m": 69.8,
+  "next_12m_conditional": 4.3,
+  "conditional": 213.8,
+  "estimates_low": 150,
+  "estimates_high": 175,
+  "pages": {
+   "total": "173",
+   "by_2030": "6",
+   "next_12m": "174",
+   "conditional": "173",
+   "estimates": "174"
+  },
+  "table_by_year": {
+   "Q4 2026": 5.2,
+   "2027": 29.2,
+   "2028": 44.4,
+   "2029": 47.8,
+   "2030": 45.1,
+   "Thereafter": 148.4
+  },
+  "table_total": 320.0
+ },
+ "s1_reconstruction": {
+  "total": 855.1,
+  "date": "2026-10-26",
+  "parts": [
+   {
+    "label": "Fixed or minimum purchase commitments",
+    "value": 265.6,
+    "page": "F-58",
+    "snippet": "approximately $265.6 billion"
+   },
+   {
+    "label": "Leases signed, not yet started",
+    "value": 321.4,
+    "page": "F-35",
+    "snippet": "$50.2 billion and $321.4 billion"
+   },
+   {
+    "label": "Leases already running",
+    "value": 2.1,
+    "page": "F-35",
+    "snippet": "Total undiscounted lease payments"
+   },
+   {
+    "label": "New long-term deals signed after June 30",
+    "value": 245,
+    "page": "F-65",
+    "snippet": "approximately $245"
+   },
+   {
+    "label": "Short-term minimums signed after June 30",
+    "value": 21,
+    "page": "F-65",
+    "snippet": "approximately $21 billion"
+   }
+  ]
+ }
 }

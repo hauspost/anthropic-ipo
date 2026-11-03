@@ -1,72 +1,74 @@
 {
  "ledger": [
   {
-   "label": "Revenue, Q2 2026",
-   "value": "$11.6B",
-   "note": "Three months. Up 1,368% from a year earlier.",
-   "page": "157"
+   "label": "Revenue, Q3 2026",
+   "value": "$17.0B",
+   "note": "Three months. Up 47% from Q2 and 1,127% from a year earlier.",
+   "page": "160"
   },
   {
-   "label": "Operating profit, Q2 2026",
-   "value": "+$974M",
-   "note": "Its first profitable quarter, an 8% margin.",
-   "page": "157"
-  },
-  {
-   "label": "Net loss, first half 2026",
-   "value": "−$80.7B",
+   "label": "Operating result, Q3 2026",
+   "value": "−$567M",
    "neg": true,
-   "note": "$72.4B of it is a paper charge on convertible notes.",
+   "note": "After a $2.0B non-cash donation-matching charge. About +$1.4B (8%) without it; Q2 was +$974M.",
+   "page": "163"
+  },
+  {
+   "label": "Net loss, first nine months of 2026",
+   "value": "−$104.0B",
+   "neg": true,
+   "note": "$94.3B of it is a paper charge on convertible notes.",
    "page": "F-7"
   },
   {
    "label": "Compute commitments",
-   "value": "≈$855B",
-   "note": "Signed minimums, added up from the footnotes. The S-1 leaves the total blank.",
-   "page": "F-58",
-   "snip": "approximately $265.6 billion"
+   "value": "$895.4B",
+   "note": "Now filed. Our estimate from the original S-1's footnotes was ≈$855B. Excludes $150–175B of estimates.",
+   "page": "173",
+   "snip": "approximately $895.4 billion"
   },
   {
-   "label": "Cash and investments",
-   "value": "$131.7B",
-   "note": "At June 30, 2026, before IPO money.",
-   "page": "161"
+   "label": "Cash and short-term investments",
+   "value": "$131.8B",
+   "note": "At Sept 30, 2026, before IPO money. $146.6B including an undrawn credit line.",
+   "page": "25",
+   "snip": "131,845"
   },
   {
    "label": "Founders' share of the vote",
    "value": "50.1%",
    "note": "Through a single Class F share.",
-   "page": "247"
+   "page": "251"
   }
  ],
  "findings": [
   {
    "lead": "Growth without precedent, now slowing.",
-   "text": "Quarterly revenue went from $376 million to $11.6 billion in five quarters. Third-quarter revenue is blank, but the filing's own ratios put it near $16.9 billion. That means quarter-on-quarter growth slowed from 144% to about 46%.",
+   "text": "Quarterly revenue went from $376 million to $17.0 billion in six quarters. Growth slowed from 144% in Q2 to 47% in Q3, close to what the original filing's own ratios implied. Price cuts and discounts took about $600 million off Q3 revenue.",
    "to": "growth",
    "cta": "The growth"
   },
   {
-   "lead": "The business just turned an operating profit.",
-   "text": "Q2 2026 produced $974 million of operating income. Each dollar of compute now brings in $2.08 of revenue, up from 40 cents in early 2025.",
+   "lead": "A profit in Q2, a loss again in Q3.",
+   "text": "Q2 made $974 million of operating income. Q3 lost $567 million, after a $2.0 billion non-cash charge for employee donation matching. The real squeeze was compute: $5.0 billion of short-term capacity that costs \"significantly more\" pushed revenue per compute dollar down from $2.08 to $1.72.",
    "to": "economics",
    "cta": "The unit economics"
   },
   {
-   "lead": "The $80.7 billion loss is mostly paper.",
-   "text": "It comes from marking Amazon's convertible notes up to the company's soaring valuation. Amazon booked almost the same amount as a gain. The operating loss for the half was $693 million.",
+   "lead": "The $104 billion loss is mostly paper.",
+   "text": "$94.3 billion of the nine-month loss comes from marking convertible notes, mostly Amazon's, up to the company's soaring valuation. No cash changes hands. The operating loss for the nine months was $1.3 billion.",
    "to": "loss",
    "cta": "The loss, explained"
   },
   {
-   "lead": "The compute bill is close to a trillion dollars.",
-   "text": "The S-1 leaves the total blank. Its own footnotes add up to about $855 billion of signed minimums, more than 40 times the past year's revenue, plus $145–170 billion of estimates.",
+   "lead": "The compute bill: $895.4 billion, now filed.",
+   "text": "The original S-1 left it blank, and we estimated about $855 billion from its footnotes. $69.8 billion is due in the next 12 months, about a year of revenue at Q3's pace. $213.8 billion can be cancelled or depends on conditions, such as a supplier getting financing.",
    "to": "compute",
    "cta": "Can they pay?"
   },
   {
    "lead": "Its suppliers are also its financiers.",
-   "text": "Amazon, Google, Broadcom and AMD all put money in, and several of those investments unlock only as the investor delivers its own chips or cloud capacity. Cloud marketplaces collect 48% of revenue.",
+   "text": "Amazon and Google have invested billions; Broadcom offers a $42 billion loan facility to pay its own rent, and AMD has agreed to buy up to $5 billion of stock from 2027. Several of these unlock only as the partner delivers its own chips or cloud capacity. Cloud marketplaces collected 44% of revenue in the first nine months.",
    "to": "circle",
    "cta": "Follow the money"
   },
@@ -78,7 +80,7 @@
   },
   {
    "lead": "The risk section reads like a safety incident log.",
-   "text": "Models broke into real computer systems during a test, export controls switched two models off worldwide, the FTC opened an investigation, and the Pentagon branded the company a supply-chain risk.",
+   "text": "Models broke into real computer systems during a test, export controls switched two models off worldwide, and the FTC opened an investigation. The amendment adds that Anthropic may \"imminently meet\" its own safety policy's threshold for AI-accelerated progress.",
    "to": "risks",
    "cta": "Explore 88 risks"
   }
@@ -99,22 +101,22 @@
     "Lender"
    ],
    "points": [
-    "Leases Anthropic TPU-based hardware under five-year, non-cancelable equipment leases worth about $161.2B in rent, excluding interest.",
+    "Leases Anthropic TPU-based hardware under five-year, non-cancelable equipment leases worth about $161.2B in rent, excluding interest. In October 2026 Broadcom assigned part of the 2026 lease to a newly formed special-purpose financing entity.",
     "Offers a $42.0B note facility 'solely to finance quarterly rent obligations' under the 2026 lease. It accrues 9% interest in kind, or 13% if revenue conditions are missed.",
     "The notes convert into Class N stock at 90% of the 30-day average price, or 85% if revenue conditions are missed, so Broadcom could end up a large shareholder.",
     "Anthropic put $2.5B in a restricted account for the 2026 lease and may have to deposit up to $10.0B more."
    ],
-   "pages": "166–167, 171–172, F-36"
+   "pages": "170, 176, F-36"
   },
   {
    "id": "google",
    "name": "Google",
    "in": 23.3,
    "in_facility": 20,
-   "out": 114.5,
+   "out": 121.3,
    "out_est": 137.5,
    "in_label": "≈$23B in, $20B more",
-   "out_label": "$114.5B + est. TPUs",
+   "out_label": "$121.3B + est. TPUs",
    "roles": [
     "Investor",
     "Lender",
@@ -127,10 +129,10 @@
     "Invested about $3.3B through convertible notes and $20.0B in preferred stock in 2026 (our sum of disclosed tranches).",
     "A further $20.0B facility runs to 2030. Draws depend on TPU capacity delivered and revenue targets.",
     "Holds an option to buy up to $10.0B of stock in a private placement alongside the IPO, at the IPO price.",
-    "Anthropic must spend at least ~$114.5B with Google from April 2026 to July 2033 and pay any shortfall in cash. It estimates another $125–150B for TPU capacity from providers including Google, 2028–2031.",
+    "Anthropic must spend at least ~$121.3B with Google from April 2026 to July 2033 and pay any shortfall in cash. The minimum was $114.5B in the original S-1 and was raised in amendments made by October. It estimates another $125–150B for TPU capacity from providers including Google, 2028–2031.",
     "Google is also a customer, a distribution channel and a named competitor."
    ],
-   "pages": "165–170, F-39–F-40"
+   "pages": "169–174, F-39–F-40"
   },
   {
    "id": "spacexai",
@@ -151,7 +153,7 @@
     "After the non-cancelable periods end in January and March 2027, either side can cancel on 90 days' notice.",
     "No investment flows the other way. SpaceXAI also builds a rival model."
    ],
-   "pages": "171"
+   "pages": "175"
   },
   {
    "id": "amazon",
@@ -172,13 +174,13 @@
    ],
    "points": [
     "Invested about $8.0B through convertible notes (2023–2025) and $10.0B in preferred stock in 2026 (our sum of disclosed tranches).",
-    "$6.2B of notes outstanding at June 30 convert into non-voting Class N shares at the IPO, capped at 12% ownership unless Amazon waives the cap.",
+    "$6.2B of notes outstanding at September 30 convert into non-voting Class N shares at the IPO, capped at 12% ownership unless Amazon waives the cap.",
     "A further $15.0B unlocks in $5.0B steps 'following the achievement of the relevant compute capacity milestones', meaning capacity Amazon delivers.",
     "Anthropic must spend at least $110.0B with Amazon from May 2026 to April 2036, and pay any shortfall in cash.",
     "Amazon can settle its notes by netting them against money it owes Anthropic from marketplace sales.",
-    "Amazon's own Q2 2026 results included a $53.4B pre-tax gain 'primarily from our investments in Anthropic'."
+    "Amazon's profit gains on Anthropic come mainly from marking up its preferred shares: $62.8B in the first nine months of 2026, nearly all in the first half. The notes' rise in value goes to 'other comprehensive income', not profit: $140.3B of unrealized gain by Sept 30 (Amazon Q3 2026 10-Q)."
    ],
-   "pages": "164–166, 171, F-40–F-42"
+   "pages": "168–170, 175, F-40–F-42"
   },
   {
    "id": "microsoft",
@@ -197,10 +199,10 @@
    ],
    "points": [
     "The S-1 says Microsoft has made 'significant equity investments' but does not give the amount. Microsoft announced up to $5B in November 2025.",
-    "Anthropic must spend at least $44.9B on Azure from November 2026 to May 2033, regardless of usage.",
+    "Anthropic must spend at least $44.9B on Azure from November 2026 to June 2033, regardless of usage.",
     "Claude is sold through Microsoft Foundry. Microsoft also owns a large stake in OpenAI."
    ],
-   "pages": "73, 170"
+   "pages": "75, 174"
   },
   {
    "id": "amd",
@@ -219,7 +221,7 @@
     "Anthropic expects to spend more than $20.0B on AMD Helios rack-scale systems (MI450 GPUs) from 2027 if it buys the full initial tranche.",
     "AMD has agreed to buy up to $5.0B of Anthropic's Class N stock in increments as GPU delivery milestones are met, starting in 2027."
    ],
-   "pages": "163, 171"
+   "pages": "166, 175"
   },
   {
    "id": "nvidia",
@@ -239,7 +241,7 @@
     "Anthropic buys NVIDIA GPU capacity indirectly, through SpaceXAI, Nscale, Lambda and Microsoft. Those deals total up to about $250B.",
     "The S-1 describes a 'strategic partnership with NVIDIA' covering Grace Blackwell and Vera Rubin systems."
    ],
-   "pages": "171, 204"
+   "pages": "175, 208"
   }
  ],
  "control": [
@@ -319,49 +321,49 @@
    "label": "Founders sell or donate",
    "result": "Nothing changes. The founders keep 50.1% of the vote.",
    "explain": "Class F's votes are tied to the single share, not to how much stock the founders own. A founder stays in the voting group as long as they keep 2% of the Class A shares they held at the IPO. All seven have pledged to give away 80% of their equity. The filing says their economic interest will fall 'while their voting control through the Founder LLC will remain unchanged.'",
-   "page": "118"
+   "page": "119"
   },
   {
    "id": "issue",
    "label": "Company issues new shares",
    "result": "Class F's votes grow automatically to stay at 50.1%.",
    "explain": "The charter recalculates Class F's votes on every record date. The S-1's own example: issue 1,000,000 new Class A shares and Class F gains about 1,004,008 votes.",
-   "page": "117"
+   "page": "118"
   },
   {
    "id": "two",
    "label": "Two founders leave",
    "result": "Nothing changes. Five founders remain in control.",
    "explain": "The Founder LLC acts by a majority of 'Continuing Founders'. If they can't agree, Class F votes in the same proportions as the Class A votes cast.",
-   "page": "108"
+   "page": "109"
   },
   {
    "id": "five",
    "label": "Five founders leave",
    "result": "Founder control ends after a 450-day countdown.",
    "explain": "If fewer than three founders remain for 90 consecutive days, a 450-day transition starts. At the end, the Class F share and all employee Class E shares are cancelled for nothing. Class A holders then elect the non-trust directors, and the board becomes staggered. Successors named on confidential lists can step in only after a death or incapacity, and only for the first 10 years.",
-   "page": "252"
+   "page": "255"
   },
   {
    "id": "trust",
    "label": "Shareholders want to dissolve the trust",
    "result": "Possible, but it needs the founders and the employees too.",
    "explain": "With the trustees' agreement, it takes 80% of the board and 80% of the trustees. Without them: all founders (two-thirds after year three), plus a majority of employee Class E votes (75% on the later path), plus a majority of Class A votes cast. Once founder control has ended, it takes 85% of all outstanding Class A shares.",
-   "page": "245"
+   "page": "249"
   },
   {
    "id": "bid",
    "label": "A bidder offers a big premium",
    "result": "The founders decide, and the board may weigh the mission.",
    "explain": "Class F decides any merger vote. As a public benefit corporation, the board must balance shareholders' money interests against the company's purpose, which the S-1 says 'could make it easier for our board of directors to reject a hostile bid.' Delaware's anti-takeover statute applies only after both founder and trust control end.",
-   "page": "111"
+   "page": "112"
   },
   {
    "id": "director",
    "label": "The trust wants a new director",
    "result": "It can freely replace three of its four directors.",
    "explain": "The fourth seat, the 'Specified Class T Director' (currently Christopher Liddell), needs the agreement of the nominating committee, which Daniela Amodei chairs. If the committee objects, employees holding Class E shares break the tie.",
-   "page": "244"
+   "page": "248"
   }
  ],
  "letter": [
@@ -390,7 +392,7 @@
    "pg": 7,
    "tag": "On the compute bill",
    "quote": "Anthropic will often make forward investments (especially in compute) that may seem irresponsibly large at first glance.",
-   "note": "This is the letter's answer to the ~$855B in commitments. The company compares itself to drug developers, which spend heavily up front and earn it back later. It promises to be 'bold but sane' and to 'offload excess compute if we overestimate demand.'",
+   "note": "This is the letter's answer to the $895.4B in commitments. The company compares itself to drug developers, which spend heavily up front and earn it back later. It promises to be 'bold but sane' and to 'offload excess compute if we overestimate demand.'",
    "side": true
   },
   {
@@ -425,7 +427,7 @@
    "pg": 5,
    "tag": "Giving it away",
    "quote": "All seven of us have also pledged to donate 80% of our personal equity in Anthropic to charitable causes.",
-   "note": "The founders' pledges equal 9% of fully diluted shares and employees' pledges another 8%. The pledges are 'voluntary, revocable' and not legally binding (S-1, p. 118). They don't touch the founders' voting control.",
+   "note": "The founders' pledges equal 9% of fully diluted shares and employees' pledges another 8%. The pledges are 'voluntary, revocable' and not legally binding (S-1/A, p. 119). They don't touch the founders' voting control.",
    "side": true
   },
   {
@@ -458,39 +460,51 @@
  },
  "risk_highlights": [
   {
+   "lead": "AI speeding up AI.",
+   "text": "New in the amendment: Anthropic says its internal estimates and expectations for future models indicate it may soon meet its own policy's threshold for 'dramatically accelerated progress attributable to AI'. No current model has been designated as crossing it.",
+   "page": "29",
+   "q": "accelerat"
+  },
+  {
+   "lead": "Suppliers that need outside financing.",
+   "text": "Also new: some compute providers depend on third-party financing or credit support to buy chips and build capacity. If that dries up, contracted capacity 'may be delayed, repriced, reduced, or not delivered.'",
+   "page": "31",
+   "q": "financing"
+  },
+  {
    "lead": "Models broke into real systems.",
    "text": "During a misconfigured third-party cyber test, four models gained unauthorized access to real outside systems. One read a person's personal data.",
-   "page": "47",
+   "page": "48",
    "q": "third-party"
   },
   {
    "lead": "Two models switched off worldwide.",
    "text": "Commerce Department export restrictions in June 2026 forced Anthropic to disable Fable 5 and Mythos 5 for all customers.",
-   "page": "99",
+   "page": "100",
    "q": "export"
   },
   {
    "lead": "Blackmail-like behavior.",
    "text": "Models have tried to resist shutdown and produced output 'resembling blackmail' in testing. They also act differently when they sense they are being evaluated.",
-   "page": "46",
+   "page": "47",
    "q": "shutdown"
   },
   {
    "lead": "A federal blacklist.",
    "text": "The Department of War designated Anthropic a national-security supply-chain risk after it refused autonomous-weapons and mass-surveillance uses. An appeals court upheld the designation 2–1.",
-   "page": "71",
+   "page": "73",
    "q": "supply-chain"
   },
   {
    "lead": "An FTC investigation.",
    "text": "In October 2026 the FTC issued a civil investigative demand covering consumer protection, privacy and product safety.",
-   "page": "51",
+   "page": "52",
    "q": "FTC"
   },
   {
    "lead": "A state-sponsored attack.",
    "text": "A Chinese state-sponsored group used Claude Code against about 30 targets, which the company calls the first large-scale cyberattack run without substantial human intervention.",
-   "page": "45",
+   "page": "46",
    "q": "Chinese"
   }
  ],
@@ -507,8 +521,8 @@
      "url": "https://fortune.com/2026/04/30/google-amazon-ai-profits-anthropic-stake-bubble-earnings-2026/"
     },
     {
-     "text": "Amazon booked $16.8B and $53.4B of pre-tax gains in Q1 and Q2 2026, 'primarily from our investments in Anthropic', while Anthropic booked a $72.4B loss on the same instruments.",
-     "who": "Amazon Q2 2026 results; S-1 p. F-7",
+     "text": "Amazon booked $16.8B and $53.4B of pre-tax gains in Q1 and Q2 2026, 'primarily from our investments in Anthropic', mostly from marking up its Anthropic preferred shares. In the same half, Anthropic booked a $72.4B charge on the notes Amazon holds.",
+     "who": "Amazon Q2 2026 results; S-1/A p. F-7",
      "url": "https://www.nasdaq.com/press-release/amazoncom-announces-second-quarter-results-2026-07-30"
     },
     {
@@ -535,7 +549,7 @@
     },
     {
      "text": "Demand is limited by compute supply, so partner capacity is a bottleneck being relieved rather than a subsidy. Partners have refused requests for more capacity in the past.",
-     "who": "Anthropic, S-1 p. 30",
+     "who": "Anthropic, S-1/A p. 31",
      "url": ""
     }
    ],
@@ -547,12 +561,12 @@
    "lean": 0.55,
    "left": "Normal vendor finance",
    "right": "Self-dealing loop",
-   "share": "Amazon booked ~$70B of gains on Anthropic in H1 2026; Anthropic booked a $72.4B loss on the same notes. The circularity debate, both sides:"
+   "share": "Amazon booked ~$70B of gains on its Anthropic stake in H1 2026, while Anthropic booked a $72.4B charge on Amazon's notes. The circularity debate, both sides:"
   },
   {
    "id": "compute",
    "short": "The compute bill",
-   "title": "Can a $16 billion half-year carry a trillion-dollar compute bill?",
+   "title": "Can a $17 billion quarter carry an $895 billion compute bill?",
    "framing": "Most of the commitments are minimums owed regardless of use, while most revenue is pay-as-you-go. Is this prudent capacity planning or a bet-the-company liability?",
    "critics": [
     {
@@ -573,9 +587,9 @@
    ],
    "defenders": [
     {
-     "text": "Demand is 'limited principally by the availability of compute'. Partners were unwilling to supply all the capacity Anthropic sought.",
-     "who": "Anthropic (filing, as reported) (as reported), 2026-09",
-     "url": "https://thenextweb.com/news/anthropic-ipo-prospectus-42bn-loss-518bn-compute"
+     "text": "Demand is limited by compute supply: “we have in the past sought quantities of compute from CSPs in excess of what those partners were willing to provide.”",
+     "who": "S-1/A p. 31",
+     "url": ""
     },
     {
      "text": "“The inference business worked at the unit level in 2025.”",
@@ -584,15 +598,15 @@
     },
     {
      "text": "The SpaceXAI contract, the largest GPU deal, can be cancelled on 90 days' notice after early 2027, and Lambda's biggest contract falls away if Lambda can't secure its site.",
-     "who": "S-1 p. 171",
+     "who": "S-1/A p. 175",
      "url": ""
     }
    ],
    "filing": {
-    "page": "141",
+    "page": "143",
     "quote": "Our compute commitments are substantial and generally must be satisfied regardless of our revenue or utilization, while our access to additional capital depends on a number of conditions, many of which are outside our control, including market conditions and investor demand."
    },
-   "read": "This is the single biggest risk in the filing. At Q2 2026 efficiency, the contracted bill for 2027 alone exceeds twice the revenue Anthropic will probably earn in 2026. It works if demand keeps compounding as it has. If growth slows, the $131.7B cash pile and the cancelable pieces buy time. The rest is owed.",
+   "read": "This is the single biggest risk in the filing. The amendment makes it concrete: $69.8B falls due in the next 12 months, about a year of revenue at Q3's pace, and $447.5B by the end of 2030. It works if demand keeps compounding. If growth slows, the $131.8B of cash and short-term investments buys time. The $213.8B of terminable or conditional deals helps less than it sounds: only $4.3B of the next 12 months' $69.8B is of that kind, and most conditions sit with suppliers, not with Anthropic. The rest is owed.",
    "lean": 0.7,
    "left": "Prudent",
    "right": "Bet the company",
@@ -600,7 +614,7 @@
   },
   {
    "id": "loss",
-   "short": "The $80.7B loss",
+   "short": "The $104B loss",
    "title": "Is the giant loss real?",
    "framing": "Anthropic's net losses are among the largest ever reported, yet most of the loss is a non-cash markup that grows as the company becomes more valuable.",
    "critics": [
@@ -610,8 +624,8 @@
      "url": "https://thenextweb.com/news/anthropic-ipo-valuation-new-constructs-144bn"
     },
     {
-     "text": "Stock pay is about to jump: $26.6B of unrecognized RSU expense, $2.9B of it booked the moment the IPO happens, all excluded from 'adjusted' figures.",
-     "who": "S-1 p. 173",
+     "text": "Stock pay is about to jump: had the IPO happened on Sept 30, $8.2B of RSU expense would have been booked at once, with $24.1B more over about two years, all excluded from 'adjusted' figures.",
+     "who": "S-1/A p. 66",
      "url": ""
     },
     {
@@ -638,14 +652,14 @@
     }
    ],
    "filing": {
-    "page": "161",
-    "quote": "We have generated losses from our operations, as reflected in our accumulated deficit of $132.9 billion, which includes $113.2 billion related to changes in the fair value of our convertible notes driven by increases in our enterprise valuation and derivative liabilities since 2023."
+    "page": "164",
+    "quote": "We have generated losses from our operations, as reflected in our accumulated deficit of $156.2 billion, which includes $135.1 billion related to changes in the fair value of our convertible notes driven by increases in our enterprise valuation and derivative liabilities since 2023, including $94.3 billion during the nine months ended September 30, 2026."
    },
-   "read": "The headline loss is an accounting artifact, and the critics who lead with it are mostly wrong. But 'adjusted' profit is flattering in the other direction: stock pay, a $2B donation-matching charge in Q3 and the coming RSU expense are real costs to shareholders. The honest middle is the GAAP operating line, which turned positive in Q2 2026.",
+   "read": "The headline loss is an accounting artifact, and the critics who lead with it are mostly wrong. But 'adjusted' profit is flattering in the other direction: stock pay, the $2.0B donation-matching charge in Q3 and the coming RSU expense are real costs to shareholders. The honest middle is the GAAP operating line: +$974M in Q2, −$567M in Q3, and about +$1.4B in Q3 without the donation charge.",
    "lean": 0.3,
    "left": "Paper loss",
    "right": "Real losses",
-   "share": "Anthropic's $80.7B loss: $72.4B is a paper markup on Amazon's notes. Is it real? Both sides:"
+   "share": "Anthropic's $104B nine-month loss: $94.3B is a paper markup on convertible notes. Is it real? Both sides:"
   },
   {
    "id": "revenue",
@@ -665,7 +679,7 @@
     },
     {
      "text": "An estimated 5–7% of nine-month 2026 revenue came from customers later found to violate the usage policy or terms. Press reports tie this to rivals distilling Claude.",
-     "who": "S-1 p. 145; FT via Fortune",
+     "who": "S-1/A p. 146; FT via Fortune",
      "url": ""
     },
     {
@@ -746,7 +760,7 @@
     }
    ],
    "filing": {
-    "page": "108",
+    "page": "109",
     "quote": "Accordingly, holders of our Class A common stock generally will not be able to affect the outcome of any matter submitted to a vote of our stockholders or the election of our directors, regardless of how they vote."
    },
    "read": "The structure is more defensible than its critics allow. It is disclosed in unusual detail, it has real sunsets tied to the founders, and Anthropic's mission is public. But it has no time limit. The trust can only be removed with the founders' cooperation, and the biggest economic holders have no vote at all. Investors should price in a discount. Index funds will own it anyway.",
@@ -758,8 +772,8 @@
   {
    "id": "valuation",
    "short": "The price",
-   "title": "Is $1.5–2 trillion justified?",
-   "framing": "Talk ranges from $1.5T to over $2T, about 30–43 times today's revenue run-rate, for a company that lost money as recently as Q1 2026.",
+   "title": "Is $1.5 trillion justified?",
+   "framing": "Talk started near $2T and has slipped to about $1.5T (Reuters, WSJ). That is 22–30 times Q3 revenue at an annual rate, for a company that lost money in Q3.",
    "critics": [
     {
      "text": "“an unprecedented test of investor gullibility”",
@@ -839,7 +853,7 @@
     },
     {
      "text": "The disclosures are specific and costly to make: a dated FTC demand, named export restrictions, a misconfigured test in which models reached real systems. Hype would be vaguer.",
-     "who": "Our reading of S-1 pp. 45–51",
+     "who": "Our reading of S-1/A pp. 46–52",
      "url": ""
     },
     {
@@ -849,7 +863,7 @@
     }
    ],
    "filing": {
-    "page": "46",
+    "page": "47",
     "quote": "Concerns have been raised both within our organization and by other researchers, regulators, policymakers, and industry participants that sufficiently advanced AI systems could ... pose catastrophic or existential risks to humanity."
    },
    "read": "The risk factors are mostly lawyers doing their job. Securities law punishes companies for risks they knew about and didn't disclose, and Anthropic has unusual knowledge of what its models do. The specific incidents are not marketing. The broader existential language does double duty, though: it protects the company legally and supports its case for regulation that critics say favors incumbents.",
@@ -903,10 +917,10 @@
     }
    ],
    "filing": {
-    "page": "110",
+    "page": "111",
     "quote": "Maintaining these limitations has had, and may continue to have, adverse commercial and financial consequences."
    },
-   "read": "Direct government revenue is only about 1% of the total (p. 70), so the immediate hit is small. The larger risk is indirect: contractors who sell to the military may avoid Anthropic, and the same government controls export licenses that switched two models off this summer. The en banc appeal is the event to watch before and after the IPO.",
+   "read": "Direct government revenue is less than 2% of the total (p. 72), so the immediate hit is small. The larger risk is indirect: contractors who sell to the military may avoid Anthropic, and the same government controls export licenses that switched two models off this summer. The en banc appeal is the event to watch before and after the IPO.",
    "lean": 0.5,
    "left": "Contained",
    "right": "Serious",
@@ -916,7 +930,7 @@
    "id": "durability",
    "short": "Can growth last?",
    "title": "Is the growth slowing just as it lists?",
-   "framing": "Quarter-on-quarter growth went from 144% in Q2 to about 46% in Q3. Is this the natural fade of a hypergrowth curve or a warning sign?",
+   "framing": "Quarter-on-quarter growth went from 144% in Q2 to 47% in Q3, and price cuts took about $600M off Q3 revenue. Is this the natural fade of a hypergrowth curve or a warning sign?",
    "critics": [
     {
      "text": "“Anthropic ARR is flatlining post tokenmaxxing (as many of us predicted) just as they are about to IPO.”",
@@ -924,9 +938,9 @@
      "url": "https://x.com/GaryMarcus/status/2105349862355304892"
     },
     {
-     "text": "“Anthropic revenue hit a highly disappointing $16.8 billion in the third quarter”",
+     "text": "“Anthropic revenue hit a highly disappointing $16.8 billion in the third quarter” (the press-reported figure; the amendment later showed $16.96B)",
      "who": "Zvi Mowshowitz, 2026-10",
-     "url": "https://thezvi.substack.com/p/ai-188-gemini-dot-argon"
+     "url": "https://thezvi.substack.com/p/ai-190-scion-of-the-times"
     },
     {
      "text": "“What happened since then is OpenAI caught up”",
@@ -957,14 +971,14 @@
     }
    ],
    "filing": {
-    "page": "143",
+    "page": "144",
     "quote": "For example, model versions released in the six months ended September 30, 2026 accounted for over 80% of our revenue for the three months ended September 30, 2026."
    },
-   "read": "A 46% quarter is extraordinary for any company and slow only by Anthropic's standards. What matters is the treadmill the filing describes: four-fifths of revenue comes from models less than six months old. Anthropic has to keep shipping frontier models on schedule, against Google and OpenAI, while partners and rivals distill its outputs.",
+   "read": "A 47% quarter is extraordinary for any company and slow only by Anthropic's standards. What matters is the treadmill the filing describes: four-fifths of revenue comes from models less than six months old. Anthropic has to keep shipping frontier models on schedule, against Google and OpenAI, while partners and rivals distill its outputs.",
    "lean": 0.45,
    "left": "Natural fade",
    "right": "Warning sign",
-   "share": "Anthropic's revenue growth slowed from +144% to ~+46% quarter-on-quarter just before its IPO. Natural fade or warning sign?"
+   "share": "Anthropic's revenue growth slowed from +144% to +47% quarter-on-quarter just before its IPO. Natural fade or warning sign?"
   }
  ],
  "timeline": [
@@ -991,7 +1005,7 @@
   {
    "when": "Oct 30, 2025",
    "what": "Auditor switched from Grant Thornton to Ernst & Young.",
-   "why": "No disagreements reported and no reason given (S-1 p. 334)."
+   "why": "No disagreements reported and no reason given (S-1/A p. 339)."
   },
   {
    "when": "Nov 2025",
@@ -1011,7 +1025,7 @@
   {
    "when": "May 28, 2026",
    "what": "Series H: $65B at $965B post-money.",
-   "why": "The markup that drives the $72.4B fair-value charge."
+   "why": "The markup behind most of 2026's $94.3B fair-value charge ($59.6B of it in Q2)."
   },
   {
    "when": "June 1, 2026",
@@ -1041,14 +1055,25 @@
    "key": true
   },
   {
-   "when": "Week of Nov 9 (expected)",
-   "what": "Roadshow and price range.",
-   "why": "An amended S-1 should fill in the blanks."
+   "when": "Oct 28–30, 2026",
+   "what": "Alphabet and Amazon report; tech stocks sell off. OpenAI cuts its funding round's valuation to $1.25T (FT via Reuters).",
+   "why": "Amazon's Q3 profit included essentially no gain on Anthropic, after $62.8B in the first half."
   },
   {
-   "when": "Nov 19–20 (expected)",
+   "when": "Nov 2, 2026",
+   "what": "Amendment No. 1 (S-1/A): Q3 results and the $895.4B compute total.",
+   "why": "Price range still blank. Valuation talk now about $1.5T (Reuters, WSJ).",
+   "key": true
+  },
+  {
+   "when": "Week of Nov 9 (expected)",
+   "what": "Roadshow and price range.",
+   "why": "Reuters: formal marketing to start the week of Nov 9."
+  },
+  {
+   "when": "Week of Nov 16 (expected)",
    "what": "Pricing and first trade.",
-   "why": "Reported by Fox Business and Renaissance Capital; not confirmed by the company.",
+   "why": "WSJ: listing the week before Thanksgiving. Not confirmed by the company.",
    "key": true
   }
  ],
@@ -1326,6 +1351,7 @@
   ]
  },
  "drafts_notes": [
+  "Amendment No. 1 (November 2) adds the third quarter and fills in the compute total ($895.4B). Its MD&A chart now says compute efficiency rose 4.3x since Q1 2025, where the S-1 said 5.2x, because Q3 brought in less revenue per compute dollar. It also adds the risk-factor sentence that Anthropic \"may imminently meet\" its own threshold for AI-accelerated progress.",
   "The founders' 50.1% voting share did not exist in the first draft. On June 1 the trust elected only \"certain members\" of the board. The single Class F share appeared in the July 13 draft, the employee Class E class on August 10, and the 450-day sunset on October 1.",
   "Broadcom was named as the chip-lease supplier on June 1, renamed \"Infrastructure Partner\" on July 13, and named again on August 10.",
   "The SpaceXAI (formerly xAI) deal grew from up to $44.4B (July 13) to $84.5B (August 10) to $120.5B. Microsoft's minimum rose from $31.4B to $44.9B.",
@@ -1339,7 +1365,8 @@
   "Sep 4",
   "Oct 1",
   "Oct 9",
-  "Oct 26 (S-1)"
+  "Oct 26 (S-1)",
+  "Nov 2 (S-1/A)"
  ],
  "draft_rows": [
   {
@@ -1351,7 +1378,8 @@
     "",
     "450-day sunset added",
     "",
-    "in place"
+    "in place",
+    ""
    ]
   },
   {
@@ -1363,7 +1391,8 @@
     "",
     "",
     "",
-    "4 of 7 directors"
+    "4 of 7 directors",
+    ""
    ]
   },
   {
@@ -1375,7 +1404,8 @@
     "",
     "",
     "",
-    "up to $120.5B"
+    "up to $120.5B",
+    ""
    ]
   },
   {
@@ -1387,7 +1417,8 @@
     "",
     "",
     "",
-    "$44.9B"
+    "$44.9B",
+    "term runs to June 2033"
    ]
   },
   {
@@ -1399,7 +1430,8 @@
     "",
     "",
     "",
-    ""
+    "",
+    "part of a lease assigned to a financing entity"
    ]
   },
   {
@@ -1411,7 +1443,8 @@
     "~$98B since June 1, plus up to $89B contingent",
     "~$154B since June 30",
     "",
-    "~$245B since June 30"
+    "~$245B since June 30",
+    "new basis: ~$100.2B since Sept 30"
    ]
   },
   {
@@ -1419,6 +1452,7 @@
    "v": [
     "none",
     "disclosed",
+    "",
     "",
     "",
     "",
@@ -1435,7 +1469,8 @@
     "district court win added",
     "appeals loss added",
     "",
-    "rehearing sought"
+    "rehearing sought",
+    ""
    ]
   },
   {
@@ -1447,7 +1482,8 @@
     "",
     "probes mentioned",
     "\"may receive\" a demand",
-    "demand received"
+    "demand received",
+    ""
    ]
   },
   {
@@ -1459,7 +1495,8 @@
     "",
     "",
     "\"at or above\" rivals",
-    "dropped"
+    "dropped",
+    ""
    ]
   },
   {
@@ -1471,7 +1508,8 @@
     "",
     "",
     "\"expanded steadily\"",
-    "will \"compress\""
+    "will \"compress\"",
+    ""
    ]
   },
   {
@@ -1483,17 +1521,142 @@
     "",
     "",
     "top two ≈20% (H1)",
-    "top five ≈25% (9M)"
+    "top five ≈25% (9M)",
+    ""
+   ]
+  },
+  {
+   "k": "Q3 2026 results",
+   "v": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "blank (but \"86 times\" Q4 2024)",
+    "revenue $16.96B; operating loss $567M"
+   ]
+  },
+  {
+   "k": "Total compute commitments",
+   "v": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "blank",
+    "$895.4B"
+   ]
+  },
+  {
+   "k": "Compute-efficiency callout (MD&A chart)",
+   "v": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "5.2x since Q1'25",
+    "4.3x (\">4x\")"
+   ]
+  },
+  {
+   "k": "AI accelerating AI research",
+   "v": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "may \"imminently meet\" RSP threshold"
+   ]
+  },
+  {
+   "k": "Retail brokers named",
+   "v": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "six, incl. Schwab, Fidelity, Robinhood"
    ]
   }
  ],
  "val_context": [
-  "Private investors last priced Anthropic at <strong>$965 billion</strong> in the Series H round that closed in May 2026 (company announcement). The S-1 confirms the round's price of $589.01 a share, which is $58.90 after September's 10-for-1 split<a class=\"pg\" data-pg=\"282\"></a>. Press reports put IPO talk at $1.5–2 trillion, trimmed after an October 14 investor day.",
-  "For scale: at $2 trillion the market would pay about 43 times Anthropic's second-quarter revenue run-rate ($11.6B × 4 = $46.2B). OpenAI's last priced round was about 17 times its annualized revenue. NVIDIA trades at 17 times trailing sales and Palantir at 78 (October 26 close, StockAnalysis)."
+  "Private investors last priced Anthropic at <strong>$965 billion</strong> in the Series H round that closed in May 2026 (company announcement). The S-1 confirms the round's price of $589.01 a share, which is $58.90 after September's 10-for-1 split<a class=\"pg\" data-pg=\"286\"></a>. Press reports first put IPO talk at up to $2 trillion. Since the amendment, Reuters and the WSJ report about $1.5 trillion (WSJ: $1.5–1.6 trillion).",
+  "For scale: at $1.5 trillion the market would pay about 22 times Q3 revenue at an annual rate ($16.96B × 4 = $67.8B; this is our arithmetic, not the company's Run-Rate Revenue, which is still blank) and about 43 times revenue over the past four quarters ($35.3B). NVIDIA trades at 17 times trailing sales and Palantir at 78 (October 26 close, StockAnalysis). Jay Ritter counts only 14 of 4,110 US IPOs from 1980 to 2024 priced above 40 times sales, and those trailed the market by 15.4% on average over up to three years (Fortune, Nov 3).",
+  "<strong>Who can buy.</strong> The amendment says Anthropic anticipates that a portion of the shares will be offered to individual investors at the IPO price through Schwab, Fidelity, Robinhood, Trade-PMR, SoFi and E*TRADE<a class=\"pg\" data-pg=\"330\" data-snip=\"offered to retail investors\"></a>. Index funds are a separate question. Nasdaq's fast-entry rule could add the stock to the Nasdaq-100 after 15 trading days (<a href=\"https://www.fool.com/investing/2026/09/23/anthropic-could-join-the-nasdaq-100-only-15-trading-days-after-its-ipo-just-like-spacex-did/\" target=\"_blank\" rel=\"noopener\">Motley Fool</a>, Sept 23). The S&amp;P 500 has not adopted a similar rule (<a href=\"https://www.etfstream.com/articles/s-and-p-500-will-not-adopt-fast-entry-for-spacex-anthropic-and-openai\" target=\"_blank\" rel=\"noopener\">ETF Stream</a>), and its standard rules require positive reported earnings, which Anthropic's losses rule out for now."
  ],
  "val_after": [
-  "Aswath Damodaran put the test plainly before the filing: “To make a case for Anthropic at a $1.5 or $2 trillion pricing, you will have to make defensible arguments for sky-high revenue growth in the early years, a surge in operating margins to 30% or higher” (<a href=\"https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing\" target=\"_blank\" rel=\"noopener\">Musings on Markets</a>, Oct 22).",
-  "Two things the tool leaves out. The compute bill caps how high margins can go. The cash pile of $131.7B, plus whatever the IPO raises, is worth roughly 7–13% of a $1–2T valuation by itself. The share count is our estimate: the S-1 says the 846,840,960 shares given to the public benefit fund equal 5% of fully diluted shares at June 30, which implies about 16.9 billion<a class=\"pg\" data-pg=\"12\"></a>."
+  "Aswath Damodaran values Anthropic at about $1.48 trillion and says that if it is priced well above that, he will sit out (<a href=\"https://aswathdamodaran.blogspot.com/2026/10/the-anthropic-prospectus-arrives-ipo.html\" target=\"_blank\" rel=\"noopener\">blog</a>, Oct 28). He put the test plainly before the filing: “To make a case for Anthropic at a $1.5 or $2 trillion pricing, you will have to make defensible arguments for sky-high revenue growth in the early years, a surge in operating margins to 30% or higher” (<a href=\"https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing\" target=\"_blank\" rel=\"noopener\">Musings on Markets</a>, Oct 22).",
+  "Two things the tool leaves out. The compute bill caps how high margins can go. The $131.8B of cash and short-term investments, plus whatever the IPO raises, is worth roughly 7–13% of a $1–2T valuation by itself. The share count is our estimate: the S-1 says the 846,840,960 shares given to the public benefit fund equal 5% of fully diluted shares at June 30, which implies about 16.9 billion<a class=\"pg\" data-pg=\"12\"></a>."
+ ],
+ "amendment": [
+  {
+   "lead": "Q3 revenue: $16.96 billion.",
+   "text": "Up 47% from Q2 and 1,127% from a year earlier. Our estimate, from the original filing's statement that Q3 was 86 times Q4 2024, was $16.9 billion.",
+   "page": "160",
+   "to": "growth"
+  },
+  {
+   "lead": "Back to an operating loss.",
+   "text": "−$567 million, after +$974 million in Q2. The $2.0 billion non-cash donation-matching charge is bigger than the whole swing: without it, Q3 earned about $1.4 billion, roughly Q2's 8% margin. The company also blames $5.0 billion of pricier short-term compute, and on its adjusted measure margin fell from 19% to 15%.",
+   "page": "163",
+   "to": "economics"
+  },
+  {
+   "lead": "The compute total is filled in: $895.4 billion.",
+   "text": "$69.8 billion falls due in the 12 months after September 30, $447.5 billion by the end of 2030, and the rest by 2045. $213.8 billion can be cancelled or depends on conditions, such as a supplier securing its own financing.",
+   "page": "173",
+   "to": "compute"
+  },
+  {
+   "lead": "A new safety disclosure.",
+   "text": "Anthropic says its internal estimates and its expectations for future models, \"rather than our current models\", indicate it \"may imminently meet\" its Responsible Scaling Policy's definition of \"dramatically accelerated progress attributable to AI\". No current model has been designated as crossing that threshold.",
+   "page": "29",
+   "to": "safety-box"
+  },
+  {
+   "lead": "Shares for retail investors.",
+   "text": "Anthropic anticipates that a portion of the shares will be offered to individuals through Schwab, Fidelity, Robinhood, Trade-PMR, SoFi and E*TRADE.",
+   "page": "330",
+   "to": "valuation"
+  },
+  {
+   "lead": "Still blank.",
+   "text": "The price range, the number of shares, the size of the offering, and Run-Rate Revenue as of October 31.",
+   "page": "198",
+   "to": "valuation"
+  },
+  {
+   "lead": "Unchanged.",
+   "text": "The founders' letter (apart from small typographic fixes), the governance structure, the trust, the founder share and the lock-up terms. A new page in the glossy front section puts the Q3 net loss and the (3)% operating margin up front.",
+   "page": "",
+   "to": "control"
+  }
+ ],
+ "safety_box": [
+  {
+   "page": "29",
+   "quote": "For example, our internal estimates and our expectations regarding future models, rather than our current models, indicate that we may imminently meet our Responsible Scaling Policy's definition of \"dramatically accelerated progress attributable to AI.\" We have not designated any of our current models as exceeding this threshold, and we continue to assess the underlying data."
+  },
+  {
+   "page": "52",
+   "quote": "We are also considering additional measures, including updates to our Responsible Scaling Policy, to require human review and approval of certain decisions in our research and development processes as our models perform an increasing share of that work."
+  },
+  {
+   "page": "188",
+   "quote": "However, we do not anticipate being able to safely use Claude to fully autonomously design and build successive generations of frontier models without meaningful human supervision or understanding, if and when that becomes technically possible. Accordingly, we are considering updates to our Responsible Scaling Policy to keep humans in control of frontier model development at Anthropic."
+  }
  ],
  "revenue_comps": [
   {
@@ -1535,6 +1698,12 @@
  ],
  "sources": [
   {
+   "title": "Anthropic, PBC Form S-1/A (Amendment No. 1) and exhibits",
+   "outlet": "SEC EDGAR",
+   "date": "2026-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/"
+  },
+  {
    "title": "Anthropic, PBC Form S-1 and exhibits",
    "outlet": "SEC EDGAR",
    "date": "2026-10-26",
@@ -1559,6 +1728,24 @@
    "url": "https://www.nasdaq.com/press-release/amazoncom-announces-second-quarter-results-2026-07-30"
   },
   {
+   "title": "Anthropic's quarterly loss shrinks, revenue jumps ahead of blockbuster IPO",
+   "outlet": "Reuters via MarketScreener",
+   "date": "2026-11-02",
+   "url": "https://www.marketscreener.com/news/anthropic-s-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-ce785fd9d98ff521"
+  },
+  {
+   "title": "Anthropic's third-quarter results mean IPO math and history are not on its side, analysts say",
+   "outlet": "Fortune",
+   "date": "2026-11-03",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/"
+  },
+  {
+   "title": "Amazon.com Form 10-Q for the quarter ended September 30, 2026",
+   "outlet": "SEC EDGAR",
+   "date": "2026-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  },
+  {
    "title": "Some investors push Anthropic to cut IPO valuation (Q3 revenue $16.8B)",
    "outlet": "Reuters via Investing.com",
    "date": "2026-10-15",
@@ -1578,7 +1765,7 @@
   }
  ],
  "q3_estimate": 16.9,
- "rev2026_base": 55,
+ "rev2026_base": 54,
  "fd_shares": 16.94,
- "run_rate_base": 46.2
+ "run_rate_base": 67.8
 }

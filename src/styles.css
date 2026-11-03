@@ -257,6 +257,23 @@ button { font: inherit; color: inherit; }
   font-variation-settings: "wdth" 118; margin-top: 1.25rem; max-width: 18ch;
 }
 .hero .dek { font-size: var(--t-lg); color: var(--ink-2); max-width: 40rem; margin-top: 1.25rem; line-height: 1.5; }
+.update-flag {
+  display: inline-flex; flex-wrap: wrap; gap: 0.35rem; align-items: baseline; margin-bottom: 0.9rem;
+  font-size: var(--t-sm); color: var(--ink-2); background: var(--wash-1); border: 1px solid var(--s1);
+  padding: 0.35rem 0.75rem; border-radius: 999px; line-height: 1.35;
+}
+.update-flag span { font-weight: 700; color: var(--ink); }
+.update-flag a { font-weight: 600; }
+.amend { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.amend-list li { line-height: 1.5; }
+.amend-to { font-size: var(--t-sm); font-weight: 600; white-space: nowrap; }
+.safety-box {
+  margin-top: 1.75rem; padding: 1.1rem 1.15rem 0.4rem; border: 1px solid var(--herring); border-radius: var(--radius);
+  background: var(--surface); box-shadow: var(--shadow);
+}
+.safety-box h3 { font-size: var(--t-lg); font-weight: 750; color: var(--herring); margin: 0 0 0.4rem; }
+.safety-box > p { color: var(--ink-2); line-height: 1.5; }
+.safety-box .filing { margin: 1rem 0; }
 .byline { margin-top: 1.25rem; font-size: var(--t-sm); color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
 .byline a { color: var(--ink-2); }
 

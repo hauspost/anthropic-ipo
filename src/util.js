@@ -1,7 +1,9 @@
 /* Shared helpers: formatting, DOM, tooltips, sharing, theme. */
 const U = (() => {
-  const EDGAR_DOC = "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm";
-  const EDGAR_INDEX = "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/";
+  // Page references point to Amendment No. 1 (S-1/A, Nov 2, 2026); chips marked data-doc="s1" point to the original S-1.
+  const EDGAR_DOC = "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm";
+  const EDGAR_S1 = "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm";
+  const EDGAR_INDEX = "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/";
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -41,13 +43,14 @@ const U = (() => {
   const mult = (v, d = 1) => (v == null ? "—" : v.toFixed(d).replace(/\.0$/, "") + "×");
 
   // Link to the filing. Text fragments (#:~:text=) jump to the quoted words in browsers that support them.
-  function edgarLink(snippet) {
-    if (!snippet) return EDGAR_DOC;
-    return EDGAR_DOC + "#:~:text=" + encodeURIComponent(snippet).replace(/-/g, "%2D");
+  function edgarLink(snippet, doc) {
+    const base = doc === "s1" ? EDGAR_S1 : EDGAR_DOC;
+    if (!snippet) return base;
+    return base + "#:~:text=" + encodeURIComponent(snippet).replace(/-/g, "%2D");
   }
 
   function pageChip(page, snippet) {
-    return el("a", { class: "pg", href: edgarLink(snippet), target: "_blank", rel: "noopener", title: "Open the S-1 on SEC.gov" }, "p." + page);
+    return el("a", { class: "pg", href: edgarLink(snippet), target: "_blank", rel: "noopener", title: "Open the S-1/A on SEC.gov" }, "p." + page);
   }
 
   /* toast */

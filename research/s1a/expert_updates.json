@@ -1,0 +1,106 @@
+{
+ "update": {
+  "damodaran": {
+   "date": "2026-11-03",
+   "outlet": "Fortune; Musings on Markets (Oct 28)",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "mixed",
+   "quote": "the most telegraphed 3rd quarter number of all time",
+   "quote_type": "verbatim_secondary",
+   "summary": "On the amendment's Q3 numbers. He values Anthropic at about $1.48 trillion and says he will sit out if it prices well above that; he won't short it."
+  },
+  "ritter": {
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "bear",
+   "quote": "a lot of things have to go right",
+   "quote_type": "verbatim_secondary",
+   "summary": "Only 14 of 4,110 US IPOs from 1980 to 2024 priced above 40 times sales, and they trailed the market by 15.4% on average. A value above $1.4T needs a path to $100B or more of annual after-tax profit."
+  },
+  "renaissance_kennedy": {
+   "date": "2026-11-02",
+   "outlet": "Reuters via MarketScreener",
+   "url": "https://www.marketscreener.com/news/anthropic-s-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-ce785fd9d98ff521",
+   "stance": "mixed",
+   "quote": "I wouldn't say these results are worrisome, but I do expect some of this pressure on growth and margins ... to be reflected in the ultimate IPO valuation",
+   "quote_type": "verbatim_secondary",
+   "summary": "Q3 isn't alarming, but slower growth and thinner margins should lower the IPO price."
+  },
+  "ives": {
+   "date": "2026-11-03",
+   "outlet": "Bloomberg interview, via Stocktwits",
+   "url": "https://stocktwits.com/news-articles/markets/equity/dan-ives-calls-anthropic-junk-rating-gut-punch-ipo-valuation-below-1-5-trillion/cNGXddmR95p",
+   "stance": "mixed",
+   "quote": "you could call it 1.5, is maybe baseline ... to what probably could even go lower by mid-November.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Still bullish on Anthropic's importance, but sees $1.5T as the baseline for valuation talk and calls an expected junk credit rating a 'gut punch'. Quoted secondhand.",
+   "affiliation": "Yorkville (formerly Wedbush)"
+  },
+  "epoch": {
+   "name": "Campbell Hutcheson",
+   "affiliation": "Epoch AI",
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "bull",
+   "quote": "very strong growth, high gross margins",
+   "quote_type": "verbatim_secondary",
+   "summary": "Paying up for short-term compute is rational; the fundamentals are still strong while the company invests heavily in research."
+  },
+  "tunguz": {
+   "summary": "Bull case: 11.9x growth on a derived ~40% gross margin, the first operating profit (~$974M in Q2), positive cash flow and almost no drawn debt. Bear case: $637B of commitments (his sum of the seven named deals in the original S-1), two-thirds non-cancelable, against consumption revenue customers can cut."
+  }
+ },
+ "add": [
+  {
+   "id": "trzcinka",
+   "name": "Tony Trzcinka",
+   "affiliation": "Impax Asset Management (investment-grade portfolio manager)",
+   "category": "finance",
+   "prominence": "medium",
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "mixed",
+   "quote": "The key question is whether revenue can compound fast enough to absorb the future commitments and outpace compute cost",
+   "quote_type": "verbatim_secondary",
+   "summary": "A credit investor's view: the $895.4B of commitments against revenue growth is the crux."
+  },
+  {
+   "id": "winton",
+   "name": "Brett Winton",
+   "affiliation": "ARK Invest",
+   "category": "finance",
+   "prominence": "medium",
+   "date": "2026-11-03",
+   "outlet": "BeInCrypto via Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-amended-ipo-filing-5-080000335.html",
+   "stance": "bull",
+   "quote": "the frontier lab companies will be good for the bill",
+   "quote_type": "verbatim_secondary",
+   "summary": "The world is short of compute, and the leading labs can pay for what they have signed."
+  }
+ ],
+ "args": {
+  "bull_args": {
+   "0": {
+    "argument": "Revenue went from $41M in 2023 to $33.2B in the first nine months of 2026. Q2 was the first quarter with an operating profit ($974M); Q3 slipped to a $567M loss after a $2.0B non-cash donation charge, for a nine-month operating loss of $1.3B. Operating cash flow was +$6.6B over nine months and adjusted operating income $4.1B (S-1/A pp. 138, 172). Revenue is growing faster than costs."
+   },
+   "1": {
+    "argument": "$94.3B of the $104.0B nine-month 2026 net loss, and ~$34B of the $42B 2025 loss, are non-cash fair-value charges on convertible notes, SAFEs and derivatives as the company's value rose. Economically, the operating line and cash flow matter more."
+   },
+   "3": {
+    "argument": "Lenders and suppliers (Broadcom, Google) have financed capacity against contracted payments, so financing is not the near-term bottleneck. Anthropic has essentially no drawn debt, a large cash pile and $14.8B available on its revolver."
+   }
+  },
+  "bear_args": {
+   "1": {
+    "argument": "$895.4B of compute commitments as filed in the amendment, of which $213.8B is terminable or conditional (pre-amendment estimates ran $518B–$637B) set against consumption revenue with no lock-in. The payments are owed whether customers stay or not. Rolfes thinks ~70% gross margins are needed to carry them, against ~44% now."
+   },
+   "3": {
+    "argument": "ARR is unstandardized and gameable, and Anthropic books cloud-marketplace revenue gross (Damodaran). Nearly half of 2025 sales ran through Amazon and Google, who are also investors, suppliers and competitors. The top five customers were about 25% of nine-month 2026 revenue, though none exceeded 10%. The 2025 cost base was $2.75 per $1 of revenue (Zitron)."
+   }
+  }
+ }
+}

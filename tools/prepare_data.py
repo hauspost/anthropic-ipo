@@ -19,11 +19,26 @@ def load(name):
 def risks():
     keep = ["id", "group", "heading", "page", "category", "plain_english", "novelty", "quote", "numbers", "named_entities"]
     rows = load("risk_factors_a.json") + load("risk_factors_b.json")
-    return [{k: r.get(k) for k in keep} for r in rows]
+    # Amendment No. 1 (Nov 2, 2026): new printed pages, plus wording or numbers that changed
+    upd = load("s1a/risk_updates.json")
+    out = []
+    for r in rows:
+        row = {k: r.get(k) for k in keep}
+        row.update(upd.get(r["id"], {}))
+        out.append(row)
+    return out
 
 
 def experts():
     d = load("expert_commentary.json")
+    # Amendment No. 1 reactions (Nov 2–3, 2026) replace the earlier quote for returning experts
+    upd = load("s1a/expert_updates.json")
+    for e in d["experts"]:
+        e.update(upd["update"].get(e["id"], {}))
+    d["experts"] = d["experts"] + upd["add"]
+    for key, rows in upd.get("args", {}).items():
+        for i, row in rows.items():
+            d[key][int(i)].update(row)
     skip = {"buyer", "ipox_muehlbauer", "rhind", "hendricks"}
     order = {"high": 0, "medium": 1, "low": 2}
     out = []
@@ -70,7 +85,7 @@ CUSTOM_TERMS = [
     ("runrate", "Run-rate revenue", "A recent short period of revenue scaled up to a year, for example one month times twelve. It flatters fast-growing companies and is not an audited number."),
     ("ttm", "TTM (trailing twelve months)", "The total for the most recent twelve months, whatever the fiscal calendar."),
     ("nrr", "Net revenue retention", "How much this year's revenue from last year's customers compares with what they paid a year ago. Anthropic's definition counts any customer that paid at least $1, which inflates the figure against a tiny base."),
-    ("csp", "Cloud marketplaces (CSPs)", "Amazon, Google and Microsoft resell Claude through their own cloud platforms. They collect the money, keep a fee, and pass the rest to Anthropic. These sales were 48% of revenue in the first half of 2026."),
+    ("csp", "Cloud marketplaces (CSPs)", "Amazon, Google and Microsoft resell Claude through their own cloud platforms. They collect the money, keep a fee, and pass the rest to Anthropic. These sales were 44% of revenue in the first nine months of 2026."),
     ("grossnet", "Gross vs. net revenue", "Booking the full price a customer pays (gross) versus only the part the company keeps after a reseller's cut (net). Anthropic books cloud-marketplace sales gross and counts the cloud's fee as an expense."),
     ("pbc", "Public benefit corporation", "A company legally required to balance shareholders' financial interests against a stated public purpose. Anthropic's purpose is \"the responsible development and maintenance of advanced AI for the long-term benefit of humanity.\""),
     ("controlled", "Controlled company", "A Nasdaq status for companies where one person or group controls board elections. It lets the company skip some independence rules for board committees."),
@@ -79,7 +94,7 @@ CUSTOM_TERMS = [
     ("pik", "Paid-in-kind (PIK) interest", "Interest paid by adding to the loan balance instead of in cash. Broadcom's $42B facility accrues 9% this way."),
     ("vwap", "VWAP", "Volume-weighted average price: the average price a stock traded at over a period, weighted by how many shares changed hands. Several partner deals convert into stock at the 30-day VWAP."),
     ("financelease", "Finance lease", "A lease that works economically like buying with a loan. The asset and the debt both sit on the balance sheet. Anthropic's Broadcom chip leases are treated this way."),
-    ("rpo", "Remaining performance obligations", "Revenue customers have contractually committed to that hasn't been delivered yet. Anthropic's was $10.8B at June 30, 2026, small next to its revenue because most usage is pay-as-you-go."),
+    ("rpo", "Remaining performance obligations", "Revenue customers have contractually committed to that hasn't been delivered yet. Anthropic's was $13.8B at September 30, 2026, small next to its revenue because most usage is pay-as-you-go."),
     ("tender", "Tender offer", "An offer to buy shares from existing holders, often employees, at a set price before a company is public."),
     ("index", "Index fast entry", "New Nasdaq rules let a very large new listing join the Nasdaq-100 within weeks instead of waiting a season, which forces index funds to buy."),
 ]
@@ -100,9 +115,14 @@ PICK = {
 
 def glossary():
     out = [{"key": k, "term": t, "plain": p} for k, t, p in CUSTOM_TERMS]
+    # figures in the S-1 glossary extracts that the amendment updated
+    fixes = {"It made up about 80% of revenue in H1 2026 (F-26)": "It made up about 79% of revenue in the first nine months of 2026 (F-26)"}
     for g in load("s1_glossary.json"):
         if g["term"] in PICK:
-            out.append({"key": "s1-" + g["term"].split(" ")[0].lower(), "term": g["term"], "plain": g["plain_english"]})
+            plain = g["plain_english"]
+            for a, b in fixes.items():
+                plain = plain.replace(a, b)
+            out.append({"key": "s1-" + g["term"].split(" ")[0].lower(), "term": g["term"], "plain": plain})
     return out
 
 
