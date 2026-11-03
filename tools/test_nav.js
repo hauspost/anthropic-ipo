@@ -46,7 +46,7 @@ const fail = (w, msg) => { failures++; console.log(`  FAIL @${w}px: ${msg}`); };
 
     // 2. The reported section matches the content under the bar, for every section.
     const ids = await page.evaluate(() => [...document.querySelectorAll("#toc-list a")].map((a) => a.dataset.id));
-    if (ids.length !== 15) fail(w, `expected 15 menu entries, found ${ids.length}`);
+    if (ids.length !== 16) fail(w, `expected 16 menu entries, found ${ids.length}`);
     for (const id of ids) {
       const ok = await page.evaluate(async (id) => {
         const s = document.getElementById(id);

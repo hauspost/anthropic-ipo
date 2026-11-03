@@ -9,16 +9,17 @@
   /* ---------------- page chips & share buttons ---------------- */
   function wireChips(root = document) {
     $$(".pg[data-pg]", root).forEach((a) => {
-      a.textContent = "p." + a.dataset.pg;
-      a.href = U.edgarLink(a.dataset.snip);
+      const orig = a.dataset.doc === "s1";
+      a.textContent = (orig ? "orig. p." : "p.") + a.dataset.pg;
+      a.href = U.edgarLink(a.dataset.snip, a.dataset.doc);
       a.target = "_blank"; a.rel = "noopener";
-      a.title = "Open page " + a.dataset.pg + " of the S-1 on SEC.gov";
+      a.title = orig ? "Open page " + a.dataset.pg + " of the original S-1 (Oct 26) on SEC.gov" : "Open page " + a.dataset.pg + " of the amended S-1 (S-1/A, Nov 2) on SEC.gov";
     });
     $$(".filing[data-pg]", root).forEach((f) => {
       if (f.querySelector(".cite")) return;
       const first = (f.textContent || "").trim().split(/\s+/).slice(0, 7).join(" ");
       f.append(el("div", { class: "cite" },
-        el("span", {}, "Anthropic S-1, ", /^(F-)?\d+$/.test(f.dataset.pg) ? "p. " + f.dataset.pg : f.dataset.pg),
+        el("span", {}, "Anthropic S-1/A, ", /^(F-)?\d+$/.test(f.dataset.pg) ? "p. " + f.dataset.pg : f.dataset.pg),
         el("a", { href: U.edgarLink(first), target: "_blank", rel: "noopener" }, "Read in filing ↗")));
     });
   }
@@ -63,6 +64,23 @@
     });
   }
 
+  /* ---------------- amendment summary & safety box ---------------- */
+  function renderAmendment() {
+    const ul = $("#amend-list");
+    if (!ul || !C.amendment) return;
+    C.amendment.forEach((a) => {
+      ul.append(el("li", {}, el("strong", {}, a.lead), " ", a.text, " ",
+        a.page ? el("a", { class: "pg", "data-pg": a.page }) : null, a.page ? " " : null,
+        a.to ? el("a", { href: "#" + a.to, class: "amend-to" }, "More →") : null));
+    });
+  }
+
+  function renderSafetyBox() {
+    const box = $("#safety-quotes");
+    if (!box || !C.safety_box) return;
+    C.safety_box.forEach((q) => box.append(el("div", { class: "filing", "data-pg": q.page }, el("p", { text: q.quote }))));
+  }
+
   /* ---------------- quiz ---------------- */
   function initQuiz() {
     const q = $("#quiz");
@@ -89,7 +107,7 @@
     if (!node || !F.quarterly) return;
     const q = F.quarterly;
     const data = q.periods.map((p, i) => ({ p, v: B(q.rows.revenue[i]), est: false }));
-    data.push({ p: "Q3 26", v: C.q3_estimate || 16.9, est: true });
+    const EST = C.q3_estimate || 16.9;
     Charts.mount(node, (container, W) => {
       const H = Math.round(Math.min(380, Math.max(260, W * 0.42)));
       const m = { t: 28, r: 8, b: 30, l: 44 };
@@ -115,16 +133,19 @@
         path.on("pointerenter focus", show).on("pointerleave blur", () => tip.hide());
         if (i === 0 || i >= data.length - 3) {
           svg.append("text").attr("x", bx + bw / 2).attr("y", y(d.v) - 8).attr("text-anchor", "middle")
-            .attr("class", i === data.length - 2 ? "lbl-strong" : "lbl-muted").text(d.est ? "≈" + fmtB(d.v) : fmtB(d.v));
+            .attr("class", i === data.length - 1 ? "lbl-strong" : "lbl-muted").text(fmtB(d.v));
         }
       });
+      // our pre-amendment estimate for Q3, drawn as a dashed tick across the actual bar
       const last = data[data.length - 1];
-      const lx = x(last.p) + x.bandwidth() / 2;
+      const lbx = x(last.p) + (x.bandwidth() - bw) / 2;
+      svg.append("line").attr("x1", lbx - 6).attr("x2", lbx + bw + 6).attr("y1", y(EST)).attr("y2", y(EST))
+        .style("stroke", "var(--herring)").style("stroke-width", 2).style("stroke-dasharray", "4 3");
       if (W > 520) {
-        svg.append("text").attr("x", lx).attr("y", y(last.v) - 24).attr("text-anchor", "middle").attr("class", "annot").text("blank in S-1");
+        svg.append("text").attr("x", lbx - 10).attr("y", y(EST) + 4).attr("text-anchor", "end").attr("class", "annot").text("our estimate ≈$" + EST + "B");
       }
     });
-    Charts.tableView($("#fig-revenue"), ["Quarter", "Revenue ($B)", "Note"], data.map((d) => [d.p, d.v.toFixed(2), d.est ? "Our estimate: 86 × Q4 2024 revenue of $197M (pp. 63, 183)" : "S-1 p. 157"]));
+    Charts.tableView($("#fig-revenue"), ["Quarter", "Revenue ($B)", "Note"], data.map((d, i) => [d.p, d.v.toFixed(2), i === data.length - 1 ? `S-1/A p. 160. Our estimate from the original S-1 (86 × Q4 2024's $197M): ≈$${EST}B` : "S-1/A p. 160"]));
   }
 
   /* --- customers --- */
@@ -173,7 +194,7 @@
       svg.attr("aria-label", "Revenue and compute spending per quarter, and the ratio of revenue to compute");
       const x0 = d3.scaleBand().domain(data.map((d) => d.p)).range([m.l, W - m.r]).padding(0.22);
       const x1 = d3.scaleBand().domain(["rev", "cmp"]).range([0, x0.bandwidth()]).padding(0.08);
-      const y = d3.scaleLinear().domain([0, 12]).range([H1 - m.b, m.t]);
+      const y = d3.scaleLinear().domain([0, 18]).range([H1 - m.b, m.t]);
       const tip = U.chartTip(container);
       svg.append("g").attr("class", "grid").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - m.l - m.r)).tickFormat(""));
       svg.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat((d) => "$" + d + "B").tickSize(0).tickPadding(8)).call(axisStyle);
@@ -208,7 +229,7 @@
       svg.append("path").datum(data).attr("d", d3.line().x(cx).y((d) => y2(d.ratio))).style("fill", "none").style("stroke", "var(--ink)").style("stroke-width", 2).style("stroke-linejoin", "round");
       data.forEach((d, i) => {
         svg.append("circle").attr("cx", cx(d)).attr("cy", y2(d.ratio)).attr("r", 4.5).style("fill", "var(--ink)").style("stroke", "var(--bg)").style("stroke-width", 2);
-        if (i === 0 || i === data.length - 1 || i === 4) svg.append("text").attr("x", cx(d)).attr("y", y2(d.ratio) - 10).attr("text-anchor", "middle").attr("class", i === data.length - 1 ? "lbl-strong" : "lbl-muted").text("$" + d.ratio.toFixed(2));
+        if (i === 0 || i === data.length - 1 || i === data.length - 2) svg.append("text").attr("x", cx(d)).attr("y", y2(d.ratio) - 10).attr("text-anchor", "middle").attr("class", i === data.length - 1 ? "lbl-strong" : "lbl-muted").text("$" + d.ratio.toFixed(2));
       });
     });
     Charts.tableView($("#fig-efficiency"), ["Quarter", "Revenue ($B)", "Compute & infrastructure ($B)", "Revenue per $1 of compute"], data.map((d) => [d.p, d.rev.toFixed(2), d.cmp.toFixed(2), d.ratio.toFixed(2)]));
@@ -221,15 +242,17 @@
     const q = F.quarterly;
     const series = {
       gaap: q.periods.map((p, i) => ({ p, v: q.rows.operating[i] / q.rows.revenue[i] })),
+      exdon: q.periods.map((p, i) => ({ p, v: (q.rows.operating[i] + (q.rows.donation ? q.rows.donation[i] : 0)) / q.rows.revenue[i] })),
       adj: q.periods.map((p, i) => ({ p, v: q.rows.adj_operating[i] / q.rows.revenue[i] })),
     };
+    const basisLabel = { gaap: "Operating margin", exdon: "Without donation charges", adj: "Adjusted op. margin" };
     let basis = "gaap";
     const draw = (container, W) => {
       const data = series[basis];
       const H = Math.round(Math.min(300, Math.max(220, W * 0.3)));
       const m = { t: 34, r: 8, b: 26, l: 52 };
       const svg = Charts.svgFor(container, W, H);
-      svg.attr("aria-label", `Operating margin by quarter, ${basis === "gaap" ? "GAAP" : "adjusted"}`);
+      svg.attr("aria-label", `Operating margin by quarter, ${basisLabel[basis]}`);
       const x = d3.scaleBand().domain(data.map((d) => d.p)).range([m.l, W - m.r]).padding(0.32);
       const y = d3.scaleLinear().domain([-2.6, 0.35]).range([H - m.b, m.t]);
       svg.append("g").attr("class", "grid").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).tickValues([-2.5, -2, -1.5, -1, -0.5, 0]).tickSize(-(W - m.l - m.r)).tickFormat(""));
@@ -247,7 +270,7 @@
           : `M${bx},${top}H${bx + bw}V${top + h - r}Q${bx + bw},${top + h} ${bx + bw - r},${top + h}H${bx + r}Q${bx},${top + h} ${bx},${top + h - r}Z`;
         svg.append("path").attr("d", path).style("fill", d.v >= 0 ? "var(--good)" : "var(--bad)").style("opacity", d.v >= 0 ? 1 : 0.85)
           .attr("tabindex", 0).attr("aria-label", `${d.p}: ${pct(d.v)}`)
-          .on("pointerenter focus", () => tip.show(bx + bw, d.v >= 0 ? y(d.v) : y(0) + 10, d.p.replace(" ", " 20"), [{ label: basis === "gaap" ? "Operating margin" : "Adjusted op. margin", value: pct(d.v) }]))
+          .on("pointerenter focus", () => tip.show(bx + bw, d.v >= 0 ? y(d.v) : y(0) + 10, d.p.replace(" ", " 20"), [{ label: basisLabel[basis], value: pct(d.v) }]))
           .on("pointerleave blur", () => tip.hide());
         svg.append("text").attr("x", bx + bw / 2).attr("y", d.v >= 0 ? y(d.v) - 6 : y(d.v) + 14).attr("text-anchor", "middle").attr("class", d.v >= 0 ? "lbl-strong" : "lbl-muted").text(pct(d.v));
       });
@@ -258,7 +281,7 @@
       $$("#fig-margin .seg button").forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
       draw(node, node.clientWidth);
     }));
-    Charts.tableView($("#fig-margin"), ["Quarter", "Operating margin (GAAP)", "Adjusted operating margin"], q.periods.map((p, i) => [p, pct(series.gaap[i].v), pct(series.adj[i].v)]));
+    Charts.tableView($("#fig-margin"), ["Quarter", "Operating margin (GAAP)", "Without donation charges", "Adjusted operating margin"], q.periods.map((p, i) => [p, pct(series.gaap[i].v), pct(series.exdon[i].v), pct(series.adj[i].v)]));
   }
 
   /* --- waterfall --- */
@@ -335,7 +358,7 @@
     }));
     const h1 = steps(4);
     const rows = steps(2).map((d) => { const o = h1.find((s) => s.k === d.k); return [d.k, fmtBs(d.vb), o ? fmtBs(o.vb) : "—"]; });
-    Charts.tableView($("#fig-waterfall"), ["Line", "FY 2025", "H1 2026"], rows);
+    Charts.tableView($("#fig-waterfall"), ["Line", "FY 2025", "9M 2026"], rows);
   }
 
   /* --- commitment ladder --- */
@@ -344,19 +367,19 @@
     const cd = D.compute;
     if (!node || !cd) return;
     const segs = [
-      { k: "Purchase commitments at June 30", v: 265.6, c: "var(--s2)", pg: "F-58" },
-      { k: "Leases signed, not started (June 30)", v: 321.4, c: "var(--s2)", pg: "F-35" },
-      { k: "Running leases", v: 2.1, c: "var(--s2)", pg: "F-35" },
-      { k: "New long-term deals after June 30", v: 245, c: "var(--s4)", pg: "F-65" },
-      { k: "Short-term minimums after June 30", v: 21, c: "var(--s4)", pg: "F-65" },
-      { k: "Estimated: extra TPUs 2028–31 (midpoint)", v: 137.5, c: "var(--rule-2)", pg: "170", est: true },
-      { k: "Estimated: AMD systems", v: 20, c: "var(--rule-2)", pg: "171", est: true },
+      { k: "Purchase commitments (Sept 30 table)", v: 313.8, c: "var(--s2)", pg: "173" },
+      { k: "Leases already running", v: 6.2, c: "var(--s2)", pg: "173" },
+      { k: "Short-term minimums (Sept 30)", v: 17.4, c: "var(--s2)", pg: "174" },
+      { k: "Leases signed, not yet started", v: 451.2, c: "var(--s2)", pg: "174" },
+      { k: "Long-term deals signed after Sept 30", v: 100.2, c: "var(--s4)", pg: "174" },
+      { k: "Short-term deals signed after Sept 30", v: 6.6, c: "var(--s4)", pg: "174" },
+      { k: "Estimated: TPU and AMD capacity (midpoint of $150–175B)", v: 162.5, c: "var(--rule-2)", pg: "174", est: true },
     ];
     const total = d3.sum(segs, (d) => d.v);
     const rows = [
       { label: "Committed to compute", segs },
-      { label: "Cash and short-term investments (June 30)", segs: [{ k: "Cash and short-term investments", v: 131.7, c: "var(--s1)", pg: "161" }] },
-      { label: "Revenue, last four quarters to June 30", segs: [{ k: "Revenue Q3 2025 – Q2 2026", v: 19.7, c: "var(--s1)", pg: "157" }] },
+      { label: "Cash and short-term investments (Sept 30)", segs: [{ k: "Cash and short-term investments", v: 131.8, c: "var(--s1)", pg: "139" }] },
+      { label: "Revenue, last four quarters to Sept 30", segs: [{ k: "Revenue Q4 2025 – Q3 2026", v: 35.3, c: "var(--s1)", pg: "160" }] },
     ];
     Charts.mount(node, (container, W) => {
       const narrow = W < 560;
@@ -365,7 +388,7 @@
       const H = rows.length * rowH + m.t + m.b + 30;
       const svg = Charts.svgFor(container, W, H);
       svg.attr("aria-label", "Stacked bar of compute commitments compared with cash and revenue");
-      const x = d3.scaleLinear().domain([0, 1050]).range([m.l, W - m.r]);
+      const x = d3.scaleLinear().domain([0, 1080]).range([m.l, W - m.r]);
       svg.append("g").attr("class", "grid").attr("transform", `translate(0,${m.t})`).call(d3.axisTop(x).ticks(narrow ? 4 : 7).tickSize(-(rows.length * rowH)).tickFormat(""));
       svg.append("g").attr("transform", `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).ticks(narrow ? 4 : 7).tickFormat((d) => "$" + d + "B").tickSize(0).tickPadding(8)).call(axisStyle);
       const tip = U.chartTip(container);
@@ -376,20 +399,22 @@
         r.segs.forEach((s) => {
           const x0 = x(run), w = Math.max(1, x(run + s.v) - x(run) - (r.segs.length > 1 ? 2 : 0));
           const bar = svg.append("rect").attr("x", x0).attr("y", yy + 22).attr("width", w).attr("height", rowH - 34).attr("rx", 3).style("fill", s.c)
-            .attr("tabindex", 0).attr("aria-label", `${s.k}: $${s.v}B, S-1 p. ${s.pg}`);
+            .attr("tabindex", 0).attr("aria-label", `${s.k}: $${s.v}B, S-1/A p. ${s.pg}`);
           if (s.est) bar.style("fill", "var(--rule-2)").style("opacity", 0.8);
-          bar.on("pointerenter focus", () => tip.show(x0 + w, yy + 20, s.k, [{ label: "S-1 p. " + s.pg, value: "$" + s.v + "B" }])).on("pointerleave blur", () => tip.hide());
+          bar.on("pointerenter focus", () => tip.show(x0 + w, yy + 20, s.k, [{ label: "S-1/A p. " + s.pg, value: "$" + s.v + "B" }])).on("pointerleave blur", () => tip.hide());
           run += s.v;
         });
-        const lbl = ri === 0 ? `≈$${Math.round(total)}B` : `$${r.segs[0].v}B`;
+        const lbl = ri === 0 ? `≈$${(total / 1000).toFixed(2)}T` : `$${r.segs[0].v}B`;
         svg.append("text").attr("x", x(run) + 6).attr("y", yy + 22 + (rowH - 34) / 2 + 4).attr("class", "lbl-strong").text(lbl);
       });
-      const signed = 855.1;
+      const filed = 895.4, ours = 855.1;
       const ys = m.t + 22;
-      svg.append("line").attr("x1", x(signed)).attr("x2", x(signed)).attr("y1", ys - 6).attr("y2", ys + rowH - 28).style("stroke", "var(--ink)").style("stroke-width", 1.5);
-      svg.append("text").attr("x", x(signed) - 4).attr("y", ys - 9).attr("text-anchor", "end").attr("class", "annot").text(narrow ? "signed ≈$855B" : "signed minimums ≈ $855B │ estimates →");
+      svg.append("line").attr("x1", x(filed)).attr("x2", x(filed)).attr("y1", ys - 6).attr("y2", ys + rowH - 28).style("stroke", "var(--ink)").style("stroke-width", 1.5);
+      if (!narrow) svg.append("text").attr("x", x(filed) - 4).attr("y", ys - 9).attr("text-anchor", "end").attr("class", "annot").text("filed total $895.4B │ estimates →");
+      svg.append("line").attr("x1", x(ours)).attr("x2", x(ours)).attr("y1", ys + 2).attr("y2", ys + rowH - 36).style("stroke", "var(--bg)").style("stroke-width", 2).style("stroke-dasharray", "3 3");
+      if (!narrow) svg.append("text").attr("x", x(ours) - 4).attr("y", ys + rowH - 18).attr("text-anchor", "end").attr("class", "lbl-muted").text("our Oct 26 estimate ≈$855B");
     });
-    Charts.tableView($("#fig-ladder"), ["Component", "$ billions", "S-1 page"], segs.map((s) => [s.k, s.v.toFixed(1), s.pg]).concat([["Total including estimates", total.toFixed(1), ""], ["Cash and short-term investments, June 30", "131.7", "161"], ["Revenue, four quarters to June 30", "19.7", "157"]]));
+    Charts.tableView($("#fig-ladder"), ["Component", "$ billions", "S-1/A page"], segs.map((s) => [s.k, s.v.toFixed(1), s.pg]).concat([["Filed total (excludes estimates)", "895.4", "173"], ["Total including estimates (midpoint)", total.toFixed(1), ""], ["Our estimate from the original S-1, Oct 26", "≈855", "orig. F-35, F-58, F-65"], ["Cash and short-term investments, Sept 30", "131.8", "139"], ["Revenue, four quarters to Sept 30", "35.3", "160"]]));
   }
 
   /* --- named deals --- */
@@ -462,47 +487,28 @@
   /* --- can they pay? simulator --- */
   const SIM_YEARS = d3.range(2026, 2037);
   const SHOW_FROM = 2027;
-  function schedule(includeOptional) {
-    const deals = [
-      { k: "Broadcom", amt: 161.2, s: [2026, 7], e: [2031, 12] },
-      { k: "Google", amt: 114.5, s: [2026, 4], e: [2033, 7] },
-      { k: "Amazon", amt: 110.0, s: [2026, 5], e: [2036, 4] },
-      { k: "Microsoft", amt: 44.9, s: [2026, 11], e: [2033, 5] },
-      { k: "Nscale", amt: 44.6, s: [2027, 1], e: [2033, 12] },
-      { k: "Lambda", amt: 41.3, s: [2027, 1], e: [2034, 12] },
-      { k: "Other signed (unnamed)", amt: 218.1, s: [2027, 1], e: [2040, 12] },
-    ];
-    const opt = [
-      { k: "Extra TPUs (estimate)", amt: 137.5, s: [2028, 1], e: [2031, 12] },
-      { k: "AMD (estimate)", amt: 20.0, s: [2027, 1], e: [2031, 12] },
-    ];
-    const byYear = new Map(SIM_YEARS.map((y) => [y, 0]));
-    const add = (d) => {
-      const months = (d.e[0] - d.s[0]) * 12 + (d.e[1] - d.s[1]) + 1;
-      const per = d.amt / months;
-      for (let i = 0; i < months; i++) {
-        const yr = d.s[0] + Math.floor((d.s[1] - 1 + i) / 12);
-        if (byYear.has(yr)) byYear.set(yr, byYear.get(yr) + per);
-      }
-    };
-    deals.forEach(add);
-    // SpaceXAI: ramp Aug–Nov 2026, then ~$3.1B a month from Dec 2026; cancelable after Mar 2027
-    const spacex = [];
-    for (let mth = 8; mth <= 11; mth++) spacex.push([2026, 1.45]);
-    for (let i = 0; i < 37; i++) spacex.push([2026 + Math.floor((11 + i) / 12), 3.1]);
-    spacex.forEach(([yr, v], i) => {
-      const isCancelable = i >= 8; // after March 2027
-      if (!includeOptional && isCancelable) return;
-      if (byYear.has(yr)) byYear.set(yr, byYear.get(yr) + v);
-    });
-    if (includeOptional) opt.forEach(add);
+  // Our spread of the filed commitments ($895.4B at and after Sept 30, 2026), calibrated to the S-1/A's own anchors:
+  // $69.8B due in the 12 months after Sept 30 and $447.5B by the end of 2030 (pp. 6, 174), with the $320.0B
+  // contractual table as filed by year (p. 173). Short-term minimums fall within a year. The $551.4B of leases not
+  // yet started and deals signed after Sept 30 ramp up as they commence (2026–2028) and run about ten years (p. 174).
+  function schedule(includeEstimates) {
+    const table = { 2026: 5.231, 2027: 29.165, 2028: 44.357, 2029: 47.752, 2030: 45.070 };
+    for (let yr = 2031; yr <= 2036; yr++) table[yr] = 148.418 / 6; // "thereafter", spread to 2036
+    const shortTerm = { 2026: 6.0, 2027: 18.0 }; // $17.4B + $6.6B
+    const pool = { 2026: 2.0, 2027: 28.3, 2028: 65.0, 2029: 79.0, 2030: 77.6, 2031: 70, 2032: 60, 2033: 45, 2034: 35, 2035: 28, 2036: 20, 2037: 15, 2038: 10, 2039: 8, 2040: 8.5 };
+    const byYear = new Map(SIM_YEARS.map((y) => [y, (table[y] || 0) + (shortTerm[y] || 0) + (pool[y] || 0)]));
+    if (includeEstimates) {
+      // midpoint of the company's $150–175B estimate: AMD (>$20B) from 2027, TPUs delivered 2028–2031 and paid over time
+      for (let yr = 2027; yr <= 2031; yr++) byYear.set(yr, byYear.get(yr) + 20 / 5);
+      for (let yr = 2028; yr <= 2035; yr++) if (byYear.has(yr)) byYear.set(yr, byYear.get(yr) + 142.5 / 8);
+    }
     return SIM_YEARS.map((y) => ({ y, v: byYear.get(y) }));
   }
 
   function initSim() {
     const node = $("#chart-sim");
     if (!node) return;
-    const st = { g1: 1.5, eff: 2.0, inc: true };
+    const st = { g1: 1.5, eff: 1.7, inc: false };
     const base2026 = C.rev2026_base || 55;
     const model = () => {
       const sch = schedule(st.inc);
@@ -557,14 +563,14 @@
       const ro = $("#sim-readout");
       ro.replaceChildren(
         readout("2027 revenue in this scenario", fmtB(by(2027).rev), `vs. ~$${base2026}B estimated for 2026`),
-        readout("Compute as a share of 2027 revenue", pct(by(2027).contracted / by(2027).rev), "Q2 2026 actual: 48%"),
+        readout("Compute as a share of 2027 revenue", pct(by(2027).contracted / by(2027).rev), "Q3 2026 actual: 58%"),
         readout("Total shortfall, 2027–2031", gap5 > 0.5 ? fmtB(gap5) : "None", "Contracted compute above what revenue carries"),
-        readout("Cash and short-term investments", "$131.7B", "June 30, 2026, before IPO proceeds"),
+        readout("Cash and short-term investments", "$131.8B", "Sept 30, 2026, before IPO proceeds"),
       );
       const v = $("#sim-verdict");
       if (gap5 < 0.5) { v.dataset.tone = "good"; v.textContent = "In this scenario revenue carries the whole contracted bill at your efficiency level. The commitments look like a good bet."; }
-      else if (gap5 <= 131.7) { v.dataset.tone = ""; v.textContent = `Revenue falls short of the bill by about ${fmtB(gap5)} through 2031${firstOk ? `, and catches up by ${firstOk.y}` : ""}. The June cash pile would cover that, before counting IPO proceeds or partner facilities.`; }
-      else { v.dataset.tone = "bad"; v.textContent = `Revenue falls short by about ${fmtB(gap5)} through 2031, more than the $131.7B cash pile. Anthropic would need the IPO money, partner facilities, new capital or to cancel what it can${firstGap ? `, starting in ${firstGap.y}` : ""}.`; }
+      else if (gap5 <= 131.8) { v.dataset.tone = ""; v.textContent = `Revenue falls short of the bill by about ${fmtB(gap5)} through 2031${firstOk ? `, and catches up by ${firstOk.y}` : ""}. The September cash pile would cover that, before counting IPO proceeds or partner facilities.`; }
+      else { v.dataset.tone = "bad"; v.textContent = `Revenue falls short by about ${fmtB(gap5)} through 2031, more than the $131.8B of cash and short-term investments. Anthropic would need the IPO money, partner facilities, new capital or to cancel what it can${firstGap ? `, starting in ${firstGap.y}` : ""}.`; }
     };
     const readout = (l, v, n) => el("div", {}, el("div", { class: "r-label", text: l }), el("div", { class: "r-value", text: v }), el("div", { class: "r-note", text: n }));
     Charts.mount(node, draw);
@@ -582,8 +588,8 @@
       draw(node, node.clientWidth);
     }));
     sync();
-    const sch = schedule(true);
-    Charts.tableView($("#fig-sim"), ["Year", "Contracted compute, our spread ($B)"], sch.filter((d) => d.y >= SHOW_FROM).map((d) => [String(d.y), d.v.toFixed(1)]));
+    const sch = schedule(false), schE = schedule(true);
+    Charts.tableView($("#fig-sim"), ["Year", "Filed commitments, our spread ($B)", "With company estimates ($B)"], sch.filter((d) => d.y >= SHOW_FROM).map((d, i) => [String(d.y), d.v.toFixed(1), schE.find((e) => e.y === d.y).v.toFixed(1)]));
   }
 
   /* --- money circle (butterfly) --- */
@@ -686,7 +692,7 @@
     const btns = $(".scen-buttons", box), body = $("#scen-body");
     const show = (s) => {
       $$("button", btns).forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === s.id)));
-      body.replaceChildren(el("p", { class: "scen-result" }, el("strong", { text: s.result })), el("p", { text: s.explain }), el("p", { class: "src" }, "S-1 ", el("a", { class: "pg", "data-pg": s.page })));
+      body.replaceChildren(el("p", { class: "scen-result" }, el("strong", { text: s.result })), el("p", { text: s.explain }), el("p", { class: "src" }, "S-1/A ", el("a", { class: "pg", "data-pg": s.page })));
       wireChips(body);
     };
     sc.forEach((s, i) => {
@@ -726,7 +732,7 @@
     };
     const draw = (container, W) => {
       const res = calc();
-      const list = comps.concat([{ name: `Anthropic needs (${2026 + st.year})`, rev: res.reqRev, req: true }, { name: "Anthropic today (Q2 2026 × 4)", rev: BASE, now: true }]).sort((a, b) => b.rev - a.rev);
+      const list = comps.concat([{ name: `Anthropic needs (${2026 + st.year})`, rev: res.reqRev, req: true }, { name: "Anthropic today (Q3 2026 × 4)", rev: BASE, now: true }]).sort((a, b) => b.rev - a.rev);
       const narrow = W < 560;
       const labelW = narrow ? 0 : 220;
       const rowH = narrow ? 42 : 30;
@@ -749,9 +755,9 @@
       const ro = $("#val-readout");
       ro.replaceChildren(
         el("div", {}, el("div", { class: "r-label", text: "Implied price per share" }), el("div", { class: "r-value", text: "$" + res.price.toFixed(0) }), el("div", { class: "r-note", text: "On ~16.9B fully diluted shares (our estimate)" })),
-        el("div", {}, el("div", { class: "r-label", text: "Price ÷ today's revenue run-rate" }), el("div", { class: "r-value", text: res.ps.toFixed(0) + "×" }), el("div", { class: "r-note", text: "Q2 2026 revenue × 4 = $46.2B" })),
+        el("div", {}, el("div", { class: "r-label", text: "Price ÷ Q3 revenue at an annual rate" }), el("div", { class: "r-value", text: res.ps.toFixed(0) + "×" }), el("div", { class: "r-note", text: "Q3 2026 revenue × 4 = $67.8B (our arithmetic)" })),
         el("div", {}, el("div", { class: "r-label", text: `Revenue needed in ${2026 + st.year}` }), el("div", { class: "r-value", text: "$" + d3.format(",.0f")(res.reqRev) + "B" }), el("div", { class: "r-note", text: "To earn your return at those margins and multiples" })),
-        el("div", {}, el("div", { class: "r-label", text: "Growth needed per year" }), el("div", { class: "r-value", text: pct(res.cagr) }), el("div", { class: "r-note", text: "From the $46.2B run-rate" })),
+        el("div", {}, el("div", { class: "r-label", text: "Growth needed per year" }), el("div", { class: "r-value", text: pct(res.cagr) }), el("div", { class: "r-note", text: "From Q3 × 4 = $67.8B" })),
       );
       const top = comps.slice().sort((a, b) => b.rev - a.rev)[0];
       const v = $("#val-verdict");
@@ -995,15 +1001,16 @@
   /* --- nav: progress, active section, S-1 page counter --- */
   /* Sections in reading order: one list feeds the Contents menu, the side rail and the top bar. */
   const NAV = [
+    { id: "amendment", t: "What the amendment changed", d: "Nov 2: Q3 results, the $895.4B total" },
     { id: "short", t: "The short version", d: "Seven things to know first" },
-    { id: "growth", t: "Growth", d: "$376M to $11.6B a quarter" },
+    { id: "growth", t: "Growth", d: "$376M to $17.0B a quarter" },
     { id: "economics", t: "Unit economics", d: "Revenue per dollar of compute" },
-    { id: "loss", t: "The $80.7B loss", d: "Why most of it is paper" },
-    { id: "compute", t: "The compute bill", d: "≈$855B signed; can they pay?" },
+    { id: "loss", t: "The $104B loss", d: "Why most of it is paper" },
+    { id: "compute", t: "The compute bill", d: "$895.4B filed; can they pay?" },
     { id: "circle", t: "The money circle", d: "Investors who are also suppliers" },
     { id: "control", t: "Who controls it", d: "One share, 50.1% of the vote" },
     { id: "letter", t: "The founders' letter", d: "Eight pages most readers miss" },
-    { id: "valuation", t: "Fill in the blank", d: "What a $1–2T price assumes" },
+    { id: "valuation", t: "Fill in the blank", d: "What a ~$1.5T price assumes" },
     { id: "risks", t: "88 risk factors", d: "Searchable, unprecedented ones first" },
     { id: "court", t: "Nine debates", d: "Both sides, the filing, our read" },
     { id: "experts", t: "The expert map", d: "Who is saying what" },
@@ -1088,19 +1095,20 @@
     const sp = $("#share-page");
     if (sp) sp.addEventListener("click", () => U.copyText(U.pageUrl()));
     const sx = $("#share-x");
-    if (sx) sx.href = U.shareX("Anthropic's 421-page S-1, annotated: the growth, the $80.7B paper loss, the ~$1T compute bill, and who really controls the company.", "");
+    if (sx) sx.href = U.shareX("Anthropic's S-1, annotated and updated for Amendment No. 1: $17.0B of Q3 revenue, the $895.4B compute bill, the $104B paper loss, and who really controls the company.", "");
   }
 
   /* ---------------- boot ---------------- */
   function boot() {
     U.initTheme();
     renderLedger();
+    renderAmendment();
     renderFindings();
     initQuiz();
     chartRevenue(); chartCustomers(); chartEfficiency(); chartMargin(); chartWaterfall();
     chartLadder(); chartDeals(); chartDrafts(); initSim(); chartCircle();
     chartControl(); initScenarios(); renderLetter(); initValuation();
-    initRisks(); initCourt(); initExperts(); chartRounds(); renderTimeline(); renderTracker(); chartLockup();
+    renderSafetyBox(); initRisks(); initCourt(); initExperts(); chartRounds(); renderTimeline(); renderTracker(); chartLockup();
     renderGlossary(); renderSources();
     wireChips(); wireShares(); initNav();
     if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) setTimeout(() => t.scrollIntoView(), 50); }

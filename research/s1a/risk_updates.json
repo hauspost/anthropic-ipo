@@ -1,0 +1,282 @@
+{
+ "rf-a-001": {
+  "page": "29"
+ },
+ "rf-a-002": {
+  "page": "31"
+ },
+ "rf-a-003": {
+  "page": "32"
+ },
+ "rf-a-004": {
+  "page": "35"
+ },
+ "rf-a-005": {
+  "page": "39"
+ },
+ "rf-a-006": {
+  "page": "40"
+ },
+ "rf-a-007": {
+  "page": "40"
+ },
+ "rf-a-008": {
+  "page": "41"
+ },
+ "rf-a-009": {
+  "page": "43"
+ },
+ "rf-a-010": {
+  "page": "44"
+ },
+ "rf-a-011": {
+  "page": "45"
+ },
+ "rf-a-012": {
+  "page": "46"
+ },
+ "rf-a-013": {
+  "page": "48"
+ },
+ "rf-a-014": {
+  "page": "50"
+ },
+ "rf-a-015": {
+  "page": "53"
+ },
+ "rf-a-016": {
+  "page": "55"
+ },
+ "rf-a-017": {
+  "page": "57"
+ },
+ "rf-a-018": {
+  "page": "58",
+  "quote": "revenue generated from sales to customers through CSP marketplaces represented approximately 11%, 32%, 47%, and 44%, respectively, of total revenue.",
+  "numbers": "No customer >10% of revenue (9 months ended Sept. 30, 2026); top five customers ≈25% of revenue (same period); CSP-marketplace share of revenue ≈11% (2023), 32% (2024), 47% (2025), 44% (nine months ended Sept 30, 2026); CSP share of net accounts receivable 42% (Dec. 31, 2024), 60% (Dec. 31, 2025), 52% (Sept 30, 2026)"
+ },
+ "rf-a-019": {
+  "page": "59"
+ },
+ "rf-a-020": {
+  "page": "60"
+ },
+ "rf-b-001": {
+  "page": "61"
+ },
+ "rf-b-002": {
+  "page": "62"
+ },
+ "rf-b-003": {
+  "page": "62"
+ },
+ "rf-b-004": {
+  "quote": "In the nine months ended September 30, 2026, our revenue was $33.2 billion, representing a year-over-year growth rate of 1,206%.",
+  "plain_english": "Revenue has exploded, from $41 million in 2023 to $33.2 billion in the first nine months of 2026, but Anthropic warns that growth rates will slow and that it has struggled to forecast revenue accurately.",
+  "numbers": "Revenue $41M (2023), $386M (2024), $4.6B (2025); YoY growth 841% (2024) and 1,088% (2025); 9M 2026 revenue $33.2B (+1,206% YoY)",
+  "page": "63"
+ },
+ "rf-b-005": {
+  "page": "64"
+ },
+ "rf-b-006": {
+  "quote": "net losses of $1.5 billion, $8.3 billion, and $42.0 billion for the years ended December 31, 2023, 2024, and 2025, respectively, and $104.0 billion for the nine months ended September 30, 2026",
+  "plain_english": "Anthropic has lost money every year, and its reported net loss reached $104.0 billion in the first nine months of 2026. Most of that is a non-cash charge from its convertible notes rising in value as its valuation climbed. Large stock-compensation charges will also be booked once the IPO is completed.",
+  "numbers": "Net loss $1.5B (2023), $8.3B (2024), $42.0B (2025), $104.0B (9M 2026); of which fair-value changes in convertible notes, derivative liabilities and SAFEs $1.0B, $5.4B, $34.3B, $94.3B (9M 2026)",
+  "page": "65"
+ },
+ "rf-b-007": {
+  "page": "66"
+ },
+ "rf-b-008": {
+  "page": "69"
+ },
+ "rf-b-009": {
+  "page": "71"
+ },
+ "rf-b-010": {
+  "page": "73"
+ },
+ "rf-b-011": {
+  "quote": "these CSPs, which simultaneously serve as our investors, customers, distribution partners, and competitors, or with Broadcom, which simultaneously serves as a supplier and lessor",
+  "page": "75"
+ },
+ "rf-b-012": {
+  "page": "75"
+ },
+ "rf-b-013": {
+  "page": "77"
+ },
+ "rf-b-014": {
+  "page": "78"
+ },
+ "rf-b-015": {
+  "page": "79"
+ },
+ "rf-b-016": {
+  "page": "80"
+ },
+ "rf-b-017": {
+  "page": "81"
+ },
+ "rf-b-018": {
+  "page": "81"
+ },
+ "rf-b-019": {
+  "page": "82"
+ },
+ "rf-b-020": {
+  "page": "82"
+ },
+ "rf-b-021": {
+  "page": "83"
+ },
+ "rf-b-022": {
+  "page": "84"
+ },
+ "rf-b-023": {
+  "page": "85"
+ },
+ "rf-b-024": {
+  "quote": "our corporate headquarters is located in the San Francisco Bay Area, a region known for seismic activity and increasingly for the threat of fires",
+  "page": "86"
+ },
+ "rf-b-025": {
+  "page": "87"
+ },
+ "rf-b-026": {
+  "page": "87"
+ },
+ "rf-b-027": {
+  "page": "88"
+ },
+ "rf-b-028": {
+  "quote": "plaintiffs, class action counsel, state attorneys general, and other claimants continue to pursue claims against AI companies relating to data handling, privacy, and cybersecurity",
+  "page": "88"
+ },
+ "rf-b-029": {
+  "page": "89"
+ },
+ "rf-b-030": {
+  "quote": "state-sponsored actors may conduct cyberattacks specifically targeting Mythos in light of its advanced cyber vulnerability discovery capabilities.",
+  "page": "89"
+ },
+ "rf-b-031": {
+  "page": "92"
+ },
+ "rf-b-032": {
+  "page": "93"
+ },
+ "rf-b-033": {
+  "page": "93"
+ },
+ "rf-b-034": {
+  "page": "95",
+  "quote": "current or former employees, contractors, or other insiders with access to our proprietary model weights, training data, algorithms, research insights, or other proprietary information could misappropriate such information"
+ },
+ "rf-b-035": {
+  "page": "96"
+ },
+ "rf-b-036": {
+  "page": "96"
+ },
+ "rf-b-037": {
+  "page": "97"
+ },
+ "rf-b-038": {
+  "page": "97"
+ },
+ "rf-b-039": {
+  "page": "98"
+ },
+ "rf-b-040": {
+  "page": "99"
+ },
+ "rf-b-041": {
+  "page": "100"
+ },
+ "rf-b-042": {
+  "page": "103"
+ },
+ "rf-b-043": {
+  "heading": "Increasing scrutiny and changing expectations from regulators, our investors, customers, and employees with respect to ESG may result in additional compliance risk and costs and may impact our reputation and business.",
+  "page": "104"
+ },
+ "rf-b-044": {
+  "page": "104"
+ },
+ "rf-b-045": {
+  "page": "105"
+ },
+ "rf-b-046": {
+  "page": "106"
+ },
+ "rf-b-047": {
+  "page": "106"
+ },
+ "rf-b-048": {
+  "page": "107"
+ },
+ "rf-b-049": {
+  "page": "107"
+ },
+ "rf-b-050": {
+  "page": "108"
+ },
+ "rf-b-051": {
+  "page": "108"
+ },
+ "rf-b-052": {
+  "page": "109"
+ },
+ "rf-b-053": {
+  "page": "110"
+ },
+ "rf-b-054": {
+  "page": "110"
+ },
+ "rf-b-055": {
+  "page": "110"
+ },
+ "rf-b-056": {
+  "page": "111"
+ },
+ "rf-b-057": {
+  "quote": "our directors are not merely permitted, but obligated, to consider the Company Purpose and the interests of other stakeholders",
+  "page": "112"
+ },
+ "rf-b-058": {
+  "page": "112"
+ },
+ "rf-b-059": {
+  "page": "113"
+ },
+ "rf-b-060": {
+  "page": "114"
+ },
+ "rf-b-061": {
+  "page": "115"
+ },
+ "rf-b-062": {
+  "page": "115",
+  "quote": "supply chain constraints, particularly those impacting compute, and new and evolving trade regulations and tariffs, and countermeasures"
+ },
+ "rf-b-063": {
+  "page": "117"
+ },
+ "rf-b-064": {
+  "page": "117"
+ },
+ "rf-b-065": {
+  "page": "118"
+ },
+ "rf-b-066": {
+  "page": "119"
+ },
+ "rf-b-067": {
+  "page": "120"
+ },
+ "rf-b-068": {
+  "page": "120"
+ }
+}

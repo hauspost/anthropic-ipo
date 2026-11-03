@@ -6,25 +6,25 @@
    "affiliation": "NYU Stern (valuation professor)",
    "field": "finance",
    "stance": "mixed",
-   "quote": "To make a case for Anthropic at a $1.5 or $2 trillion pricing, you will have to make defensible arguments for sky-high revenue growth in the early years, a surge in operating margins to 30% or higher",
-   "quote_type": "verbatim_primary",
-   "summary": "The IPO will be priced against what investors pay for peers such as OpenAI, not valued on its cash flows. Getting to $1.5-2T needs very fast early growth, operating margins of 30%+ and a risk profile that falls to average. He flags ARR as unstandardized and gameable, notes Anthropic books revenue gross rather than net, and treats the compute commitments as financial risk.",
-   "outlet": "Musings on Markets (Substack)",
-   "date": "2026-10-22",
-   "url": "https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing"
+   "quote": "the most telegraphed 3rd quarter number of all time",
+   "quote_type": "verbatim_secondary",
+   "summary": "On the amendment's Q3 numbers. He values Anthropic at about $1.48 trillion and says he will sit out if it prices well above that; he won't short it.",
+   "outlet": "Fortune; Musings on Markets (Oct 28)",
+   "date": "2026-11-03",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/"
   },
   {
    "id": "ives",
    "name": "Dan Ives",
    "affiliation": "Wedbush Securities (tech analyst)",
    "field": "finance",
-   "stance": "bull",
-   "quote": "I think Anthropic is the heart and lungs of the AI revolution,",
+   "stance": "mixed",
+   "quote": "you could call it 1.5, is maybe baseline ... to what probably could even go lower by mid-November.",
    "quote_type": "verbatim_secondary",
-   "summary": "He calls Anthropic central to a decade-long build-out of a 'new economy'. He reads the existential-risk disclosures as a jarring 'shocker' risk with some alarmism, not as a reason to avoid the stock.",
-   "outlet": "Yahoo Finance (Sozzi Unleashed)",
-   "date": "2026-09-29",
-   "url": "https://finance.yahoo.com/technology/article/tech-bull-dan-ives-flags-shocker-risk-in-anthropics-ipo-leak-172922273.html"
+   "summary": "Still bullish on Anthropic's importance, but sees $1.5T as the baseline for valuation talk and calls an expected junk credit rating a 'gut punch'. Quoted secondhand.",
+   "outlet": "Bloomberg interview, via Stocktwits",
+   "date": "2026-11-03",
+   "url": "https://stocktwits.com/news-articles/markets/equity/dan-ives-calls-anthropic-junk-rating-gut-punch-ipo-valuation-below-1-5-trillion/cNGXddmR95p"
   },
   {
    "id": "patel",
@@ -83,13 +83,13 @@
    "name": "Jay Ritter",
    "affiliation": "University of Florida, Warrington College of Business ('Mr. IPO')",
    "field": "finance",
-   "stance": "mixed",
-   "quote": "These are great companies. A great company doesn't automatically mean it's a great investment.",
+   "stance": "bear",
+   "quote": "a lot of things have to go right",
    "quote_type": "verbatim_secondary",
-   "summary": "Strong businesses can still be poor investments if the price is too high. With Ari Pandes he argues the SpaceX template (tiny gross spread, few hedge-fund allocations) threatens Wall Street's IPO economics if Anthropic copies it. His data show dual-class tech IPOs since 1980 beat comparable stocks by about 19 points over three years.",
-   "outlet": "Marketplace (APM)",
-   "date": "2026-06-05",
-   "url": "https://www.marketplace.org/story/2026/06/05/should-you-buy-spacex-open-ai-or-anthropic-stock-at-ipo"
+   "summary": "Only 14 of 4,110 US IPOs from 1980 to 2024 priced above 40 times sales, and they trailed the market by 15.4% on average. A value above $1.4T needs a path to $100B or more of annual after-tax profit.",
+   "outlet": "Fortune",
+   "date": "2026-11-03",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/"
   },
   {
    "id": "nyc_comptroller",
@@ -196,17 +196,30 @@
    "url": "https://advertiserintelligence.substack.com/p/ai-eats-the-world-a-friday-detour"
   },
   {
+   "id": "winton",
+   "name": "Brett Winton",
+   "affiliation": "ARK Invest",
+   "field": "finance",
+   "stance": "bull",
+   "quote": "the frontier lab companies will be good for the bill",
+   "quote_type": "verbatim_secondary",
+   "summary": "The world is short of compute, and the leading labs can pay for what they have signed.",
+   "outlet": "BeInCrypto via Yahoo Finance",
+   "date": "2026-11-03",
+   "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-amended-ipo-filing-5-080000335.html"
+  },
+  {
    "id": "epoch",
-   "name": "Campbell Hutcheson (Epoch AI guest post)",
-   "affiliation": "Epoch AI, Gradient Updates newsletter (guest author)",
+   "name": "Campbell Hutcheson",
+   "affiliation": "Epoch AI",
    "field": "ai",
-   "stance": "mixed",
-   "quote": "Anthropic's buildout therefore suggests that financing is unlikely to be the immediate limit on frontier compute growth.",
-   "quote_type": "verbatim_primary",
-   "summary": "Anthropic raised ~$50B of debt-like financing while revenue was under $9B annualized, because lenders lent against contracted payment streams and suppliers (Broadcom, Google) took on part of the risk. Vendor support makes compute financeable, which also shows how much of it is supplier-backed.",
-   "outlet": "Epoch AI - Gradient Updates (Substack)",
-   "date": "2026-08-13",
-   "url": "https://epochai.substack.com/p/will-financing-bottleneck-ai-compute"
+   "stance": "bull",
+   "quote": "very strong growth, high gross margins",
+   "quote_type": "verbatim_secondary",
+   "summary": "Paying up for short-term compute is rational; the fundamentals are still strong while the company invests heavily in research.",
+   "outlet": "Fortune",
+   "date": "2026-11-03",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/"
   },
   {
    "id": "hughes",
@@ -279,12 +292,12 @@
    "affiliation": "Renaissance Capital (senior strategist)",
    "field": "finance",
    "stance": "mixed",
-   "quote": "A successful IPO from Anthropic could crack open or slam shut the IPO market, even well into 2027",
+   "quote": "I wouldn't say these results are worrisome, but I do expect some of this pressure on growth and margins ... to be reflected in the ultimate IPO valuation",
    "quote_type": "verbatim_secondary",
-   "summary": "Anthropic is the swing deal for the whole IPO market. The window is tougher than in summer and investors now push back on valuations, but a good outcome could carry 2027 issuance.",
-   "outlet": "Reuters (via Investing.com factbox; Reuters story via InvestmentNews / Idaho Business Review)",
-   "date": "2026-10-26",
-   "url": "https://www.investing.com/news/stock-market-news/factboxanthropic-moves-closer-to-blockbuster-listing-with-us-ipo-filing-4972888"
+   "summary": "Q3 isn't alarming, but slower growth and thinner margins should lower the IPO price.",
+   "outlet": "Reuters via MarketScreener",
+   "date": "2026-11-02",
+   "url": "https://www.marketscreener.com/news/anthropic-s-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-ce785fd9d98ff521"
   },
   {
    "id": "breakingviews",
@@ -311,6 +324,19 @@
    "outlet": "Key Context (Substack)",
    "date": "2026-10-26",
    "url": "https://taekim.substack.com/p/anthropic-8-most-interesting-things"
+  },
+  {
+   "id": "trzcinka",
+   "name": "Tony Trzcinka",
+   "affiliation": "Impax Asset Management (investment-grade portfolio manager)",
+   "field": "finance",
+   "stance": "mixed",
+   "quote": "The key question is whether revenue can compound fast enough to absorb the future commitments and outpace compute cost",
+   "quote_type": "verbatim_secondary",
+   "summary": "A credit investor's view: the $895.4B of commitments against revenue growth is the crux.",
+   "outlet": "Fortune",
+   "date": "2026-11-03",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/"
   },
   {
    "id": "bylund",

@@ -1,0 +1,81 @@
+{
+ "update": {
+  "damodaran": {
+   "date": "2026-11-03",
+   "outlet": "Fortune; Musings on Markets (Oct 28)",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "mixed",
+   "quote": "the most telegraphed 3rd quarter number of all time",
+   "quote_type": "verbatim_secondary",
+   "summary": "On the amendment's Q3 numbers. He values Anthropic at about $1.48 trillion and says he will sit out if it prices well above that; he won't short it."
+  },
+  "ritter": {
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "bear",
+   "quote": "a lot of things have to go right",
+   "quote_type": "verbatim_secondary",
+   "summary": "Only 14 of 4,110 US IPOs from 1980 to 2024 priced above 40 times sales, and they trailed the market by 15.4% on average. A value above $1.4T needs a path to $100B or more of annual after-tax profit."
+  },
+  "renaissance_kennedy": {
+   "date": "2026-11-02",
+   "outlet": "Reuters via MarketScreener",
+   "url": "https://www.marketscreener.com/news/anthropic-s-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-ce785fd9d98ff521",
+   "stance": "mixed",
+   "quote": "I wouldn't say these results are worrisome, but I do expect some of this pressure on growth and margins ... to be reflected in the ultimate IPO valuation",
+   "quote_type": "verbatim_secondary",
+   "summary": "Q3 isn't alarming, but slower growth and thinner margins should lower the IPO price."
+  },
+  "ives": {
+   "date": "2026-11-03",
+   "outlet": "Bloomberg interview, via Stocktwits",
+   "url": "https://stocktwits.com/news-articles/markets/equity/dan-ives-calls-anthropic-junk-rating-gut-punch-ipo-valuation-below-1-5-trillion/cNGXddmR95p",
+   "stance": "mixed",
+   "quote": "you could call it 1.5, is maybe baseline ... to what probably could even go lower by mid-November.",
+   "quote_type": "verbatim_secondary",
+   "summary": "Still bullish on Anthropic's importance, but sees $1.5T as the baseline for valuation talk and calls an expected junk credit rating a 'gut punch'. Quoted secondhand."
+  },
+  "epoch": {
+   "name": "Campbell Hutcheson",
+   "affiliation": "Epoch AI",
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "bull",
+   "quote": "very strong growth, high gross margins",
+   "quote_type": "verbatim_secondary",
+   "summary": "Paying up for short-term compute is rational; the fundamentals are still strong while the company invests heavily in research."
+  }
+ },
+ "add": [
+  {
+   "id": "trzcinka",
+   "name": "Tony Trzcinka",
+   "affiliation": "Impax Asset Management (investment-grade portfolio manager)",
+   "category": "finance",
+   "prominence": "medium",
+   "date": "2026-11-03",
+   "outlet": "Fortune",
+   "url": "https://fortune.com/2026/11/03/anthropics-third-quarter-results-mean-ipo-math-and-history-are-not-on-its-side-analysts-say/",
+   "stance": "mixed",
+   "quote": "The key question is whether revenue can compound fast enough to absorb the future commitments and outpace compute cost",
+   "quote_type": "verbatim_secondary",
+   "summary": "A credit investor's view: the $895.4B of commitments against revenue growth is the crux."
+  },
+  {
+   "id": "winton",
+   "name": "Brett Winton",
+   "affiliation": "ARK Invest",
+   "category": "finance",
+   "prominence": "medium",
+   "date": "2026-11-03",
+   "outlet": "BeInCrypto via Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-amended-ipo-filing-5-080000335.html",
+   "stance": "bull",
+   "quote": "the frontier lab companies will be good for the bill",
+   "quote_type": "verbatim_secondary",
+   "summary": "The world is short of compute, and the leading labs can pay for what they have signed."
+  }
+ ]
+}

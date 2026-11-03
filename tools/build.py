@@ -19,8 +19,8 @@ DIST = ROOT / "dist"
 SITE_URL = "https://hauspost.github.io/anthropic-ipo/"
 TITLE = "Anthropic S-1, Annotated"
 DESCRIPTION = (
-    "An independent, interactive reading of Anthropic's S-1: the growth, the $80.7B loss, "
-    "the ~$1T compute bill, who controls the company, and every fight about it, "
+    "An independent, interactive reading of Anthropic's S-1, updated for Amendment No. 1: $17.0B of Q3 revenue, "
+    "the $895.4B compute bill, the $104B paper loss, who controls the company, and every fight about it, "
     "with each number traced to its page in the filing."
 )
 

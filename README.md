@@ -1,10 +1,11 @@
 # Anthropic S-1, Annotated
 
-An independent, interactive reading of Anthropic, PBC's Form S-1 (filed with the SEC on October 26, 2026).
-It covers the growth, the unit economics, the $80.7B paper loss, the roughly trillion-dollar compute bill, the
-circular financing, who controls the company, the founders' letter, a reverse-valuation tool, all 88 risk
-factors, nine debates argued from both sides, an expert map, and how six confidential drafts changed.
-Every figure links to its printed page in the filing.
+An independent, interactive reading of Anthropic, PBC's Form S-1 (filed with the SEC on October 26, 2026),
+updated for Amendment No. 1 (S-1/A, filed November 2, 2026). It covers the growth, the unit economics, the
+$104B paper loss, the $895.4B compute bill, the circular financing, who controls the company, the founders'
+letter, a reverse-valuation tool, all 88 risk factors, nine debates argued from both sides, an expert map, and
+how six confidential drafts, the S-1 and its amendment changed. Every figure links to its printed page in the
+amended filing; a few chips marked "orig." link to the original S-1.
 
 **Open it:** `dist/index.html` is a single self-contained file. Open it in a browser or host it anywhere.
 
@@ -20,7 +21,8 @@ Not investment advice. Not affiliated with Anthropic or its underwriters.
 | `src/` | Page markup, styles and scripts (`page.html`, `styles.css`, `util.js`, `charts.js`, `app.js`) |
 | `data/` | The JSON the page ships: financials, compute deals, risks, experts, glossary, editorial content |
 | `research/` | Page-cited extracts of the S-1 and of outside coverage that the data was built from |
-| `research/s1/` | The S-1 converted to text page by page, plus the printed-page map used for checking |
+| `research/s1/` | The original S-1 converted to text page by page, plus its printed-page map |
+| `research/s1a/` | Amendment No. 1 converted the same way, plus the risk-factor and expert updates applied on top of the S-1 research |
 | `tools/` | Build, data-preparation, verification and social-card scripts |
 | `docs/PLAN.md` | Project plan: v1 before research, v2 after |
 
@@ -30,7 +32,7 @@ Not investment advice. Not affiliated with Anthropic or its underwriters.
 python3 tools/prepare_data.py   # research/*.json  -> data/risks.json, experts.json, glossary.json
 python3 tools/content.py        # editorial content -> data/content.json
 python3 tools/build.py          # src/ + data/      -> dist/index.html, dist/artifact.html
-python3 tools/verify.py         # checks every quoted passage against its cited S-1 page
+python3 tools/verify.py         # checks quoted passages, snippets and headline numbers against the cited S-1/A page
 node tools/og.js                # dist/og.png (needs Playwright)
 node tools/test_nav.js [url]    # navigation tests at 7 screen widths (needs Playwright and a served dist/)
 ```
@@ -48,6 +50,13 @@ elsewhere, rebuild, and X will show the card when the link is posted.
 
 ## Updating when the filing is amended
 
-The S-1 will be amended before pricing to fill in the price range, share counts and commitment totals. To update:
-download the new filing from EDGAR, rerun the text conversion into `research/s1/`, update `data/fin.json`,
-`data/compute.json` and `tools/content.py` where numbers changed, then rebuild and rerun `tools/verify.py`.
+Amendment No. 1 was handled like this, and the next amendment (expected to add the price range) can follow the
+same steps:
+
+1. Download the new filing from EDGAR and convert it to page-indexed text (`research/s1a/` shows the format:
+   a list of page texts plus a 0-based index → printed-page map).
+2. Diff it against the previous version and write the changes up (`research/amendment1_changes.md`).
+3. Map old printed pages to new ones by text overlap, then re-point the page chips. Pages shift unevenly
+   (0 to +5 for Amendment No. 1), so match on text, not a fixed offset.
+4. Update `data/fin.json`, `data/compute.json`, `tools/content.py`, the overlays in `research/s1a/` and the
+   prose in `src/page.html`; then rebuild, run `tools/verify.py`, `tools/og.js` and `tools/test_nav.js`.

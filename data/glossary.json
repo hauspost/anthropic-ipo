@@ -97,7 +97,7 @@
  {
   "key": "csp",
   "term": "Cloud marketplaces (CSPs)",
-  "plain": "Amazon, Google and Microsoft resell Claude through their own cloud platforms. They collect the money, keep a fee, and pass the rest to Anthropic. These sales were 48% of revenue in the first half of 2026."
+  "plain": "Amazon, Google and Microsoft resell Claude through their own cloud platforms. They collect the money, keep a fee, and pass the rest to Anthropic. These sales were 44% of revenue in the first nine months of 2026."
  },
  {
   "key": "grossnet",
@@ -142,7 +142,7 @@
  {
   "key": "rpo",
   "term": "Remaining performance obligations",
-  "plain": "Revenue customers have contractually committed to that hasn't been delivered yet. Anthropic's was $10.8B at June 30, 2026, small next to its revenue because most usage is pay-as-you-go."
+  "plain": "Revenue customers have contractually committed to that hasn't been delivered yet. Anthropic's was $13.8B at September 30, 2026, small next to its revenue because most usage is pay-as-you-go."
  },
  {
   "key": "tender",
