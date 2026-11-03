@@ -36,6 +36,9 @@ def experts():
     for e in d["experts"]:
         e.update(upd["update"].get(e["id"], {}))
     d["experts"] = d["experts"] + upd["add"]
+    for key, rows in upd.get("args", {}).items():
+        for i, row in rows.items():
+            d[key][int(i)].update(row)
     skip = {"buyer", "ipox_muehlbauer", "rhind", "hendricks"}
     order = {"high": 0, "medium": 1, "low": 2}
     out = []
@@ -112,9 +115,14 @@ PICK = {
 
 def glossary():
     out = [{"key": k, "term": t, "plain": p} for k, t, p in CUSTOM_TERMS]
+    # figures in the S-1 glossary extracts that the amendment updated
+    fixes = {"It made up about 80% of revenue in H1 2026 (F-26)": "It made up about 79% of revenue in the first nine months of 2026 (F-26)"}
     for g in load("s1_glossary.json"):
         if g["term"] in PICK:
-            out.append({"key": "s1-" + g["term"].split(" ")[0].lower(), "term": g["term"], "plain": g["plain_english"]})
+            plain = g["plain_english"]
+            for a, b in fixes.items():
+                plain = plain.replace(a, b)
+            out.append({"key": "s1-" + g["term"].split(" ")[0].lower(), "term": g["term"], "plain": plain})
     return out
 
 

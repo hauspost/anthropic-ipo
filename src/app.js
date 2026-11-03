@@ -373,7 +373,7 @@
       { k: "Leases signed, not yet started", v: 451.2, c: "var(--s2)", pg: "174" },
       { k: "Long-term deals signed after Sept 30", v: 100.2, c: "var(--s4)", pg: "174" },
       { k: "Short-term deals signed after Sept 30", v: 6.6, c: "var(--s4)", pg: "174" },
-      { k: "Estimated: TPU and AMD capacity (midpoint of $150–175B)", v: 162.5, c: "var(--rule-2)", pg: "174", est: true },
+      { k: "Estimated: no fixed price, mainly TPUs and AMD (midpoint of $150–175B)", v: 162.5, c: "var(--rule-2)", pg: "174", est: true },
     ];
     const total = d3.sum(segs, (d) => d.v);
     const rows = [
@@ -913,7 +913,7 @@
       if (talk.length) {
         const tx = x(parse(talk[0].date)), lo = d3.min(talk, (t) => t.post_money), hi = d3.max(talk, (t) => t.post_money);
         svg.append("rect").attr("x", tx - 5).attr("y", y(hi)).attr("width", 10).attr("height", Math.max(4, y(lo) - y(hi))).attr("rx", 5).style("fill", "var(--wash-1)").style("stroke", "var(--s1)").style("stroke-dasharray", "3 2");
-        svg.append("text").attr("x", tx - 10).attr("y", y(hi) - 6).attr("text-anchor", "end").attr("class", "annot").text("IPO talk $1.5–2T");
+        svg.append("text").attr("x", tx - 10).attr("y", y(hi) - 6).attr("text-anchor", "end").attr("class", "annot").text("IPO talk: ~$2T earlier, ~$1.5T now");
         const last = pts[pts.length - 1];
         svg.append("line").attr("x1", x(parse(last.date))).attr("x2", tx).attr("y1", y(last.post_money)).attr("y2", y(last.post_money)).style("stroke", "var(--s1)").style("stroke-width", 2).style("stroke-dasharray", "3 3");
       }

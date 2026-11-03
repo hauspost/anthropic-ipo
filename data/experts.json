@@ -16,7 +16,7 @@
   {
    "id": "ives",
    "name": "Dan Ives",
-   "affiliation": "Wedbush Securities (tech analyst)",
+   "affiliation": "Yorkville (formerly Wedbush)",
    "field": "finance",
    "stance": "mixed",
    "quote": "you could call it 1.5, is maybe baseline ... to what probably could even go lower by mid-November.",
@@ -138,7 +138,7 @@
    "stance": "mixed",
    "quote": "Building a business that went from $41M to a $16B half-year in three years is without precedent.",
    "quote_type": "verbatim_primary",
-   "summary": "Bull case: 11.9x growth on a derived ~40% gross margin, the first operating profit (~$974M in Q2), positive cash flow and almost no drawn debt. Bear case: $637B of commitments ($265.6B fixed/minimum at June 30 plus $245B since), two-thirds non-cancelable, against consumption revenue customers can cut.",
+   "summary": "Bull case: 11.9x growth on a derived ~40% gross margin, the first operating profit (~$974M in Q2), positive cash flow and almost no drawn debt. Bear case: $637B of commitments (his sum of the seven named deals in the original S-1), two-thirds non-cancelable, against consumption revenue customers can cut.",
    "outlet": "tomtunguz.com",
    "date": "2026-10-26",
    "url": "https://tomtunguz.com/anthropics-s1-grew-eleven-fold/"
@@ -407,7 +407,7 @@
  "bull_args": [
   {
    "title": "Growth with improving unit economics",
-   "argument": "Revenue went from ~$41M to $16.3B a half-year in about three years. H1-2026 operating loss narrowed to $693M, Q2 showed an operating profit, operating cash flow turned positive (+$3.9B) and adjusted operating income was profitable. Revenue is growing faster than costs.",
+   "argument": "Revenue went from $41M in 2023 to $33.2B in the first nine months of 2026. Q2 was the first quarter with an operating profit ($974M); Q3 slipped to a $567M loss after a $2.0B non-cash donation charge, for a nine-month operating loss of $1.3B. Operating cash flow was +$6.6B over nine months and adjusted operating income $4.1B (S-1/A pp. 138, 172). Revenue is growing faster than costs.",
    "attributed_to": [
     "Tomasz Tunguz",
     "Azeem Azhar",
@@ -416,7 +416,7 @@
   },
   {
    "title": "The scary net loss is mostly an accounting mark",
-   "argument": "$72.4B of the $80.7B H1 net loss, and ~$34B of the $42B 2025 loss, are non-cash fair-value charges on convertible notes, SAFEs and derivatives as the company's value rose. Economically, the operating line and cash flow matter more.",
+   "argument": "$94.3B of the $104.0B nine-month 2026 net loss, and ~$34B of the $42B 2025 loss, are non-cash fair-value charges on convertible notes, SAFEs and derivatives as the company's value rose. Economically, the operating line and cash flow matter more.",
    "attributed_to": [
     "Harrison Rolfes (PitchBook)",
     "Gil Luria (D.A. Davidson, per CNBC snippet)",
@@ -433,7 +433,7 @@
   },
   {
    "title": "Compute is financeable and the balance sheet is strong",
-   "argument": "Lenders and suppliers (Broadcom, Google) have financed capacity against contracted payments, so financing is not the near-term bottleneck. Anthropic has essentially no drawn debt, a large cash pile and an undrawn $15B revolver.",
+   "argument": "Lenders and suppliers (Broadcom, Google) have financed capacity against contracted payments, so financing is not the near-term bottleneck. Anthropic has essentially no drawn debt, a large cash pile and $14.8B available on its revolver.",
    "attributed_to": [
     "Epoch AI (Campbell Hutcheson)",
     "Tomasz Tunguz",
@@ -467,7 +467,7 @@
   },
   {
    "title": "The leverage is hidden in compute commitments",
-   "argument": "Hundreds of billions in mostly non-cancelable compute obligations ($518B-$637B depending on definition; ~$410B non-cancelable per the leak) set against consumption revenue with no lock-in. The payments are owed whether customers stay or not. Rolfes thinks ~70% gross margins are needed to carry them, against ~44% now.",
+   "argument": "$895.4B of compute commitments as filed in the amendment, of which $213.8B is terminable or conditional (pre-amendment estimates ran $518B–$637B) set against consumption revenue with no lock-in. The payments are owed whether customers stay or not. Rolfes thinks ~70% gross margins are needed to carry them, against ~44% now.",
    "attributed_to": [
     "Tomasz Tunguz (bear case)",
     "Azeem Azhar",
@@ -489,7 +489,7 @@
   },
   {
    "title": "Revenue quality, concentration and circularity",
-   "argument": "ARR is unstandardized and gameable, and Anthropic books cloud-marketplace revenue gross (Damodaran). Nearly half of 2025 sales ran through Amazon and Google, who are also investors, suppliers and competitors. The top two customers are ~20% of revenue. The 2025 cost base was $2.75 per $1 of revenue (Zitron).",
+   "argument": "ARR is unstandardized and gameable, and Anthropic books cloud-marketplace revenue gross (Damodaran). Nearly half of 2025 sales ran through Amazon and Google, who are also investors, suppliers and competitors. The top five customers were about 25% of nine-month 2026 revenue, though none exceeded 10%. The 2025 cost base was $2.75 per $1 of revenue (Zitron).",
    "attributed_to": [
     "Aswath Damodaran",
     "Tomasz Tunguz",

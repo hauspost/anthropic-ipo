@@ -36,7 +36,7 @@
   "plain_english": "Anthropic must sign binding, often take-or-pay compute and data-center contracts years ahead (some running to 2045) while most of its revenue is pay-as-you-go, so a bad forecast means either running short or paying for idle capacity. Failing to pay could trigger cross-defaults that accelerate substantially all of its debt, and some financing locks it into particular chip suppliers.",
   "novelty": "ai-specific",
   "quote": "In the past, we have significantly underestimated our compute requirements, which left us capacity constrained and impacted both product development and deployment.",
-  "numbers": "Aggregate committed spend of “more than $[blank]” as of and subsequent to Sept. 30, 2026 (amount blank in this filing), substantially all compute/infrastructure; $[blank] expected before Dec. 31, 2030; remainder 2031–2045; $[blank] due in next 12 months",
+  "numbers": "Aggregate committed spend of approximately $895.4 billion as of and subsequent to Sept. 30, 2026, substantially all compute/infrastructure; ~$447.5 billion expected before Dec. 31, 2030; substantially all the rest 2031–2045; ~$69.8 billion due in the 12 months after Sept. 30, 2026 (p. 33)",
   "named_entities": []
  },
  {
@@ -265,10 +265,10 @@
   "heading": "We have incurred significant indebtedness in order to operate and grow our business, including to fund our substantial compute commitments, and our ability to service this indebtedness may be constrained by our cash flows and liquidity.",
   "page": "59",
   "category": "financial-losses",
-  "plain_english": "As of June 30, 2026 Anthropic owed $6.2 billion, all in convertible notes held by Amazon, and it can issue up to $42 billion more in convertible notes to chip partner Broadcom to finance a 2026 accelerator lease; it also has a floating-rate credit agreement whose covenants are partly tied to operational metrics. Servicing this debt could strain cash, and a default would let lenders demand immediate repayment and seize collateral.",
+  "plain_english": "As of September 30, 2026 Anthropic owed $6.2 billion, all in convertible notes held by Amazon, and it can issue up to $42 billion more in convertible notes to chip partner Broadcom to finance a 2026 accelerator lease; it also has a floating-rate credit agreement whose covenants are partly tied to operational metrics. Servicing this debt could strain cash, and a default would let lenders demand immediate repayment and seize collateral.",
   "novelty": "unusual",
   "quote": "we have the ability to issue, if needed, up to $42.0 billion in aggregate principal amount of convertible promissory notes to Broadcom",
-  "numbers": "$6.2 billion total indebtedness at June 30, 2026 (Amazon Notes); Amazon 2023 NPA dated Sept. 19, 2023; Amazon 2024 NPA dated Nov. 22, 2024; Broadcom equipment lease (March 2026); up to $42.0 billion of convertible notes under the Infrastructure Partner 2026 NPA (March 2026)",
+  "numbers": "$6.2 billion total indebtedness at September 30, 2026 (Amazon Notes); Amazon 2023 NPA dated Sept. 19, 2023; Amazon 2024 NPA dated Nov. 22, 2024; Broadcom equipment lease (March 2026); up to $42.0 billion of convertible notes under the Infrastructure Partner 2026 NPA (March 2026)",
   "named_entities": [
    "Amazon",
    "Amazon Web Services",
@@ -350,7 +350,7 @@
   "plain_english": "Headcount grew more than five-fold in under two years, straining management, controls and partner relationships. Mis-planning compute (too much or too little) could cause service limits or wasted spending.",
   "novelty": "boilerplate",
   "quote": "the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026",
-  "numbers": "Employees ~940 (Dec 31, 2024) to ~5,300 (Sep 30, 2026); revenue $197M in Q4 2024 (Q3 2026 figure left blank in this draft)",
+  "numbers": "Employees ~940 (Dec 31, 2024) to ~5,300 (Sep 30, 2026); revenue $197M in Q4 2024 to $17.0B in Q3 2026",
   "named_entities": []
  },
  {
@@ -419,10 +419,10 @@
   "heading": "Our sales to government entities and highly regulated organizations are subject to challenges and risks.",
   "page": "73",
   "category": "government-natsec",
-  "plain_english": "Government agencies are only about 1% of revenue, but Anthropic's refusal to allow mass domestic surveillance or fully autonomous weapons led the President to order agencies to stop using its technology and the Department of War to label it a 'supply-chain risk.' Anthropic largely won in district court but lost a 2-1 appeals ruling on one designation, and the dispute could deter customers that sell to the government.",
+  "plain_english": "Government agency contracts are less than 2% of revenue, but Anthropic's refusal to allow mass domestic surveillance or fully autonomous weapons led the President to order agencies to stop using its technology and the Department of War to label it a 'supply-chain risk.' Anthropic largely won in district court but lost a 2-1 appeals ruling on one designation, and the dispute could deter customers that sell to the government.",
   "novelty": "unusual",
   "quote": "the Secretary of War directed the Department of War to designate us as a “supply-chain risk to national security” and stated that “effective immediately, no contractor, supplier, or partner that does business with the United States military may conduct any commercial activity” with us.",
-  "numbers": "Government contracts ~1% of revenue in each period; February 2026 presidential directive and DoW designation; March 4, 2026 DoW letters under 10 U.S.C. § 3252 and FASCSA § 4713; August 27, 2026 N.D. Cal. summary judgment largely for Anthropic; September 25, 2026 D.C. Circuit 2-1 ruling upholding the § 4713 designation (en banc petition filed); June 2026 export restrictions",
+  "numbers": "Government agency contracts <2% of revenue in each period (p. 72); February 2026 presidential directive and DoW designation; March 4, 2026 DoW letters under 10 U.S.C. § 3252 and FASCSA § 4713; August 27, 2026 N.D. Cal. summary judgment largely for Anthropic; September 25, 2026 D.C. Circuit 2-1 ruling upholding the § 4713 designation (en banc petition filed); June 2026 export restrictions",
   "named_entities": [
    "President of the United States",
    "Secretary of War",

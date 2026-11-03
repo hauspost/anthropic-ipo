@@ -6,7 +6,8 @@
   "page": "31"
  },
  "rf-a-003": {
-  "page": "32"
+  "page": "32",
+  "numbers": "Aggregate committed spend of approximately $895.4 billion as of and subsequent to Sept. 30, 2026, substantially all compute/infrastructure; ~$447.5 billion expected before Dec. 31, 2030; substantially all the rest 2031–2045; ~$69.8 billion due in the 12 months after Sept. 30, 2026 (p. 33)"
  },
  "rf-a-004": {
   "page": "35"
@@ -56,7 +57,9 @@
   "numbers": "No customer >10% of revenue (9 months ended Sept. 30, 2026); top five customers ≈25% of revenue (same period); CSP-marketplace share of revenue ≈11% (2023), 32% (2024), 47% (2025), 44% (nine months ended Sept 30, 2026); CSP share of net accounts receivable 42% (Dec. 31, 2024), 60% (Dec. 31, 2025), 52% (Sept 30, 2026)"
  },
  "rf-a-019": {
-  "page": "59"
+  "page": "59",
+  "plain_english": "As of September 30, 2026 Anthropic owed $6.2 billion, all in convertible notes held by Amazon, and it can issue up to $42 billion more in convertible notes to chip partner Broadcom to finance a 2026 accelerator lease; it also has a floating-rate credit agreement whose covenants are partly tied to operational metrics. Servicing this debt could strain cash, and a default would let lenders demand immediate repayment and seize collateral.",
+  "numbers": "$6.2 billion total indebtedness at September 30, 2026 (Amazon Notes); Amazon 2023 NPA dated Sept. 19, 2023; Amazon 2024 NPA dated Nov. 22, 2024; Broadcom equipment lease (March 2026); up to $42.0 billion of convertible notes under the Infrastructure Partner 2026 NPA (March 2026)"
  },
  "rf-a-020": {
   "page": "60"
@@ -77,7 +80,8 @@
   "page": "63"
  },
  "rf-b-005": {
-  "page": "64"
+  "page": "64",
+  "numbers": "Employees ~940 (Dec 31, 2024) to ~5,300 (Sep 30, 2026); revenue $197M in Q4 2024 to $17.0B in Q3 2026"
  },
  "rf-b-006": {
   "quote": "net losses of $1.5 billion, $8.3 billion, and $42.0 billion for the years ended December 31, 2023, 2024, and 2025, respectively, and $104.0 billion for the nine months ended September 30, 2026",
@@ -95,7 +99,9 @@
   "page": "71"
  },
  "rf-b-010": {
-  "page": "73"
+  "page": "73",
+  "plain_english": "Government agency contracts are less than 2% of revenue, but Anthropic's refusal to allow mass domestic surveillance or fully autonomous weapons led the President to order agencies to stop using its technology and the Department of War to label it a 'supply-chain risk.' Anthropic largely won in district court but lost a 2-1 appeals ruling on one designation, and the dispute could deter customers that sell to the government.",
+  "numbers": "Government agency contracts <2% of revenue in each period (p. 72); February 2026 presidential directive and DoW designation; March 4, 2026 DoW letters under 10 U.S.C. § 3252 and FASCSA § 4713; August 27, 2026 N.D. Cal. summary judgment largely for Anthropic; September 25, 2026 D.C. Circuit 2-1 ruling upholding the § 4713 designation (en banc petition filed); June 2026 export restrictions"
  },
  "rf-b-011": {
   "quote": "these CSPs, which simultaneously serve as our investors, customers, distribution partners, and competitors, or with Broadcom, which simultaneously serves as a supplier and lessor",

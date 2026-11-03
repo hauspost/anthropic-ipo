@@ -31,8 +31,8 @@
    "label": "Cash and short-term investments",
    "value": "$131.8B",
    "note": "At Sept 30, 2026, before IPO money. $146.6B including an undrawn credit line.",
-   "page": "139",
-   "snip": "$146.6 billion of liquidity"
+   "page": "25",
+   "snip": "131,845"
   },
   {
    "label": "Founders' share of the vote",
@@ -68,7 +68,7 @@
   },
   {
    "lead": "Its suppliers are also its financiers.",
-   "text": "Amazon, Google, Broadcom and AMD all put money in, and several of those investments unlock only as the investor delivers its own chips or cloud capacity. Cloud marketplaces collected 44% of revenue in the first nine months.",
+   "text": "Amazon and Google have invested billions; Broadcom offers a $42 billion loan facility to pay its own rent, and AMD has agreed to buy up to $5 billion of stock from 2027. Several of these unlock only as the partner delivers its own chips or cloud capacity. Cloud marketplaces collected 44% of revenue in the first nine months.",
    "to": "circle",
    "cta": "Follow the money"
   },
@@ -129,7 +129,7 @@
     "Invested about $3.3B through convertible notes and $20.0B in preferred stock in 2026 (our sum of disclosed tranches).",
     "A further $20.0B facility runs to 2030. Draws depend on TPU capacity delivered and revenue targets.",
     "Holds an option to buy up to $10.0B of stock in a private placement alongside the IPO, at the IPO price.",
-    "Anthropic must spend at least ~$121.3B with Google from April 2026 to July 2033 and pay any shortfall in cash. The minimum was $114.5B in the original S-1 and was raised in October. It estimates another $125–150B for TPU capacity from providers including Google, 2028–2031.",
+    "Anthropic must spend at least ~$121.3B with Google from April 2026 to July 2033 and pay any shortfall in cash. The minimum was $114.5B in the original S-1 and was raised in amendments made by October. It estimates another $125–150B for TPU capacity from providers including Google, 2028–2031.",
     "Google is also a customer, a distribution channel and a named competitor."
    ],
    "pages": "169–174, F-39–F-40"
@@ -174,7 +174,7 @@
    ],
    "points": [
     "Invested about $8.0B through convertible notes (2023–2025) and $10.0B in preferred stock in 2026 (our sum of disclosed tranches).",
-    "$6.2B of notes outstanding at June 30 convert into non-voting Class N shares at the IPO, capped at 12% ownership unless Amazon waives the cap.",
+    "$6.2B of notes outstanding at September 30 convert into non-voting Class N shares at the IPO, capped at 12% ownership unless Amazon waives the cap.",
     "A further $15.0B unlocks in $5.0B steps 'following the achievement of the relevant compute capacity milestones', meaning capacity Amazon delivers.",
     "Anthropic must spend at least $110.0B with Amazon from May 2026 to April 2036, and pay any shortfall in cash.",
     "Amazon can settle its notes by netting them against money it owes Anthropic from marketplace sales.",
@@ -202,7 +202,7 @@
     "Anthropic must spend at least $44.9B on Azure from November 2026 to June 2033, regardless of usage.",
     "Claude is sold through Microsoft Foundry. Microsoft also owns a large stake in OpenAI."
    ],
-   "pages": "74, 174"
+   "pages": "75, 174"
   },
   {
    "id": "amd",
@@ -342,7 +342,7 @@
    "label": "Five founders leave",
    "result": "Founder control ends after a 450-day countdown.",
    "explain": "If fewer than three founders remain for 90 consecutive days, a 450-day transition starts. At the end, the Class F share and all employee Class E shares are cancelled for nothing. Class A holders then elect the non-trust directors, and the board becomes staggered. Successors named on confidential lists can step in only after a death or incapacity, and only for the first 10 years.",
-   "page": "256"
+   "page": "255"
   },
   {
    "id": "trust",
@@ -466,8 +466,8 @@
    "q": "accelerat"
   },
   {
-   "lead": "Suppliers on borrowed money.",
-   "text": "Also new: some compute providers depend on outside financing to buy chips and build capacity. If that dries up, contracted capacity 'may be delayed, repriced, reduced, or not delivered.'",
+   "lead": "Suppliers that need outside financing.",
+   "text": "Also new: some compute providers depend on third-party financing or credit support to buy chips and build capacity. If that dries up, contracted capacity 'may be delayed, repriced, reduced, or not delivered.'",
    "page": "31",
    "q": "financing"
   },
@@ -587,9 +587,9 @@
    ],
    "defenders": [
     {
-     "text": "Demand is 'limited principally by the availability of compute'. Partners were unwilling to supply all the capacity Anthropic sought.",
-     "who": "Anthropic (filing, as reported) (as reported), 2026-09",
-     "url": "https://thenextweb.com/news/anthropic-ipo-prospectus-42bn-loss-518bn-compute"
+     "text": "Demand is limited by compute supply: “we have in the past sought quantities of compute from CSPs in excess of what those partners were willing to provide.”",
+     "who": "S-1/A p. 31",
+     "url": ""
     },
     {
      "text": "“The inference business worked at the unit level in 2025.”",
@@ -606,7 +606,7 @@
     "page": "143",
     "quote": "Our compute commitments are substantial and generally must be satisfied regardless of our revenue or utilization, while our access to additional capital depends on a number of conditions, many of which are outside our control, including market conditions and investor demand."
    },
-   "read": "This is the single biggest risk in the filing. The amendment makes it concrete: $69.8B falls due in the next 12 months, about a year of revenue at Q3's pace, and $447.5B by the end of 2030. It works if demand keeps compounding. If growth slows, the $131.8B of cash and short-term investments and the $213.8B of cancelable or conditional deals buy time. The rest is owed.",
+   "read": "This is the single biggest risk in the filing. The amendment makes it concrete: $69.8B falls due in the next 12 months, about a year of revenue at Q3's pace, and $447.5B by the end of 2030. It works if demand keeps compounding. If growth slows, the $131.8B of cash and short-term investments buys time. The $213.8B of terminable or conditional deals helps less than it sounds: only $4.3B of the next 12 months' $69.8B is of that kind, and most conditions sit with suppliers, not with Anthropic. The rest is owed.",
    "lean": 0.7,
    "left": "Prudent",
    "right": "Bet the company",
@@ -679,7 +679,7 @@
     },
     {
      "text": "An estimated 5–7% of nine-month 2026 revenue came from customers later found to violate the usage policy or terms. Press reports tie this to rivals distilling Claude.",
-     "who": "S-1/A p. 147; FT via Fortune",
+     "who": "S-1/A p. 146; FT via Fortune",
      "url": ""
     },
     {
@@ -938,9 +938,9 @@
      "url": "https://x.com/GaryMarcus/status/2105349862355304892"
     },
     {
-     "text": "“Anthropic revenue hit a highly disappointing $16.8 billion in the third quarter”",
+     "text": "“Anthropic revenue hit a highly disappointing $16.8 billion in the third quarter” (the press-reported figure; the amendment later showed $16.96B)",
      "who": "Zvi Mowshowitz, 2026-10",
-     "url": "https://thezvi.substack.com/p/ai-188-gemini-dot-argon"
+     "url": "https://thezvi.substack.com/p/ai-190-scion-of-the-times"
     },
     {
      "text": "“What happened since then is OpenAI caught up”",
@@ -1025,7 +1025,7 @@
   {
    "when": "May 28, 2026",
    "what": "Series H: $65B at $965B post-money.",
-   "why": "The markup that drives the $72.4B fair-value charge."
+   "why": "The markup behind most of 2026's $94.3B fair-value charge ($59.6B of it in Q2)."
   },
   {
    "when": "June 1, 2026",
@@ -1594,7 +1594,7 @@
  "val_context": [
   "Private investors last priced Anthropic at <strong>$965 billion</strong> in the Series H round that closed in May 2026 (company announcement). The S-1 confirms the round's price of $589.01 a share, which is $58.90 after September's 10-for-1 split<a class=\"pg\" data-pg=\"286\"></a>. Press reports first put IPO talk at up to $2 trillion. Since the amendment, Reuters and the WSJ report about $1.5 trillion (WSJ: $1.5–1.6 trillion).",
   "For scale: at $1.5 trillion the market would pay about 22 times Q3 revenue at an annual rate ($16.96B × 4 = $67.8B; this is our arithmetic, not the company's Run-Rate Revenue, which is still blank) and about 43 times revenue over the past four quarters ($35.3B). NVIDIA trades at 17 times trailing sales and Palantir at 78 (October 26 close, StockAnalysis). Jay Ritter counts only 14 of 4,110 US IPOs from 1980 to 2024 priced above 40 times sales, and those trailed the market by 15.4% on average over up to three years (Fortune, Nov 3).",
-  "<strong>Who can buy.</strong> The amendment says Anthropic anticipates that a portion of the shares will be offered to individual investors at the IPO price through Schwab, Fidelity, Robinhood, Trade-PMR, SoFi and E*TRADE<a class=\"pg\" data-pg=\"330\" data-snip=\"offered to retail investors\"></a>. Index funds are a separate question. Nasdaq's fast-entry rule could add the stock to the Nasdaq-100 after 15 trading days. The S&amp;P 500 requires positive GAAP earnings over the latest four quarters combined and in the latest quarter, plus 12 months of trading, which Anthropic's losses rule out for now (<a href=\"https://www.fool.com/investing/2026/09/23/anthropic-could-join-the-nasdaq-100-only-15-trading-days-after-its-ipo-just-like-spacex-did/\" target=\"_blank\" rel=\"noopener\">Motley Fool</a>, Sept 23)."
+  "<strong>Who can buy.</strong> The amendment says Anthropic anticipates that a portion of the shares will be offered to individual investors at the IPO price through Schwab, Fidelity, Robinhood, Trade-PMR, SoFi and E*TRADE<a class=\"pg\" data-pg=\"330\" data-snip=\"offered to retail investors\"></a>. Index funds are a separate question. Nasdaq's fast-entry rule could add the stock to the Nasdaq-100 after 15 trading days (<a href=\"https://www.fool.com/investing/2026/09/23/anthropic-could-join-the-nasdaq-100-only-15-trading-days-after-its-ipo-just-like-spacex-did/\" target=\"_blank\" rel=\"noopener\">Motley Fool</a>, Sept 23). The S&amp;P 500 has not adopted a similar rule (<a href=\"https://www.etfstream.com/articles/s-and-p-500-will-not-adopt-fast-entry-for-spacex-anthropic-and-openai\" target=\"_blank\" rel=\"noopener\">ETF Stream</a>), and its standard rules require positive reported earnings, which Anthropic's losses rule out for now."
  ],
  "val_after": [
   "Aswath Damodaran values Anthropic at about $1.48 trillion and says that if it is priced well above that, he will sit out (<a href=\"https://aswathdamodaran.blogspot.com/2026/10/the-anthropic-prospectus-arrives-ipo.html\" target=\"_blank\" rel=\"noopener\">blog</a>, Oct 28). He put the test plainly before the filing: “To make a case for Anthropic at a $1.5 or $2 trillion pricing, you will have to make defensible arguments for sky-high revenue growth in the early years, a surge in operating margins to 30% or higher” (<a href=\"https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing\" target=\"_blank\" rel=\"noopener\">Musings on Markets</a>, Oct 22).",
@@ -1609,7 +1609,7 @@
   },
   {
    "lead": "Back to an operating loss.",
-   "text": "−$567 million, after +$974 million in Q2. A $2.0 billion non-cash donation-matching charge explains the swing. On the company's adjusted measure, margin fell from 19% to 15% because of $5.0 billion of pricier short-term compute.",
+   "text": "−$567 million, after +$974 million in Q2. The $2.0 billion non-cash donation-matching charge is bigger than the whole swing: without it, Q3 earned about $1.4 billion, roughly Q2's 8% margin. The company also blames $5.0 billion of pricier short-term compute, and on its adjusted measure margin fell from 19% to 15%.",
    "page": "163",
    "to": "economics"
   },
